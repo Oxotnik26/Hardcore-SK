@@ -8,9 +8,7 @@
     <li>Core_SK</li>
     <li>Breakdowns</li>
     <li>Clutter_SK</li>
-    <li>DoNotDisturb</li>
     <li>EdBPrepareCarefully</li>
-    <li>Darkness_SK</li>
     <li>Hospitality</li>
     <li>kNumbers</li>
     <li>LT_DoorMat</li>
@@ -24,6 +22,7 @@
     <li>Miscellaneous_Robots</li>
     <li>Miscellaneous_Robots_Xtension</li>
     <li>Miscellaneous_TrainingFacility</li>
+    <li>SkilledBuilderOn</li>
     <li>MountainTemp</li>
     <li>PetFollow</li>
     <li>PowerSwitch</li>
