@@ -769,7 +769,7 @@
     <statBases>
       <MoveSpeed>5.80</MoveSpeed>
       <ComfyTemperatureMin>-36</ComfyTemperatureMin>
-      <MarketValue>2</MarketValue>
+      <MarketValue>1200</MarketValue>
 	  <ArmorPenetration>0.4</ArmorPenetration>
     </statBases>
     <verbs>
@@ -1038,7 +1038,7 @@
       <baseBodySize>1.15</baseBodySize>
       <baseHungerRate>0.75</baseHungerRate>
       <baseHealthScale>1.3</baseHealthScale>
-      <leatherLabel>Leopard skin</leatherLabel>
+      <leatherLabel>Jaguar skin</leatherLabel>
       <leatherColor>(173,155,138)</leatherColor>
     </race>
   </ThingDef>
