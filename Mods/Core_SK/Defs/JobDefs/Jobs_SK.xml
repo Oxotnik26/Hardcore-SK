@@ -7,6 +7,13 @@
         <reportString>Smoothing wall.</reportString>
         <alwaysShowWeapon>false</alwaysShowWeapon>
     </JobDef>
+	
+   <JobDef>
+    <defName>LockingDoorBasic</defName>
+    <driverClass>SK.LockDoorsJob</driverClass>
+    <reportString>Locking/Unlocking doors.</reportString>
+	<casualInterruptible>false</casualInterruptible>
+  </JobDef>
 
   <JobDef>
     <defName>WatchGlassTelevision</defName>
@@ -86,7 +93,7 @@
   <JobDef>
     <defName>JobDef_IngestBeerFeast</defName>
     <driverClass>Feast.JobDriver_IngestBeerFeast</driverClass>
-    <reportString>Drinking a alcogol.</reportString>
+    <reportString>Drinking an alcohol.</reportString>
   </JobDef>
 
   <JobDef>
@@ -139,7 +146,7 @@
   <JobDef>
     <defName>JobDef_IngestBeer</defName>
     <driverClass>CampfireParty.JobDriver_IngestBeer</driverClass>
-    <reportString>Drinking a alcogol.</reportString>
+    <reportString>Drinking an alcohol.</reportString>
   </JobDef>
 
   <JobDef>

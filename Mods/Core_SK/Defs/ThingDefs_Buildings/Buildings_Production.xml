@@ -54,6 +54,8 @@
 			<fuelFilter>
 			  <thingDefs>
 				<li>Kindling</li>
+				<li>Coal</li>
+				<li>Charcoal</li>
 			  </thingDefs>
 			</fuelFilter>
 			<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -106,18 +108,19 @@
     <surfaceType>Item</surfaceType>
 		<recipes>
 			<li>ButcherCorpseFlesh</li>
-            <li>ShellMashgon</li>
-            <li>PrepareSduiggles</li>
-            <li>PrepareSeasnake</li>
-            <li>PrepareBlueblade</li>
-            <li>ButcherTailteeth</li>
-            <li>MakeTofu</li>
-            <li>Makesoymilk</li>
-            <li>MakeSugar</li>
-            <li>MakeFlour</li>
-            <li>Makecheese</li>
-            <li>MakeFruitDrink</li>
+			<li>ShellMashgon</li>
+			<li>PrepareSduiggles</li>
+			<li>PrepareSeasnake</li>
+			<li>PrepareBlueblade</li>
+			<li>ButcherTailteeth</li>
+			<li>MakeTofu</li>
+			<li>Makesoymilk</li>
+			<li>MakeSugar</li>
+			<li>MakeFlour</li>
+			<li>Makecheese</li>
+			<li>MakeFruitDrink</li>
 			<li>MakeHerbMedicine</li>
+			<li>MakeKibble</li>
 		</recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
@@ -172,18 +175,19 @@
     <surfaceType>Item</surfaceType>
 		<recipes>
 			<li>ButcherCorpseFlesh</li>
-            <li>ShellMashgon</li>
-            <li>PrepareSduiggles</li>
-            <li>PrepareSeasnake</li>
-            <li>PrepareBlueblade</li>
-            <li>ButcherTailteeth</li>
-            <li>MakeTofu</li>
-            <li>Makesoymilk</li>
-            <li>MakeSugar</li>
-            <li>MakeFlour</li>
-            <li>Makecheese</li>
-            <li>MakeFruitDrink</li>
+			<li>ShellMashgon</li>
+			<li>PrepareSduiggles</li>
+			<li>PrepareSeasnake</li>
+			<li>PrepareBlueblade</li>
+			<li>ButcherTailteeth</li>
+			<li>MakeTofu</li>
+			<li>Makesoymilk</li>
+			<li>MakeSugar</li>
+			<li>MakeFlour</li>
+			<li>Makecheese</li>
+			<li>MakeFruitDrink</li>
 			<li>MakeHerbMedicine</li>
+			<li>MakeKibble</li>
 		</recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
@@ -970,6 +974,7 @@
 		<surfaceType>Item</surfaceType>
 		<tickerType>Normal</tickerType>
 		<recipes>
+	        <li>MakeCharcoal_Hand</li>
 			<li>MakeTinBars_Hand</li>
 			<li>MakeCopperBars_Hand</li>
 			<li>MakeBronze_Hand</li>
@@ -984,9 +989,8 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>18.0</fuelConsumptionRate>
+        <fuelConsumptionRate>12.0</fuelConsumptionRate>
         <fuelCapacity>10.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -1074,9 +1078,8 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>20.0</fuelConsumptionRate>
+        <fuelConsumptionRate>15.0</fuelConsumptionRate>
         <fuelCapacity>10.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -2626,7 +2629,7 @@
     <DefName>TablePremitiveProsthetic</DefName>
     <label>Premitive prosthetics bench</label>
     <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A workbench equipped for production of basic prosthetics. Requires power.</Description>
+    <Description>A workbench equipped for production of basic prosthetics.</Description>
     <graphicData>
       <texPath>Things/Building/Production/TableCraftsman/Neolithic/TableCraftsmanNeolithic</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
