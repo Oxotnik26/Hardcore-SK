@@ -21,7 +21,7 @@
 		<SwayFactor>1.3</SwayFactor>
 		<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 		<Bulk>11.60</Bulk>
-		<Weight>4.00</Weight>
+		<Mass>4.00</Mass>
     </statBases>
     <weaponTags>
     <li>Glaunchers</li>
@@ -42,7 +42,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_30x64mmFuel_Incendiary</projectileDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<warmupTicks>95</warmupTicks>
+			<warmupTime>0.95</warmupTime>
 			<range>50</range>
 			<targetParams>
 			  <canTargetLocations>true</canTargetLocations>
@@ -64,6 +64,10 @@
 			<magazineSize>6</magazineSize>
 			<reloadTicks>550</reloadTicks>
 			<ammoSet>AmmoSet_30x64mmFuel</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.3,0.3,-0.05)</MainHand>
+				<SecHand>(0.2,0,-0.05)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -91,7 +95,7 @@
 			<SwayFactor>2.2</SwayFactor>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 			<Bulk>6.60</Bulk>
-			<Weight>4.10</Weight>
+			<Mass>4.10</Mass>
 		</statBases>
     <weaponTags>
 		<li>Glaunchers</li>
@@ -112,7 +116,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<projectileDef>Bullet_40x46mmGrenade_HE</projectileDef>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<warmupTicks>92</warmupTicks>
+				<warmupTime>0.92</warmupTime>
 				<noiseRadius>4</noiseRadius>
 				<forcedMissRadius>2.0</forcedMissRadius>
 				<range>40</range>	<!-- grenades at 12.9 -->
@@ -134,6 +138,10 @@
 				<magazineSize>6</magazineSize>
 				<reloadTicks>550</reloadTicks>
 				<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+			  </li>
+			  <li Class="WHands.WhandCompProps">
+					<MainHand>(-0.225,0.3,-0.08625)</MainHand>
+					<SecHand>(-0.25,0,-0.125)</SecHand>
 			  </li>
 			</comps>
     <smeltProducts>
@@ -161,7 +169,7 @@
 			<SwayFactor>2.0</SwayFactor>
 			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 			<Bulk>8.50</Bulk>
-			<Weight>7.00</Weight>
+			<Mass>7.00</Mass>
 		</statBases>
     <weaponTags>
       <li>Launchers</li>
@@ -183,7 +191,7 @@
 			<projectileDef>Bullet_RPG7Grenade_HEAT</projectileDef>
 			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 			<forcedMissRadius>3</forcedMissRadius>
-			<warmupTicks>92</warmupTicks>
+			<warmupTime>0.92</warmupTime>
 			<noiseRadius>8</noiseRadius>
 			<range>50</range>	<!-- grenades at 12.9 -->
 			<targetParams>
@@ -206,6 +214,9 @@
 			<reloadTicks>420</reloadTicks>
 			<ammoSet>AmmoSet_RPG7Grenade</ammoSet>
 		  </li>
+			  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.1,0.3,-0.1)</MainHand>
+			  </li>
 		</comps>
     <smeltProducts>
       <Launcher_Component>2</Launcher_Component>
@@ -231,7 +242,7 @@
 			<SwayFactor>2.0</SwayFactor>
 			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
 			<Bulk>9.80</Bulk>
-			<Weight>7.70</Weight>
+			<Mass>7.70</Mass>
     </statBases>
 	<soundInteract>InteractPTUR</soundInteract>
     <destroyOnDrop>false</destroyOnDrop>
@@ -254,7 +265,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_RPG7Grenade_HEAT</projectileDef>
 			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-			<warmupTicks>130</warmupTicks>
+			<warmupTime>1.30</warmupTime>
 			<forcedMissRadius>2</forcedMissRadius>
 			<noiseRadius>8</noiseRadius>
 			<range>50</range>	<!-- grenades at 12.9 -->
@@ -278,6 +289,10 @@
 			<reloadTicks>450</reloadTicks>
 			<ammoSet>AmmoSet_RPG7Grenade</ammoSet>
 		  </li>
+			  <li Class="WHands.WhandCompProps">
+					<MainHand>(-0.225,0.3,-0.1)</MainHand>
+					<SecHand>(0.225,0,-0.05)</SecHand>
+			  </li>
 		</comps>
     <smeltProducts>
       <Launcher_Component>2</Launcher_Component>
@@ -304,7 +319,7 @@
 		<SwayFactor>2.1</SwayFactor>
 		<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 		<Bulk>10.60</Bulk>
-		<Weight>8.20</Weight>
+		<Mass>8.20</Mass>
     </statBases>
     <weaponTags>
       <li>Launchers</li>
@@ -326,7 +341,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 			<projectileDef>Bullet_M72LAW_HEAT</projectileDef>
-            <warmupTicks>120</warmupTicks>
+            <warmupTime>1.20</warmupTime>
 			<forcedMissRadius>1.5</forcedMissRadius>
 			<range>65</range>
 			<targetParams>
@@ -349,6 +364,10 @@
 			<reloadTicks>450</reloadTicks>
 			<ammoSet>AmmoSet_M72LAW</ammoSet>
 		  </li>
+			  <li Class="WHands.WhandCompProps">
+					<MainHand>(-0.225,0.3,-0.1)</MainHand>
+					<SecHand>(0.225,0,-0.05)</SecHand>
+			  </li>
 		</comps>
     <smeltProducts>
       <Launcher_Component>2</Launcher_Component>
@@ -375,7 +394,7 @@
 			<SwayFactor>2.3</SwayFactor>
 			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 			<Bulk>9.90</Bulk>
-			<Weight>7.85</Weight>
+			<Mass>7.85</Mass>
     </statBases>
     <weaponTags>
 		<li>Launchers</li>
@@ -384,7 +403,7 @@
     <thingCategories>
       <li>Launchers</li>
     </thingCategories>
-    <tradeability>Never</tradeability>
+	<tradeability>Sellable</tradeability>
 	<equippedStatOffsets>
 			<MoveSpeed>-0.55</MoveSpeed>
 			<WorkSpeedGlobal>-0.27</WorkSpeedGlobal>
@@ -396,7 +415,7 @@
 			<projectileDef>Bullet_RPG7Grenade_HEAT</projectileDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<forcedMissRadius>3.5</forcedMissRadius>
-			<warmupTicks>130</warmupTicks>
+			<warmupTime>1.30</warmupTime>
 			<range>50</range>
 			<burstShotCount>3</burstShotCount>
 			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -419,6 +438,10 @@
 			<reloadTicks>600</reloadTicks>
 			<ammoSet>AmmoSet_RPG7Grenade</ammoSet>
 		  </li>
+			  <li Class="WHands.WhandCompProps">
+					<MainHand>(-0.25,0.3,-0.0825)</MainHand>
+					<SecHand>(0.225,0,-0.05)</SecHand>
+			  </li>
 		</comps>
     <smeltProducts>
       <Launcher_Component>2</Launcher_Component>
@@ -443,9 +466,9 @@
 		<SwayFactor>2.3</SwayFactor>
 		<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
 		<Bulk>9.95</Bulk>
-		<Weight>8.95</Weight>
+		<Mass>8.95</Mass>
     </statBases>
-    <tradeability>Never</tradeability>
+	<tradeability>Sellable</tradeability>
 	<equippedStatOffsets>
 			<MoveSpeed>-0.68</MoveSpeed>
 			<WorkSpeedGlobal>-0.27</WorkSpeedGlobal>
@@ -461,7 +484,7 @@
 			<projectileDef>Bullet_RPG7Grenade_HEAT</projectileDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<forcedMissRadius>3.0</forcedMissRadius>
-			<warmupTicks>130</warmupTicks>
+			<warmupTime>1.30</warmupTime>
 			<range>55</range>
 			<burstShotCount>3</burstShotCount>
 			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -484,6 +507,10 @@
 			<reloadTicks>600</reloadTicks>
 			<ammoSet>AmmoSet_RPG7Grenade</ammoSet>
 		  </li>
+			  <li Class="WHands.WhandCompProps">
+					<MainHand>(-0.25,0.3,-0.0825)</MainHand>
+					<SecHand>(0.225,0,-0.05)</SecHand>
+			  </li>
 		</comps>
   </ThingDef>
 

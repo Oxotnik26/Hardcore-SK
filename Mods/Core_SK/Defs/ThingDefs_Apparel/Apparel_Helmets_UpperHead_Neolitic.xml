@@ -2,7 +2,7 @@
 
 <ThingDefs>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelNeoliticBase">
 		<defName>Apparello_Furxhood</defName>
 		<label>Fur Head Garment</label>
 		<description>A head piece that was lovingly crafted out of nimble furxhide. You can almost feel the spirit of this cunning beast within you.</description>
@@ -18,6 +18,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>35</MaxHitPoints>
 			<Flammability>8</Flammability>
 			<Insulation_Heat>-4</Insulation_Heat>
@@ -26,7 +27,7 @@
 			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 			<ArmorRating_Electric>0.05</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -74,8 +75,82 @@
 			<li>AnimalHeaddressCat</li>
 		</thingCategories>
 	</ThingDef>
+	
+	<ThingDef ParentName="ApparelNeoliticBase">
+		<defName>Apparell_ArcticWolfHood</defName>
+		<label>Wolf Hood</label>
+		<description>A head piece that was lovingly crafted out of nimble furxhide. You can almost feel the spirit of this cunning beast within you.</description>
+		<graphicData>
+		  <texPath>Things/Apparel/Apparello/Hats/Animalhats/ArcticWolfHood</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>			
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<CostList>
+			<Component>2</Component>
+		</CostList>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>35</MaxHitPoints>
+			<Flammability>8</Flammability>
+			<Insulation_Heat>-4</Insulation_Heat>
+			<Insulation_Cold>-7</Insulation_Cold>
+			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<ArmorRating_Electric>0.05</ArmorRating_Electric>
+			<Mass>0.2</Mass>
+			<Bulk>3</Bulk>
+			<WornWeight>0.2</WornWeight>
+			<WornBulk>0</WornBulk>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.02</MoveSpeed>
+			<WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+			<SocialImpact>-0.1</SocialImpact>
+			<PsychicSensitivity>-0.01</PsychicSensitivity>
+			<ShootingAccuracy>-0.05</ShootingAccuracy>
+			<AimingDelayFactor>0.05</AimingDelayFactor>
+			<MeleeHitChance>-0.05</MeleeHitChance>
+			<TrainAnimalChance>0.1</TrainAnimalChance>
+			<TameAnimalChance>0.07</TameAnimalChance>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <worngraphicPath>Things/Apparel/Apparello/Hats/Animalhats/ArcticWolfHood</worngraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+			<commonality>1</commonality>
+		<tags>
+			<li>Tribal</li>
+			<li>PredatorsLight</li>
+			<li>PredatorsMedium</li>
+			<li>PredatorsScout</li>
+		</tags>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>			
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+			  <weight>4</weight>
+			  <min>RGBA(0.9,0.9,0.9,1)</min>
+			  <max>RGBA(1,1,1,1)</max>
+			</li>
+		  </options>
+		</colorGenerator>
+		<thingCategories>
+			<li>AnimalHeaddressCat</li>
+		</thingCategories>
+	</ThingDef>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelNeoliticBase">
 		<defName>Apparello_Rimramhood</defName>
 		<label>Ram Head Garment</label>
 		<description>A head piece that was lovingly crafted out of enduring Rimram hide. You can almost feel the spirit of this stubborn beast within you.</description>
@@ -88,6 +163,7 @@
 		</stuffCategories>
 		<costStuffCount>24</costStuffCount>
 		<statBases>
+			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>40</MaxHitPoints>
 			<Flammability>8</Flammability>
 			<Insulation_Heat>-3</Insulation_Heat>
@@ -95,7 +171,7 @@
 			<ArmorRating_Blunt>0.13</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>1</Weight>
+			<Mass>1</Mass>
 			<Bulk>4</Bulk>
 			<WornWeight>1</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -148,7 +224,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelNeoliticBase">
 		<defName>Apparello_Scarabhood</defName>
 		<label>Chitin Head Garment</label>
 		<description>A head piece that was lovingly crafted out of shiny chitin. You can almost feel the spirit of this intelligent beast within you.</description>
@@ -160,6 +236,7 @@
 			<Chitin>10</Chitin>
 		</CostList>
 		<statBases>
+			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>38</MaxHitPoints>
 			<Flammability>5</Flammability>
 			<Insulation_Heat>7</Insulation_Heat>
@@ -167,7 +244,7 @@
 			<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.26</ArmorRating_Sharp>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>1</Weight>
+			<Mass>1</Mass>
 			<Bulk>4</Bulk>
 			<WornWeight>1</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -220,7 +297,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelNeoliticBase">
 		<defName>Apparel_Tribal</defName>
 		<label>Feathered Headdress</label>
 		<description>This feathered headdress offers little in the way of protection, however anyone who wears it feels the spirit of the warrior stirring from deep within.</description>
@@ -233,13 +310,14 @@
 		</stuffCategories>
 		<costStuffCount>22</costStuffCount>
 		<statBases>
+			<WorkToMake>4500</WorkToMake>
 			<MaxHitPoints>34</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
 			<Insulation_Cold>-1</Insulation_Cold>
 			<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-			<Weight>0.7</Weight>
+			<Mass>0.7</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.7</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -287,7 +365,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorNeoliticBase">
 		<defName>Apparello_ohlala</defName>
 		<label>Shimmering Crown</label>
 		<description>An awe inspiring crown. It makes your subject's hearts beat ever so faster around you.</description>
@@ -305,14 +383,14 @@
 			<Manganese>6</Manganese>
 		</CostList>
 		<statBases>
-			<MarketValue>650</MarketValue>
+			<WorkToMake>6500</WorkToMake>
 			<MaxHitPoints>47</MaxHitPoints>
 			<Flammability>7</Flammability>
 			<Insulation_Heat>1</Insulation_Heat>
 			<Insulation_Cold>-2</Insulation_Cold>
 			<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-			<Weight>0.7</Weight>
+			<Mass>0.7</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.7</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -356,7 +434,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelNeoliticBase">
 		<defName>Apparello_Snorkhood</defName>
 		<label>Tusk Head Garment</label>
 		<description>A head piece that was lovingly crafted out of tusk. You can almost feel the spirit of this slumbering beast within you.</description>
@@ -369,6 +447,7 @@
 		</stuffCategories>
 		<costStuffCount>18</costStuffCount>
 		<statBases>
+			<WorkToMake>2500</WorkToMake>
 			<MaxHitPoints>40</MaxHitPoints>
 			<Flammability>8</Flammability>
 			<Insulation_Heat>8</Insulation_Heat>
@@ -376,7 +455,7 @@
 			<ArmorRating_Blunt>0.13</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>1</Weight>
+			<Mass>1</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>1</WornWeight>
 			<WornBulk>0</WornBulk>

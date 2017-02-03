@@ -46,11 +46,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
+			<WorkToMake>2000</WorkToMake>
 			<MaxHitPoints>35</MaxHitPoints>
-			<Weight>2</Weight>
+			<Mass>2</Mass>
 			<Bulk>2</Bulk>
 			<WornWeight>2</WornWeight>
 			<WornBulk>1</WornBulk>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 		</statBases>
 		<stuffCategories>
 			<li>Leathery</li>
@@ -80,6 +83,16 @@
 		<thingCategories>
 			<li>ShieldCat</li>
 		</thingCategories>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>Kiln</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
 	</ThingDef>
 	
 	
@@ -96,10 +109,12 @@
 		<statBases>
 			<MarketValue>70</MarketValue>
 			<MaxHitPoints>50</MaxHitPoints>
-			<Weight>5</Weight>
+			<Mass>5</Mass>
 			<Bulk>5</Bulk>
 			<WornWeight>5</WornWeight>
 			<WornBulk>2</WornBulk>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 		</statBases>
 		<tradeability>Sellable</tradeability>
 		<equippedStatOffsets>
@@ -144,11 +159,14 @@
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<statBases>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>65</MaxHitPoints>
-			<Weight>3</Weight>
+			<Mass>3</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>3</WornWeight>
 			<WornBulk>1</WornBulk>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.3</MoveSpeed>
@@ -174,6 +192,16 @@
 		<thingCategories>
 			<li>ShieldCat</li>
 		</thingCategories>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
 	</ThingDef>
 	
 	<ThingDef ParentName="Shield_Base">
@@ -190,11 +218,14 @@
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>70</MaxHitPoints>
-			<Weight>4</Weight>
+			<Mass>4</Mass>
 			<Bulk>4</Bulk>
 			<WornWeight>3</WornWeight>
 			<WornBulk>1</WornBulk>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.45</MoveSpeed>
@@ -220,6 +251,16 @@
 		<thingCategories>
 			<li>ShieldCat</li>
 		</thingCategories>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
 	</ThingDef>
 	
 	
@@ -241,10 +282,11 @@
 			<Kevlar>15</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>14000</WorkToMake>
 			<MaxHitPoints>120</MaxHitPoints>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<Weight>5</Weight>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<Mass>5</Mass>
 			<Bulk>7</Bulk>
 			<WornWeight>5</WornWeight>
 			<WornBulk>3</WornBulk>
@@ -293,6 +335,16 @@
 			<li>SetSecurity</li>
 			<li>SetInteractor</li>
 		</thingCategories>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+		<li>ElectricTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
 	</ThingDef>
 	
 </ThingDefs>

@@ -3,10 +3,11 @@
 
   <ThingDef Abstract="True" Name="FruitFoodRawBase" ParentName="OrganicProductBase" >
     <ingestible>
-      <preferability>MealSimple</preferability>
-	  <tastesRaw>false</tastesRaw>
-      <eatEffect>EatVegetarian</eatEffect>
-      <soundEat>RawVegetable_Eat</soundEat>
+      <preferability>RawTasty</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+       <foodType>VegetableOrFruit</foodType>
+	  <joyKind>Gluttonous</joyKind>
     </ingestible>
     <comps>
       <li Class="CompProperties_FoodPoisoningChance" />
@@ -18,7 +19,7 @@
     <label>Strawberries</label>
     <description>Strawberries are small, red, soft fruits of a Strawberry Plant. They are good when eaten raw.</description>
     <graphicData>
-      <texPath>Things/Veg/Berry</texPath>
+      <texPath>Things/Fruits/Berries</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2.1</MarketValue>
@@ -45,7 +46,7 @@
     <label>Agave Fruit</label>
     <description>The Agave Fruit is edible stalks and flowers of a wild Agave Plant. Agave Plants are native to deserts. The fruits are foul when eaten raw.</description>
     <graphicData>
-      <texPath>Things/Veg/AgaveFruit</texPath>
+      <texPath>Things/Fruits/AgaveFruit</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2.1</MarketValue>
@@ -279,6 +280,32 @@
         <daysToRotStart>4</daysToRotStart>
       </li>
     </comps>    
+  </ThingDef>
+  
+  <ThingDef ParentName="FruitFoodRawBase">
+    <defName>RawCoconut</defName>
+    <label>Coconut</label>
+    <description>Coconut.</description>
+    <graphicData>
+      <texPath>Things/Fruits/Coconut</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.5</MarketValue>
+    </statBases>
+    <tickerType>Rare</tickerType>   
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+      <joy>0.008</joy>
+      <nutrition>0.05</nutrition>
+    </ingestible>
+    <thingCategories>
+      <li>FruitFoodRaw</li>
+    </thingCategories>
   </ThingDef>
 
 </ThingDefs>

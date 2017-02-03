@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>ElectricStove</defName>
-    <label>Electric Stove</label>
+    <label>electric stove</label>
     <ThingClass>SK.Building_WorkTable_HeatPushAdvanced</ThingClass>
     <Description>A simple stove and attached countertop for preparing meals. Requires power.</Description>
     <graphicData>
@@ -30,12 +30,12 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>3200</WorkToMake>
+      <WorkToBuild>3200</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
     <Size>(3,1)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -46,9 +46,7 @@
 			<li>CookRoastedMeat</li>
 			<li>MakeVegetables</li>
 			<li>MakeRoastwMushrooms</li>
-            <li>MakeBurger</li>
             <li>MakeBurgerCheese</li>
-            <li>MakeBurgerDeluxe</li>
             <li>MakeCheeseGrilled</li>
 			<li>CookMealSalad</li>
 			<li>CookRoastedMeat</li>
@@ -65,14 +63,15 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <startElectricalFires>true</startElectricalFires>
                 <basePowerConsumption>350</basePowerConsumption>
             </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_HeatPusher">
@@ -101,13 +100,13 @@
   
   <ThingDef ParentName="BenchBase">
     <defName>ElectricStove_Pro</defName>
-    <label>Professional Cook Stove</label>
+    <label>professional cook stove</label>
     <ThingClass>SK.Building_WorkTable_HeatPushAdvanced</ThingClass>
     <Description>A professional-quality stove and attached countertop for preparing meals in bulk. Requires power.</Description>
         <graphicData>
       <texPath>Things/Building/Production/TableElectricStove_ProXL</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(4,1)</drawSize>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.5,1.5)</drawSize>
     </graphicData>
 	<stuffCategories>
 		<li>Metallic</li>
@@ -123,12 +122,13 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>6500</WorkToMake>
+      <WorkToBuild>6500</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
+	  <WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
     </statBases>
     <Size>(4,1)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -137,14 +137,15 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>true</startElectricalFires>
         <basePowerConsumption>500</basePowerConsumption>
       </li>
-            			<li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                		<compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            			<li Class="SK.CompProperties_LowIdleDraw">
+                		<compClass>SK.CompPowerLowIdleDraw</compClass>
                 		<idlePowerFactor>0.1</idlePowerFactor>
             			</li>
 			<li Class="CompProperties_HeatPusher">
@@ -173,7 +174,7 @@
   
 <ThingDef ParentName="BenchBase">
 	<DefName>Canningstove</DefName>
-	<label>Electric Pressure Cooker</label>
+	<label>electric pressure cooker</label>
 	<ThingClass>SK.Building_WorkTable_HeatPushAdvanced</ThingClass>
 	<Description>A stove for canning foods, drying fruit, and making tofu. Requires power.</Description>
 	<graphicData>
@@ -199,12 +200,12 @@
 	<fillPercent>0.5</fillPercent>
 	<useHitPoints>True</useHitPoints>
 	<statBases>
-	  <WorkToMake>3500</WorkToMake>
+	  <WorkToBuild>3500</WorkToBuild>
 	  <MaxHitPoints>130</MaxHitPoints>
 	  <Flammability>1.0</Flammability>
 	</statBases>
 	<Size>(2,1)</Size>
-	<DesignationCategory>Hitech</DesignationCategory>
+	<DesignationCategory>Production</DesignationCategory>
 	<Passability>PassThroughOnly</Passability>
 	<pathCost>70</pathCost>
 	<hasInteractionCell>True</hasInteractionCell>
@@ -221,6 +222,7 @@
 	<inspectorTabs>
 		<li>ITab_Bills</li>
 	</inspectorTabs>
+		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -229,8 +231,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_HeatPusher">
@@ -259,7 +261,7 @@
   
    <ThingDef ParentName="BenchBase">
       <DefName>soylenttable</DefName>
-      <Label>Soylent Machine</Label>
+      <Label>soylent machine</Label>
       <ThingClass>Building_WorkTable</ThingClass>
       <Description>A machine to produce Soylent Green from humanlike corpses. Requires power.</Description>
       <graphicData>
@@ -281,17 +283,18 @@
       </CostList>
       <altitudeLayer>Building</altitudeLayer>
       <statBases>
-         <WorkToMake>5600</WorkToMake>
+         <WorkToBuild>5600</WorkToBuild>
          <MaxHitPoints>180</MaxHitPoints>
       <Cleanliness>-5</Cleanliness>
       </statBases>
       <useHitPoints>True</useHitPoints>
       <Size>(2,1)</Size>
-      <DesignationCategory>Hitech</DesignationCategory>
-      <Passability>Impassable</Passability>
+      <DesignationCategory>Production</DesignationCategory>
+	  <Passability>PassThroughOnly</Passability>
       <hasInteractionCell>True</hasInteractionCell>
       <interactionCellOffset>(0,0,-1)</interactionCellOffset>
       <surfaceType>Item</surfaceType>
+	  <tickerType>Normal</tickerType>
       <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -306,8 +309,8 @@
             <soundPowerOn>PowerOnSmall</soundPowerOn>
             <soundPowerOff>PowerOffSmall</soundPowerOff>
          </li>
-         <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-            <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+         <li Class="SK.CompProperties_LowIdleDraw">
+            <compClass>SK.CompPowerLowIdleDraw</compClass>
             <idlePowerFactor>0.1</idlePowerFactor>
          </li>
 			<li Class="CompProperties_HeatPusher">
@@ -335,7 +338,7 @@
   
 	<ThingDef ParentName="BenchBase">
 		<defName>TableSawmillElectric</defName>
-		<label>Electric Sawmill</label>
+		<label>electric sawmill</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>An electric saw for cutting logs into planks and kindling. Requires power.</Description>
     <graphicData>
@@ -356,14 +359,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>7000</WorkToMake>
+			<WorkToBuild>7000</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-3</Cleanliness>
 		</statBases>
 		<Size>(3,1)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
-		<Passability>Impassable</Passability>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
@@ -379,6 +382,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
             <heatPerTickWhileWorking>0.2</heatPerTickWhileWorking>
 		</building>
+		<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -394,8 +398,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            			<li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                		<compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            			<li Class="SK.CompProperties_LowIdleDraw">
+                		<compClass>SK.CompPowerLowIdleDraw</compClass>
                 		<idlePowerFactor>0.1</idlePowerFactor>
             			</li>
 			<li Class="CompProperties_HeatPusher">
@@ -414,7 +418,7 @@
   
   <ThingDef ParentName="BenchBase">
     <DefName>ElectricSmelter</DefName>
-    <label>Electric Smelting Furnace</label>
+    <label>electric smelting furnace</label>
     <ThingClass>SK.Building_WorkTable_HeatPushAdvanced</ThingClass>
     <Description>A furnace used for smelting more advanced metal ores, slag, and sand into metal alloys and silicon-based alloys. Can make metal cans and produce charcoal from logs. Requires power.</Description>
     <graphicData>
@@ -441,13 +445,13 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-			<WorkToMake>6500</WorkToMake>
+			<WorkToBuild>6500</WorkToBuild>
 			<MaxHitPoints>190</MaxHitPoints>
 			<Flammability>1.0</Flammability>
       		<Cleanliness>-8</Cleanliness>
     </statBases>
     <Size>(3,1)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -470,6 +474,7 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -487,8 +492,8 @@
 				<heatPerSecond>35</heatPerSecond>
 				<heatPushMaxTemperature>75</heatPushMaxTemperature>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 		<li Class="CompProperties_AffectedByFacilities">
@@ -511,7 +516,7 @@
   
   <ThingDef ParentName="BenchBase">
     <DefName>TableMachining</DefName>
-    <label>Electric Machining Table</label>
+    <label>electric machining table</label>
     <ThingClass>SK.Building_WorkTable_HeatPushAdvanced</ThingClass>
     <Description>An electric table that can process stone chunks into blocks, rubble or sand. Can also make drill heads, create reinforced concrete and disassemble mechanoids. Requires power.</Description>
     <graphicData>
@@ -538,13 +543,13 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToBuild>6000</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-8</Cleanliness>
     </statBases>
     <Size>(3,1)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -563,6 +568,7 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -582,8 +588,8 @@
           <li>PodChair</li>
         </linkableFacilities>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
@@ -602,7 +608,7 @@
   
 	<ThingDef ParentName="BenchBase">
 		<DefName>TableElectronics</DefName>
-		<label>Electronics Table</label>
+		<label>electronics table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>A table with tools for crafting electronic chips, robot parts, and the mobile mineral sonar. Requires power.</Description>
     <graphicData>
@@ -628,14 +634,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>4750</WorkToMake>
+			<WorkToBuild>4750</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-4</Cleanliness>
 		</statBases>
 		<Size>(3,1)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
-		<Passability>Impassable</Passability>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
     		<surfaceType>Item</surfaceType>
@@ -653,6 +659,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
+		<tickerType>Normal</tickerType>
 		<comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -667,8 +674,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-            	<compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+            	<compClass>SK.CompPowerLowIdleDraw</compClass>
             	<idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
@@ -682,7 +689,7 @@
 	
   <ThingDef ParentName="BenchBase">
     <DefName>HyperTailoringBench</DefName>
-    <label>Hyper Tailoring Bench</label>
+    <label>hyper tailoring bench</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A sophisticated workbench equipped for tailoring and smithing advanced combat clothing, power armor, enhanced gloves and battle helmets. Requires power.</Description>
     <graphicData>
@@ -710,13 +717,13 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-			<WorkToMake>16250</WorkToMake>
+			<WorkToBuild>16250</WorkToBuild>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1.0</Flammability>
       		<Cleanliness>-2</Cleanliness>
     </statBases>
     <Size>(3,1)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -729,6 +736,7 @@
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <unpoweredWorkTableWorkSpeedFactor>0.1</unpoweredWorkTableWorkSpeedFactor>
     </building>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -744,8 +752,8 @@
           <li>PodChair</li>
         </linkableFacilities>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
@@ -759,7 +767,7 @@
   
   <ThingDef ParentName="BenchBase">
     <DefName>MatterConverter</DefName>
-    <label>Inorganic Matter Converter</label>
+    <label>inorganic matter converter</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A converter to turn resources into inorganic matter. Inorganic matter can be used to make other resources. Requires power.</Description>
     <graphicData>
@@ -778,7 +786,7 @@
 			<Microchips>4</Microchips>
 		</CostList>
     <statBases>
-      <WorkToMake>12000</WorkToMake>
+      <WorkToBuild>12000</WorkToBuild>
       <MaxHitPoints>110</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-5</Cleanliness>
@@ -787,8 +795,8 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <Size>(3,2)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
-    <Passability>Impassable</Passability>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -811,6 +819,7 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -829,8 +838,8 @@
         <glowRadius>3</glowRadius>
         <glowColor>(0,0,217,0)</glowColor>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_HeatPusher">
@@ -850,7 +859,7 @@
   
   <ThingDef ParentName="BenchBase">
     <DefName>AdvToolBench</DefName>
-    <label>Electric Assembling Bench</label>
+    <label>electric assembling bench</label>
     <thingClass>Building_WorkTable</thingClass>
     <Description>An electric table for the assembling of components, wires, mechanisms, and advanced mechanisms. Requires power.</Description>
     <graphicData>
@@ -878,14 +887,14 @@
     <altitudeLayer>Building</altitudeLayer>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToBuild>7000</WorkToBuild>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-6</Cleanliness>
     </statBases>
     <Size>(3,1)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
-    <Passability>Impassable</Passability>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -895,6 +904,7 @@
 		<li>MakeSimpleMechanism_Electric</li>
 		<li>MakeAdvMechanism_Electric</li>
     </recipes>
+	<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -910,8 +920,8 @@
 			  <li>PodChair</li>
 			</linkableFacilities>
 		  </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Glower">
@@ -935,7 +945,7 @@
 	
   <ThingDef ParentName="BenchBase">
     <DefName>ElectricSmithy</DefName>
-    <label>Electric Smithy</label>
+    <label>electric smithy</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A smithing table equipped for basic weapon and protective apparel production. Requires power.</Description>
     <graphicData>
@@ -962,13 +972,13 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>4750</WorkToMake>
+			<WorkToBuild>4750</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>1.0</Flammability>
      		<Cleanliness>-6</Cleanliness>
 		</statBases>
     <Size>(3,1)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -984,6 +994,7 @@
 		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
         <heatPerTickWhileWorking>1</heatPerTickWhileWorking>
 	</building>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -998,8 +1009,8 @@
           <li>PodChair</li>
         </linkableFacilities>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_HeatPusher">
@@ -1018,7 +1029,7 @@
 
   <ThingDef ParentName="BenchBase">
     <DefName>EAF</DefName>
-    <label>Electric Arc Furnace</label>
+    <label>electric arc furnace</label>
     <ThingClass>SK.Building_WorkTable_HeatPushAdvanced</ThingClass>
     <Description>An electric arc furnace for advanced metal alloy smelting. Efficient, but requires a lot of power.</Description>
 	<graphicData>
@@ -1042,15 +1053,15 @@
     <UseHitPoints>True</UseHitPoints>
     <rotatable>True</rotatable>
     <statBases>
-      <WorkToMake>9500</WorkToMake>
+      <WorkToBuild>9500</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-60</Beauty>
       <Cleanliness>-12</Cleanliness>
     </statBases>
     <Size>(3,3)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
-    <Passability>Impassable</Passability>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <recipes>
@@ -1072,6 +1083,7 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -1091,8 +1103,8 @@
           <li>PodChair</li>
         </linkableFacilities>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_HeatPusher">
@@ -1117,7 +1129,7 @@
   
   <ThingDef ParentName="BenchBase">
     <DefName>EConcreteMixer</DefName>
-    <label>Electric Concrete Mixer</label>
+    <label>electric concrete mixer</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>An electric concrete mixer. Concrete is mixed from rubble and sand. Requires power.</Description>
     <graphicData>
@@ -1143,14 +1155,14 @@
     <UseHitPoints>True</UseHitPoints>
     <rotatable>True</rotatable>
     <statBases>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToBuild>7000</WorkToBuild>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <Beauty>-40</Beauty>
       <Cleanliness>-6</Cleanliness>
     </statBases>
     <Size>(2,2)</Size>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
 	<pathCost>40</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -1170,8 +1182,8 @@
         <soundPowerOn>PowerOnSmall</soundPowerOn>
         <soundPowerOff>PowerOffSmall</soundPowerOff>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
       <li Class="CompProperties_AffectedByFacilities">
@@ -1191,11 +1203,64 @@
     </building>
     <researchPrerequisites><li>SK_ConstructionII</li></researchPrerequisites>
   </ThingDef>
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>DeepDrill</defName>
+    <label>deep drill</label>
+    <description>A deep-crust drilling rig for extracting minerals from deep under the surface. Use a ground-penetrating scanner to detect the resources.</description>
+    <size>(1,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <designationHotKey>Misc12</designationHotKey>
+    <specialDisplayRadius>1.5</specialDisplayRadius>
+    <rotatable>true</rotatable>
+    <costList>
+      <Steel>100</Steel>
+      <Component>3</Component>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_ShowDeepResources</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>DeepDrilling</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-25</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+        <startElectricalFires>true</startElectricalFires>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li>
+        <compClass>CompDeepDrill</compClass>
+      </li>
+    </comps>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Production/DeepDrill</texPath>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+  </ThingDef>
 
 
   <ThingDef ParentName="BenchBase">
     <defName>Extractor</defName>
-    <label>Mine Extractor</label>
+    <label>mine extractor</label>
     <description>The mine extractor digs deep into the ground to extract metal ores and rocks. Must be placed on a Deposits of Minerals. Requires power.</description>
     <thingClass>SK.Building_Extractor</thingClass>
     <graphicData>
@@ -1205,13 +1270,13 @@
     </graphicData>
     <uiIconPath>Buildings/Extractor/Extractor</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
+    <Passability>PassThroughOnly</Passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <statBases>
-      <WorkToMake>12500</WorkToMake>
+      <WorkToBuild>12500</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>1.0</Flammability>
 	  <Beauty>-60</Beauty>
@@ -1228,8 +1293,8 @@
                 <heatPerSecond>55</heatPerSecond>
                 <heatPushMaxTemperature>1500</heatPushMaxTemperature>
             </li>
-            <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-                <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
                 <RestrictedThing>
                     <li>MineralDeposits</li>
                 </RestrictedThing>
@@ -1251,7 +1316,7 @@
 	<ElectronicComponents>8</ElectronicComponents>
 	</costList>
     <placeWorkers>
-      <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+      <li>SK.PlaceWorker_OnlyOnThing</li>
     </placeWorkers>
     <building>
       <deconstructible>true</deconstructible>
@@ -1261,15 +1326,15 @@
     </killedLeavings>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Hitech</designationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <staticSunShadowHeight>0.6</staticSunShadowHeight>
-	<researchPrerequisites><li>SK_MiningII</li></researchPrerequisites>
+	<researchPrerequisites><li>DeepDrilling</li></researchPrerequisites>
   </ThingDef>
 
 
   <ThingDef ParentName="BenchBase">
     <defName>ExtractorDebris</defName>
-    <label>Exhausted Mine Extractor</label>
+    <label>exhausted mine extractor</label>
     <description>This mine extractor will no longer produce resources and should be deconstructed.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -1279,11 +1344,11 @@
     </graphicData>
     <uiIconPath>Buildings/Extractor/Extractor</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
+    <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <statBases>
-      <WorkToMake>18500</WorkToMake>
+      <WorkToBuild>18500</WorkToBuild>
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
 	  <Beauty>-200</Beauty>
@@ -1311,7 +1376,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>RareExtractor</defName>
-    <label>Advanced Mine Extractor</label>
+    <label>advanced mine extractor</label>
     <description>The advanced mine extractor digs deep into the ground to extract rare metal ores. Must be placed on a Deposits of Rare Minerals. Requires power.</description>
     <thingClass>SK.Building_RareExtractor</thingClass>
     <graphicData>
@@ -1326,12 +1391,12 @@
 	<rotatable>false</rotatable>
     <uiIconPath>Buildings/Extractor/AdvExtrator</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
+    <Passability>PassThroughOnly</Passability>
     <fillPercent>1</fillPercent>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(2,0,-3)</interactionCellOffset>
     <statBases>
-      <WorkToMake>18500</WorkToMake>
+      <WorkToBuild>18500</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>1.0</Flammability>
 	  <Beauty>-60</Beauty>
@@ -1343,8 +1408,8 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>4000</basePowerConsumption>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-                <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
                 <RestrictedThing>
                     <li>RareMineralDeposits</li>
                 </RestrictedThing>
@@ -1371,7 +1436,7 @@
 	<Electronics>4</Electronics>
 	</costList>
     <placeWorkers>
-      <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+      <li>SK.PlaceWorker_OnlyOnThing</li>
     </placeWorkers>
     <building>
       <deconstructible>true</deconstructible>
@@ -1381,15 +1446,15 @@
     </killedLeavings>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Hitech</designationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <castEdgeShadows>false</castEdgeShadows>
-	<researchPrerequisites><li>SK_MiningIII</li></researchPrerequisites>
+	<researchPrerequisites><li>GroundPenetratingScanner</li></researchPrerequisites>
   </ThingDef>
 
 
   <ThingDef ParentName="BuildingBase">
     <defName>ExtractorDebrisRare</defName>
-    <label>Exhausted Advanced Mine Extractor</label>
+    <label>exhausted advanced mine extractor</label>
     <description>This mine extractor will no longer produce resources and should be deconstructed.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -1404,10 +1469,10 @@
 	<rotatable>false</rotatable>
     <uiIconPath>Buildings/Extractor/AdvExtratorDebris</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
+    <passability>PassThroughOnly</passability>
     <fillPercent>1</fillPercent>
     <statBases>
-      <WorkToMake>18500</WorkToMake>
+      <WorkToBuild>18500</WorkToBuild>
       <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0</Flammability>
 	  <Beauty>-200</Beauty>
@@ -1435,7 +1500,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>OilExtractor</defName>
-    <label>Oil Extractor</label>
+    <label>oil extractor</label>
     <description>The oil extractor digs deep into the ground and extracts crude oil. Must be placed on an oil fissure created by a drilling rig. Requires power.</description>
     <thingClass>SK.Building_OilExtractor</thingClass>
     <graphicData>
@@ -1445,13 +1510,13 @@
     </graphicData>
     <uiIconPath>Things/Building/OilExtractor</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
+    <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <statBases>
-      <WorkToMake>18500</WorkToMake>
+      <WorkToBuild>18500</WorkToBuild>
       <MaxHitPoints>130</MaxHitPoints>
       <Flammability>1.0</Flammability>
 	  <Beauty>-60</Beauty>
@@ -1489,15 +1554,15 @@
     </killedLeavings>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Hitech</designationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <staticSunShadowHeight>0.6</staticSunShadowHeight>
-	<researchPrerequisites><li>SK_MiningII</li></researchPrerequisites>
+	<researchPrerequisites><li>DeepDrilling</li></researchPrerequisites>
   </ThingDef>
 
 
   <ThingDef ParentName="BuildingNaturalBase">
     <category>Ethereal</category>
-    <label>Oil Fissure</label>
+    <label>oil fissure</label>
     <defName>Fissure</defName>
     <thingClass>SK.Fissure</thingClass>
     <graphicData>
@@ -1524,7 +1589,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>FissureGenerator</defName>
-    <label>Drilling Rig</label>
+    <label>drilling rig</label>
     <description>A powerful machine designed to create a deep fissure. Must be placed on a Deposit of Crude Oil. Requires power.</description>
     <thingClass>SK.Building_FissureGenerator</thingClass>
     <graphicData>
@@ -1534,12 +1599,12 @@
     </graphicData>
     <uiIconPath>Buildings/FissureGenerator/FissureGenerator</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
+    <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <statBases>
       <MaxHitPoints>170</MaxHitPoints>
-      <WorkToMake>17000</WorkToMake>
+      <WorkToBuild>17000</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>-40</Beauty>
       <Cleanliness>-20</Cleanliness>
@@ -1561,8 +1626,8 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>1800</basePowerConsumption>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-                <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
                 <RestrictedThing>
                     <li>Oilfield</li>
                 </RestrictedThing>
@@ -1578,27 +1643,95 @@
       <ChunkSlagSteel>3</ChunkSlagSteel>
     </killedLeavings>
     <placeWorkers>
-      <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+      <li>SK.PlaceWorker_OnlyOnThing</li>
     </placeWorkers>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Hitech</designationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     		<researchPrerequisites><li>SK_MiningI</li></researchPrerequisites>
   </ThingDef>
-
+  
+	<ThingDef ParentName="BenchBase">
+		<defName>Refinery</defName>
+		<label>refinery</label>
+		<description>A chemical refining plant. Used to refine wood into chemfuel.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/Refinery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(1.5,1,1.5)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.3,0.1,2.4,1.8)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,2)</size>
+		<stuffCategories>
+		<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>170</costStuffCount>
+		<CostList>
+				<ReinforcedConcrete>25</ReinforcedConcrete>
+				<Component>15</Component>
+				<ElectronicComponents>5</ElectronicComponents>
+				<Mechanism>8</Mechanism>
+		</CostList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>700</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.1</idlePowerFactor>
+            </li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<recipes>
+			<li>MakeChemfuelFromWood</li>
+			<li>MakeChemfuelFromOrganics</li>
+		</recipes>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>Refining</li>
+		</researchPrerequisites>
+	</ThingDef>
 
     <ThingDef ParentName="BenchBase">
     <DefName>ChemicalLab</DefName>
-    <label>Petrochemical Plant</label>
+    <label>petrochemical plant</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>The petrochemical plant refines crude into fuel and produces plastic, rubber, synthetic fiber and carbon. Requires power.</Description>
     <graphicData>
-    <texPath>Things/Building/Production/Refinery</texPath>
+    <texPath>Things/Building/PB</texPath>
     <graphicClass>Graphic_Single</graphicClass>
-      	<drawSize>(4,4)</drawSize>
-      <damageData>
-        <rect>(0,0,4,4)</rect>
-      </damageData>
+      	<drawSize>(3,4)</drawSize>
     </graphicData>
 	<stuffCategories>
 	<li>Metallic</li>
@@ -1615,14 +1748,14 @@
     <fillPercent>1</fillPercent>
     <statBases>
 	<Beauty>-60</Beauty>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToBuild>10000</WorkToBuild>
       <MaxHitPoints>140</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-10</Cleanliness>
     </statBases>
     <size>(4,4)</size>
-    <DesignationCategory>Hitech</DesignationCategory>
-	<Passability>Impassable</Passability>
+    <DesignationCategory>Production</DesignationCategory>
+	<passability>PassThroughOnly</passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -1637,6 +1770,7 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -1645,8 +1779,8 @@
         <soundPowerOn>PowerOnSmall</soundPowerOn>
         <soundPowerOff>PowerOffSmall</soundPowerOff>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
       <li Class="CompProperties_Glower">
@@ -1705,15 +1839,15 @@
     <UseHitPoints>True</UseHitPoints>
     <statBases>
 	  <Beauty>-80</Beauty>
-      <WorkToMake>12000</WorkToMake>
+      <WorkToBuild>12000</WorkToBuild>
       <MaxHitPoints>130</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-12</Cleanliness>
     </statBases>
     <fillPercent>1</fillPercent>
     <size>(3,3)</size>
-    <DesignationCategory>Hitech</DesignationCategory>
-	<Passability>Impassable</Passability>
+    <DesignationCategory>Production</DesignationCategory>
+	<passability>PassThroughOnly</passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -1743,7 +1877,7 @@
   </ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
 		<defName>OilFeeder</defName>
 	   <label>Oil Refinery Hopper</label>
 		<thingClass>Building_Storage</thingClass>
@@ -1778,7 +1912,7 @@
 		</inspectorTabs>
 		<castEdgeShadows>true</castEdgeShadows>
 		<statBases>
-			<WorkToMake>750</WorkToMake>
+			<WorkToBuild>750</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
@@ -1793,7 +1927,7 @@
 		<tickerType>Never</tickerType>
 		<rotatable>true</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<designationCategory>Hitech</designationCategory>
+		<DesignationCategory>Production</DesignationCategory>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 		<surfaceType>Item</surfaceType>
 		<placeWorkers>
@@ -1827,15 +1961,15 @@
     <UseHitPoints>True</UseHitPoints>
     <statBases>
 	<Beauty>-40</Beauty>
-      <WorkToMake>15000</WorkToMake>
+      <WorkToBuild>15000</WorkToBuild>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-5</Cleanliness>
     </statBases>
     <fillPercent>1</fillPercent>
     <size>(3,2)</size>
-    <DesignationCategory>Hitech</DesignationCategory>
-	<Passability>Impassable</Passability>
+    <DesignationCategory>Production</DesignationCategory>
+	<passability>PassThroughOnly</passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -1853,8 +1987,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            			<li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                		<compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            			<li Class="SK.CompProperties_LowIdleDraw">
+                		<compClass>SK.CompPowerLowIdleDraw</compClass>
                 		<idlePowerFactor>0.1</idlePowerFactor>
             			</li>
     </comps>
@@ -1881,7 +2015,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>GC</defName>
-    <label>Gas Centrifuge</label>
+    <label>gas centrifuge</label>
     <description>A thermal diffusion gas centrifuge is a device that performs isotope separation of gases. A centrifuge relies on the principles of centrifugal force accelerating molecules so that particles of different masses are physically separated in a gradient along the radius of a rotating container. A prominent use of gas centrifuges is for the separation uranium-235 from natural uranium-237.</description>
     <ThingClass>SK.Building_GC</ThingClass>
     <graphicData>
@@ -1891,13 +2025,13 @@
     </graphicData>
     <uiIconPath>Things/Building/GasCentrifuge</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
+    <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <statBases>
-      <WorkToMake>16500</WorkToMake>
+      <WorkToBuild>16500</WorkToBuild>
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-10</Cleanliness>
@@ -1938,15 +2072,15 @@
     </building>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Hitech</designationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <staticSunShadowHeight>0.6</staticSunShadowHeight>
 	<researchPrerequisites><li>SK_NuclearI</li></researchPrerequisites>
   </ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
 		<defName>CentrifugeFeeder</defName>
-	     <label>Gas Centrifuge Hopper</label>
+	     <label>gas centrifuge hopper</label>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
 		<texPath>Things/Building/GenHopper</texPath>
@@ -1979,7 +2113,7 @@
 		</inspectorTabs>
 		<castEdgeShadows>true</castEdgeShadows>
 		<statBases>
-			<WorkToMake>750</WorkToMake>
+			<WorkToBuild>750</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
@@ -1994,7 +2128,7 @@
 		<tickerType>Never</tickerType>
 		<rotatable>true</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<designationCategory>Hitech</designationCategory>
+		<DesignationCategory>Production</DesignationCategory>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 		<surfaceType>Item</surfaceType>
 		<placeWorkers>
@@ -2004,9 +2138,9 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBaseNoShadows">
     <DefName>ElectricCrematorium</DefName>
-    <label>Crematorium</label>
+    <label>crematorium</label>
     <ThingClass>SK.Building_WorkTable_HeatPushAdvanced</ThingClass>
     <Description>Cremates corpses, apparel or various resources into ashes. Requires power.</Description>
     <graphicData>
@@ -2032,15 +2166,15 @@
     <altitudeLayer>Building</altitudeLayer>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>4500</WorkToMake>
+      <WorkToBuild>4500</WorkToBuild>
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>0</Flammability>
       <Cleanliness>-20</Cleanliness>
     </statBases>
     <Size>(3,2)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
+		<DesignationCategory>Production</DesignationCategory>
     <fillPercent>1</fillPercent>
-    <Passability>Impassable</Passability>
+    <passability>PassThroughOnly</passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -2048,11 +2182,14 @@
       <li>CremateCorpse</li>
       <li>BurnApparel</li>
       <li>BurnThings</li>
+	  <li>BurnDrugs</li>
     </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+	<tickerType>Normal</tickerType>
     <comps>
+		<li Class="CompProperties_Flickable"/>
      <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>650</basePowerConsumption>
@@ -2069,8 +2206,8 @@
 				<heatPerSecond>28</heatPerSecond>
 				<heatPushMaxTemperature>1000</heatPushMaxTemperature>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
     </comps>
@@ -2085,7 +2222,7 @@
 	
    <ThingDef ParentName="BenchBase">
       <DefName>meditable</DefName>
-      <Label>Medical Table</Label>
+      <Label>medical table</Label>
       <ThingClass>Building_WorkTable</ThingClass>
       <Description>A table that is used to craft medicine and life support devices. Requires power.</Description>
       <graphicData>
@@ -2115,13 +2252,13 @@
       <useHitPoints>True</useHitPoints>
       <statBases>
          <MaxHitPoints>100</MaxHitPoints>
-         <WorkToMake>6000</WorkToMake>
+         <WorkToBuild>6000</WorkToBuild>
       </statBases>
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
       <Size>(3,1)</Size>
-      <DesignationCategory>Hitech</DesignationCategory>
-      <Passability>Impassable</Passability>
+      <DesignationCategory>Production</DesignationCategory>
+	  <Passability>PassThroughOnly</Passability>
       <hasInteractionCell>True</hasInteractionCell>
       <interactionCellOffset>(0,0,-1)</interactionCellOffset>
       <surfaceType>Item</surfaceType>
@@ -2148,8 +2285,8 @@
             <soundPowerOn>PowerOnSmall</soundPowerOn>
             <soundPowerOff>PowerOffSmall</soundPowerOff>
          </li>
-         <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-            <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+         <li Class="SK.CompProperties_LowIdleDraw">
+            <compClass>SK.CompPowerLowIdleDraw</compClass>
             <idlePowerFactor>0.1</idlePowerFactor>
          </li>
 			  <li Class="CompProperties_Flickable"/>
@@ -2158,7 +2295,7 @@
       <building>
          <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       </building>
-      <researchPrerequisites><li>SK_MedicineII</li></researchPrerequisites>
+      <researchPrerequisites><li>MedicineProduction</li></researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
@@ -2168,7 +2305,7 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>TableChemlab</defName>
-		<label>Chemical Laboratory</label>
+		<label>chemical laboratory</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>A chemical laboratory with all of the equipment needed to create carbon fiber alloy, artificial bones and cybernetic prosthetics. Requires power.</Description>
 		<graphicData>
@@ -2190,14 +2327,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>8500</WorkToMake>
+			<WorkToBuild>8500</WorkToBuild>
 			<MaxHitPoints>130</MaxHitPoints>
 			<Flammability>1.0</Flammability>
       		<Cleanliness>-3</Cleanliness>
 		</statBases>
 		<Size>(3,1)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
-		<Passability>Impassable</Passability>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
     		<surfaceType>Item</surfaceType>
@@ -2221,6 +2358,7 @@
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
+		<tickerType>Normal</tickerType>
 		<comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -2235,8 +2373,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_HeatPusher">
@@ -2259,7 +2397,7 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>TableOrganvat</defName>
-		<label>Organ Vat</label>
+		<label>organ vat</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>A large vat used to turn human corpses into biomatter and grow natural replacement organs. Requires power.</Description>
     <graphicData>
@@ -2281,13 +2419,13 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
+			<WorkToBuild>9000</WorkToBuild>
 			<MaxHitPoints>110</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<Size>(2,2)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
-		<Passability>Impassable</Passability>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(1,0,-1)</interactionCellOffset>
     		<surfaceType>Item</surfaceType>
@@ -2305,6 +2443,7 @@
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
+		<tickerType>Normal</tickerType>
 		<comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -2320,8 +2459,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
@@ -2336,12 +2475,75 @@
 		</placeWorkers>
 	</ThingDef>
 	
+<ThingDef ParentName="BenchBase">
+	<defName>BioRefinery</defName>
+	<label>bio-refinery</label>
+	<thingClass>Building_WorkTable</thingClass>
+	<Description>A machine for making biodiesel and silage.</Description>
+	<graphicData>
+      <texPath>Things/Building/BioRefinery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+		<stuffCategories>
+		<li>Metallic</li>
+		</stuffCategories>
+    	<costStuffCount>65</costStuffCount>
+		<costList>
+			<Glass>25</Glass>
+			<Rubber>40</Rubber>
+			<Component>6</Component>
+			<Mechanism>3</Mechanism>
+		</costList>
+	<altitudeLayer>Building</altitudeLayer>
+    	<tickerType>Normal</tickerType>
+	<fillPercent>1</fillPercent>
+	<useHitPoints>True</useHitPoints>
+	<statBases>
+	  <WorkToBuild>7500</WorkToBuild>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+	</statBases>
+	<Size>(2,2)</Size>
+	<DesignationCategory>Production</DesignationCategory>
+	<Passability>PassThroughOnly</Passability>
+	<pathCost>70</pathCost>
+	<hasInteractionCell>True</hasInteractionCell>
+	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<surfaceType>Item</surfaceType>
+	<recipes>
+	 <li>MakeBioDiesel</li>
+    </recipes>
+	<inspectorTabs>
+		<li>ITab_Bills</li>
+	</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>500</basePowerConsumption>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.1</idlePowerFactor>
+            </li>
+			  <li Class="CompProperties_Breakdownable"/>
+			  <li Class="CompProperties_Flickable" />
+        </comps>
+	<building>
+	  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	</building>
+		<researchPrerequisites><li>SK_BiochemistryI</li></researchPrerequisites>
+  </ThingDef>
+	
 	
 	<ThingDef ParentName="BenchBase">
 		<DefName>TableComposter</DefName>
-		<label>Composter</label>
+		<label>composter</label>
 		<ThingClass>Building_WorkTable</ThingClass>
-		<Description>A composter that turns wood planks, nitre and ash into Compost. It can also pull seeds from plants. Requires power.</Description>
+		<Description>A composter that turns wood planks, nitre and ash into Compost. Requires power.</Description>
     <graphicData>
 		<texPath>Things/Building/Production/TableComposter1x2</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -2360,14 +2562,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>5250</WorkToMake>
+			<WorkToBuild>5250</WorkToBuild>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-8</Cleanliness>
 		</statBases>
 		<Size>(1,2)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
-		<Passability>Impassable</Passability>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
     		<surfaceType>Item</surfaceType>
@@ -2377,6 +2579,7 @@
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
+		<tickerType>Normal</tickerType>
 		<comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -2391,8 +2594,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
@@ -2411,7 +2614,7 @@
 	
 	<ThingDef ParentName="BenchBase">
 		<DefName>MechWeaponCraftingWorkTable</DefName>
-		<label>Futuristic Weapon Workbench</label>
+		<label>futuristic weapon workbench</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>A workbench that produces futuristic Mechanoid weapons, such as laser beam rifles. Requires power.</Description>
     <graphicData>
@@ -2438,13 +2641,13 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>16000</WorkToMake>
+			<WorkToBuild>16000</WorkToBuild>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Flammability>1.0</Flammability>
       		<Cleanliness>-5</Cleanliness>
 		</statBases>
 		<Size>(3,1)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
+		<DesignationCategory>Production</DesignationCategory>
 		<Passability>PassThroughOnly</Passability>
 		<pathCost>70</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -2458,6 +2661,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
+		<tickerType>Normal</tickerType>
 		<comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -2473,8 +2677,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
@@ -2489,7 +2693,7 @@
 	
   <ThingDef ParentName="BenchBase">
     <DefName>TableSurrogates</DefName>
-    <label>Surrogate Organ Workbench</label>
+    <label>surrogate organ workbench</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A workstation equipped to craft simple surrogate organs. Requires power.</Description>
       <graphicData>
@@ -2512,11 +2716,12 @@
     <altitudeLayer>Building</altitudeLayer>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToBuild>7000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0.8</Flammability>
     </statBases>
     <Size>(3,1)</Size>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -2532,14 +2737,14 @@
           <li>PodChair</li>
         </linkableFacilities>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
 			  <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -2568,7 +2773,7 @@
 
   <ThingDef ParentName="BenchBase">
     <DefName>TableSynthetics</DefName>
-    <label>Synthetic Organ Assembler</label>
+    <label>synthetic organ assembler</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A workstation fully equipped with an extremely powerful nano-printer capable of producing synthetic organs and AI chips. Requires power.</Description>
       <graphicData>
@@ -2590,10 +2795,11 @@
     <altitudeLayer>Building</altitudeLayer>
     <Size>(2,1)</Size>
     <statBases>
-      <WorkToMake>8000</WorkToMake>
+      <WorkToBuild>8000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0.8</Flammability>
     </statBases>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -2609,14 +2815,14 @@
           <li>PodChair</li>
         </linkableFacilities>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
 			  <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>60</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -2647,7 +2853,7 @@
 
   <ThingDef ParentName="BenchBase">
     <DefName>TableBionics</DefName>
-    <label>Bionics Workbench</label>
+    <label>bionics workbench</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A workbench equipped for production of high-tech bionic prosthetics. Requires power.</Description>
       <graphicData>
@@ -2668,11 +2874,12 @@
     <altitudeLayer>Building</altitudeLayer>
     <Size>(3,1)</Size>
     <statBases>
-      <WorkToMake>11500</WorkToMake>
+      <WorkToBuild>11500</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-2</Cleanliness>
     </statBases>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -2681,8 +2888,8 @@
         <soundPowerOn>PowerOnSmall</soundPowerOn>
         <soundPowerOff>PowerOffSmall</soundPowerOff>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 	  <li Class="CompProperties_AffectedByFacilities">
@@ -2694,7 +2901,7 @@
 			  <li Class="CompProperties_Flickable"/>
 			  <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -2727,7 +2934,7 @@
 
   <ThingDef ParentName="BenchBase">
     <DefName>UpgradingStation</DefName>
-    <label>Advanced Bionics Workbench</label>
+    <label>advanced bionics workbench</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A workbench equipped for production of advanced bionics. Requires power.</Description>
       <graphicData>
@@ -2747,12 +2954,13 @@
     </CostList>
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
-      <WorkToMake>14000</WorkToMake>
+      <WorkToBuild>14000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-1</Cleanliness>
     </statBases>
     <Size>(3,1)</Size>
+	<tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -2768,14 +2976,14 @@
           <li>PodChair</li>
         </linkableFacilities>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			  <li Class="CompProperties_Flickable"/>
 			  <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <DesignationCategory>Hitech</DesignationCategory>
+    <DesignationCategory>Production</DesignationCategory>
     <Passability>PassThroughOnly</Passability>
     <pathCost>60</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -2813,13 +3021,13 @@
 
 	<ThingDef ParentName="BenchBase">
 		<DefName>RobAssem</DefName>
-		<label>Robotic Assembler</label>
+		<label>robotic assembler</label>
 		<ThingClass>Building_WorkTable</ThingClass>
-		<Description>A machine that applies state of the art robotics to construct machine components too intricate for simple human hands. Requires power.</Description>
+		<Description>A machine that applies state of the art robotics to construct machine components too intricate for simple human hands. Requires 5000W power when active.</Description>
 		<graphicData>
-			<texPath>Things/Building/Production/RobAssem</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(5,2)</drawSize>
+			<texPath>Things/Building/Production/RoboticAssembler/RA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
 		</graphicData>
 	<stuffCategories>
 		<li>Metallic</li>
@@ -2835,14 +3043,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>16000</WorkToMake>
+			<WorkToBuild>16000</WorkToBuild>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1.0</Flammability>
       		<Cleanliness>-5</Cleanliness>
 		</statBases>
-		<Size>(5,2)</Size>
-		<designationCategory>Hitech</designationCategory>
-		<Passability>Impassable</Passability>
+		<Size>(2,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
@@ -2854,6 +3062,7 @@
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
+		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -2862,8 +3071,8 @@
 				<soundPowerOn>PowerOnSmall</soundPowerOn>
 				<soundPowerOff>PowerOffSmall</soundPowerOff>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_Glower">
@@ -2884,9 +3093,9 @@
 	<!-- ========================= Matter fabricator ==========================-->
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BenchBaseNoShadows">
 		<DefName>Matterfab</DefName>
-		<label>Quantum Fabricator</label>
+		<label>quantum fabricator</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>The quantum fabricator is the forefront of quantum thermodynamics and plasma spectrometry. This machine disassembles elements into base subatomic particles and re-assembles them into powerful artificial elements. Requires power.</Description>
 		<graphicData>
@@ -2914,14 +3123,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>18000</WorkToMake>
+			<WorkToBuild>18000</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
       		<Cleanliness>-8</Cleanliness>
 		</statBases>
 		<Size>(3,2)</Size>
-		<DesignationCategory>Hitech</DesignationCategory>
-		<Passability>Impassable</Passability>
+		<DesignationCategory>Production</DesignationCategory>
+		<passability>PassThroughOnly</passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
@@ -2932,6 +3141,7 @@
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
+		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -2944,8 +3154,8 @@
 				<glowRadius>8</glowRadius>
 				<glowColor>(0,217,217,0)</glowColor>
 			</li>
-			<li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+			<li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
 			<li Class="CompProperties_HeatPusher">
@@ -2968,9 +3178,9 @@
   	<!-- ========================= Hadron Collider ==========================-->
 
 
-	<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
 		<DefName>HadronCollider</DefName>
-		<label>Hadron Collider</label>
+		<label>hadron collider</label>
 		<ThingClass>SK.Building_HadronCollider</ThingClass>
 		<Description>An apparatus for accelerating subatomic particles to high velocities by means of electric or electromagnetic fields. The accelerated particles are generally made to collide with other particles, either as a research technique or for the generation of high-energy X-rays and gamma rays.</Description>
 		<graphicData>
@@ -2993,14 +3203,14 @@
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
-			<WorkToMake>22000</WorkToMake>
+			<WorkToBuild>22000</WorkToBuild>
 			<MaxHitPoints>210</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>-60</Beauty>
 		</statBases>
 		<Size>(7,2)</Size>
-		<designationCategory>Hitech</designationCategory>
-		<Passability>Impassable</Passability>
+		<DesignationCategory>Production</DesignationCategory>
+		<passability>PassThroughOnly</passability>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
@@ -3030,9 +3240,9 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
 		<defName>HadronColliderFeeder</defName>
-		<label>Hadron Collider Hopper</label>
+		<label>hadron collider hopper</label>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
 		<texPath>Things/Building/GenHopper</texPath>
@@ -3065,7 +3275,7 @@
 		</inspectorTabs>
 		<castEdgeShadows>true</castEdgeShadows>
 		<statBases>
-			<WorkToMake>750</WorkToMake>
+			<WorkToBuild>750</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
@@ -3080,7 +3290,7 @@
 		<tickerType>Never</tickerType>
 		<rotatable>true</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<designationCategory>Hitech</designationCategory>
+		<DesignationCategory>Production</DesignationCategory>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 		<surfaceType>Item</surfaceType>
 		<placeWorkers>
@@ -3088,8 +3298,5 @@
 		</placeWorkers>
 		<researchPrerequisites><li>SK_AppliedPhysicsII</li></researchPrerequisites>
 	</ThingDef>
-	
-	
-	
 	
 </Buildings>

@@ -11,14 +11,13 @@
 	<menuHidden>true</menuHidden>
     <useHitPoints>false</useHitPoints>
     <statBases>
-      <Weight>0</Weight>
+      <Mass>0</Mass>
       <Bulk>0</Bulk>
     </statBases>
     <graphicData>
 	  <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Filth/LiquidFuel</texPath>
     </graphicData>
-    <category>Item</category>
     <tickerType>Never</tickerType>
   </ThingDef>
   
@@ -146,7 +145,7 @@
   </ThingDef>
   
   <ThingDef ParentName="LoadoutGenBase">
-    <defName>LoadoutGen_AmmoTypeH</defName>
+    <defName>LoadoutGen_AmmoTypeHH</defName>
     <label>Loadout Generator - Ammo 250x300</label>
 	<loadoutGenerator Class="Combat_Realism.LoadoutGenerator_AmmoPrimary">
 	  <skipChance>0</skipChance>
@@ -186,6 +185,39 @@
 	  <skipChance>0</skipChance>
 	  <minCount>450</minCount>
 	  <maxCount>800</maxCount>
+	</loadoutGenerator>
+	<priority>0</priority>
+  </ThingDef>
+  
+  <ThingDef ParentName="LoadoutGenBase">
+    <defName>LoadoutGen_AmmoTypeL</defName>
+    <label>Loadout Generator - Ammo 1000x1200</label>
+	<loadoutGenerator Class="Combat_Realism.LoadoutGenerator_AmmoPrimary">
+	  <skipChance>0</skipChance>
+	  <minCount>1000</minCount>
+	  <maxCount>1200</maxCount>
+	</loadoutGenerator>
+	<priority>0</priority>
+  </ThingDef>
+  
+  <ThingDef ParentName="LoadoutGenBase">
+    <defName>LoadoutGen_AmmoTypeM</defName>
+    <label>Loadout Generator - Ammo 3100x3300</label>
+	<loadoutGenerator Class="Combat_Realism.LoadoutGenerator_AmmoPrimary">
+	  <skipChance>0</skipChance>
+	  <minCount>3100</minCount>
+	  <maxCount>3300</maxCount>
+	</loadoutGenerator>
+	<priority>0</priority>
+  </ThingDef>
+  
+  <ThingDef ParentName="LoadoutGenBase">
+    <defName>LoadoutGen_AmmoTypeN</defName>
+    <label>Loadout Generator - Ammo 1600x1800</label>
+	<loadoutGenerator Class="Combat_Realism.LoadoutGenerator_AmmoPrimary">
+	  <skipChance>0</skipChance>
+	  <minCount>1600</minCount>
+	  <maxCount>1800</maxCount>
 	</loadoutGenerator>
 	<priority>0</priority>
   </ThingDef>

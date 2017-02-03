@@ -8,7 +8,6 @@
     <label>Plasma bolt</label>
     <description></description>
 	<tradeTags>
-	  <li>CR_AutoEnableTrade</li>
 	  <li>CR_AutoEnableCrafting</li>
 	</tradeTags>
     <thingCategories>
@@ -20,23 +19,13 @@
     </graphicData>
     <statBases>
 		<MarketValue>3</MarketValue>
-		<Weight>0.01</Weight>
+		<Mass>0.01</Mass>
 		<Bulk>0.03</Bulk>
     </statBases>
 	<linkedProjectile>Bullet_Plasma</linkedProjectile>
 	<ammoClass>Charged</ammoClass>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.4</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
   
@@ -47,7 +36,6 @@
     <label>Plasma pellet bolt</label>
     <description></description>
 	<tradeTags>
-	  <li>CR_AutoEnableTrade</li>
 	  <li>CR_AutoEnableCrafting</li>
 	</tradeTags>
     <thingCategories>
@@ -59,7 +47,7 @@
     </graphicData>
     <statBases>
 		<MarketValue>3</MarketValue>
-		<Weight>0.015</Weight>
+		<Mass>0.015</Mass>
 		<Bulk>0.04</Bulk>
 		<MaxHitPoints>20</MaxHitPoints>
     	<Flammability>1</Flammability>
@@ -68,16 +56,6 @@
 	<ammoClass>Charged</ammoClass>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.4</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
   
@@ -88,7 +66,6 @@
     <label>Blaster bolt</label>
     <description></description>
 	<tradeTags>
-	  <li>CR_AutoEnableTrade</li>
 	  <li>CR_AutoEnableCrafting</li>
 	</tradeTags>
     <thingCategories>
@@ -100,23 +77,13 @@
     </graphicData>
     <statBases>
 		<MarketValue>4</MarketValue>
-		<Weight>0.01</Weight>
+		<Mass>0.01</Mass>
 		<Bulk>0.03</Bulk>
     </statBases>
 	<linkedProjectile>Bullet_Blaster</linkedProjectile>
 	<ammoClass>ChargedAP</ammoClass>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.4</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
   
@@ -125,7 +92,6 @@
     <label>Blaster pellet bolt</label>
     <description></description>
 	<tradeTags>
-	  <li>CR_AutoEnableTrade</li>
 	  <li>CR_AutoEnableCrafting</li>
 	</tradeTags>
     <thingCategories>
@@ -137,23 +103,13 @@
     </graphicData>
     <statBases>
 		<MarketValue>4</MarketValue>
-		<Weight>0.01</Weight>
+		<Mass>0.01</Mass>
 		<Bulk>0.03</Bulk>
     </statBases>
 	<linkedProjectile>Bullet_Blaster</linkedProjectile>
 	<ammoClass>ChargedAP</ammoClass>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.4</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
   
@@ -164,7 +120,6 @@
     <label>Charged Rail Ray</label>
     <description></description>
 	<tradeTags>
-	  <li>CR_AutoEnableTrade</li>
 	  <li>CR_AutoEnableCrafting</li>
 	</tradeTags>
     <thingCategories>
@@ -176,7 +131,7 @@
     </graphicData>
     <statBases>
 		<MarketValue>10</MarketValue>
-		<Weight>0.01</Weight>
+		<Mass>0.01</Mass>
 		<Bulk>0.02</Bulk>
 		<MaxHitPoints>20</MaxHitPoints>
     	<Flammability>1</Flammability>
@@ -185,16 +140,6 @@
 	<ammoClass>Charged</ammoClass>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.3</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
   
@@ -205,7 +150,6 @@
     <label>Charged Laser beam</label>
     <description></description>
 	<tradeTags>
-	  <li>CR_AutoEnableTrade</li>
 	  <li>CR_AutoEnableCrafting</li>
 	</tradeTags>
     <thingCategories>
@@ -217,7 +161,7 @@
     </graphicData>
     <statBases>
 		<MarketValue>4</MarketValue>
-		<Weight>0.01</Weight>
+		<Mass>0.01</Mass>
 		<Bulk>0.02</Bulk>
 		<MaxHitPoints>20</MaxHitPoints>
     	<Flammability>1</Flammability>
@@ -226,16 +170,6 @@
 	<ammoClass>Charged</ammoClass>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.5</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
   

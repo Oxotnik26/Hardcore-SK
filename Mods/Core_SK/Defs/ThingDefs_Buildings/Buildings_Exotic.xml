@@ -26,8 +26,9 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <forceDebugSpawnable>true</forceDebugSpawnable>
     <building>
-      <soundAmbient>CrashedShipPart_Ambience</soundAmbient>
-      <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+		<claimable>false</claimable>
+		<soundAmbient>CrashedShipPart_Ambience</soundAmbient>
+		<roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
     </building>
   </ThingDef>
 
@@ -77,7 +78,7 @@
 		  <MaxHitPoints>300</MaxHitPoints>
 		  <Flammability>0</Flammability>
 		  <Beauty>-20</Beauty>
-		  <WorkToMake>12000</WorkToMake>
+		  <WorkToBuild>12000</WorkToBuild>
 		</statBases>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<killedLeavings>
@@ -95,7 +96,7 @@
   
   <ThingDef ParentName="ShipParts">
     <defName>ShipMechChunk</defName>
-    <label>Ship mechanics chunk</label>
+    <label>ship mechanics chunk</label>
     <description>A chunk of a spacecraft. Can be deconstructed to yield useful mechanisms, wire and electronic components.</description>
     <graphicData>
       <texPath>Things/Building/Genstep/ShipChunk</texPath>
@@ -119,7 +120,7 @@
   
   <ThingDef ParentName="ShipParts">
     <defName>ShipBeamChunk</defName>
-    <label>Ship beam chunk</label>
+    <label>ship beam chunk</label>
     <description>A chunk of a spacecraft. Can be deconstructed to yield useful metals and components.</description>
     <graphicData>
       <texPath>Things/Building/Genstep/ShipBeamPart</texPath>
@@ -132,7 +133,7 @@
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
       <Beauty>-20</Beauty>
-      <WorkToMake>12000</WorkToMake>
+      <WorkToBuild>12000</WorkToBuild>
     </statBases>
     <costList>
       <SteelBar>45</SteelBar>
@@ -151,7 +152,7 @@
 			  <MaxHitPoints>300</MaxHitPoints>
 			  <Flammability>0</Flammability>
 			  <Beauty>-30</Beauty>
-			<WorkToMake>25000</WorkToMake>
+			<WorkToBuild>25000</WorkToBuild>
 		</statBases>
 		<killedLeavings>
 		  <ChunkSlagSteel>5</ChunkSlagSteel>
@@ -161,7 +162,7 @@
 	
 	<ThingDef ParentName="ShipPartsSmoke">
 		<defName>CrashedShipWreck</defName>
-		<label>Crashed ship wreck</label>
+		<label>crashed ship wreck</label>
 		<graphicData>
 			<texPath>Things/Building/Genstep/CrashedShipPart</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -179,7 +180,7 @@
 	
 	<ThingDef ParentName="ShipPartsSmoke">
 		<defName>ShipWreck</defName>
-		<label>Ship wreck</label>
+		<label>ship wreck</label>
 		<graphicData>
 			<texPath>Things/Building/Genstep/ShipWreckLanded</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -232,7 +233,7 @@
 		  <MaxHitPoints>120</MaxHitPoints>
 		  <Flammability>1</Flammability>
 		  <Beauty>25</Beauty>
-		  <WorkToMake>48000</WorkToMake>
+		  <WorkToBuild>48000</WorkToBuild>
 		</statBases>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<rotatable>false</rotatable>
@@ -260,7 +261,7 @@
   
   <ThingDef ParentName="GenstepArts">
 	<defName>Totem</defName>
-	<label>Totem</label>
+	<label>totem</label>
 	<size>(1,2)</size>
 		<description>A person-sized piece of material sculpted into an artistic form.</description>
 		<graphicData>
@@ -280,9 +281,8 @@
   </ThingDef>
   
   <ThingDef ParentName="GenstepArts">
-	<thingClass>Building_Art</thingClass>
 	<defName>Cairn</defName>
-	<label>Cairn</label>
+	<label>cairn</label>
 	<size>(1,1)</size>
 	<description>A person-sized piece of material sculpted into an artistic form.</description>
 	<graphicData>
@@ -297,14 +297,13 @@
     <statBases>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>15</Beauty>
-      <WorkToMake>28000</WorkToMake>
+      <Beauty>10</Beauty>
+      <WorkToBuild>18000</WorkToBuild>
     </statBases>
 	<stuffCategories>
 		<li>Stony</li>
 	</stuffCategories>
 	<costStuffCount>70</costStuffCount>
-	<DesignationCategory>Decoration</DesignationCategory>
   </ThingDef>
 
 <!--========================= Landed Skyfallers =============================-->
@@ -324,7 +323,7 @@
 
 	<ThingDef ParentName="ShipPartsLanded">
 		<defName>DropPodLanded</defName>
-		<label>Drop pod wreckage</label>
+		<label>drop pod wreckage</label>
 		<thingClass>SK.DropPodLanded</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Genstep/DropPodLanded</texPath>
@@ -350,7 +349,7 @@
 
 	<ThingDef ParentName="ShipPartsLanded">
 		<defName>ShipWreckLanded</defName>
-		<label>Ship wreck</label>
+		<label>ship wreck</label>
 		<thingClass>SK.ShipWreckLanded</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Genstep/ShipWreckLanded</texPath>
@@ -359,7 +358,7 @@
 		</graphicData>
 		<size>(5,3)</size>
 		<statBases>
-			<WorkToMake>1000</WorkToMake>
+			<WorkToBuild>1000</WorkToBuild>
 		</statBases>
 		<comps>
 			<li Class="SK.CompLoot_Properties">

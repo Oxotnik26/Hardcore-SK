@@ -6,7 +6,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="556x45mmNATOBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Small, high-velocity rifle bullet used in a variety of assault rifles.</description>
     <statBases>
-	  <Weight>0.012</Weight>
+	  <Mass>0.012</Mass>
 	  <Bulk>0.03</Bulk>
     </statBases>
 	<tradeTags>
@@ -18,16 +18,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.5</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -78,7 +68,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="762x39mmSovietBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Intermediate rifle cartridge used by certain older assault rifles.</description>
     <statBases>
-	  <Weight>0.016</Weight>
+	  <Mass>0.016</Mass>
 	  <Bulk>0.04</Bulk>
     </statBases>
 	<tradeTags>
@@ -90,16 +80,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.5</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -150,7 +130,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="303BritishBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Large rifle bullet found mostly in outdated bolt-action firearms.</description>
     <statBases>
-	  <Weight>0.022</Weight>
+	  <Mass>0.022</Mass>
 	  <Bulk>0.05</Bulk>
     </statBases>
 	<tradeTags>
@@ -162,16 +142,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.7</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -222,7 +192,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="762x51mmNATOBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Large rifle bullet used in machine guns, sniper rifles and the occasional assault rifle.</description>
     <statBases>
-	  <Weight>0.025</Weight>
+	  <Mass>0.025</Mass>
 	  <Bulk>0.05</Bulk>
     </statBases>
 	<tradeTags>
@@ -234,16 +204,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.5</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -294,7 +254,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="762x54mmRBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Rimmed rifle cartridge used by many machine guns, bolt-action and sniper rifles.</description>
     <statBases>
-	  <Weight>0.022</Weight>
+	  <Mass>0.022</Mass>
 	  <Bulk>0.05</Bulk>
     </statBases>
 	<tradeTags>
@@ -306,16 +266,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.5</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 

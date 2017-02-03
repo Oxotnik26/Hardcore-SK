@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Languages>
+<LanguageData>
 
-	<Lion.label>Лев</Lion.label>
-	<Lion.description>Гордые, сильные и опасные. Эти звери получили репутацию королей зверей.</Lion.description>
-	<Lion_Leather.label>шкура льва</Lion_Leather.label>
-	<Lion_Leather.stuffProps.stuffAdjective>шкуры льва</Lion_Leather.stuffProps.stuffAdjective>
-	<Lion_Leather.description>шкура, содранная со льва</Lion_Leather.description>
-	<Lion_Meat.label>мясо льва</Lion_Meat.label>
-	<Lion_Meat.description>Сырое мясо льва.</Lion_Meat.description>
-	<Lion_Corpse.label>труп льва</Lion_Corpse.label>
-	<Lion_Corpse.description>Труп льва.</Lion_Corpse.description>
-	
+
 	<Tiger.label>Тигр</Tiger.label>
 	<Tiger.description>Тигр - самый крупным вид кошачьих, наиболее узнаваем по чёрным вертикальным полосам на красновато-оранжевом мехе.</Tiger.description>
 	<Tiger_Leather.label>шкура тигра</Tiger_Leather.label>
@@ -32,7 +23,7 @@
 	<WhiteTiger_Corpse.description>Труп белого тигра.</WhiteTiger_Corpse.description>
 	
 	<SnowLeopard.label>Снежный леопард</SnowLeopard.label> <!-- Ирбис, Снежный барс -->
-	<SnowLeopard.description>An agile and powerful big cat native to the cold biomes. As solitary ambush predators, Snow leopards are masters of taking down both large and small prey. Onlookers tend to focus on their graceful movements, while those in closer contact usually notice their skull-crushing strength.</SnowLeopard.description>
+	<SnowLeopard.description>Единственный вид крупных кошек, приспособившийся обитать в условиях сурового холода. Снежный леопард отличается тонким, длинным, гибким телом, относительно короткими лапами, небольшой головой и очень длинным хвостом. Окраска меха светлая дымчато-серая с кольцеобразными и сплошными тёмными пятнами.</SnowLeopard.description>
 	<SnowLeopard_Leather.label>шкура снежного леопарда</SnowLeopard_Leather.label>
 	<SnowLeopard_Leather.stuffProps.stuffAdjective>шкуры снежного леопарда</SnowLeopard_Leather.stuffProps.stuffAdjective>
 	<SnowLeopard_Leather.description>шкура, содранная со снежного леопарда</SnowLeopard_Leather.description>
@@ -42,7 +33,7 @@
 	<SnowLeopard_Corpse.description>Труп снежного леопарда.</SnowLeopard_Corpse.description>
 	
 	<Jaguar.label>Ягуар</Jaguar.label>
-	<Jaguar.description>The jaguar is the third-largest feline after the tiger and the lion.</Jaguar.description>
+	<Jaguar.description>Внешне ягуар очень похож на леопарда, но значительно превосходит его по размерам. Образ жизни ягуаров одиночный. Как и все хищные кошки, ягуары — территориальные звери.</Jaguar.description>
 	<Jaguar_Leather.label>шкура ягуара</Jaguar_Leather.label>
 	<Jaguar_Leather.stuffProps.stuffAdjective>шкуры ягуара</Jaguar_Leather.stuffProps.stuffAdjective>
 	<Jaguar_Leather.description>шкура, содранная со ягуара</Jaguar_Leather.description>
@@ -51,17 +42,18 @@
 	<Jaguar_Corpse.label>труп ягуара</Jaguar_Corpse.label>
 	<Jaguar_Corpse.description>Труп ягуара.</Jaguar_Corpse.description>
 	
-	<Fluffy_Feenix.label>Огненный кот</Fluffy_Feenix.label>
-	<Fluffy_Feenix.description>Живое воплощение огня которое может опустошить всю вашу колонию</Fluffy_Feenix.description>
-	<Fluffy_Feenix_Meat.label>Мясо огнекота</Fluffy_Feenix_Meat.label>
-	<Fluffy_Feenix_Meat.description>Сырое мясо огнекота.</Fluffy_Feenix_Meat.description>
-	<Fluffy_Feenix_Corpse.label>Труп огнекота</Fluffy_Feenix_Corpse.label>
-	<Fluffy_Feenix_Corpse.description>Труп огнекота.</Fluffy_Feenix_Corpse.description>
+	<Feenix.label>Феникс</Feenix.label>
+	<Feenix.description>Живое воплощение огня которое может опустошить всю вашу колонию.</Feenix.description>
+	<Feenix_Meat.label>Мясо феникса</Feenix_Meat.label>
+	<Feenix_Meat.description>Сырое мясо феникса.</Feenix_Meat.description>
+	<Feenix_Corpse.label>Труп феникса</Feenix_Corpse.label>
+	<Feenix_Corpse.description>Труп феникса.</Feenix_Corpse.description>
 	
-	<Fluffy_Icicat.label>Ледяной кот</Fluffy_Icicat.label>
-	<Fluffy_Icicat.description>Рожденный изо льда, ледокот несет стужу и холод. Сердце этого существа высоко ценится за свои свойства на рынках римворлда</Fluffy_Icicat.description>
-	<Fluffy_Icicat_Meat.label>Мясо ледяного кота</Fluffy_Icicat_Meat.label>
-	<Fluffy_Icicat_Meat.description>Сырое мясо ледяного кота.</Fluffy_Icicat_Meat.description>
-	<Fluffy_Icicat_Corpse.label>Труп ледяного кота</Fluffy_Icicat_Corpse.label>
-	<Fluffy_Icicat_Corpse.description>Труп ледяного кота.</Fluffy_Icicat_Corpse.description>
-</Languages>
+	<Kirin.label>Кирин</Kirin.label>
+	<Kirin.description>Мистическое существо рожденное изо льда, Кирин несет стужу и холод. Сердце этого существа высоко ценится за свои свойства на рынках римворлда.</Kirin.description>
+	<Kirin_Meat.label>Мясо кирин</Kirin_Meat.label>
+	<Kirin_Meat.description>Сырое мясо кирин.</Kirin_Meat.description>
+	<Kirin_Corpse.label>Труп кирин</Kirin_Corpse.label>
+	<Kirin_Corpse.description>Труп кирин.</Kirin_Corpse.description>
+	
+</LanguageData>

@@ -8,6 +8,7 @@
 	<CR_ReloadedMote>Перезарядил!</CR_ReloadedMote>
 
 	<CR_SuppressedMote>Под огнём!</CR_SuppressedMote>
+	  <CR_HunkeringMote>Пригнулся!</CR_HunkeringMote>
 	<CR_TurretReloading>Перезарядка</CR_TurretReloading>
 
 	<CR_AutoFireLabel>Авто</CR_AutoFireLabel>
@@ -22,20 +23,20 @@
 
 	<CR_MarkedForArtillery>Помечено целью, исчезнет через</CR_MarkedForArtillery>
 
-	<CR_VisibilityError>Погрешность видимости</CR_VisibilityError>
-	<CR_LeadError>Lead error</CR_LeadError>
-	<CR_RangeError>Погрешность дальности</CR_RangeError>
-	<CR_Sway>Sway</CR_Sway>
-	<CR_Spread>Spread</CR_Spread>
-	<CR_MissRadius>Miss radius</CR_MissRadius>
-	<CR_IndirectFire>Indirect fire</CR_IndirectFire>
-	<CR_CoverHeight>Высота укрытия</CR_CoverHeight>
-	<CR_TargetHeight>Высота цели</CR_TargetHeight>
-	<CR_TargetWidth>Ширина цели</CR_TargetWidth>
+	<CR_VisibilityError>Ошибка видимости</CR_VisibilityError>
+	<CR_LeadError>Смещение  </CR_LeadError>
+	<CR_RangeError>Дальность  </CR_RangeError>
+	<CR_Sway>Взм.</CR_Sway>
+	<CR_Spread>Разб.  </CR_Spread>
+	<CR_MissRadius>КВО        </CR_MissRadius>
+	<CR_IndirectFire>Закрытая поз.</CR_IndirectFire>
+	<CR_CoverHeight>Высота укр. </CR_CoverHeight>
+	<CR_TargetHeight>Высота цели  </CR_TargetHeight>
+	<CR_TargetWidth>Ширина цели </CR_TargetWidth>
 
 	<CR_CarriedWeight>Переносимый вес</CR_CarriedWeight>
 	<CR_CarriedBulk>Переносимый объём</CR_CarriedBulk>
-	<CR_Encumbered>Encumbered</CR_Encumbered>
+	<CR_Encumbered>Нагруженный</CR_Encumbered>
 	<CR_FinalModifier>Окончательный модификатор</CR_FinalModifier>
 	<CR_InventoryFull>Инвентарь полон</CR_InventoryFull>
 	<CR_PickUp>Поднять</CR_PickUp>
@@ -49,5 +50,7 @@
 	<CR_OutOfAmmo>Нет патронов</CR_OutOfAmmo>
 	<CR_PutAway>Убрать [{0}]</CR_PutAway>
 	<CR_TamerInventoryFull>невозможно заняться приручением, так как инвентарь полон.</CR_TamerInventoryFull>
+	<CR_DropThingHaul>Выкинуть без запрета</CR_DropThingHaul>
+	<CR_Eat>Употребить</CR_Eat>
 
 </LanguageData>

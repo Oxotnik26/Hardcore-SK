@@ -13,6 +13,9 @@
       <foodType>OmnivoreAnimal, AnimalProduct</foodType>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.025</manhunterOnTameFailChance>
+	  <hediffGiverSets>
+        <li>HardPassiveSet</li>
+      </hediffGiverSets>
     </race>
   </ThingDef>
   
@@ -21,10 +24,11 @@
     <label>Megascarab</label>
     <description>A large, genetically-engineered beetle. What was once the worker caste of an artifical ecosystem of insectoids designed to fight Mechanoid invasions, it is now usually seen without its deadlier insectoid cousins. Still, its size and hard shell make it dangerous when it attacks. An eusocial creature, it cannot reproduce individually.</description>
     <statBases>
+	  <Mass>10</Mass>
       <MoveSpeed>3.7</MoveSpeed>
       <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <MarketValue>250</MarketValue>
       <LeatherAmount>0</LeatherAmount>
       <ImmunityGainSpeed>2.5</ImmunityGainSpeed>
@@ -33,15 +37,15 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>110</defaultCooldownTicks>
+        <defaultCooldownTime>1.75</defaultCooldownTime>
         <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
       </li>
     </verbs>
 	<comps>
-            <li Class="CommunityCoreLibrary.CompProperties_ShearableRenameable">
-                <compClass>CommunityCoreLibrary.CompShearableRenameable</compClass>
+            <li Class="SK.CompProperties_ShearableRenameable">
+                <compClass>SK.CompShearableRenameable</compClass>
                 <growthLabel>Chitin</growthLabel>
                 <woolDef>Chitin</woolDef>
                 <shearIntervalDays>10</shearIntervalDays>
@@ -93,7 +97,7 @@
     <defName>Megascarab</defName>
     <label>Megascarab</label>
     <race>Megascarab</race>
-    <combatPower>30</combatPower>
+    <combatPower>40</combatPower>
     <wildSpawn_EcoSystemWeight>0.15</wildSpawn_EcoSystemWeight>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <lifeStages>
@@ -143,6 +147,7 @@
     <label>Spelopede</label>
     <description>A medium-sized bioengineered bug the size of a sheep. The spelopede is the middle caste of a hive, taking care of most work tasks as well as fighting with its claws.</description>
     <statBases>
+	  <Mass>50</Mass>
       <MoveSpeed>2.5</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <MarketValue>450</MarketValue>
@@ -154,15 +159,15 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>115</defaultCooldownTicks>
+        <defaultCooldownTime>1.75</defaultCooldownTime>
         <meleeDamageBaseAmount>11</meleeDamageBaseAmount>
         <meleeDamageDef>Cut</meleeDamageDef>
         <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
       </li>
     </verbs>
 	<comps>
-            <li Class="CommunityCoreLibrary.CompProperties_ShearableRenameable">
-                <compClass>CommunityCoreLibrary.CompShearableRenameable</compClass>
+            <li Class="SK.CompProperties_ShearableRenameable">
+                <compClass>SK.CompShearableRenameable</compClass>
                 <growthLabel>Chitin</growthLabel>
                 <woolDef>Chitin</woolDef>
                 <shearIntervalDays>10</shearIntervalDays>
@@ -210,7 +215,7 @@
     <defName>Spelopede</defName>
     <label>spelopede</label>
     <race>Spelopede</race>
-    <combatPower>65</combatPower>
+    <combatPower>130</combatPower>
     <wildSpawn_EcoSystemWeight>0.2</wildSpawn_EcoSystemWeight>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <lifeStages>
@@ -259,8 +264,9 @@
     <label>megaspider</label>
     <description>Not actually a spider, the megaspider is a genetically-engineered giant insectoid the size of a bear. Designed for heavy work and combat, its thick chitinous armor makes it hard to kill, while its long deadly ripper-blades make it deadly.</description>
     <statBases>
+	  <Mass>90</Mass>
       <MoveSpeed>3.85</MoveSpeed>
-      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <MarketValue>700</MarketValue>
       <LeatherAmount>0</LeatherAmount>
       <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
@@ -270,7 +276,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>110</defaultCooldownTicks>
+        <defaultCooldownTime>1.75</defaultCooldownTime>
         <meleeDamageBaseAmount>14</meleeDamageBaseAmount>
         <meleeDamageDef>Cut</meleeDamageDef>
         <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
@@ -285,8 +291,8 @@
       </li>
     </verbs>
 	<comps>
-            <li Class="CommunityCoreLibrary.CompProperties_ShearableRenameable">
-                <compClass>CommunityCoreLibrary.CompShearableRenameable</compClass>
+            <li Class="SK.CompProperties_ShearableRenameable">
+                <compClass>SK.CompShearableRenameable</compClass>
                 <growthLabel>Chitin</growthLabel>
                 <woolDef>Chitin</woolDef>
                 <shearIntervalDays>10</shearIntervalDays>
@@ -335,7 +341,7 @@
     <defName>Megaspider</defName>
     <label>megaspider</label>
     <race>Megaspider</race>
-    <combatPower>110</combatPower>
+    <combatPower>170</combatPower>
     <wildSpawn_EcoSystemWeight>0.2</wildSpawn_EcoSystemWeight>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <lifeStages>
@@ -385,6 +391,7 @@
     <label>Tarantula</label>
     <description>Tarantulas are carnivorous, eight legged monsters with hideous fangs and a toxic bite! A build up of the toxins can be fatal.</description>
     <statBases>
+	  <Mass>60</Mass>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <LeatherAmount>0</LeatherAmount>
@@ -398,15 +405,15 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>13</meleeDamageBaseAmount>
         <meleeDamageDef>ToxicBite</meleeDamageDef>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
       </li>
     </verbs>
 	<comps>
-            <li Class="CommunityCoreLibrary.CompProperties_ShearableRenameable">
-                <compClass>CommunityCoreLibrary.CompShearableRenameable</compClass>
+            <li Class="SK.CompProperties_ShearableRenameable">
+                <compClass>SK.CompShearableRenameable</compClass>
                 <growthLabel>Chitin</growthLabel>
                 <woolDef>Chitin</woolDef>
                 <shearIntervalDays>10</shearIntervalDays>
@@ -460,7 +467,7 @@
     <defName>Tarantula</defName>
     <label>Tarantula</label>
     <race>Tarantula</race>
-    <combatPower>110</combatPower>
+    <combatPower>180</combatPower>
     <wildSpawn_EcoSystemWeight>0.6</wildSpawn_EcoSystemWeight>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <lifeStages>
@@ -504,6 +511,7 @@
     <label>Spindlecrib</label>
     <description>This is one large, poisonous arachnid! Unlike most giant bugs, these spiders naturally evolved this way without the aid of gene manipulation. The name "Spindlecrib" stems from the spider's unique behavior. These spiders drag victims to their lair and spin a crib for their offspring. The victim is used as the spindle for the webbing.</description> 
     <statBases>
+	  <Mass>80</Mass>
       <MoveSpeed>3.9</MoveSpeed>
       <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
@@ -517,15 +525,15 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <defaultCooldownTime>1.6</defaultCooldownTime>
         <meleeDamageBaseAmount>13</meleeDamageBaseAmount>
         <meleeDamageDef>ToxicBite</meleeDamageDef>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
       </li>
     </verbs>
 	<comps>
-            <li Class="CommunityCoreLibrary.CompProperties_ShearableRenameable">
-                <compClass>CommunityCoreLibrary.CompShearableRenameable</compClass>
+            <li Class="SK.CompProperties_ShearableRenameable">
+                <compClass>SK.CompShearableRenameable</compClass>
                 <growthLabel>Chitin</growthLabel>
                 <woolDef>Chitin</woolDef>
                 <shearIntervalDays>10</shearIntervalDays>
@@ -579,7 +587,7 @@
     <defName>Spindlecrib</defName>
     <label>Spindlecrib</label>
     <race>Spindlecrib</race>
-    <combatPower>120</combatPower>
+    <combatPower>190</combatPower>
     <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <lifeStages>
@@ -623,6 +631,7 @@
     <label>Scorpion</label>
     <description>Scorpions are predatory arachnids with eight legs. The two frontal legs consist of a pair of sharp, grasping claws. They have a segmented tail that ends with a venomous stinger.</description> 
     <statBases>
+	  <Mass>120</Mass>
       <MoveSpeed>3.3</MoveSpeed>
       <ArmorRating_Blunt>0.21</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.23</ArmorRating_Sharp>
@@ -637,15 +646,15 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>120</defaultCooldownTicks>
+        <defaultCooldownTime>1.8</defaultCooldownTime>
         <meleeDamageBaseAmount>16</meleeDamageBaseAmount>
         <meleeDamageDef>ToxicBite</meleeDamageDef>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
       </li>
     </verbs>
 	<comps>
-            <li Class="CommunityCoreLibrary.CompProperties_ShearableRenameable">
-                <compClass>CommunityCoreLibrary.CompShearableRenameable</compClass>
+            <li Class="SK.CompProperties_ShearableRenameable">
+                <compClass>SK.CompShearableRenameable</compClass>
                 <growthLabel>Chitin</growthLabel>
                 <woolDef>Chitin</woolDef>
                 <shearIntervalDays>10</shearIntervalDays>
@@ -699,7 +708,7 @@
     <defName>Scorpion</defName>
     <label>Scorpion</label>
     <race>Scorpion</race>
-    <combatPower>120</combatPower>
+    <combatPower>200</combatPower>
     <wildSpawn_EcoSystemWeight>0.6</wildSpawn_EcoSystemWeight>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <lifeStages>

@@ -62,8 +62,8 @@
     <defName>Projectile_ExplosiveBolt</defName>
     <label>explosive bolt</label>
     <projectile>
-      <damageAmountBase>18</damageAmountBase>
-	  <armorPenetration>0.12</armorPenetration>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetration>0.2</armorPenetration>
       <secondaryDamage>
         <li>
           <def>Bomb_Secondary</def>
@@ -77,8 +77,24 @@
     <defName>Projectile_MetallicBolt</defName>
     <label>metallic bolt</label>
     <projectile>
-      <damageAmountBase>22</damageAmountBase>
-	  <armorPenetration>0.14</armorPenetration>
+      <damageAmountBase>24</damageAmountBase>
+	  <armorPenetration>0.25</armorPenetration>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBoltProjectile">
+    <defName>Projectile_PoisonBolt</defName>
+    <label>poison bolt</label>
+    <projectile>
+      <damageDef>Poison</damageDef>
+      <damageAmountBase>2</damageAmountBase>
+	  <armorPenetration>0.23</armorPenetration>
+      <secondaryDamage>
+        <li>
+          <def>Arrow</def>
+          <amount>15</amount>
+        </li>
+      </secondaryDamage>
     </projectile>
   </ThingDef>
   
@@ -93,7 +109,7 @@
       <damageDef>Bullet</damageDef>
       <speed>130</speed>
       <damageAmountBase>23</damageAmountBase>
-	  <armorPenetration>0.45</armorPenetration>
+	  <armorPenetration>0.65</armorPenetration>
 	  <dropsCasings>true</dropsCasings>
     </projectile>
   </ThingDef>
@@ -117,7 +133,7 @@
     <label>Ballista Bolt</label>
     <projectile>
       <damageAmountBase>50</damageAmountBase>
-	  <armorPenetration>0.4</armorPenetration>
+	  <armorPenetration>0.8</armorPenetration>
     </projectile>
   </ThingDef>
   
@@ -129,7 +145,7 @@
 		</graphicData>
 		<projectile>
 			<speed>40</speed>
-			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundExplode>Explosion</soundExplode>
 	  		<flyOverhead>true</flyOverhead>
 			<dropsCasings>true</dropsCasings>
 			<casingMoteDefName>Mote_BigShell</casingMoteDefName>
@@ -146,16 +162,16 @@
     <projectile>
       <damageDef>Bomb</damageDef>
       <damageAmountBase>15</damageAmountBase>
-	  <explosionRadius>2.5</explosionRadius>
+	  <explosionRadius>3</explosionRadius>
 	  <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
-	  <soundExplode>MortarBomb_Explode</soundExplode>
+	  <soundExplode>Explosion</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
     </projectile>
 		<comps>
 			<li Class="Combat_Realism.CompProperties_ExplosiveCR">
 				<explosionDamage>15</explosionDamage>
 				<explosionDamageDef>Bomb</explosionDamageDef>
-				<explosionRadius>1.5</explosionRadius>
+				<explosionRadius>2</explosionRadius>
 				<fragments>
 					<Fragment_MortarSmall>25</Fragment_MortarSmall>
 					<Fragment_MortarMedium>15</Fragment_MortarMedium>
@@ -176,9 +192,9 @@
     <projectile>
       <damageDef>Flame</damageDef>
       <damageAmountBase>15</damageAmountBase>
-	  <explosionRadius>2.5</explosionRadius>
+	  <explosionRadius>3</explosionRadius>
 	  <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
-	  <soundExplode>MortarBomb_Explode</soundExplode>
+	  <soundExplode>Explosion</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 	  <preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
     </projectile>
@@ -186,7 +202,7 @@
 			<li Class="Combat_Realism.CompProperties_ExplosiveCR">
 				<explosionDamage>30</explosionDamage>
 				<explosionDamageDef>Bomb</explosionDamageDef>
-				<explosionRadius>1.5</explosionRadius>
+				<explosionRadius>2</explosionRadius>
 				<fragments>
 					<Fragment_MortarSmall>25</Fragment_MortarSmall>
 					<Fragment_MortarMedium>15</Fragment_MortarMedium>
@@ -217,7 +233,7 @@
     <label>.50 inch Action Express (FMJ)</label>
     <projectile>
       <damageAmountBase>20</damageAmountBase>
-	  <armorPenetration>0.35</armorPenetration>
+	  <armorPenetration>0.57</armorPenetration>
     </projectile>
   </ThingDef>
   
@@ -226,7 +242,7 @@
     <label>.50 inch Action Express (AP)</label>
     <projectile>
       <damageAmountBase>16</damageAmountBase>
-	  <armorPenetration>0.43</armorPenetration>
+	  <armorPenetration>0.65</armorPenetration>
     </projectile>
   </ThingDef>
   
@@ -234,8 +250,8 @@
     <defName>Bullet_50AE_HP</defName>
     <label>.50 inch Action Express (HP)</label>
     <projectile>
-      <damageAmountBase>19</damageAmountBase>
-	  <armorPenetration>0.25</armorPenetration>
+      <damageAmountBase>23</damageAmountBase>
+	  <armorPenetration>0.50</armorPenetration>
     </projectile>
   </ThingDef>
 
@@ -259,7 +275,7 @@
     <label>5.45mm Russian bullet (FMJ)</label>
     <projectile>
       <damageAmountBase>15</damageAmountBase>
-      <armorPenetration>0.4</armorPenetration>
+      <armorPenetration>0.51</armorPenetration>
     </projectile>
   </ThingDef>
   
@@ -268,7 +284,7 @@
     <label>5.45mm Russian bullet (AP)</label>
     <projectile>
       <damageAmountBase>12</damageAmountBase>
-      <armorPenetration>0.45</armorPenetration>
+      <armorPenetration>0.55</armorPenetration>
     </projectile>
   </ThingDef>
   
@@ -277,13 +293,13 @@
     <label>5.45mm Russian bullet (HP)</label>
     <projectile>
       <damageAmountBase>18</damageAmountBase>
-      <armorPenetration>0.26</armorPenetration>
+      <armorPenetration>0.48</armorPenetration>
     </projectile>
   </ThingDef>
   
   
   <ThingDef ParentName="BaseBullet">
-		<defName>Bullet_9x39Soviet</defName>
+		<defName>Bullet_9x39Soviet_FMJ</defName>
 		<label>9x39mm Soviet sniper standart</label>
     <graphicData>
 		<texPath>Things/Projectile/Bullet_Big</texPath>
@@ -293,13 +309,13 @@
 		  <damageDef>Bullet</damageDef>
 		  <damageAmountBase>24</damageAmountBase>
 		  <speed>145</speed>
-		  <armorPenetration>0.5</armorPenetration>
+		  <armorPenetration>0.62</armorPenetration>
 		  <dropsCasings>true</dropsCasings>
     </projectile>
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-		<defName>Bullet_9x39Soviet</defName>
+		<defName>Bullet_9x39Soviet_SH</defName>
 		<label>9x39mm Soviet sniper shock</label>
     <graphicData>
 		<texPath>Things/Projectile/Bullet_Big</texPath>
@@ -308,9 +324,15 @@
     <projectile>
 		  <damageDef>ElectricShock</damageDef>
 		  <damageAmountBase>10</damageAmountBase>
-		  <speed>145</speed>
-		  <armorPenetration>0.15</armorPenetration>
+		  <speed>150</speed>
+		  <armorPenetration>0.25</armorPenetration>
 		  <dropsCasings>true</dropsCasings>
+		  <secondaryDamage>
+			<li>
+			  <def>Bullet</def>
+			  <amount>12</amount>
+			</li>
+		  </secondaryDamage>
     </projectile>
   </ThingDef>
 

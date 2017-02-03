@@ -16,12 +16,21 @@
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>2</DeteriorationRate>
 			<SellPriceFactor>0.3</SellPriceFactor>
-			  <Weight>0.5</Weight>
+			  <Mass>0.5</Mass>
 			  <Bulk>0.5</Bulk>
 		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
 		<alwaysHaulable>True</alwaysHaulable>
 		<tickerType>Never</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		  <li>
+			<compClass>CompEquippable</compClass>
+		  </li>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		</comps>
 		<techLevel>Industrial</techLevel>
 		<soundInteract>Interact_BeatFire</soundInteract>
 		<inspectorTabs>
@@ -46,14 +55,17 @@
 	<ThingDef ParentName="BaseTool">
 		<defName>TFJ_Tool_Woodcutting_Handaxe</defName>
 		<label>Handaxe</label>
-		<description>A practical wood cutting handaxe. Trees beware! Equipping this boosts plant work speed by 50%.</description>
+		<description>A practical wood cutting handaxe. Trees beware! Equipping this boosts plant work speed by 30%.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/Handaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-			<MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
+			<WorkToMake>7000</WorkToMake>
+			<MeleeWeapon_DamageAmount>13</MeleeWeapon_DamageAmount>
+			<MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
+			<Mass>3.4</Mass>
+			<Bulk>3</Bulk>
 		</statBases>
 		<verbs>
 			<li>
@@ -62,12 +74,6 @@
 				<meleeDamageDef>Cut</meleeDamageDef>
 			</li>
 		</verbs>
-		<comps>
-		<li Class="CompProperties_Forbiddable"/>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
-		</comps>
 		<equippedStatOffsets>
 			<PlantWorkSpeed>0.3</PlantWorkSpeed>
 		</equippedStatOffsets>
@@ -77,14 +83,17 @@
 	<ThingDef ParentName="BaseTool">
 		<defName>TFJ_Tool_Mining_Pickaxe</defName>
 		<label>Pickaxe</label>
-		<description>A practical mining pickaxe. We have to go deeper. Equipping this boosts mining work speed by 50%.</description>
+		<description>A practical mining pickaxe. We have to go deeper. Equipping this boosts mining work speed by 30%.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/Pickaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
+			<WorkToMake>7000</WorkToMake>
 			<MeleeWeapon_DamageAmount>12</MeleeWeapon_DamageAmount>
-			<MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+			<MeleeWeapon_Cooldown>2.5</MeleeWeapon_Cooldown>
+			<Mass>3.5</Mass>
+			<Bulk>3</Bulk>
 		</statBases>
 		<verbs>
 			<li>
@@ -93,12 +102,6 @@
 				<meleeDamageDef>Stab</meleeDamageDef>
 			</li>
 		</verbs>
-		<comps>
-		<li Class="CompProperties_Forbiddable"/>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
-		</comps>
 	<equippedStatOffsets>
 		<MiningSpeed>0.3</MiningSpeed>
 	</equippedStatOffsets>
@@ -108,14 +111,17 @@
 	<ThingDef ParentName="BaseTool">
 		<defName>TFJ_Tool_Building_Hammer</defName>
 		<label>Hammer</label>
-		<description>A practical construction hammer. Be careful with your fingers! Equipping this boosts construction work speed by 50%.</description>
+		<description>A practical construction hammer. Be careful with your fingers! Equipping this boosts construction work speed by 30%.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/Hammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-			<MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
+			<WorkToMake>2000</WorkToMake>
+			<MeleeWeapon_DamageAmount>10</MeleeWeapon_DamageAmount>
+			<MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
+			<Mass>1</Mass>
+			<Bulk>2</Bulk>
 		</statBases>
 		<verbs>
 			<li>
@@ -124,12 +130,6 @@
 				<meleeDamageDef>Blunt</meleeDamageDef>
 			</li>
 		</verbs>
-		<comps>
-		<li Class="CompProperties_Forbiddable"/>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
-		</comps>
 	<equippedStatOffsets>
 		<ConstructionSpeed>0.3</ConstructionSpeed>
 	</equippedStatOffsets>

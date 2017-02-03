@@ -42,9 +42,6 @@
 	<EdB.NotEnoughPoints>Вам требуется больше очков.</EdB.NotEnoughPoints>
 	<EdB.PresetPawnLoadFailed>Невозможно загрузить образ. Проверьте, все ли необходимые моды установлены?</EdB.PresetPawnLoadFailed>
 	<EdB.PresetIncompatible>Невозможно загрузить образ. Возможно образ был создан в старой версии игры?</EdB.PresetIncompatible>
-	<EdB.DisablePoints>Удалить очки</EdB.DisablePoints>
-	<EdB.EnablePoints>Установить очки</EdB.EnablePoints>
-	<EdB.BackstoryWarning>Эта предыстория не соотвествует имени или полу выбранного поселенца.</EdB.BackstoryWarning>
 	<EdB.Age>Лет:</EdB.Age>
 	<EdB.NewColonistTab>Новый поселенец</EdB.NewColonistTab>
 	<EdB.LoadColonistButton>Загрузить поселенца</EdB.LoadColonistButton>
@@ -58,7 +55,7 @@
 	<EdB.TooManyColonists>Невозможно начать с больше чем {0} поселенца(ев).</EdB.TooManyColonists>
 	<EdB.BodyParts>Части тела</EdB.BodyParts>
 	<EdB.NormalBodyPart>Нормальная</EdB.NormalBodyPart>
-	<EdB.OldInjuries>Случаные старые травмы</EdB.OldInjuries>
+	<EdB.OldInjuries>Случайные старые травмы</EdB.OldInjuries>
 	<EdB.ColonistThingDefFailed>Невозможно загрузить поселенца. Проверьте, все ли необходимые моды установлены?</EdB.ColonistThingDefFailed>
 	<EdB.CostSummaryTotal>Итого потрачено: {0}</EdB.CostSummaryTotal>
 	<EdB.CostSummaryEquipment>Вооружение: {0}</EdB.CostSummaryEquipment>
@@ -77,7 +74,7 @@
 	<EdB.PrepareCarefully.RandomizeAll>Случайный новый поселенец</EdB.PrepareCarefully.RandomizeAll>
 	<EdB.PrepareCarefully.RandomizeName>Случайное имя</EdB.PrepareCarefully.RandomizeName>
 	<EdB.PrepareCarefully.RandomizeTraits>Случайные особенности</EdB.PrepareCarefully.RandomizeTraits>
-	<EdB.PrepareCarefully.RandomizeBackstory>Случайная предыстрория</EdB.PrepareCarefully.RandomizeBackstory>
+	<EdB.PrepareCarefully.RandomizeBackstory>Случайная предыстория</EdB.PrepareCarefully.RandomizeBackstory>
 	<EdB.PrepareCarefully.RandomizeAppearance>Случайная внешность</EdB.PrepareCarefully.RandomizeAppearance>
 	<EdB.PrepareCarefully.ResetSkills>Сбросить все навыки и интересы</EdB.PrepareCarefully.ResetSkills>
 	<EdB.PrepareCarefully.EquipmentName>Имя</EdB.PrepareCarefully.EquipmentName>
@@ -88,8 +85,6 @@
 	<!-- New for Alpha 13 -->
 	<EdB.PrepareCarefully.UsePoints>Использовать очки</EdB.PrepareCarefully.UsePoints>
 	<EdB.PrepareCarefully.UsePoints.Tip>Включить счет очков, если вы хотите сбалансированный старт за счет навыков, дополнительных поселенцев и обмундирования из доступных очков. Отключить счет очков, чтобы подготовить поселенцев без каких-либо ограничений.</EdB.PrepareCarefully.UsePoints.Tip>
-	<EdB.PrepareCarefully.FixedPoints>Фикс. очки</EdB.PrepareCarefully.FixedPoints>
-	<EdB.PrepareCarefully.FixedPoints.Tip>Включить эту опцию с фиксированным числом - {0} очков вместо того, чтобы использовать случайное количество очков, которые соответствуют случайными начальным поселенцам.</EdB.PrepareCarefully.FixedPoints.Tip>
 	<EdB.PrepareCarefully.AddRelationship>Добавить отношения...</EdB.PrepareCarefully.AddRelationship>
 	<EdB.PrepareCarefully.SelectColonist>Выберите поселенца</EdB.PrepareCarefully.SelectColonist>
 	<EdB.PrepareCarefully.SelectRelationship>Выберите отношения</EdB.PrepareCarefully.SelectRelationship>
@@ -115,13 +110,13 @@
 	<EdB.PrepareCarefully.SelectInjury>Выбрать травму</EdB.PrepareCarefully.SelectInjury>
 	<EdB.PrepareCarefully.ErrorMustSelectInjury>Вы должны выбрать травму</EdB.PrepareCarefully.ErrorMustSelectInjury>
 	<EdB.PrepareCarefully.InjuryLabel>{0} ({1})</EdB.PrepareCarefully.InjuryLabel>
-	<EdB.PrepareCarefully.EquipmentTab.Implants>Импланты</EdB.PrepareCarefully.EquipmentTab.Implants>
+	<!--<EdB.PrepareCarefully.EquipmentTab.Implants>Импланты</EdB.PrepareCarefully.EquipmentTab.Implants> -->
 	<EdB.PrepareCarefully.EquipmentTab.Buildings>Мебель</EdB.PrepareCarefully.EquipmentTab.Buildings>
 	<EdB.PrepareCarefully.Severity.OptionLabel.2>2 урона</EdB.PrepareCarefully.Severity.OptionLabel.2>
 	<EdB.PrepareCarefully.Severity.OptionLabel.3>3 урона</EdB.PrepareCarefully.Severity.OptionLabel.3>
 	<EdB.PrepareCarefully.Severity.OptionLabel.4>4 урона</EdB.PrepareCarefully.Severity.OptionLabel.4>
 	<EdB.PrepareCarefully.Severity.OptionLabel.5>5 урона</EdB.PrepareCarefully.Severity.OptionLabel.5>
-	<EdB.PrepareCarefully.Severity.OptionLabel.6>6 Damage</EdB.PrepareCarefully.Severity.OptionLabel.6>
+	<EdB.PrepareCarefully.Severity.OptionLabel.6>6 урона</EdB.PrepareCarefully.Severity.OptionLabel.6>
 	<EdB.PrepareCarefully.Stage.OptionLabel>{0} {1}</EdB.PrepareCarefully.Stage.OptionLabel>
 	<EdB.PrepareCarefully.Stage.FieldLabel>{0}, {1}</EdB.PrepareCarefully.Stage.FieldLabel>
 	<EdB.PrepareCarefully.Severity.FieldLabel>{0}</EdB.PrepareCarefully.Severity.FieldLabel>
@@ -138,5 +133,14 @@
 Core, Community Core Library, Combat Realism, Core_SK, а затем PrepareCarefully. И только потом Miscellaneous Core с Miscellaneous_MapGenerator. 
 В текущий момент, последовательность нарушена, работа генератора персонажей может работать со сбоем!</EdB.PrepareCarefully.ModConfigProblem.Description>
 	<EdB.PawnLayer.Accessory>Аксессуары</EdB.PawnLayer.Accessory>
-	<EdB.PrepareCarefully.ScenarioPoints>Начальные колонисты и ресурсы, которые были сгенерированы случайным образом для этого сценария стоили {0} очков.</EdB.PrepareCarefully.ScenarioPoints>
+	<EdB.PrepareCarefully.ScenarioPoints>Начальные поселенцы и ресурсы, которые были сгенерированы случайным образом для этого сценария стоили {0} очков.</EdB.PrepareCarefully.ScenarioPoints>
+	
+		<!-- New for Alpha 15 -->
+	<EdB.PrepareCarefully.EquipmentTab.Medical>Медицина</EdB.PrepareCarefully.EquipmentTab.Medical>
+
+	<EdB.PrepareCarefully.UnrecoverableError.Header>Неустранимая ошибка</EdB.PrepareCarefully.UnrecoverableError.Header>
+	<EdB.PrepareCarefully.UnrecoverableError.Message>Что-то пошло не так, и Prepare Carefully не смог это исправить.  Следующее сообщение об ошибке может помочь определить проблему:
+
+"{0}"</EdB.PrepareCarefully.UnrecoverableError.Message>
+	
 </LanguageData>

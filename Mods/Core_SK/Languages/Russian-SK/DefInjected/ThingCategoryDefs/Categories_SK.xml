@@ -40,17 +40,14 @@
 <LuxuryStuffs.label>Отдельные</LuxuryStuffs.label>
 <Hydrocarbons.label>Углеводороды</Hydrocarbons.label>
 <Chemical.label>Химия</Chemical.label>
-<Drugs.label>Нарики</Drugs.label>
-<Fluffy_CatFoods.label>Кошачья еда</Fluffy_CatFoods.label>
 <FruitFoodRaw.label>Фрукты</FruitFoodRaw.label>
 <SweetMeals.label>Сладости</SweetMeals.label>
-<CookingSupplies.label>кулинарные ингридиенты</CookingSupplies.label>
+<CookingSupplies.label>кулинарные ингредиенты</CookingSupplies.label>
 <Alcohol.label>Алкоголь</Alcohol.label>
 <Energetics.label>Энергетики</Energetics.label>
 <WeaponCrate.label>Ящики с оружием</WeaponCrate.label>
 <ElectronicsCat.label>Электроника</ElectronicsCat.label>
 <Extracted.label>Ископаемые</Extracted.label>
-<RawPlant.label>Растительные</RawPlant.label>
 <GlassCat.label>Стеклянные</GlassCat.label>
 <FuelCat.label>Топливо</FuelCat.label>
 <ExplosivesCat.label>Топливо</ExplosivesCat.label>

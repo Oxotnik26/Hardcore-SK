@@ -8,24 +8,19 @@
 		<trans>телёнок альфало</trans>
 	</rep>	
 	
+	<Zeon.label>зеон</Zeon.label>
 	
-	<Hedgehog.label>Ёжик</Hedgehog.label>
-	<Hedgehog.labelMale>Ёж</Hedgehog.labelMale>
-	<Hedgehog.labelFeMale>Ежиха</Hedgehog.labelFeMale>
-    
-	<rep>
-		<path>Hedgehog.lifeStages[0].label</path>
-		<trans>ёжик</trans>
-	</rep>
+	<PandaBear.label>панда</PandaBear.label>
+	
+	<Blackbear.label>Черный медведь</Blackbear.label>
 	
 	<Lacosdile.label>Лакосдил</Lacosdile.label>
     
-	<Quadhog.label>Мегасвин</Quadhog.label>
-	
 	<Flea.label>Блоха</Flea.label>
 	
 	<Snork.label>Снорк</Snork.label>
     
+	<Chipmunk.label>Бурундук</Chipmunk.label>
 	
 	<Rimram.label>Баран</Rimram.label>
 	<Rimram.labelMale>Баран</Rimram.labelMale>
@@ -43,15 +38,10 @@
     
 	
 	<Spindlecrib.label>Большой паук</Spindlecrib.label>
-	
-	<PackMuffalo.label>Торговый муффало</PackMuffalo.label>
-	<PackMuffalo.labelMale>Торговый альфа муффало</PackMuffalo.labelMale>
-	<PackMuffalo.labelFeMale>Торговый муффало</PackMuffalo.labelFeMale>
-	
 
 	<Void.label>Тень</Void.label>
 	<Abomination.label>Нечто</Abomination.label>	
-	<Fenrir.label>Фенрир</Fenrir.label>
+	<Barghest.label>Багрест</Barghest.label>
 	
 	<Nightling.label>Найтлинг</Nightling.label>
 		<rep>
@@ -62,8 +52,6 @@
 <!-- 	<TribalFanatic.label>Фанатик</TribalFanatic.label> -->
 	
 	<GermanShepherd.label>Немецкая овчарка</GermanShepherd.label>
-	
-	
-	<BorderCollie.label>Бордер-колли</BorderCollie.label>
+
 	</LanguageData>
     

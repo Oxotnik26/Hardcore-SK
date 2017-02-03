@@ -10,6 +10,10 @@
 		<useHitPoints>false</useHitPoints>
 		<hasTooltip>false</hasTooltip>
 		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+		</statBases>
 		<inspectorTabs>
 			<li>ITab_Pawn_Health</li>
 			<li>ITab_Pawn_Needs</li>
@@ -29,6 +33,7 @@
 		<race>
 			<fleshType>Mechanoid</fleshType>
 			<foodType>OmnivoreHuman</foodType>
+			<hasGenders>true</hasGenders>
 			<ageGenerationCurve>
 				<points>
 					<li>(0,0)</li>
@@ -69,7 +74,7 @@
 		<verbs>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTicks>80</defaultCooldownTicks>
+				<defaultCooldownTime>80</defaultCooldownTime>
 				<meleeDamageBaseAmount>1</meleeDamageBaseAmount>
 				<meleeDamageDef>Blunt</meleeDamageDef>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
@@ -121,7 +126,7 @@
 		<verbs>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTicks>80</defaultCooldownTicks>
+				<defaultCooldownTime>80</defaultCooldownTime>
 				<meleeDamageBaseAmount>1</meleeDamageBaseAmount>
 				<meleeDamageDef>Blunt</meleeDamageDef>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>

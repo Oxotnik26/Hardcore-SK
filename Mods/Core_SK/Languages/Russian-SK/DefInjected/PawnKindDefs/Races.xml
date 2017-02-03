@@ -4,14 +4,15 @@
 	<Survivor.label>поселенец</Survivor.label>
 	<Orassan.label>поселенец</Orassan.label>
 	<NuclearSurvivor.label>поселенец</NuclearSurvivor.label>
-
+	<AsariPawn.label>поселенец</AsariPawn.label>
+	
 	<BrotherhoodGuard.label>Охранник братства</BrotherhoodGuard.label>
 	<BrotherhoodStriker.label>Страйкер братства</BrotherhoodStriker.label>
 	<BrotherhoodProtector.label>Защитник братства</BrotherhoodProtector.label>
-	<BrotherhoodScout.label>Развездчик братства</BrotherhoodScout.label>
+	<BrotherhoodScout.label>Разведчик братства</BrotherhoodScout.label>
 	<BrotherhoodDestroyer.label>Разрушитель братства</BrotherhoodDestroyer.label>
 	<BrotherhoodSentinel.label>Страж братства</BrotherhoodSentinel.label>
-	<BrotherhoodTrader.label>Торговец братсва</BrotherhoodTrader.label>
+	<BrotherhoodTrader.label>Торговец братства</BrotherhoodTrader.label>
 	
 	
 	<SectarianSoldier.label>Солдат сектантов</SectarianSoldier.label>
@@ -22,12 +23,12 @@
 	<SectarianSentinel.label>Часовой сектантов</SectarianSentinel.label>
 	<SectarianTrader.label>Торговец сектантов</SectarianTrader.label>
 	
-	<SyndicateProspector.label>Развездчик синдиката</SyndicateProspector.label>
+	<SyndicateProspector.label>Разведчик синдиката</SyndicateProspector.label>
 	<SyndicateStriker.label>Страйкер синдиката</SyndicateStriker.label>
 	<SyndicateHunter.label>Охотник синдиката</SyndicateHunter.label>
 	<SyndicateHawkeye.label>Орлиный глаз синдиката</SyndicateHawkeye.label>
 	<SyndicateDevastator.label>Девастатор синдиката</SyndicateDevastator.label>
-	<SyndicateAnnihilator.label>Анигилятор синдиката</SyndicateAnnihilator.label>
+	<SyndicateAnnihilator.label>Аннигилятор синдиката</SyndicateAnnihilator.label>
 	<SyndicateBloodborne.label>Порождение крови синдиката</SyndicateBloodborne.label>
 	
 	<OrionChaser.label>Преследователь ориона</OrionChaser.label>
@@ -81,15 +82,13 @@
 	<AsariCrewMember.label>член экипажа</AsariCrewMember.label>
     <!--<AsariEngineer.label>инженер</AsariEngineer.label>-->
     <AsariSupremeAdmiral.label>верховный адмирал</AsariSupremeAdmiral.label>
-
-  
-	<!-- ============================ Combat Staff ========================== -->
-  
-
+  	<!-- ============================ Combat Staff ========================== -->
     <AsariCommando.label>коммандос</AsariCommando.label>
-
     <AsariVanguard.label>член авангарда</AsariVanguard.label>
-
     <AsariInfiltrator.label>оперативник</AsariInfiltrator.label>
+	
+	<AsariOvermaster.label>подчинитель воли</AsariOvermaster.label>
+	<AsariEnslaver.label>поработитель</AsariEnslaver.label>
+	<AsariHunter.label>охотник</AsariHunter.label>
 	
 </LanguageData>

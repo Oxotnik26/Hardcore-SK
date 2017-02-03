@@ -1,432 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-<!-- by Hardcore-SK team edits -->	
-  <!-- Injuries -->
+	<!-- by Hardcore-SK team edits -->
+	<!-- Injuries -->
+
 	<Misc.label>разное</Misc.label>
-	<rep>
-		<path>Misc.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Misc.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Misc.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Misc.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Misc.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Misc.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
+  <Misc.comps.0.labelTendedWell>перевязано</Misc.comps.0.labelTendedWell>
+  <Misc.comps.0.labelTendedWellInner>зашито</Misc.comps.0.labelTendedWellInner>
+  <Misc.comps.0.labelSolidTendedWell>обработано</Misc.comps.0.labelSolidTendedWell>
+  <Misc.injuryProps.destroyedLabel>уничтожено</Misc.injuryProps.destroyedLabel>
 
-	<Misc.injuryProps.destroyedLabel>уничтожено</Misc.injuryProps.destroyedLabel>
-	
-	
 	<Burn.label>ожог</Burn.label>
-	<rep>
-		<path>Burn.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Burn.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Burn.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Burn.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Burn.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Burn.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Burn.comps[2].oldLabel</path>
-		<trans>ожоговый шрам</trans>
-	</rep>
-	<Burn.injuryProps.destroyedLabel>Сгорело</Burn.injuryProps.destroyedLabel>
-	<Burn.injuryProps.destroyedOutLabel>Отгорело</Burn.injuryProps.destroyedOutLabel>
-	
-	
+  <Burn.comps.0.labelTendedWell>перевязано</Burn.comps.0.labelTendedWell>
+  <Burn.comps.0.labelTendedWellInner>зашито</Burn.comps.0.labelTendedWellInner>
+  <Burn.comps.0.labelSolidTendedWell>обработано</Burn.comps.0.labelSolidTendedWell>
+  <Burn.comps.2.oldLabel>ожоговый шрам</Burn.comps.2.oldLabel>
+  <Burn.injuryProps.destroyedLabel>сгорело</Burn.injuryProps.destroyedLabel>
+  <Burn.injuryProps.destroyedOutLabel>сгорело</Burn.injuryProps.destroyedOutLabel>
+
 	<Crush.label>перелом</Crush.label>
-	<rep>
-		<path>Crush.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Crush.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Crush.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Crush.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Crush.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Crush.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Crush.comps[2].oldLabel</path>
-		<trans>шрам</trans>
-	</rep>
-	<Crush.injuryProps.destroyedLabel>Сломано</Crush.injuryProps.destroyedLabel>
+  <Crush.comps.0.labelTendedWell>перевязано</Crush.comps.0.labelTendedWell>
+  <Crush.comps.0.labelTendedWellInner>зашито</Crush.comps.0.labelTendedWellInner>
+  <Crush.comps.0.labelSolidTendedWell>обработано</Crush.comps.0.labelSolidTendedWell>
+  <Crush.comps.2.oldLabel>шрам</Crush.comps.2.oldLabel>
+  <Crush.injuryProps.destroyedLabel>раздавлено</Crush.injuryProps.destroyedLabel>
 
-	
 	<Crack.label>трещина</Crack.label>
-	<rep>
-		<path>Crack.comps[0].labelTreatedWell</path>
-		<trans>вылечено</trans>
-	</rep>
-	<rep>
-		<path>Crack.comps[0].labelTreated</path>
-		<trans>плохо вылечено</trans>
-	</rep>
-	<rep>
-		<path>Crack.comps[0].labelTreatedWellInner</path>
-		<trans>вылечено</trans>
-	</rep>
-	<rep>
-		<path>Crack.comps[0].labelTreatedInner</path>
-		<trans>плохо вылечено</trans>
-	</rep>
-	<rep>
-		<path>Crack.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Crack.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
+  <Crack.comps.0.labelTendedWell>вылечено</Crack.comps.0.labelTendedWell>
+  <Crack.comps.0.labelTendedWellInner>вылечено</Crack.comps.0.labelTendedWellInner>
+  <Crack.comps.0.labelSolidTendedWell>обработано</Crack.comps.0.labelSolidTendedWell>
+  <Crack.injuryProps.destroyedLabel>раздроблено</Crack.injuryProps.destroyedLabel>
 
-	<Crack.injuryProps.destroyedLabel>Треснуто</Crack.injuryProps.destroyedLabel>
-
-	
 	<Cut.label>порез</Cut.label>
-	<rep>
-		<path>Cut.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Cut.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Cut.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Cut.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Cut.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Cut.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Cut.comps[2].oldLabel</path>
-		<trans>шрам от пореза</trans>
-	</rep>
-	<Cut.injuryProps.destroyedLabel>Отрезано</Cut.injuryProps.destroyedLabel>
-	<Cut.injuryProps.destroyedOutLabel>Вырезано</Cut.injuryProps.destroyedOutLabel>
+  <Cut.comps.0.labelTendedWell>перевязано</Cut.comps.0.labelTendedWell>
+  <Cut.comps.0.labelTendedWellInner>зашито</Cut.comps.0.labelTendedWellInner>
+  <Cut.comps.0.labelSolidTendedWell>обработано</Cut.comps.0.labelSolidTendedWell>
+  <Cut.comps.2.oldLabel>шрам от пореза</Cut.comps.2.oldLabel>
+  <Cut.injuryProps.destroyedLabel>отрезано</Cut.injuryProps.destroyedLabel>
+  <Cut.injuryProps.destroyedOutLabel>вырезано</Cut.injuryProps.destroyedOutLabel>
 
-	
 	<SurgicalCut.label>хирургический порез</SurgicalCut.label>
-	<rep>
-		<path>SurgicalCut.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>SurgicalCut.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>SurgicalCut.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>SurgicalCut.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>SurgicalCut.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>SurgicalCut.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>SurgicalCut.comps[1].oldLabel</path>
-		<trans>шрам от пореза</trans>
-	</rep>
+  <SurgicalCut.comps.0.labelTendedWell>перевязано</SurgicalCut.comps.0.labelTendedWell>
+  <SurgicalCut.comps.0.labelTendedWellInner>зашито</SurgicalCut.comps.0.labelTendedWellInner>
+  <SurgicalCut.comps.0.labelSolidTendedWell>обработано</SurgicalCut.comps.0.labelSolidTendedWell>
+  <SurgicalCut.comps.1.oldLabel>шрам от пореза</SurgicalCut.comps.1.oldLabel>
 	<SurgicalCut.injuryProps.destroyedLabel>отрезано</SurgicalCut.injuryProps.destroyedLabel>
 	<SurgicalCut.injuryProps.destroyedOutLabel>вырезано</SurgicalCut.injuryProps.destroyedOutLabel>
 
-	
 	<Scratch.label>царапина</Scratch.label>
-	<rep>
-		<path>Scratch.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Scratch.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Scratch.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Scratch.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Scratch.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Scratch.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Scratch.comps[2].oldLabel</path>
-		<trans>шрам от царапины</trans>
-	</rep>
-	<Scratch.injuryProps.destroyedLabel>Разорвано</Scratch.injuryProps.destroyedLabel>
-	<Scratch.injuryProps.destroyedOutLabel>Оторвано</Scratch.injuryProps.destroyedOutLabel>
+  <Scratch.comps.0.labelTendedWell>перевязано</Scratch.comps.0.labelTendedWell>
+  <Scratch.comps.0.labelTendedWellInner>зашито</Scratch.comps.0.labelTendedWellInner>
+  <Scratch.comps.0.labelSolidTendedWell>обработано</Scratch.comps.0.labelSolidTendedWell>
+  <Scratch.comps.2.oldLabel>шрам от царапины</Scratch.comps.2.oldLabel>
+  <Scratch.injuryProps.destroyedLabel>оторвано</Scratch.injuryProps.destroyedLabel>
+  <Scratch.injuryProps.destroyedOutLabel>вырвано</Scratch.injuryProps.destroyedOutLabel>
 
-	
 	<Bite.label>укус</Bite.label>
-	<rep>
-		<path>Bite.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Bite.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Bite.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Bite.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Bite.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Bite.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Bite.comps[2].oldLabel</path>
-		<trans>шрам от укуса</trans>
-	</rep>
-	<Bite.injuryProps.destroyedLabel>Откушено</Bite.injuryProps.destroyedLabel>
-	<Bite.injuryProps.destroyedOutLabel>Откушено</Bite.injuryProps.destroyedOutLabel>
+  <Bite.comps.0.labelTendedWell>перевязано</Bite.comps.0.labelTendedWell>
+  <Bite.comps.0.labelTendedWellInner>зашито</Bite.comps.0.labelTendedWellInner>
+  <Bite.comps.0.labelSolidTendedWell>обработано</Bite.comps.0.labelSolidTendedWell>
+  <Bite.comps.2.oldLabel>шрам от укуса</Bite.comps.2.oldLabel>
+  <Bite.injuryProps.destroyedLabel>отгрызено</Bite.injuryProps.destroyedLabel>
+  <Bite.injuryProps.destroyedOutLabel>выгрызено</Bite.injuryProps.destroyedOutLabel>
 
-	
 	<Stab.label>колотая рана</Stab.label>
-	<rep>
-		<path>Stab.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Stab.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Stab.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Stab.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Stab.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Stab.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Stab.comps[2].oldLabel</path>
-		<trans>шрам от колотой раны</trans>
-	</rep>
-	<Stab.injuryProps.destroyedLabel>Отрезано</Stab.injuryProps.destroyedLabel>
-	<Stab.injuryProps.destroyedOutLabel>Вырезано</Stab.injuryProps.destroyedOutLabel>
+  <Stab.comps.0.labelTendedWell>перевязано</Stab.comps.0.labelTendedWell>
+  <Stab.comps.0.labelTendedWellInner>зашито</Stab.comps.0.labelTendedWellInner>
+  <Stab.comps.0.labelSolidTendedWell>обработано</Stab.comps.0.labelSolidTendedWell>
+  <Stab.comps.2.oldLabel>шрам от колотой раны</Stab.comps.2.oldLabel>
+  <Stab.injuryProps.destroyedLabel>отрезано</Stab.injuryProps.destroyedLabel>
+  <Stab.injuryProps.destroyedOutLabel>вырезано</Stab.injuryProps.destroyedOutLabel>
 
-	
 	<Gunshot.label>пулевое ранение</Gunshot.label>
-	<rep>
-		<path>Gunshot.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Gunshot.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Gunshot.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Gunshot.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Gunshot.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Gunshot.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Gunshot.comps[2].oldLabel</path>
-		<trans>Шрам от пули</trans>
-	</rep>
-	<Gunshot.injuryProps.destroyedLabel>Отстрелено</Gunshot.injuryProps.destroyedLabel>
-	<Gunshot.injuryProps.destroyedOutLabel>Отстрелено</Gunshot.injuryProps.destroyedOutLabel>
-	
+  <Gunshot.comps.0.labelTendedWell>перевязано</Gunshot.comps.0.labelTendedWell>
+  <Gunshot.comps.0.labelTendedWellInner>зашито</Gunshot.comps.0.labelTendedWellInner>
+  <Gunshot.comps.0.labelSolidTendedWell>обработано</Gunshot.comps.0.labelSolidTendedWell>
+  <Gunshot.comps.2.oldLabel>шрам от пули</Gunshot.comps.2.oldLabel>
+  <Gunshot.comps.2.instantlyOldLabel>огнестрельное ранение</Gunshot.comps.2.instantlyOldLabel>
+  <Gunshot.injuryProps.destroyedLabel>отстрелено</Gunshot.injuryProps.destroyedLabel>
+  <Gunshot.injuryProps.destroyedOutLabel>прострелено</Gunshot.injuryProps.destroyedOutLabel>
 
 	<Shredded.label>раздроблено</Shredded.label>
-	<rep>
-		<path>Shredded.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Shredded.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Shredded.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Shredded.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Shredded.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Shredded.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Shredded.comps[2].oldLabel</path>
-		<trans>шрам</trans>
-	</rep>
-	<Shredded.injuryProps.destroyedLabel>Разорвано</Shredded.injuryProps.destroyedLabel>
-	<Shredded.injuryProps.destroyedOutLabel>Оторвано</Shredded.injuryProps.destroyedOutLabel>
-	
+  <Shredded.comps.0.labelTendedWell>перевязано</Shredded.comps.0.labelTendedWell>
+  <Shredded.comps.0.labelTendedWellInner>зашито</Shredded.comps.0.labelTendedWellInner>
+  <Shredded.comps.0.labelSolidTendedWell>обработано</Shredded.comps.0.labelSolidTendedWell>
+  <Shredded.comps.2.oldLabel>шрам</Shredded.comps.2.oldLabel>
+  <Shredded.injuryProps.destroyedLabel>оторвано</Shredded.injuryProps.destroyedLabel>
+  <Shredded.injuryProps.destroyedOutLabel>разорвано</Shredded.injuryProps.destroyedOutLabel>
 
 	<Bruise.label>ушиб</Bruise.label>
-	<rep>
-		<path>Bruise.comps[0].labelTreatedWell</path>
-		<trans>перевязано</trans>
-	</rep>
-	<rep>
-		<path>Bruise.comps[0].labelTreated</path>
-		<trans>плохо перевязано</trans>
-	</rep>
-	<rep>
-		<path>Bruise.comps[0].labelTreatedWellInner</path>
-		<trans>зашито</trans>
-	</rep>
-	<rep>
-		<path>Bruise.comps[0].labelTreatedInner</path>
-		<trans>плохо зашито</trans>
-	</rep>
-	<rep>
-		<path>Bruise.comps[0].labelSolidTreatedWell</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Bruise.comps[0].labelSolidTreated</path>
-		<trans>плохо обработано</trans>
-	</rep>
+  <Bruise.comps.0.labelTendedWell>перевязано</Bruise.comps.0.labelTendedWell>
+  <Bruise.comps.0.labelTendedWellInner>зашито</Bruise.comps.0.labelTendedWellInner>
+  <Bruise.comps.0.labelSolidTendedWell>обработано</Bruise.comps.0.labelSolidTendedWell>
+  <Bruise.injuryProps.destroyedLabel>отбито</Bruise.injuryProps.destroyedLabel>
+  <Bruise.injuryProps.destroyedOutLabel>выбито</Bruise.injuryProps.destroyedOutLabel>
 
-	<Bruise.injuryProps.destroyedLabel>Отбито</Bruise.injuryProps.destroyedLabel>
-	<Bruise.injuryProps.destroyedOutLabel>Выбито</Bruise.injuryProps.destroyedOutLabel>
-	
-	
-	<Frostbite.label>обморожение</Frostbite.label>
-	<rep>
-		<path>Frostbite.comps[0].labelTreatedWell</path>
-		<trans>отогрето</trans>
-	</rep>
-	<rep>
-		<path>Frostbite.comps[0].labelTreated</path>
-		<trans>плохо отогрето</trans>
-	</rep>
-	<rep>
-		<path>Frostbite.comps[0].labelTreatedWellInner</path>
-		<trans>обработано</trans>
-	</rep>
-	<rep>
-		<path>Frostbite.comps[0].labelTreatedInner</path>
-		<trans>плохо обработано</trans>
-	</rep>
-	<rep>
-		<path>Frostbite.comps[0].labelSolidTreatedWell</path>
-		<trans>обогрето</trans>
-	</rep>
-	<rep>
-		<path>Frostbite.comps[0].labelSolidTreated</path>
-		<trans>плохо обогрето</trans>
-	</rep>
-	<rep>
-		<path>Frostbite.comps[2].oldLabel</path>
-		<trans>Alte Erfrierung</trans>
-	</rep>
-	<Frostbite.injuryProps.destroyedLabel>Отморожено</Frostbite.injuryProps.destroyedLabel>
-	
-	
-<!-- 	<BrainDamage.label>Травма мозга</BrainDamage.label>
-	<rep>
-		<path>BrainDamage.comps[0].oldLabel</path>
-		<trans>Травма мозга</trans>
-	</rep>
-	<BrainDamage.injuryProps.destroyedLabel>Критическое повреждение</BrainDamage.injuryProps.destroyedLabel> -->
+  <Frostbite.label>обморожение</Frostbite.label>
+  <Frostbite.comps.0.labelTendedWell>отогрето</Frostbite.comps.0.labelTendedWell>
+  <Frostbite.comps.0.labelTendedWellInner>обработано</Frostbite.comps.0.labelTendedWellInner>
+  <Frostbite.comps.0.labelSolidTendedWell>обогрето</Frostbite.comps.0.labelSolidTendedWell>
+  <Frostbite.comps.2.oldLabel>шрам от обморожения</Frostbite.comps.2.oldLabel>
+  <Frostbite.injuryProps.destroyedLabel>отморожено</Frostbite.injuryProps.destroyedLabel>
 
-  <!-- Missing body part -->
+	<!-- Missing body part -->
 
-  <MissingBodyPart.label>недостающая часть тела</MissingBodyPart.label>
+	<MissingBodyPart.label>недостающая часть тела</MissingBodyPart.label>
 
 </LanguageData>

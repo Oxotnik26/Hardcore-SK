@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Norballo_Shirt</defName>
 		<label>Mundane Shirt</label>
 		<description>A very mundane shirt. Slightly warmer than most base clothing.</description>
@@ -17,6 +17,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>-1</Insulation_Heat>
@@ -25,7 +26,7 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.07</ArmorRating_Heat>
 			<ArmorRating_Electric>0.06</ArmorRating_Electric>
-			<Weight>0.7</Weight>
+			<Mass>0.7</Mass>
 			<Bulk>10</Bulk>
 			<WornWeight>0.7</WornWeight>
 			<WornBulk>5</WornBulk>
@@ -62,7 +63,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>MedievalArmor_Gambeson</defName>
 		<label>Gambeson</label>
 		<description>Also known as an aketon, padded jack, or arming doublet, this padded defensive jacket provides decent protection. It is meant to be paired with a mail hauberk or plate armor.</description>
@@ -79,6 +80,7 @@
 			<Component>6</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -87,7 +89,7 @@
 			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.07</ArmorRating_Heat>
 			<ArmorRating_Electric>0</ArmorRating_Electric>
-			<Weight>3</Weight>
+			<Mass>3</Mass>
 			<Bulk>10</Bulk>
 			<WornWeight>3</WornWeight>
 			<WornBulk>5</WornBulk>
@@ -124,7 +126,7 @@
 	</ThingDef>
 
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>MedievalTimes_Shirt_Tunic</defName>
 		<label>Medieval tunic</label>
 		<description>Medieval era shirt, stitched together with clearly visible leather laces.</description>
@@ -138,13 +140,14 @@
 		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
 			<Insulation_Cold>-7</Insulation_Cold>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
-			<Weight>2</Weight>
+			<Mass>2</Mass>
 			<Bulk>7</Bulk>
 			<WornWeight>2</WornWeight>
 			<WornBulk>3</WornBulk>
@@ -181,7 +184,7 @@
 	</ThingDef>
 
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>MedievalTimes_Tabbard</defName>
 		<label>Tabard</label>
 		<description>In battle sometimes it becomes necessary to distinguish friend from foe, that is where the tabard comes in. It is basically a flag that can be worn.</description>
@@ -195,13 +198,14 @@
 		</stuffCategories>
 		<costStuffCount>65</costStuffCount>
 		<statBases>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
 			<Insulation_Cold>-3</Insulation_Cold>
 			<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
-			<Weight>2</Weight>
+			<Mass>2</Mass>
 			<Bulk>7</Bulk>
 			<WornWeight>2</WornWeight>
 			<WornBulk>3</WornBulk>
@@ -238,7 +242,7 @@
 	</ThingDef>
 
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparel_BasicShirt</defName>
 		<label>T-Shirt</label>
 		<description>A simple piece of clothing worn on the body with short sleeves.</description>
@@ -254,6 +258,7 @@
 			<Component>3</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -262,7 +267,7 @@
 			<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.04</ArmorRating_Heat>
 			<ArmorRating_Electric>0.03</ArmorRating_Electric>
-			<Weight>0.3</Weight>
+			<Mass>0.3</Mass>
 			<Bulk>10</Bulk>
 			<WornWeight>0.3</WornWeight>
 			<WornBulk>5</WornBulk>
@@ -313,7 +318,7 @@
 	
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparel_CollarShirt</defName>
 		<label>Button-down Shirt</label>
 		<description>A nice looking collared shirt with buttons in front.</description>
@@ -330,6 +335,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -338,7 +344,7 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.04</ArmorRating_Heat>
 			<ArmorRating_Electric>0.05</ArmorRating_Electric>
-			<Weight>0.3</Weight>
+			<Mass>0.3</Mass>
 			<Bulk>10</Bulk>
 			<WornWeight>0.3</WornWeight>
 			<WornBulk>5</WornBulk>
@@ -388,7 +394,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparello_Urbulence</defName>
 		<label>Urban Shirt</label>
 		<description>All the punks felt lucky wearing these.</description>
@@ -405,6 +411,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -413,7 +420,7 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.06</ArmorRating_Heat>
 			<ArmorRating_Electric>0.08</ArmorRating_Electric>
-			<Weight>0.5</Weight>
+			<Mass>0.5</Mass>
 			<Bulk>10</Bulk>
 			<WornWeight>0.5</WornWeight>
 			<WornBulk>5</WornBulk>
@@ -500,7 +507,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Marine_TShirt</defName>
 		<label>Marine Shirt</label>
 		<description>A basic military T-shirt intended for marines.</description>
@@ -518,6 +525,7 @@
 			<SyntheticFibers>10</SyntheticFibers>
 		</CostList>
 		<statBases>
+			<WorkToMake>6000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -526,7 +534,7 @@
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.13</ArmorRating_Heat>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>0.3</Weight>
+			<Mass>0.3</Mass>
 			<Bulk>10</Bulk>
 			<WornWeight>0.3</WornWeight>
 			<WornBulk>5</WornBulk>
@@ -566,7 +574,7 @@
 	</ThingDef>
 
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparello_Tunic</defName>
 		<label>Tunic</label>
 		<description>A very sleek and skillfully crafted full body suit capable of protecting the wearer from formidable threats.</description>
@@ -583,6 +591,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>-3</Insulation_Heat>
@@ -591,7 +600,7 @@
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.02</ArmorRating_Heat>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>0.1</Weight>
+			<Mass>0.1</Mass>
 			<Bulk>13</Bulk>
 			<WornWeight>0.1</WornWeight>
 			<WornBulk>5</WornBulk>
@@ -635,7 +644,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparel_Scrubs</defName>
 		<label>Scrubs</label>
 		<description>Medical scrubs.</description>
@@ -653,6 +662,7 @@
 			<Medicine>2</Medicine>
 		</CostList>
 		<statBases>
+			<WorkToMake>9000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -661,7 +671,7 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.06</ArmorRating_Heat>
 			<ArmorRating_Electric>0.08</ArmorRating_Electric>
-			<Weight>0.5</Weight>
+			<Mass>0.5</Mass>
 			<Bulk>7</Bulk>
 			<WornWeight>0.5</WornWeight>
 			<WornBulk>3</WornBulk>
@@ -670,7 +680,7 @@
 			<CarryBulk>8</CarryBulk>
 			<MoveSpeed>-0.03</MoveSpeed>
 			<SurgerySuccessChance>0.20</SurgerySuccessChance>
-			<BaseHealingQuality>0.20</BaseHealingQuality>
+			<HealingQuality>0.20</HealingQuality>
 			<HealingSpeed>0.2</HealingSpeed>
 			<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
 		</equippedStatOffsets>

@@ -9,6 +9,7 @@
     <label>Warg</label>
     <description>Wargs are heavily-muscled wolf-like creatures. Scientists say Wargs are the descendants of weaponized military animals created for population suppression. The superstitious see them as the tools of an angry god.</description>
     <statBases>
+	  <Mass>60</Mass>
       <MoveSpeed>5.00</MoveSpeed>
       <ComfyTemperatureMin>-65</ComfyTemperatureMin>
       <MarketValue>1180</MarketValue>
@@ -19,7 +20,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
@@ -34,7 +35,7 @@
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
@@ -49,7 +50,7 @@
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>16</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -77,7 +78,7 @@
       <leatherColor>(128,128,128)</leatherColor>
       <leatherLabel>Warg Hide</leatherLabel>
       <leatherInsulation>1.5</leatherInsulation>
-      <leatherMarketValue>6.0</leatherMarketValue>
+      <leatherMarketValueFactor>6.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.1</MaxHitPoints>
         <Beauty>1.5</Beauty>
@@ -91,13 +92,12 @@
 		<WorkToMake>1.2</WorkToMake>
 		<BedRestEffectiveness>1.25</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>0.95</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <gestationPeriodDays>22.5</gestationPeriodDays>
       <wildness>0.65</wildness>
-      <manhunterOnTameFailChance>0.005</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0</manhunterOnDamageChance>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <nuzzleMtbHours>80</nuzzleMtbHours>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -129,6 +129,9 @@
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <hediffGiverSets>
+        <li>FuriousPassiveSet</li>
+      </hediffGiverSets>
     </race>
     <tradeTags>
       <li>StandardAnimal</li>
@@ -140,7 +143,7 @@
     <defName>Warg</defName>
     <label>Warg</label>
     <race>Warg</race>
-    <combatPower>110</combatPower>
+    <combatPower>195</combatPower>
     <lifeStages>
       <li>
         <label>warg puppy</label>
@@ -200,6 +203,7 @@
     <description>A large deformed beast with rows of quills on its back.
 The rim is a violent place and the dead are a common sight. But over the years, disturbing reports of ravaged corpses started to increase in surprising numbers, all gut-wrenching and skewered with spikes. Each dawn shedding light to the aftermath of the night before. The locals soon learned to fear the dark, and the nightmares within them.</description>
     <statBases>
+	  <Mass>50</Mass>
       <MoveSpeed>5.00</MoveSpeed>
       <ComfyTemperatureMin>-65</ComfyTemperatureMin>
 	  <MarketValue>980</MarketValue>
@@ -209,7 +213,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <defaultCooldownTime>1.6</defaultCooldownTime>
         <meleeDamageBaseAmount>16</meleeDamageBaseAmount>
         <meleeDamageDef>ToxicBite</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -223,7 +227,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
        </surpriseAttack></li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
@@ -238,7 +242,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
@@ -279,9 +283,9 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       <leatherLabel>Nightling fur</leatherLabel>
       <gestationPeriodDays>24</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
-	  <leatherMarketValue>2</leatherMarketValue>
+	  <leatherMarketValueFactor>2</leatherMarketValueFactor>
       <trainableIntelligence>Advanced</trainableIntelligence>
-      <leatherMarketValue>7.0</leatherMarketValue>
+      <leatherMarketValueFactor>7.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.2</MaxHitPoints>
         <Beauty>1.1</Beauty>
@@ -295,13 +299,12 @@ The rim is a violent place and the dead are a common sight. But over the years, 
 		<WorkToMake>1.2</WorkToMake>
 		<BedRestEffectiveness>1.25</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>0.9</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <leatherInsulation>1.5</leatherInsulation>
       <wildness>0.7</wildness>
-      <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0</manhunterOnDamageChance>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <nuzzleMtbHours>70</nuzzleMtbHours>
 	  <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -333,6 +336,9 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <hediffGiverSets>
+        <li>FuriousPassiveSet</li>
+      </hediffGiverSets>
     </race>
     <tradeTags>
       <li>StandardAnimal</li>
@@ -345,7 +351,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
     <defName>Nightling</defName>
     <label>Nightling</label>
     <race>Nightling</race>
-    <combatPower>100</combatPower>
+    <combatPower>185</combatPower>
     <lifeStages>
       <li>
         <label>Nightling Cup</label>
@@ -403,6 +409,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
     <label>Feathered Raptor</label>
     <description>Quiet, cunning, elegant and ruthless, these reptile species were originally developed to resolve an increasing warg population problem. Someone quickly realized that adding another alpha predator doesn't help an already broken ecosystem, and the project was cancelled. Scientists then started a new development project that was aimed at making raptors the pets of rich people. Because of that, these raptors now have colorful feathers.</description>
     <statBases>
+	  <Mass>160</Mass>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
@@ -417,7 +424,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>LeftLegClaws</linkedBodyPartsGroup>
@@ -432,7 +439,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>14</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>RightLegClaws</linkedBodyPartsGroup>
@@ -447,7 +454,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>14</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
@@ -462,7 +469,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>14</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
@@ -477,7 +484,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>120</defaultCooldownTicks>
+        <defaultCooldownTime>1.8</defaultCooldownTime>
         <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -509,12 +516,12 @@ The rim is a violent place and the dead are a common sight. But over the years, 
 	  <body>RaptorLike</body>
       <baseBodySize>1.9</baseBodySize>
       <baseHungerRate>1.7</baseHungerRate>
-      <baseHealthScale>3.8</baseHealthScale>
+      <baseHealthScale>3.2</baseHealthScale>
       <foodType>CarnivoreAnimal, CarnivoreAnimalStrict</foodType>
 	  <meatLabel>Feathered Raptor Meat</meatLabel>
       <leatherColor>(138,80,154)</leatherColor>
       <leatherLabel>Feathered Raptor Leather</leatherLabel>
-      <leatherMarketValue>15.0</leatherMarketValue>
+      <leatherMarketValueFactor>15.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.5</MaxHitPoints>
         <Beauty>1.3</Beauty>
@@ -528,15 +535,14 @@ The rim is a violent place and the dead are a common sight. But over the years, 
 		<WorkToMake>1.8</WorkToMake>
 		<BedRestEffectiveness>1.05</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>1.05</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <leatherInsulation>1.5</leatherInsulation>
       <gestationPeriodDays>24</gestationPeriodDays>
       <wildness>0.9</wildness>
       <petness>0</petness>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
-      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+      <nuzzleMtbHours>140</nuzzleMtbHours>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -568,6 +574,9 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <hediffGiverSets>
+        <li>FuriousPassiveSet</li>
+      </hediffGiverSets>
     </race>
   </ThingDef>
 
@@ -575,7 +584,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
     <defName>FRaptor</defName>
     <label>Raptor</label>
     <race>FRaptor</race>
-    <combatPower>170</combatPower>
+    <combatPower>400</combatPower>
     <lifeStages>
       <li>
         <label>Baby raptor</label>
@@ -629,10 +638,11 @@ The rim is a violent place and the dead are a common sight. But over the years, 
   
 
   <ThingDef ParentName="AnimalThingBase">
-    <defName>Fenrir</defName>
-    <label>Fenrir</label>
-    <description>Gigantic, monstrous wolf-like creatures. Theories differ as to the origin of the Fenrir, although clearly it is related somehow to the more common warg. Perhaps they mutated from the common stock due to radioactive fallout, or perhaps they were intentionally created by some insane glitterworld geneticist. At ease in even the coldest environments, these terrifying beasts predate on human colonies and have an insatiable hunger for flesh.  Superstitious tribals view them as proof that that not only is there a god, but it actively hates us. They are even harder to tame and train than their smaller cousins, and are prone to violence if attacked.</description>
+    <defName>Barghest</defName>
+    <label>barghest</label>
+    <description>A ghostly hound of lore, the sight of it is rumoured to foretell one's death.</description>
     <statBases>
+	  <Mass>310</Mass>
       <MoveSpeed>6</MoveSpeed>
       <ComfyTemperatureMin>-278</ComfyTemperatureMin>
       <ComfyTemperatureMax>30</ComfyTemperatureMax>
@@ -644,10 +654,11 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       <ArmorRating_Sharp>0.27</ArmorRating_Sharp>
 	  <ArmorPenetration>0.8</ArmorPenetration>
     </statBases>
+	<tickerType>Normal</tickerType>
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>70</defaultCooldownTicks>
+        <defaultCooldownTime>1.25</defaultCooldownTime>
         <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
@@ -662,7 +673,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>70</defaultCooldownTicks>
+        <defaultCooldownTime>1.25</defaultCooldownTime>
         <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
@@ -677,7 +688,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>25</meleeDamageBaseAmount>
         <meleeDamageDef>Frostbite</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -692,12 +703,8 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
     </verbs>
 	<comps>
-      <li Class="CompProperties_Glower">
-        <glowRadius>6</glowRadius>
-        <glowColor>(175,238,238,0)</glowColor>
-      </li>
-      <li Class="Fluffy.CompPropertiesSnow">
-        <compClass>Fluffy.CompSnow</compClass>
+      <li Class="SK.CompPropertiesSnow">
+        <compClass>SK.CompSnow</compClass>
         <heatSuckMinTemperature>-10</heatSuckMinTemperature>
         <coldPerSecond>50</coldPerSecond>
         <snowRadius>4</snowRadius>
@@ -715,11 +722,11 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       <petness>0</petness>
       <nameGenerator>NamerAnimalGeneric</nameGenerator>
       <trainableIntelligence>Advanced</trainableIntelligence>
-	  <meatLabel>Fenrir Meat</meatLabel>
+	  <meatLabel>Barghest Meat</meatLabel>
       <leatherColor>(220,220,220)</leatherColor>
-      <leatherLabel>Fenrir Fur</leatherLabel>
+      <leatherLabel>Barghest Fur</leatherLabel>
       <leatherInsulation>1.5</leatherInsulation>
-      <leatherMarketValue>8.0</leatherMarketValue>
+      <leatherMarketValueFactor>8.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.5</MaxHitPoints>
         <Beauty>1.6</Beauty>
@@ -733,11 +740,10 @@ The rim is a violent place and the dead are a common sight. But over the years, 
 		<WorkToMake>1.7</WorkToMake>
 		<BedRestEffectiveness>1.2</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1.14</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>1.1</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <gestationPeriodDays>22</gestationPeriodDays>
       <wildness>0.95</wildness>
-      <manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <litterSizeCurve>
@@ -771,20 +777,23 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <hediffGiverSets>
+        <li>FuriousPassiveSet</li>
+      </hediffGiverSets>
     </race>
   </ThingDef>
   
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Fenrir</defName>
-    <label>Fenrir</label>
-    <race>Fenrir</race>
-    <combatPower>400</combatPower>
+    <defName>Barghest</defName>
+    <label>Barghest</label>
+    <race>Barghest</race>
+    <combatPower>550</combatPower>
     <lifeStages>
       <li>
-        <label>Fenrir Puppy</label>
+        <label>Barghest Puppy</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+          <texPath>Things/Pawn/Animal/Barghest/barghest</texPath>
           <drawSize>1.7</drawSize>
           <color>(220,220,220)</color>
         </bodyGraphicData>
@@ -795,7 +804,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+          <texPath>Things/Pawn/Animal/Barghest/barghest</texPath>
           <drawSize>2.7</drawSize>
           <color>(220,220,220)</color>
           <shadowData>
@@ -810,7 +819,7 @@ The rim is a violent place and the dead are a common sight. But over the years, 
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+          <texPath>Things/Pawn/Animal/Barghest/barghest</texPath>
           <drawSize>3.5</drawSize>
           <color>(220,220,220)</color>
           <shadowData>

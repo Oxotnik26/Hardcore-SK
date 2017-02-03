@@ -8,6 +8,7 @@
     <label>Chicken</label>
     <description>Being the most traditional domesticated farm bird, the Chicken is raised for its eggs and meat.</description>
     <statBases>
+	  <Mass>3</Mass>
       <MoveSpeed>2.1</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <MarketValue>110</MarketValue>
@@ -17,7 +18,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <defaultCooldownTime>1.6</defaultCooldownTime>
         <meleeDamageBaseAmount>2</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
@@ -103,9 +104,8 @@
       <li>
         <labelMale>cockerel</labelMale>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Chicken/Chicken</texPath>
-          <drawSize>0.75</drawSize>
-          <color>(200,150,85)</color>
+          <texPath>Things/Pawn/Animal/Junglefowl</texPath>
+          <drawSize>0.86</drawSize>
         </bodyGraphicData>
         <femaleGraphicData>
           <texPath>Things/Pawn/Animal/Chicken/Chicken</texPath>
@@ -118,9 +118,8 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Chicken/Chicken</texPath>
-          <drawSize>0.87</drawSize>
-          <color>(200,150,85)</color>
+          <texPath>Things/Pawn/Animal/Junglefowl</texPath>
+          <drawSize>1</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.05)</offset>
@@ -144,6 +143,7 @@
     <label>Pig</label>
     <description>The Pig was one of the first animals domesticated by humans. It is commonly raised for meat and leather. While capable of being an omnivore, domesticated Pigs are raised as herbivores.</description>
     <statBases>
+	  <Mass>30</Mass>
       <MoveSpeed>3.6</MoveSpeed>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
       <MarketValue>310</MarketValue>
@@ -152,7 +152,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>6</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -167,7 +167,7 @@
       <leatherColor>(201,167,135)</leatherColor>
       <leatherLabel>Pig Hide</leatherLabel>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
-      <leatherMarketValue>5.0</leatherMarketValue>
+      <leatherMarketValueFactor>5.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.1</MaxHitPoints>
         <Beauty>0.8</Beauty>
@@ -181,8 +181,8 @@
 		<WorkToMake>1.15</WorkToMake>
 		<BedRestEffectiveness>0.95</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>0.95</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
+      <nuzzleMtbHours>80</nuzzleMtbHours>
       <wildness>0.07</wildness>
       <trainableIntelligence>Advanced</trainableIntelligence>
       <meatLabel>Pork</meatLabel>
@@ -310,6 +310,7 @@
     <label>Cow</label>
     <description>A Cow is a large, common domestic animal. It can produce large amounts of milk, or can be slaughtered for delicious meat called beef.</description>
     <statBases>
+	  <Mass>120</Mass>
       <MoveSpeed>3.15</MoveSpeed>
       <ComfyTemperatureMin>-14</ComfyTemperatureMin>
       <MarketValue>830</MarketValue>
@@ -318,14 +319,14 @@
     <comps>
         <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
-        <milkIntervalDays>1</milkIntervalDays>
-        <milkAmount>16</milkAmount>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>36</milkAmount>
       </li>
     </comps>
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -342,7 +343,7 @@
       <leatherInsulation>1.4</leatherInsulation>
       <gestationPeriodDays>50</gestationPeriodDays>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
-      <leatherMarketValue>5.0</leatherMarketValue>
+      <leatherMarketValueFactor>5.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.0</MaxHitPoints>
         <Beauty>1</Beauty>
@@ -356,10 +357,9 @@
 		<WorkToMake>1.2</WorkToMake>
 		<BedRestEffectiveness>1</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>1</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <wildness>0.05</wildness>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <nuzzleMtbHours>80</nuzzleMtbHours>
       <trainableIntelligence>Intermediate</trainableIntelligence>
       <meatLabel>Cow Beef</meatLabel>
       <litterSizeCurve>
@@ -402,7 +402,7 @@
     <defName>Cow</defName>
     <label>cow</label>
     <race>Cow</race>
-    <combatPower>55</combatPower>
+    <combatPower>75</combatPower>
     <wildSpawn_EcoSystemWeight>0.5</wildSpawn_EcoSystemWeight>
     <wildSpawn_spawnWild>false</wildSpawn_spawnWild>
     <labelMale>bull</labelMale>
@@ -490,6 +490,7 @@
     <label>Alpaca</label>
     <description>A medium-sized ungulate closely related to the llama, the Alpaca is often farmed for its remarkably soft wool.</description>
     <statBases>
+	  <Mass>90</Mass>
       <MoveSpeed>3.8</MoveSpeed>
       <ComfyTemperatureMin>-18</ComfyTemperatureMin>
       <MarketValue>630</MarketValue>
@@ -499,14 +500,14 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
@@ -516,7 +517,7 @@
         <li Class="CompProperties_Shearable">
         <woolDef>AlpacaWool</woolDef>
         <shearIntervalDays>15</shearIntervalDays>
-        <woolAmount>140</woolAmount>
+        <woolAmount>60</woolAmount>
       </li>
     </comps>
     <race>
@@ -530,7 +531,7 @@
       <leatherColor>(237,216,174)</leatherColor>
       <leatherLabel>Alpaca Leather</leatherLabel>
       <leatherInsulation>1.3</leatherInsulation>
-      <leatherMarketValue>4.0</leatherMarketValue>
+      <leatherMarketValueFactor>4.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>0.9</MaxHitPoints>
         <Beauty>1.3</Beauty>
@@ -544,11 +545,10 @@
 		<WorkToMake>1.15</WorkToMake>
 		<BedRestEffectiveness>1.2</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>1</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
       <wildness>0.1</wildness>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <nuzzleMtbHours>70</nuzzleMtbHours>
       <gestationPeriodDays>45</gestationPeriodDays>
       <litterSizeCurve>
         <points>

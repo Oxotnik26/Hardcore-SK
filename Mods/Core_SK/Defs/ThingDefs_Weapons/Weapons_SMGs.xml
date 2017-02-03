@@ -31,7 +31,7 @@
 			<SwayFactor>1.16</SwayFactor>
 			<RangedWeapon_Cooldown>0.23</RangedWeapon_Cooldown>
 			<Bulk>2.10</Bulk>
-			<Weight>1.00</Weight>
+			<Mass>1.00</Mass>
 		</statBases>
 		<verbs>
 		  <li Class="Combat_Realism.VerbPropertiesCR">
@@ -40,7 +40,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
-			<warmupTicks>45</warmupTicks>
+			<warmupTime>0.45</warmupTime>
 			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 			<burstShotCount>6</burstShotCount>
 			<range>26</range>
@@ -60,6 +60,9 @@
 			<magazineSize>20</magazineSize>
 			<reloadTicks>210</reloadTicks>
 			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(-0.175,0.3,-0.1)</MainHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -86,7 +89,7 @@
 			<SwayFactor>1.3</SwayFactor>
 			<RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
 			<Bulk>5.44</Bulk>
-			<Weight>3.50</Weight>
+			<Mass>3.50</Mass>
 		</statBases>
     <weaponTags>
       <li>Gun</li>
@@ -108,7 +111,7 @@
 			<projectileDef>Bullet_40Rimfire_FMJ</projectileDef>
 			<burstShotCount>5</burstShotCount>
 			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-			<warmupTicks>55</warmupTicks>
+			<warmupTime>0.55</warmupTime>
 			<range>30</range>
 			<soundCast>RF_ShotGreaseGun</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
@@ -127,6 +130,10 @@
 			<reloadTicks>210</reloadTicks>
 			<ammoSet>AmmoSet_40Rimfire</ammoSet>
 		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.225,0.3,-0.1)</MainHand>
+				<SecHand>(0.1125,0,-0.05)</SecHand>
+		  </li>
 		</comps>
     <smeltProducts>
       <SMG_Component>1</SMG_Component>
@@ -136,11 +143,11 @@
   
   
   <ThingDef ParentName="BaseGunCR">
-    <defName>Gun_PDW</defName>
+    <defName>Gun_MachinePistol</defName>
     <label>Uzi</label>
-    <description>A personal defense weapon is a micro-submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</description>
-    <graphicData>
-    <texPath>Things/Item/Equipment/WeaponRanged/PDW</texPath>
+	<description>A micro-submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</description>
+	<graphicData>
+	<texPath>Things/Weapons/Uzi</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>InteractSMG</soundInteract>
@@ -151,7 +158,7 @@
 	  <SwayFactor>1.55</SwayFactor>
       <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 	  <Bulk>5.14</Bulk>
-	  <Weight>2.70</Weight>
+	  <Mass>2.70</Mass>
     </statBases>
     <weaponTags>
     <li>Gun</li>
@@ -171,11 +178,11 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
-        <warmupTicks>45</warmupTicks>
+        <warmupTime>0.45</warmupTime>
         <range>25</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <soundCast>ShotPDW</soundCast>
+        <soundCast>ShotMachinePistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -192,6 +199,9 @@
 			<reloadTicks>215</reloadTicks>
 			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
 		</li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(0,0.3,-0.2)</MainHand>
+		  </li>
     </comps>
     <smeltProducts>
       <SMG_Component>1</SMG_Component>
@@ -217,7 +227,7 @@
 			<SwayFactor>1.1</SwayFactor>
 			<RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
 			<Bulk>4.54</Bulk>
-			<Weight>2.90</Weight>
+			<Mass>2.90</Mass>
 		</statBases>
     <weaponTags>
       <li>Gun</li>
@@ -239,7 +249,7 @@
 			<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
 			<burstShotCount>6</burstShotCount>
 			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-			<warmupTicks>34</warmupTicks>
+			<warmupTime>0.34</warmupTime>
 			<range>25</range>
 			<soundCast>RF_ShotTMP</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
@@ -257,6 +267,10 @@
 			<magazineSize>28</magazineSize>
 			<reloadTicks>220</reloadTicks>
 			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(-0.15,0.3,-0.15)</MainHand>
+			<SecHand>(0.15,0,-0.15)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -283,7 +297,7 @@
 			<SwayFactor>1.30</SwayFactor>
 			<RangedWeapon_Cooldown>0.28</RangedWeapon_Cooldown>
 			<Bulk>4.34</Bulk>
-			<Weight>3.30</Weight>
+			<Mass>3.30</Mass>
 		</statBases>
     <weaponTags>
       <li>Gun</li>
@@ -305,7 +319,7 @@
 			<projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
 			<burstShotCount>6</burstShotCount>
 			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-			<warmupTicks>32</warmupTicks>
+			<warmupTime>0.32</warmupTime>
 			<range>30</range>
 			<soundCast>RF_ShotSkorpion</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
@@ -323,6 +337,10 @@
 			<magazineSize>30</magazineSize>
 			<reloadTicks>215</reloadTicks>
 			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(-0.25,0.3,-0.1)</MainHand>
+			<SecHand>(0.075,0,-0.1)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -351,7 +369,7 @@
 			<SwayFactor>1.25</SwayFactor>
 			<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
 			<Bulk>4.24</Bulk>
-			<Weight>3.50</Weight>
+			<Mass>3.50</Mass>
 		</statBases>
     <weaponTags>
       <li>Gun</li>
@@ -373,7 +391,7 @@
 			<projectileDef>Bullet_45ACP_FMJ</projectileDef>
 			<burstShotCount>5</burstShotCount>
 			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-			<warmupTicks>45</warmupTicks>
+			<warmupTime>0.45</warmupTime>
 			<range>28</range>
 			<soundCast>RF_ShotVector</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
@@ -391,6 +409,10 @@
 			<magazineSize>25</magazineSize>
 			<reloadTicks>225</reloadTicks>
 			<ammoSet>AmmoSet_45ACP</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(-0.3,0.3,-0.075)</MainHand>
+			<SecHand>(0.075,0,-0.025)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -418,7 +440,7 @@
 		<SwayFactor>1.45</SwayFactor>
 		<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
 		<Bulk>5.44</Bulk>
-		<Weight>3.50</Weight>
+		<Mass>3.50</Mass>
     </statBases>
     <weaponTags>
     <li>AdvancedGun</li>
@@ -438,7 +460,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_9x19mmPara_FMJ</projectileDef>
-        <warmupTicks>40</warmupTicks>
+        <warmupTime>0.40</warmupTime>
         <range>28</range>
         <burstShotCount>8</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -458,6 +480,10 @@
 			<magazineSize>30</magazineSize>
 			<reloadTicks>225</reloadTicks>
 			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(-0.0825,0.3,-0.1)</MainHand>
+			<SecHand>(0.3,0,-0.075)</SecHand>
 		  </li>
     </comps>
     <smeltProducts>
@@ -484,7 +510,7 @@
 		<SwayFactor>1.1</SwayFactor>
 		<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
 		<Bulk>5.14</Bulk>
-		<Weight>3.30</Weight>
+		<Mass>3.30</Mass>
     </statBases>
     <weaponTags>
     <li>AdvancedGun</li>
@@ -504,7 +530,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_45ACP_FMJ</projectileDef>
-			<warmupTicks>55</warmupTicks>
+			<warmupTime>0.55</warmupTime>
 			<range>30</range>
 			<burstShotCount>5</burstShotCount>
 			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -524,6 +550,10 @@
 			<magazineSize>25</magazineSize>
 			<reloadTicks>220</reloadTicks>
 			<ammoSet>AmmoSet_45ACP</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(-0.0825,0.3,-0.1)</MainHand>
+			<SecHand>(0.3,0,-0.075)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -551,7 +581,7 @@
 		<SwayFactor>1.45</SwayFactor>
 		<RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
 		<Bulk>5.25</Bulk>
-		<Weight>3.10</Weight>
+		<Mass>3.10</Mass>
     </statBases>
     <weaponTags>
       <li>Gun</li>
@@ -571,7 +601,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_40Rimfire_FMJ</projectileDef>
-			<warmupTicks>50</warmupTicks>
+			<warmupTime>0.50</warmupTime>
 			<range>30</range>
 			<burstShotCount>6</burstShotCount>
 			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
@@ -591,6 +621,9 @@
 			<magazineSize>30</magazineSize>
 			<reloadTicks>220</reloadTicks>
 			<ammoSet>AmmoSet_40Rimfire</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+			<MainHand>(-0.2,0.3,-0.1)</MainHand>
 		  </li>
 		</comps>
     <smeltProducts>

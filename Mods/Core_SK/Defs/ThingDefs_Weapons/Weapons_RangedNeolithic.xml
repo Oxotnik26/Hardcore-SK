@@ -41,7 +41,45 @@
     </comps>
   </ThingDef>
 
-
+  <ThingDef Name="RangedWeaponNeoliticBase" ParentName="BaseWeaponNeolithic" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+		 <li>CraftingSpot</li>
+      </recipeUsers>
+		<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>1</minLevel>
+		</li>
+		</skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef Name="RangedWeaponMedievalBase" ParentName="BaseWeaponNeolithic" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+		<skillRequirements>
+		<li>
+			<skill>Crafting</skill>
+			<minLevel>5</minLevel>
+		</li>
+		</skillRequirements>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
   <ThingDef Name="BaseProjectileNeolithic" Abstract="True">
     <category>Projectile</category>
     <tickerType>Normal</tickerType>
@@ -59,7 +97,7 @@
   
   <!-- ========================== SPECIFICS ============================== -->
 
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponNeoliticBase">
     <defName>Bow_Short</defName>
     <label>Short Bow</label>
     <description>A simple short bow. It was made with skill from primitive technology.</description>
@@ -73,12 +111,12 @@
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
     <statBases>
-      <MarketValue>60</MarketValue>
+	  <WorkToMake>4000</WorkToMake>
       <AimEfficiency>0.5</AimEfficiency>
       <ShotSpread>2</ShotSpread>
       <SwayFactor>1</SwayFactor>
       <Bulk>3.00</Bulk>
-      <Weight>2.00</Weight>
+      <Mass>2.00</Mass>
       <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
     </statBases>
 	<tradeability>Sellable</tradeability>
@@ -91,7 +129,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Projectile_Arrow_Stone</projectileDef>
-        <warmupTicks>36</warmupTicks>
+        <warmupTime>0.36</warmupTime>
         <range>16</range>
         <soundCast>BowSmall</soundCast>
       </li>
@@ -107,6 +145,10 @@
 		<aiUseBurstMode>false</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.1,0.3,0)</MainHand>
+				<SecHand>(0.1,0,0.02)</SecHand>
+		  </li>
     </comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.05</MoveSpeed>
@@ -118,7 +160,7 @@
   </ThingDef>
  
  
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponNeoliticBase">
     <defName>Pila</defName>
     <label>Pila</label>
     <description>A bundle of pila. It is a type of non-reusable throwing spears.</description>
@@ -136,12 +178,12 @@
 			<SteelBar>1</SteelBar>
 		</CostList>
     <statBases>
-      <MarketValue>4</MarketValue>
+	  <WorkToMake>500</WorkToMake>
       <AimEfficiency>0.25</AimEfficiency>
       <ShotSpread>2.5</ShotSpread>
       <SwayFactor>1.5</SwayFactor>
       <Bulk>4.00</Bulk>
-      <Weight>3.00</Weight>
+      <Mass>3.00</Mass>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>30</equippedAngleOffset>
@@ -154,7 +196,7 @@
         <verbClass>Combat_Realism.Verb_ShootCROneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Pilum_Thrown</projectileDef>
-        <warmupTicks>70</warmupTicks>
+        <warmupTime>0.70</warmupTime>
         <range>12.9</range>
         <soundCast>Interact_BeatFire</soundCast>
       </li>
@@ -164,6 +206,9 @@
 		<aiUseBurstMode>false</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.25,0.3,0)</MainHand>
+		  </li>
 	</comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.14</MoveSpeed>
@@ -175,7 +220,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponNeoliticBase">
     <defName>Bow_Great</defName>
     <label>Great Bow</label>
     <description>A powerful great bow. It fires a heavy arrow over long distances.</description>
@@ -184,7 +229,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>BowLarge</soundInteract>
-<tradeability>Sellable</tradeability>			
+	<tradeability>Sellable</tradeability>			
 		<stuffCategories>
 			<li>WoodLogs</li>
 		</stuffCategories>
@@ -193,12 +238,12 @@
 			<SteelBar>10</SteelBar>
 		</CostList>
     <statBases>
-      <MarketValue>160</MarketValue>
+	  <WorkToMake>5000</WorkToMake>
       <AimEfficiency>0.7</AimEfficiency>
       <ShotSpread>2</ShotSpread>
       <SwayFactor>1</SwayFactor>
       <Bulk>5.00</Bulk>
-      <Weight>2.00</Weight>
+      <Mass>2.00</Mass>
       <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -211,7 +256,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Projectile_Arrow_Stone</projectileDef>
-        <warmupTicks>45</warmupTicks>
+        <warmupTime>0.45</warmupTime>
         <range>20</range>
         <soundCast>BowLarge</soundCast>
       </li>
@@ -227,6 +272,10 @@
 		<aiUseBurstMode>false</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.1,0.3,0)</MainHand>
+				<SecHand>(0.1,0,0.02)</SecHand>
+		  </li>
 	</comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.065</MoveSpeed>
@@ -237,7 +286,7 @@
     </thingCategories>
   </ThingDef>
   
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponMedievalBase">
     <defName>Norbal_Scorpion</defName>
     <label>Scorpion Crossbow</label>
     <description>Fearsome crossbow. Deadly but slow.</description>
@@ -254,11 +303,12 @@
 			<SteelBar>10</SteelBar>
 		</CostList>
     <statBases>
+		  <WorkToMake>6000</WorkToMake>
 		  <AimEfficiency>0.7</AimEfficiency>
 		  <ShotSpread>2.5</ShotSpread>
 		  <SwayFactor>1.17</SwayFactor>
 		  <Bulk>4.50</Bulk>
-		  <Weight>3.30</Weight>
+		  <Mass>3.30</Mass>
 		  <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -271,7 +321,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Projectile_MetallicBolt</projectileDef>
-        <warmupTicks>85</warmupTicks>
+        <warmupTime>0.85</warmupTime>
         <range>24</range>
         <SoundCast>Interact_BeatFire</SoundCast>
       </li>
@@ -287,6 +337,10 @@
 		<aiUseBurstMode>false</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.3,0.3,-0.05)</MainHand>
+				<SecHand>(0.25,0,-0.05)</SecHand>
+		  </li>
 	</comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.09</MoveSpeed>
@@ -299,7 +353,7 @@
   
 
   
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponMedievalBase">
     <defName>Arbalest</defName>
     <label>Balestra</label>
     <description></description>
@@ -316,11 +370,12 @@
 			<SteelBar>15</SteelBar>
 		</CostList>
     <statBases>
+		  <WorkToMake>7500</WorkToMake>
 		  <AimEfficiency>0.60</AimEfficiency>
 		  <ShotSpread>2.5</ShotSpread>
 		  <SwayFactor>1.14</SwayFactor>
 		  <Bulk>4.50</Bulk>
-		  <Weight>3.30</Weight>
+		  <Mass>3.30</Mass>
 		  <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -332,7 +387,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Projectile_MetallicBolt</projectileDef>
-        <warmupTicks>100</warmupTicks>
+        <warmupTime>1.00</warmupTime>
         <range>29</range>
         <SoundCast>Interact_BeatFire</SoundCast>
       </li>
@@ -348,6 +403,10 @@
 		<aiUseBurstMode>false</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.3,0.3,-0.05)</MainHand>
+				<SecHand>(0.25,0,-0.05)</SecHand>
+		  </li>
 	</comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.11</MoveSpeed>
@@ -360,7 +419,7 @@
   
   
 
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponMedievalBase">
     <defName>Crossbow</defName>
     <label>Crossbow</label>
     <description></description>
@@ -377,11 +436,12 @@
 			<SteelBar>20</SteelBar>
 		</CostList>
     <statBases>
+		  <WorkToMake>7000</WorkToMake>
 		  <AimEfficiency>0.73</AimEfficiency>
 		  <ShotSpread>2.5</ShotSpread>
 		  <SwayFactor>1.12</SwayFactor>
 		  <Bulk>4.50</Bulk>
-		  <Weight>3.30</Weight>
+		  <Mass>3.30</Mass>
 		  <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -394,7 +454,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Projectile_MetallicBolt</projectileDef>
-        <warmupTicks>90</warmupTicks>
+        <warmupTime>0.90</warmupTime>
         <range>25</range>
         <SoundCast>Interact_BeatFire</SoundCast>
       </li>
@@ -410,6 +470,10 @@
 		<aiUseBurstMode>false</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.3,0.3,-0.05)</MainHand>
+				<SecHand>(0.25,0,-0.05)</SecHand>
+		  </li>
 	</comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.12</MoveSpeed>
@@ -421,7 +485,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponMedievalBase">
     <defName>RecurveBow</defName>
     <label>Recurve Bow</label>
     <description></description>
@@ -435,11 +499,12 @@
 		</stuffCategories>
 		<costStuffCount>62</costStuffCount>
     <statBases>
+		  <WorkToMake>7000</WorkToMake>
 		  <AimEfficiency>0.6</AimEfficiency>
 		  <ShotSpread>2.1</ShotSpread>
 		  <SwayFactor>1</SwayFactor>
 		  <Bulk>4.50</Bulk>
-		  <Weight>1.30</Weight>
+		  <Mass>1.30</Mass>
 		  <RangedWeapon_Cooldown>0.30</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -456,7 +521,7 @@
         <projectileDef>Projectile_Arrow_Stone</projectileDef>
         <burstShotCount>2</burstShotCount>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-        <warmupTicks>30</warmupTicks>
+        <warmupTime>0.30</warmupTime>
         <range>21</range>
         <soundCast>BowLarge</soundCast>
       </li>
@@ -472,6 +537,10 @@
 		<aiUseBurstMode>false</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.1,0.3,0)</MainHand>
+				<SecHand>(0.1,0,0.02)</SecHand>
+		  </li>
 	</comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.08</MoveSpeed>
@@ -483,7 +552,7 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef ParentName="RangedWeaponMedievalBase">
     <defName>NorbalBow_Grape</defName>
     <label>Scythian Bow</label>
     <description>A powerful scythian bow. Fires a heavy arrow long distances.</description>
@@ -497,11 +566,12 @@
 		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
     <statBases>
+		  <WorkToMake>7500</WorkToMake>
 		  <AimEfficiency>0.55</AimEfficiency>
 		  <ShotSpread>2.25</ShotSpread>
 		  <SwayFactor>1.3</SwayFactor>
 		  <Bulk>4.50</Bulk>
-		  <Weight>1.30</Weight>
+		  <Mass>1.30</Mass>
 		  <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -519,7 +589,7 @@
         <projectileDef>Projectile_Arrow_Stone</projectileDef>
         <burstShotCount>2</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <warmupTicks>32</warmupTicks>
+        <warmupTime>0.32</warmupTime>
         <range>22</range>
         <soundCast>BowLarge</soundCast>
       </li>
@@ -535,10 +605,77 @@
 		<aiUseBurstMode>TRUE</aiUseBurstMode>
 		<aiUseAimMode>false</aiUseAimMode>
 	  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.1,0.3,0)</MainHand>
+				<SecHand>(0.1,0,0.02)</SecHand>
+		  </li>
 	</comps>
     <equippedStatOffsets>
       <MoveSpeed>-0.07</MoveSpeed>
       <WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>BowRanged</li>
+    </thingCategories>
+  </ThingDef>
+  
+  
+  <!-- ========================== SPECIFICS ============================== -->
+
+  <ThingDef ParentName="RangedWeaponNeoliticBase">
+    <defName>blowgun</defName>
+    <label>blowgun</label>
+    <description>A blowgun with a set of poison darts.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Blowgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BowSmall</soundInteract>			
+		<stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<CostList>
+			<HerbalMedicine>5</HerbalMedicine>
+		</CostList>
+    <statBases>
+	  <WorkToMake>2500</WorkToMake>
+      <AimEfficiency>0.75</AimEfficiency>
+      <ShotSpread>1.5</ShotSpread>
+      <SwayFactor>1</SwayFactor>
+      <Bulk>0.90</Bulk>
+      <Mass>0.40</Mass>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+	<tradeability>Sellable</tradeability>
+    <weaponTags>
+      <li>NeolithicRanged</li>
+    </weaponTags>
+    <verbs>
+      <li Class="Combat_Realism.VerbPropertiesCR">
+        <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>PoisonDart</projectileDef>
+        <warmupTime>0.75</warmupTime>
+        <range>12</range>
+        <soundCast>BlowgunFiring</soundCast>
+      </li>
+    </verbs>
+    <comps>
+	  <li Class="Combat_Realism.CompProperties_AmmoUser">
+	    <magazineSize>10</magazineSize>
+		<reloadTicks>250</reloadTicks>
+		<ammoSet>AmmoSet_Darts</ammoSet>
+		<throwMote>false</throwMote>
+	  </li>
+	  <li Class="Combat_Realism.CompProperties_FireModes">
+		<aiUseBurstMode>false</aiUseBurstMode>
+		<aiUseAimMode>false</aiUseAimMode>
+	  </li>
+    </comps>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
     </equippedStatOffsets>
     <thingCategories>
       <li>BowRanged</li>

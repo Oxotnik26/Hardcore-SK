@@ -1,24 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PawnKindDefs>
 
-  
-	<PawnKindDef Name="NorbalWarrior">
-	<defName>NorbalWarrior</defName>
-	<label>Warmonger</label>
+  <PawnKindDef Name="NorbalBase" Abstract="True">
 	<race>Norbal</race>
-    <combatPower>85</combatPower>
     <defaultFactionType>NorbalTribe</defaultFactionType>
-	<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <baseRecruitDifficulty>0.70</baseRecruitDifficulty>
 	<backstoryCategory>Tribal</backstoryCategory>
-    <isFighter>true</isFighter>
-    <invNutrition>1.5</invNutrition>
+    <chemicalAddictionChance>0.17</chemicalAddictionChance>
+    <invNutrition>1.55</invNutrition>
+    <invFoodDef>MealJerky</invFoodDef>
+    <itemQuality>Normal</itemQuality>
 	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
     <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
-    <maxGenerationAge>40</maxGenerationAge>
+    <maxGenerationAge>45</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.8</max>
     </gearHealthRange>
+  </PawnKindDef>
+  
+	<PawnKindDef Name="NorbalWarrior" ParentName="NorbalBase">
+	<defName>NorbalWarrior</defName>
+	<label>Warmonger</label>
+    <combatPower>100</combatPower>
+    <isFighter>true</isFighter>
 		<apparelMoney>
 			<min>760</min>
 			<max>1380</max>
@@ -49,23 +54,10 @@
   </PawnKindDef>
 	
 
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
 	<defName>NorbalRager</defName>
 	<label>Berserker</label>
-	<race>Norbal</race>
-    <combatPower>90</combatPower>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
-	<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-	<backstoryCategory>Tribal</backstoryCategory>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <isFighter>true</isFighter>
-    <invNutrition>1.5</invNutrition>
-    <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
-    <maxGenerationAge>40</maxGenerationAge>
-    <gearHealthRange>
-      <min>0.5</min>
-      <max>1.8</max>
-    </gearHealthRange>
+    <combatPower>110</combatPower>
 		<apparelMoney>
 			<min>760</min>
 			<max>1380</max>
@@ -90,23 +82,10 @@
 	</PawnKindDef>
 
 
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
 	<defName>NorbalDestroyer</defName>
 	<label>Thunderer</label>
-	<race>Norbal</race>
-    <combatPower>95</combatPower>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
-	<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-	<backstoryCategory>Tribal</backstoryCategory>
-    <isFighter>true</isFighter>
-    <invNutrition>1.5</invNutrition>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
-    <maxGenerationAge>40</maxGenerationAge>
-    <gearHealthRange>
-      <min>0.5</min>
-      <max>1.8</max>
-    </gearHealthRange>
+    <combatPower>110</combatPower>
 		<apparelMoney>
 			<min>760</min>
 			<max>1380</max>
@@ -134,23 +113,10 @@
 	</PawnKindDef>
 
 
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
 	<defName>NorbalArcher</defName>
 	<label>Skirmisher</label>
-	<race>Norbal</race>
-    <combatPower>90</combatPower>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
-	<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-	<backstoryCategory>Tribal</backstoryCategory>
-    <isFighter>true</isFighter>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <invNutrition>1.5</invNutrition>
-    <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
-    <maxGenerationAge>40</maxGenerationAge>
-    <gearHealthRange>
-      <min>0.5</min>
-      <max>1.8</max>
-    </gearHealthRange>
+    <combatPower>115</combatPower>
 		<apparelMoney>
 			<min>760</min>
 			<max>1380</max>
@@ -178,17 +144,11 @@
 	</PawnKindDef>
 
 
-  <PawnKindDef Name="Viking">
+  <PawnKindDef ParentName="NorbalBase">
     <defName>NorbalSage</defName>
     <label>Sage</label>
-    <race>Norbal</race>
-    <combatPower>80</combatPower>
-    <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-    <backstoryCategory>Tribal</backstoryCategory>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
+    <combatPower>100</combatPower>
     <itemQuality>Normal</itemQuality>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
     <isFighter>false</isFighter>
     <gearHealthRange>
       <min>0.2</min>
@@ -214,6 +174,7 @@
       <li>NorbalRanged</li>
     </weaponTags>
     <invNutrition>1.5</invNutrition>
+    <invFoodDef>MealJerky</invFoodDef>
 	<fixedInventory>
 	  <LoadoutGen_AmmoTypeE>1</LoadoutGen_AmmoTypeE>
 	  <LoadoutGen_NorbalHammer>1</LoadoutGen_NorbalHammer>
@@ -221,20 +182,13 @@
   </PawnKindDef>
   
  
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
     <defName>NorbalGrandSage</defName>
     <label>Konungr</label>
-    <combatPower>105</combatPower>
-	<race>Norbal</race>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
-	<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-	<backstoryCategory>Tribal</backstoryCategory>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <combatPower>125</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>40</minGenerationAge>
     <maxGenerationAge>100</maxGenerationAge>
-    <isFighter>true</isFighter>
-    <invNutrition>1.5</invNutrition>
     <itemQuality>Good</itemQuality>
     <gearHealthRange>
       <min>1.8</min>
@@ -265,18 +219,11 @@
 	</PawnKindDef>
 
 
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
 	<defName>NorbalHero</defName>
 	<label>Hersir</label>
-	<race>Norbal</race>
-    <combatPower>110</combatPower>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
-	<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-	<backstoryCategory>Tribal</backstoryCategory>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <isFighter>true</isFighter>
-    <invNutrition>1.5</invNutrition>
-    <itemQuality>Superior</itemQuality>
+    <combatPower>125</combatPower>
+    <itemQuality>Good</itemQuality>
     <apparelTags>
       <li>Norbal</li>
       <li>NorbalKingly</li>
@@ -302,17 +249,10 @@
 	</PawnKindDef>
 
 
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
 	<defName>NorbalThane</defName>
 	<label>Jarl</label>
-	<race>Norbal</race>
-    <combatPower>105</combatPower>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-	<backstoryCategory>Tribal</backstoryCategory>
-    <isFighter>true</isFighter>
-    <invNutrition>1.5</invNutrition>
+    <combatPower>115</combatPower>
     <itemQuality>Superior</itemQuality>
     <apparelTags>
       <li>Norbal</li>
@@ -341,17 +281,13 @@
 	</PawnKindDef>
 
 
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
 	<defName>NorbalSnorb</defName>
 	<label>Thrall</label>
 	<race>Human</race>
-    <combatPower>85</combatPower>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
+    <combatPower>105</combatPower>
 	<baseRecruitDifficulty>0.60</baseRecruitDifficulty>
 	<backstoryCategory>Slave</backstoryCategory>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <isFighter>false</isFighter>
-    <invNutrition>1.5</invNutrition>
     <itemQuality>Shoddy</itemQuality>
     <apparelTags>
       <li>Norbal</li>
@@ -374,17 +310,11 @@
 	</PawnKindDef>
 
 
-	<PawnKindDef>
+  <PawnKindDef ParentName="NorbalBase">
 	<defName>NorbalKarl</defName>
 	<label>Karl</label>
-	<race>Norbal</race>
-    <combatPower>92</combatPower>
-    <defaultFactionType>NorbalTribe</defaultFactionType>
-	<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-	<backstoryCategory>Tribal</backstoryCategory>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <combatPower>105</combatPower>
     <isFighter>false</isFighter>
-    <invNutrition>1.5</invNutrition>
     <apparelTags>
       <li>Norbal</li>
     </apparelTags>

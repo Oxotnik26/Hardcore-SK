@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
 
 	<RecipeDef>
@@ -74,6 +74,35 @@
       </skillRequirements>
 		<workSkill>Crafting</workSkill>
     	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<forceHiddenSpecialFilters>
+			<li>AllowSmeltable</li>
+		</forceHiddenSpecialFilters>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>DestroyWeapon</defName>
+		<label>destroy weapon</label>
+		<description>Use heat to destroy unwanted weapons. Faster than smelting, and works on non-smeltable items, but yields no resources.</description>
+		<jobString>Destroying weapon.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Weapons</li>
+			</categories>
+		</fixedIngredientFilter>
 	</RecipeDef>
 
 	<RecipeDef>
@@ -107,7 +136,6 @@
 			</categories>
 			<exceptedCategories>
 				<li>CorpsesMechanoid</li>
-				<li>CorpsesFish</li>
 			</exceptedCategories>
 			<exceptedThingDefs>
         <li>Abomination_Corpse</li>
@@ -127,11 +155,11 @@
 
 	<RecipeDef>
 		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
-		<defName>MakeStoneBlocks</defName>
+		<defName>MakeStoneBlocksAny</defName>
 		<label>Make Stone Blocks</label>
 		<description>Cuts a stone chunk into usable stone blocks. Produces 20 sand and 5 rubble as a by-product.</description>
 		<jobString>Cutting stone chunk into blocks.</jobString>
-		<workAmount>1200</workAmount>
+		<workAmount>1600</workAmount>
 		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
@@ -157,11 +185,10 @@
       <skillRequirements>
          <li>
             <skill>Crafting</skill>
-            <minLevel>2</minLevel>
          </li>
       </skillRequirements>
 		<workSkill>Crafting</workSkill>
-    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+    	<workSkillLearnFactor>0.25</workSkillLearnFactor>
 	</RecipeDef>
 
 
@@ -201,7 +228,7 @@
          </li>
       </skillRequirements>
 		<workSkill>Crafting</workSkill>
-    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+    	<workSkillLearnFactor>0.25</workSkillLearnFactor>
 	</RecipeDef>
 	
 	
@@ -231,7 +258,6 @@
 			<exceptedCategories>
 				<li>CorpsesMechanoid</li>
 				<li>CorpsesAnimal</li>
-				<li>CorpsesFish</li>
 			</exceptedCategories>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
@@ -292,8 +318,9 @@
 			<thingDefs>
         <li>Human_Corpse</li>
         <li>Norbal_Corpse</li>
-        <li>Nova_Corpse</li>
-        <li>Asari_Corpse</li>
+        <li>Alien_Nova_Corpse</li>
+		<li>Alien_Orassan</li>
+        <li>Alien_Asari_Corpse</li>
 			</thingDefs>
 		</defaultIngredientFilter>
  		<skillRequirements>

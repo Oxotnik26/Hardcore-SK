@@ -17,10 +17,11 @@
 		<rotatable>true</rotatable>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToMake>7500</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>-5</Beauty>
+			<Mass>35</Mass>
 			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
 		</statBases>
 		<building>
@@ -41,7 +42,7 @@
 			<Component>5</Component>
 		</costList>
 		<pathCost>120</pathCost>
-		<designationCategory>Joy</designationCategory>
+		<designationCategory>Misc</designationCategory>
 		<placeWorkers>
 			<li>TrainingFacility.PlaceWorker_ShootingRange</li>
 		</placeWorkers>
@@ -64,10 +65,11 @@
 		<rotatable>true</rotatable>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToMake>7500</WorkToMake>
 			<Flammability>1.0</Flammability>
 			<Beauty>2</Beauty>
+			<Mass>45</Mass>
 			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
 		</statBases>
 		<building>
@@ -88,7 +90,7 @@
 			<Component>5</Component>
 		</costList>
 		<pathCost>120</pathCost>
-		<designationCategory>Joy</designationCategory>
+		<designationCategory>Misc</designationCategory>
 		<placeWorkers>
 			<li>TrainingFacility.PlaceWorker_MartialArtsTarget</li>
 		</placeWorkers>

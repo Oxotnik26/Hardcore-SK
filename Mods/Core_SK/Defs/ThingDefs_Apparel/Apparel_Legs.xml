@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparello_Lederhose</defName>
 		<label>Leather Pants</label>
 		<description>These are a pair of leather pants (sometimes even real leather!). The punk wearing these will always feel lucky.</description>
@@ -17,6 +17,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>4</Insulation_Heat>
@@ -25,7 +26,7 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.15</ArmorRating_Electric>
-			<Weight>0.5</Weight>
+			<Mass>0.5</Mass>
 			<Bulk>0.7</Bulk>
 			<WornWeight>0.3</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -62,7 +63,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Norballo_Loincloth</defName>
 		<label>Loincloth</label>
 		<description>A tribal loincloth. It covers parts of you, sort of.</description>
@@ -78,6 +79,7 @@
 			<Component>3</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>4500</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
@@ -86,7 +88,7 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.15</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -123,7 +125,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>MedievalTimes_Pants_Suspenders</defName>
 		<label>Suspended Trousers</label>
 		<description>Medieval era pants, they fit awkwardly and are stitched together with clearly visible leather laces. You need a pair of suspenders to keep these up.</description>
@@ -137,13 +139,14 @@
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
 			<Insulation_Cold>-8</Insulation_Cold>
 			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
-			<Weight>0.35</Weight>
+			<Mass>0.35</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.35</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -181,7 +184,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>MedievalTimes_Pants_Suspenders_Striped</defName>
 		<label>Suspended Striped Trousers</label>
 		<description>Medieval era pants, they fit awkwardly and are stitched together with clearly visible leather laces. You need a pair of suspenders to keep these up. At least they have strips to show the owners originality.</description>
@@ -195,13 +198,14 @@
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
 			<Insulation_Cold>-9</Insulation_Cold>
 			<ArmorRating_Blunt>0.13</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
-			<Weight>0.35</Weight>
+			<Mass>0.35</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.35</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -239,7 +243,7 @@
 		</thingCategories>
 	</ThingDef>	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparello_Jeans</defName>
 		<label>Jeans</label>
 		<description>Sturdy farmer pants.</description>
@@ -256,6 +260,7 @@
 			<Component>3</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>6000</WorkToMake>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>4</Insulation_Heat>
@@ -264,7 +269,7 @@
 			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.24</ArmorRating_Heat>
 			<ArmorRating_Electric>0.15</ArmorRating_Electric>
-			<Weight>0.4</Weight>
+			<Mass>0.4</Mass>
 			<Bulk>0.6</Bulk>
 			<WornWeight>0.4</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -301,7 +306,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparello_Suspender</defName>
 		<label>Stablehand Trousers</label>
 		<description>Ain't a chap on earf lookin' as honest as one wearin' these. With these equipped one should feel more comfortable wading through mud and filth and therefore more inclined to get the job done without distractions.</description>
@@ -318,6 +323,7 @@
 			<Component>3</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>6000</WorkToMake>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
@@ -326,7 +332,7 @@
 			<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.15</ArmorRating_Electric>
-			<Weight>0.6</Weight>
+			<Mass>0.6</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.6</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -385,7 +391,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparel_Pants</defName>
 		<label>Suspender Pants</label>
 		<description>A simple set of pants with suspenders that drape over the shoulders to hold the pants up.</description>
@@ -403,6 +409,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>6000</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
@@ -411,7 +418,7 @@
 			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.15</ArmorRating_Electric>
-			<Weight>0.6</Weight>
+			<Mass>0.6</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.6</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -448,7 +455,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparello_Armorpants</defName>
 		<label>Armored Pants</label>
 		<description>A pair of pants, reinforced with armor.</description>
@@ -466,6 +473,7 @@
 			<Compaste>18</Compaste>
 		</CostList>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>3</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
@@ -474,7 +482,7 @@
 			<ArmorRating_Sharp>0.28</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.15</ArmorRating_Electric>
-			<Weight>0.9</Weight>
+			<Mass>0.9</Mass>
 			<Bulk>1</Bulk>
 			<WornWeight>1</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -514,7 +522,7 @@
 	</ThingDef>
 	
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparello_Holdem</defName>
 		<label>Fancy Pants</label>
 		<description>Fancy Pants are for elegant colonists. Your legs will be the star of the show!</description>
@@ -531,6 +539,7 @@
 			<Component>3</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>4</Insulation_Heat>
@@ -539,7 +548,7 @@
 			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.15</ArmorRating_Electric>
-			<Weight>0.3</Weight>
+			<Mass>0.3</Mass>
 			<Bulk>0.3</Bulk>
 			<WornWeight>0.3</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -586,7 +595,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparello_Scrapants</defName>
 		<label>Patched Pants</label>
 		<description>A crude set of pants for use in emergencies.</description>
@@ -603,15 +612,16 @@
 			<Component>3</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>7000</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
 			<Insulation_Cold>-8</Insulation_Cold>
-			<ArmorRating_Blunt>0.17</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.19</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.17</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.21</ArmorRating_Heat>
 			<ArmorRating_Electric>0.11</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.1</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -623,8 +633,6 @@
 			<AimingDelayFactor>0.03</AimingDelayFactor>
 			<MeleeHitChance>-0.02</MeleeHitChance>
 			<MeleeWeapon_Cooldown>0.03</MeleeWeapon_Cooldown>
-			<StonecuttingSpeed>0.1</StonecuttingSpeed>
-			<MiningSpeed>0.1</MiningSpeed>
 		</equippedStatOffsets>
 		<apparel>
 		<worngraphicPath>Things/Apparel/Apparello/Accessorello/Pants/Pants</worngraphicPath>
@@ -637,26 +645,25 @@
 			<commonality>1</commonality>
 		<tags>
 			<li>Outlander</li>
-			<li>RenegadesMedium</li>
 			<li>SectarianLight</li>
-			<li>SyndicateMelee</li>
-			<li>OrionMelee</li>
+			<li>SectarianMedium</li>
+			<li>BrotherhoodLight</li>
+			<li>BrotherhoodMedium</li>
 		</tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
-		</apparel>		
+		</apparel>
 		<thingCategories>
 			<li>MilitaryPantsCat</li>
-			<li>SetMiner</li>
 		</thingCategories>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>Apparello_Holser</defName>
 		<label>Holstered Chaps</label>
-		<description>A pair of chaps with holsters. All of the fastest shooters wore these. They usually got shot in the back. (Can be worn over other pants).</description>
+		<description>A pair of chaps with holsters. All of the fastest shooters wore these. They usually got shot in the back.</description>
 		<graphicData>
 		  <texPath>Things/Apparel/Apparello/Accessorello/Chaps</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -669,6 +676,7 @@
 			<Component>3</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>5500</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -677,7 +685,7 @@
 			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.21</ArmorRating_Heat>
 			<ArmorRating_Electric>0.11</ArmorRating_Electric>
-			<Weight>0.3</Weight>
+			<Mass>0.3</Mass>
 			<Bulk>0.3</Bulk>
 			<WornWeight>0.3</WornWeight>
 			<WornBulk>0.3</WornBulk>
@@ -703,6 +711,7 @@
 		<tags>
 			<li>Outlander</li>
 			<li>RenegadesLight</li>
+			<li>RenegadesMedium</li>
 			<li>EmpireLight</li>
 		</tags>	
 		  <defaultOutfitTags>

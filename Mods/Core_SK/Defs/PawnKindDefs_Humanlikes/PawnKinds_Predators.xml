@@ -8,10 +8,16 @@
     		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
     		<isFighter>true</isFighter>
 			<itemQuality>Poor</itemQuality>
-    		<invNutrition>1.5</invNutrition>
+			<invNutrition>1.5</invNutrition>
+			<chemicalAddictionChance>0.1</chemicalAddictionChance>
+			<invFoodDef>Pemmican</invFoodDef>
     		<maxGenerationAge>42</maxGenerationAge>
 			<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
     		<apparelAllowHeadwearChance>0.5</apparelAllowHeadwearChance>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
     <gearHealthRange>
       <min>0.4</min>
       <max>1.6</max>
@@ -29,9 +35,9 @@
 	<PawnKindDef ParentName="PredatorsBase">
 		<defName>PredatorsRaven</defName>
 		<label>Predators Raven</label>
-    	<combatPower>100</combatPower>
-		<race>Nova</race>
-		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+    	<combatPower>120</combatPower>
+		<race>Alien_Nova</race>
+		<baseRecruitDifficulty>0.62</baseRecruitDifficulty>
     <gearHealthRange>
       <min>0.4</min>
       <max>1.6</max>
@@ -62,8 +68,8 @@
 	<PawnKindDef ParentName="PredatorsBase">
 		<defName>PredatorsLynx</defName>
 		<label>Predators Lynx</label>
-		<combatPower>130</combatPower>
-		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+		<combatPower>140</combatPower>
+		<baseRecruitDifficulty>0.62</baseRecruitDifficulty>
     <gearHealthRange>
       <min>0.4</min>
       <max>1.6</max>
@@ -86,7 +92,7 @@
 			<li>TierOneSMG</li>
 		</weaponTags>
 	<fixedInventory>
-	  <LoadoutGen_AmmoTypeH>1</LoadoutGen_AmmoTypeH>
+	  <LoadoutGen_AmmoTypeHH>1</LoadoutGen_AmmoTypeHH>
 	  <LoadoutGen_SidearmGrenadeTierOne>1</LoadoutGen_SidearmGrenadeTierOne>
 	</fixedInventory>
 	</PawnKindDef>
@@ -95,7 +101,7 @@
 		<defName>PredatorsWolf</defName>
 		<label>Predators Wolf</label>
 		<combatPower>155</combatPower>
-		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+		<baseRecruitDifficulty>0.60</baseRecruitDifficulty>
     <gearHealthRange>
       <min>0.4</min>
       <max>1.6</max>
@@ -127,7 +133,7 @@
 		<defName>PredatorsHawkeye</defName>
 		<label>Predators Hawkeye</label>
 		<combatPower>155</combatPower>
-		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
 		<apparelAllowHeadwearChance>0.5</apparelAllowHeadwearChance>
     <gearHealthRange>
       <min>0.4</min>
@@ -161,8 +167,8 @@
 		<defName>PredatorsBomber</defName>
 		<label>Predators Bomber</label>
 		<race>Human</race>
-		<combatPower>130</combatPower>
-		<baseRecruitDifficulty>0.85</baseRecruitDifficulty>
+		<combatPower>140</combatPower>
+		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
     <gearHealthRange>
       <min>0.4</min>
       <max>1.6</max>
@@ -200,7 +206,7 @@
 		<factionLeader>true</factionLeader>
 		<itemQuality>Normal</itemQuality>
 		<maxGenerationAge>55</maxGenerationAge>
-		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
 		<apparelAllowHeadwearChance>1</apparelAllowHeadwearChance>
     <gearHealthRange>
       <min>1.0</min>
@@ -241,8 +247,8 @@
 		<defName>PredatorsSlasher</defName>
 		<label>Predators Slasher</label>
 		<race>Norbal</race>
-    	<combatPower>100</combatPower>
-		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+    	<combatPower>120</combatPower>
+		<baseRecruitDifficulty>0.62</baseRecruitDifficulty>
     <gearHealthRange>
       <min>0.4</min>
       <max>1.6</max>

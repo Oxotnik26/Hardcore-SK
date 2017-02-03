@@ -8,6 +8,7 @@
     <label>Deer</label>
     <description>A Deer is a medium-sized herding herbivore. It is generally peaceful unless disturbed.</description>
     <statBases>
+	  <Mass>60</Mass>
       <MoveSpeed>4.84</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
       <MarketValue>450</MarketValue>
@@ -17,14 +18,14 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
@@ -40,7 +41,7 @@
       <leatherColor>(162,106,57)</leatherColor>
       <leatherLabel>Deer Hide</leatherLabel>
       <leatherInsulation>1.25</leatherInsulation>
-      <leatherMarketValue>3.0</leatherMarketValue>
+      <leatherMarketValueFactor>3.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>0.8</MaxHitPoints>
         <Beauty>1.4</Beauty>
@@ -54,7 +55,6 @@
 		<WorkToMake>1.15</WorkToMake>
 		<BedRestEffectiveness>1.25</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>0.9</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <meatLabel>Deer Venison</meatLabel>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -166,22 +166,30 @@
     <label>Ibex</label>
     <description>The hardy wild ancestor of the domesticated goat. Ibexes live on marginal territory that most antelopes couldn't survive, eating lichens and sparse mountain plants. They're famous for dextrously hopping across bare cliff faces - and for their violent ramming attack.</description>
     <statBases>
+	  <Mass>70</Mass>
       <MoveSpeed>4.4</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
       <MarketValue>200</MarketValue>
 	  <ArmorPenetration>0.09</ArmorPenetration>
     </statBases>
+    <comps>
+        <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>16</milkAmount>
+      </li>
+    </comps>
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <defaultCooldownTime>1.6</defaultCooldownTime>
         <meleeDamageBaseAmount>7</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <defaultCooldownTime>1.6</defaultCooldownTime>
         <meleeDamageBaseAmount>7</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
@@ -197,7 +205,7 @@
       <leatherColor>(153,129,113)</leatherColor>
       <leatherLabel>Goat hide</leatherLabel>
       <leatherInsulation>0.9</leatherInsulation>
-	  <leatherMarketValue>3</leatherMarketValue>
+	  <leatherMarketValueFactor>3</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.0</MaxHitPoints>
         <Beauty>1.2</Beauty>
@@ -211,7 +219,6 @@
 		<WorkToMake>1.15</WorkToMake>
 		<BedRestEffectiveness>1.15</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>1.05</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <wildness>0.55</wildness>
       <gestationPeriodDays>22.5</gestationPeriodDays>
@@ -321,6 +328,7 @@
     <label>Elk</label>
     <description>An Elk is a larger member of the deer family. It is well-adapted to life in cold climates.</description>
     <statBases>
+	  <Mass>80</Mass>
       <MoveSpeed>4.84</MoveSpeed>
       <ComfyTemperatureMin>-45</ComfyTemperatureMin>
       <MarketValue>560</MarketValue>
@@ -329,21 +337,21 @@
     <comps>
         <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
-        <milkIntervalDays>2</milkIntervalDays>
-        <milkAmount>6</milkAmount>
+        <milkIntervalDays>3</milkIntervalDays>
+        <milkAmount>22</milkAmount>
       </li>
     </comps>
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>11</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
@@ -359,7 +367,7 @@
       <leatherColor>(162,106,57)</leatherColor>
       <leatherLabel>Elk Hide</leatherLabel>
       <leatherInsulation>1.3</leatherInsulation>
-      <leatherMarketValue>5.0</leatherMarketValue>
+      <leatherMarketValueFactor>5.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>0.9</MaxHitPoints>
         <Beauty>1.3</Beauty>
@@ -373,7 +381,6 @@
 		<WorkToMake>1.2</WorkToMake>
 		<BedRestEffectiveness>1.25</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>0.95</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <meatLabel>Elk Venison</meatLabel>
       <wildness>0.7</wildness>
@@ -483,6 +490,7 @@
     <label>Caribou</label>
     <description>A large member of the deer family, well-adapted to life in cold climates.</description>
     <statBases>
+	  <Mass>60</Mass>
       <MoveSpeed>4.84</MoveSpeed>
       <ComfyTemperatureMin>-45</ComfyTemperatureMin>
       <MarketValue>550</MarketValue>
@@ -492,21 +500,21 @@
     <comps>
       <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
-        <milkIntervalDays>2</milkIntervalDays>
-        <milkAmount>6</milkAmount>
+        <milkIntervalDays>3</milkIntervalDays>
+        <milkAmount>24</milkAmount>
       </li>
     </comps>
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>110</defaultCooldownTicks>
+        <defaultCooldownTime>1.75</defaultCooldownTime>
         <meleeDamageBaseAmount>8</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>110</defaultCooldownTicks>
+        <defaultCooldownTime>1.75</defaultCooldownTime>
         <meleeDamageBaseAmount>8</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
@@ -515,13 +523,13 @@
     <race>
       <body>QuadrupedAnimalWithHooves</body>
       <herdAnimal>true</herdAnimal>
-      <baseBodySize>1.9</baseBodySize>
+      <baseBodySize>0.9</baseBodySize>
       <baseHungerRate>0.95</baseHungerRate>
-      <baseHealthScale>1.9</baseHealthScale>
+      <baseHealthScale>1.7</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherColor>(173,99,77)</leatherColor>
       <leatherInsulation>1.0</leatherInsulation>
-      <leatherMarketValue>4.0</leatherMarketValue>
+      <leatherMarketValueFactor>4.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>0.8</MaxHitPoints>
         <Beauty>1.6</Beauty>
@@ -535,7 +543,6 @@
 		<WorkToMake>1.2</WorkToMake>
 		<BedRestEffectiveness>1.28</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>0.9</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <wildness>0.75</wildness>
       <gestationPeriodDays>25</gestationPeriodDays>
@@ -628,6 +635,7 @@
     <label>Wild Boar</label>
     <description>Although considered impure by some cultures, this hairy ancestor of the domesticated pig is prized for the gamey flavor of its meat.</description>
     <statBases>
+	  <Mass>30</Mass>
       <MoveSpeed>5.00</MoveSpeed>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
       <MarketValue>390</MarketValue>
@@ -637,7 +645,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>140</defaultCooldownTicks>
+        <defaultCooldownTime>1.75</defaultCooldownTime>
         <meleeDamageBaseAmount>8</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
@@ -659,7 +667,7 @@
       <leatherColor>(117,109,93)</leatherColor>
       <leatherLabel>Boar Hide</leatherLabel>
       <leatherInsulation>1.15</leatherInsulation> 
-      <leatherMarketValue>4.0</leatherMarketValue>
+      <leatherMarketValueFactor>4.0</leatherMarketValueFactor>
       <useMeatFrom>Pig</useMeatFrom>
       <useLeatherFrom>Pig</useLeatherFrom>
       <wildness>0.40</wildness>
@@ -765,6 +773,7 @@
     <label>Tortoise</label>
     <description>This heavily armored land-dwelling reptile is known for its slow moving speed and surprisingly vicious bite.</description>
     <statBases>
+	  <Mass>20</Mass>
       <MoveSpeed>1.0</MoveSpeed>
       <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
@@ -777,7 +786,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>180</defaultCooldownTicks>
+        <defaultCooldownTime>1.95</defaultCooldownTime>
         <meleeDamageBaseAmount>4</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
@@ -804,7 +813,7 @@
 	<meatLabel>Tortoise Meat</meatLabel>
 	<leatherLabel>Tortoise Leather</leatherLabel>
       <leatherInsulation>0.75</leatherInsulation>
-      <leatherMarketValue>6.0</leatherMarketValue>
+      <leatherMarketValueFactor>6.0</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>1.3</MaxHitPoints>
         <Beauty>0.9</Beauty>
@@ -818,7 +827,6 @@
 		<WorkToMake>1.4</WorkToMake>
 		<BedRestEffectiveness>0.7</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>1.2</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
       <wildness>0.65</wildness>
       <gestationPeriodDays>22.5</gestationPeriodDays>
@@ -904,166 +912,5 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-  
-  <ThingDef ParentName="AnimalThingBase">
-    <defName>Hedgehog</defName>
-    <label>Hedgehog</label>
-    <description>Hedgehogs are a small, spine covered, herbivorous mammal with a pig-like snout. They can roll into sharp, spikey ball to protect themselves, though some predators are willing to risk minor injury for a tasty snack.</description>
-    <statBases>
-      <MoveSpeed>1.4</MoveSpeed>
-      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
-	  <MarketValue>190</MarketValue>
-      <ImmunityGainSpeed>1.3</ImmunityGainSpeed>
-      <MeatAmount>35</MeatAmount>
-	  <ArmorPenetration>0.02</ArmorPenetration>
-    </statBases>
-    <verbs>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
-        <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
-        <meleeDamageDef>Scratch</meleeDamageDef>
-        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
-        <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
-        <meleeDamageDef>Scratch</meleeDamageDef>
-        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
-        <meleeDamageBaseAmount>2</meleeDamageBaseAmount>
-        <meleeDamageDef>Bite</meleeDamageDef>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-      </li>
-    </verbs>
-    <race>
-	  <herdAnimal>true</herdAnimal>
-      <baseHungerRate>0.15</baseHungerRate>
-      <body>QuadrupedAnimalWithPaws</body>
-      <baseBodySize>0.25</baseBodySize>
-      <baseHealthScale>0.45</baseHealthScale>
-      <foodType>VegetarianRoughAnimal</foodType>
-	  <meatLabel>Hedgehog Meat</meatLabel>
-	  <leatherLabel>Hedgehog Hide</leatherLabel>
-      <leatherColor>(117,76,34)</leatherColor>
-      <leatherInsulation>1.45</leatherInsulation>
-	  <leatherMarketValue>4</leatherMarketValue>
-      <leatherStatFactors>
-		<MaxHitPoints>0.9</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <MarketValue>1.5</MarketValue>
-        <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
-        <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
-        <ArmorRating_Electric>1.9</ArmorRating_Electric>
-        <ArmorRating_Heat>1.2</ArmorRating_Heat>
-        <Insulation_Cold>0.61</Insulation_Cold>
-        <Insulation_Heat>1.11</Insulation_Heat>
-		<WorkToMake>1.4</WorkToMake>
-		<BedRestEffectiveness>0.85</BedRestEffectiveness>
-		<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>1.24</MedicalTreatmentQualityFactor>
-      </leatherStatFactors>
-      <leatherInsulation>1.5</leatherInsulation>
-      <executionRange>4</executionRange>
-	  <wildness>0.45</wildness>
-      <manhunterOnDamageChance>0</manhunterOnDamageChance>
-      <nuzzleMtbHours>120</nuzzleMtbHours>
-      <gestationPeriodDays>23</gestationPeriodDays>
-      <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(5, 1)</li>
-          <li>(5.5, 0)</li>
-        </points>
-      </litterSizeCurve>
-      <lifeExpectancy>8</lifeExpectancy>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.07</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.3</minAge>
-		  <soundWounded>Pawn_Rodent_Wounded</soundWounded>
-		  <soundDeath>Pawn_Rodent_Death</soundDeath>
-		  <soundCall>Pawn_Rodent_Call</soundCall>
-		  <soundAngry>Pawn_Rodent_Angry</soundAngry>
-		  </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-    </race>
-  </ThingDef>
-  
-
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Hedgehog</defName>
-    <label>Hedgehog</label>
-    <race>Hedgehog</race>
-    <combatPower>30</combatPower>
-    <wildSpawn_EcoSystemWeight>0.5</wildSpawn_EcoSystemWeight>
-    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
-    <wildSpawn_GroupSizeRange>
-      <min>2</min>
-      <max>4</max>
-    </wildSpawn_GroupSizeRange>
-    <lifeStages>
-      <li>
-	  <label>Hoglet</label>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Hedgehog</texPath>
-          <drawSize>0.7</drawSize>
-          <shadowData>
-            <volume>(0.25, 0.25, 0.25)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-          <drawSize>0.7</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Hedgehog</texPath>
-          <drawSize>1.1</drawSize>
-          <shadowData>
-            <volume>(0.375, 0.375, 0.375)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-          <drawSize>1.1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Hedgehog</texPath>
-          <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.5, 0.5, 0.5)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-          <drawSize>1.5</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-
-  
+    
 </Defs>

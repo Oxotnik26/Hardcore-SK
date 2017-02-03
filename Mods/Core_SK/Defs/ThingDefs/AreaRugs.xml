@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
 
-<ThingDef Name="AreaRugBase" ParentName="BuildingBase" Abstract="True">
+	<ThingDef Name="AncientRugBase" ParentName="BuildingBase" Abstract="True">
 	<building>
       <isEdifice>false</isEdifice>
     </building>
@@ -22,6 +22,436 @@
       <designationCategory>Rugs</designationCategory>
     </ThingDef>
 	
+	<ThingDef Name="AreaRugBase" ParentName="AncientRugBase" Abstract="True">
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+    </ThingDef>
+	
+	
+    <ThingDef Abstract="True" Name="MatBase" ParentName="BuildingBase">
+        <thingClass>SK.Building_DoorMat</thingClass>
+        <description>A doormat to clean your feet.</description>
+        <graphicData>
+            <texPath>Things/Building/DoorMat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Beauty>3</Beauty>
+            <WorkToBuild>120</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <designationCategory>Rugs</designationCategory>
+        <passability>Standable</passability>
+        <researchPrerequisites>
+            <li>CarpetMaking</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBase">
+        <defName>LT_DoorMatRed</defName>
+        <label>Doormat</label>
+        <graphicData>
+            <color>(118,49,57)</color>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef Abstract="True" Name="MatBigBase" ParentName="MatBase">
+        <graphicData>
+            <texPath>Things/Building/DoorMatBig</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>240</WorkToBuild>
+            <Beauty>6</Beauty>
+        </statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+        <size>(2,1)</size>
+    </ThingDef>
+
+    <ThingDef ParentName="MatBigBase">
+        <defName>LT_DoorMatBigRed</defName>
+        <label>Large doormat (red)</label>
+        <graphicData>
+            <color>(118,49,57)</color>
+        </graphicData>
+    </ThingDef>
+
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>HayRug</defName>
+		<label>Hay Rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/HayRug</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>true</drawRotated>
+			<drawSize>(2.2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<costList>
+			<Hay>15</Hay>
+		</costList>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<size>(2,2)</size>
+		<description>Give your home that "barnyard feel" with this artfully arranged collection of hay.</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>PatchworkRug</defName>
+		<label>Patchwork Rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/PatchworkRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>7</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+		</statBases>
+		<size>(3,3)</size>
+		<description>Five pieces of leather, fit together into a beautifully savage-looking rug to decorate your home with!</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>CharmingRug</defName>
+		<label>Llama Rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/CharmingRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<size>(1,2)</size>
+		<description>A charming little rug in the style of the Abeneiro of Llama Tribe.</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>TribeRug</defName>
+		<label>Achrid Rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/TribeRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>14</Beauty>
+			<Cleanliness>0.3</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<description>This piece of art, in the form of a rug, shows a marvelous design used by the Caxigo Braga people on Achrid I.</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>FutstentRug</defName>
+		<label>Futstent Rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/FutstentRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/AreaRugs/FutstentRug_MenuIcon</uiIconPath>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Cleanliness>0.5</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<description>This rug was made for walking and that's what you should do! Don't hesitate and feel the luxurious comfort all over you (-r feet).</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<researchPrerequisites><li>SK_BedroomIV</li></researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>StepRug</defName>
+		<label>Step Rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/StepRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/AreaRugs/StepRug_MenuIcon</uiIconPath>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Cleanliness>0.5</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<description>Step unto the step rug and find your path to luxury! Brightens all sleeping quarters and improves every common room.</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<researchPrerequisites><li>SK_DiningRoomIV</li></researchPrerequisites>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>SquareCozyRugB</defName>
+		<label>Square cozy rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/SquareCozyRugB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>30</Beauty>
+			<Cleanliness>0.5</Cleanliness>
+		</statBases>
+		<size>(4,4)</size>
+		<description>Step unto the step rug and find your path to luxury!</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<researchPrerequisites><li>SK_BedroomIV</li></researchPrerequisites>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>SquareCozyRug</defName>
+		<label>Square cozy rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/SquareCozyRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>30</Beauty>
+			<Cleanliness>0.5</Cleanliness>
+		</statBases>
+		<size>(4,4)</size>
+		<description>Step unto the step rug and find your path to luxury!</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<researchPrerequisites><li>SK_BedroomIV</li></researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>RoundCozyRug</defName>
+		<label>Round cozy rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/RoundCozyRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>24</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+		</statBases>
+		<size>(3,3)</size>
+		<description>Step unto the step rug and find your path to luxury!</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<researchPrerequisites><li>SK_BedroomIII</li></researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="AncientRugBase">
+		<defName>RoundCozyRugB</defName>
+		<label>Round cozy rug</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/AreaRugs/RoundCozyRugB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>24</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+		</statBases>
+		<size>(3,3)</size>
+		<description>Step unto the step rug and find your path to luxury!</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<researchPrerequisites><li>SK_BedroomIII</li></researchPrerequisites>
+	</ThingDef>
+	
 	<ThingDef ParentName="AreaRugBase">
 		<defName>DoorMat</defName>
 		<Label>Door Mat</Label>
@@ -34,12 +464,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>600</WorkToMake>
+			<WorkToBuild>600</WorkToBuild>
 			<Beauty>2</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,1)</Size>
@@ -59,12 +486,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>600</WorkToMake>
+			<WorkToBuild>600</WorkToBuild>
 			<Beauty>2</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,1)</Size>
@@ -84,12 +508,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>2400</WorkToMake>
+			<WorkToBuild>2400</WorkToBuild>
 			<Beauty>8</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(2,2)</Size>
@@ -109,12 +530,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>5400</WorkToMake>
+			<WorkToBuild>5400</WorkToBuild>
 			<Beauty>18</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>135</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(3,3)</Size>
@@ -134,12 +552,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>9600</WorkToMake>
+			<WorkToBuild>9600</WorkToBuild>
 			<Beauty>32</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>240</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(4,4)</Size>
@@ -159,12 +574,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>15000</WorkToMake>
+			<WorkToBuild>15000</WorkToBuild>
 			<Beauty>45</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>375</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(5,5)</Size>
@@ -184,12 +596,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>21600</WorkToMake>
+			<WorkToBuild>21600</WorkToBuild>
 			<Beauty>70</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>420</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(6,6)</Size>
@@ -209,12 +618,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>29400</WorkToMake>
+			<WorkToBuild>29400</WorkToBuild>
 			<Beauty>90</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>500</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(7,7)</Size>
@@ -234,12 +640,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>600</WorkToMake>
+			<WorkToBuild>600</WorkToBuild>
 			<Beauty>2</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,1)</Size>
@@ -259,12 +662,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>2400</WorkToMake>
+			<WorkToBuild>2400</WorkToBuild>
 			<Beauty>8</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(2,2)</Size>
@@ -284,12 +684,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>5400</WorkToMake>
+			<WorkToBuild>5400</WorkToBuild>
 			<Beauty>18</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>135</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(3,3)</Size>
@@ -309,12 +706,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>9600</WorkToMake>
+			<WorkToBuild>9600</WorkToBuild>
 			<Beauty>16</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>240</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(4,4)</Size>
@@ -334,12 +728,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>15000</WorkToMake>
+			<WorkToBuild>15000</WorkToBuild>
 			<Beauty>40</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>375</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(5,5)</Size>
@@ -359,12 +750,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>21600</WorkToMake>
+			<WorkToBuild>21600</WorkToBuild>
 			<Beauty>65</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>420</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(6,6)</Size>
@@ -384,12 +772,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>29400</WorkToMake>
+			<WorkToBuild>29400</WorkToBuild>
 			<Beauty>85</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>500</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(7,7)</Size>
@@ -409,12 +794,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>1200</WorkToMake>
+			<WorkToBuild>1200</WorkToBuild>
 			<Beauty>4</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,2)</Size>
@@ -434,12 +816,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>1800</WorkToMake>
+			<WorkToBuild>1800</WorkToBuild>
 			<Beauty>6</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,3)</Size>
@@ -459,12 +838,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>2400</WorkToMake>
+			<WorkToBuild>2400</WorkToBuild>
 			<Beauty>8</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,4)</Size>
@@ -484,12 +860,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
+			<WorkToBuild>3000</WorkToBuild>
 			<Beauty>10</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,5)</Size>
@@ -509,12 +882,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>3600</WorkToMake>
+			<WorkToBuild>3600</WorkToBuild>
 			<Beauty>12</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>90</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,6)</Size>
@@ -534,12 +904,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>4200</WorkToMake>
+			<WorkToBuild>4200</WorkToBuild>
 			<Beauty>14</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>105</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(1,7)</Size>
@@ -559,12 +926,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>3600</WorkToMake>
+			<WorkToBuild>3600</WorkToBuild>
 			<Beauty>12</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>90</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(2,3)</Size>
@@ -584,12 +948,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>4800</WorkToMake>
+			<WorkToBuild>4800</WorkToBuild>
 			<Beauty>16</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(2,4)</Size>
@@ -609,12 +970,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>7200</WorkToMake>
+			<WorkToBuild>7200</WorkToBuild>
 			<Beauty>24</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>180</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(3,4)</Size>
@@ -634,12 +992,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
+			<WorkToBuild>9000</WorkToBuild>
 			<Beauty>30</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>225</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(3,5)</Size>
@@ -659,12 +1014,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToBuild>12000</WorkToBuild>
 			<Beauty>35</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>300</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(4,5)</Size>
@@ -684,12 +1036,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>14400</WorkToMake>
+			<WorkToBuild>14400</WorkToBuild>
 			<Beauty>45</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>360</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(4,6)</Size>
@@ -709,12 +1058,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>16800</WorkToMake>
+			<WorkToBuild>16800</WorkToBuild>
 			<Beauty>55</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>420</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(4,7)</Size>
@@ -734,12 +1080,9 @@
 		</graphicData>
 		<AltitudeLayer>FloorEmplacement</AltitudeLayer>
 		<statBases>
-			<WorkToMake>21000</WorkToMake>
+			<WorkToBuild>21000</WorkToBuild>
 			<Beauty>65</Beauty>
 		</statBases>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>525</costStuffCount>
 		<useHitPoints>False</useHitPoints>
 		<Size>(5,7)</Size>

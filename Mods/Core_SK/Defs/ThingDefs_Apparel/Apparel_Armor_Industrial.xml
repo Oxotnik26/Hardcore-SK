@@ -2,12 +2,12 @@
 
 <ThingDefs>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparel_NSuit</defName>
 		<label>Marine Suit</label>
 		<description>A fancy suit jacket that can be worn on top of a shirt. You can look your best at any time of the day in a suit!</description>
 		<graphicData>
-		<texPath>Things/Apparel/PreAcsElite/PreAcs</texPath>
+		<texPath>Things/Apparel/PanzerGrenadierUniform/PanzerGrenadierUniform</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -19,6 +19,7 @@
 			<SyntheticFibers>10</SyntheticFibers>
 		</CostList>
 		<statBases>
+			<WorkToMake>15000</WorkToMake>
 			<MaxHitPoints>105</MaxHitPoints>
 			<Flammability>5</Flammability>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -27,7 +28,7 @@
 			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>1</Weight>
+			<Mass>1</Mass>
 			<Bulk>15</Bulk>
 			<WornWeight>1</WornWeight>
 			<WornBulk>7</WornBulk>
@@ -48,7 +49,7 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 			</bodyPartGroups>
-			<worngraphicPath>Things/Apparel/PreAcsElite/PreAcs</worngraphicPath>
+			<worngraphicPath>Things/Apparel/PanzerGrenadierUniform/PanzerGrenadierUniform</worngraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -94,7 +95,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparello_Meditux</defName>
 		<label>Doctor's Brocade</label>
 		<description>To always keep calm and collected, wear brocade. The definite go to piece of apparel for any gentleguy or gal, now in doctor's edition. All of the doctors wearing these know how to talk to their patients or at the very least give the impression that they'd know what the heck they are doing.</description>
@@ -114,6 +115,7 @@
 			<GlitterworldMedicine>5</GlitterworldMedicine>
 		</CostList>
 		<statBases>
+			<WorkToMake>14000</WorkToMake>
 			<MaxHitPoints>95</MaxHitPoints>
 			<Flammability>5</Flammability>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -122,7 +124,7 @@
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<ArmorRating_Electric>0.25</ArmorRating_Electric>
-			<Weight>1</Weight>
+			<Mass>1</Mass>
 			<Bulk>14</Bulk>
 			<WornWeight>1</WornWeight>
 			<WornBulk>8</WornBulk>
@@ -138,7 +140,7 @@
 			<MeleeWeapon_Cooldown>0.06</MeleeWeapon_Cooldown>
 			<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
 			<HealingSpeed>0.2</HealingSpeed>
-			<BaseHealingQuality>0.1</BaseHealingQuality>
+			<HealingQuality>0.1</HealingQuality>
 			<SurgerySuccessChance>0.1</SurgerySuccessChance>
 		</equippedStatOffsets>
 		<apparel>
@@ -176,12 +178,12 @@
 	</ThingDef>
 
 	
-	<ThingDef ParentName="ApparelBase">
-		<defName>Scout_Jaffa_Armor</defName>
+	<ThingDef ParentName="ApparelIndustrialBase">
+		<defName>Scout_LeatherRobe</defName>
     <label>Scout Armor</label>
     <description>A set of light armor used by military scouts. Intended to provide some protection without hindering movement.</description>
     <graphicData>
-      <texPath>Things/Apparel/Jaffa_Armor/Jaffa_Armor</texPath>
+      <texPath>Things/Apparel/LeatherRobe/LeatherRobe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>		
 		<stuffCategories>
@@ -196,6 +198,7 @@
 			<Kevlar>15</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>13000</WorkToMake>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>4</Flammability>
 			<Insulation_Heat>6</Insulation_Heat>
@@ -204,7 +207,7 @@
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<ArmorRating_Electric>0.3</ArmorRating_Electric>
-			<Weight>1.5</Weight>
+			<Mass>1.5</Mass>
 			<Bulk>15</Bulk>
 			<WornWeight>1.5</WornWeight>
 			<WornBulk>8</WornBulk>
@@ -225,7 +228,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <worngraphicPath>Things/Apparel/Jaffa_Armor/Jaffa_Armor</worngraphicPath>
+      <worngraphicPath>Things/Apparel/LeatherRobe/LeatherRobe</worngraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -246,7 +249,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparel_FSChefJacket</defName>
 		<label>Chef jacket</label>
 		<description>A chef's jacket.</description>
@@ -263,6 +266,7 @@
 			<Component>2</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>10</Flammability>
 			<Insulation_Heat>10</Insulation_Heat>
@@ -271,7 +275,7 @@
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.02</ArmorRating_Heat>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>0.1</Weight>
+			<Mass>0.1</Mass>
 			<Bulk>7</Bulk>
 			<WornWeight>0.1</WornWeight>
 			<WornBulk>3</WornBulk>

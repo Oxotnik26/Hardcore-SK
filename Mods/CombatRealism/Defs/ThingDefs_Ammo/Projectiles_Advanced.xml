@@ -45,18 +45,17 @@
     <defName>Bullet_30x64mmFuel_Thermobaric</defName>
     <label>thermobaric bolt</label>
     <projectile>
-	  <explosionRadius>1.5</explosionRadius>
+	  <explosionRadius>2</explosionRadius>
       <damageDef>Thermobaric</damageDef>
       <damageAmountBase>30</damageAmountBase>
-	  <soundExplode>MortarBomb_Explode</soundExplode>
+	  <soundExplode>Explosion</soundExplode>
     </projectile>
 	<comps>
 	  <li Class="Combat_Realism.CompProperties_ExplosiveCR">
 	    <explosionDamage>50</explosionDamage>
 	    <explosionDamageDef>Thermobaric</explosionDamageDef>
 	    <explosionRadius>2.0</explosionRadius>
-	    <soundExplode>MortarBomb_Explode</soundExplode>
-	    <damageAdjacentTiles>true</damageAdjacentTiles>
+	    <soundExplode>Explosion</soundExplode>
 	  </li>
 	</comps>
   </ThingDef>
@@ -71,7 +70,6 @@
       <explosionRadius>5.0</explosionRadius>
       <postExplosionSpawnThingDef>FilthFireFoam</postExplosionSpawnThingDef>
       <explosionSpawnChance>1</explosionSpawnChance>
-	  <damageAdjacentTiles>true</damageAdjacentTiles>
     </projectile>
   </ThingDef>
   
@@ -91,7 +89,7 @@
       <damageAmountBase>40</damageAmountBase>
       <speed>60</speed>
 	  <flyOverhead>false</flyOverhead>
-      <explosionRadius>3.5</explosionRadius>
+      <explosionRadius>4</explosionRadius>
       <preExplosionSpawnThingDef>Napalm_Fuel</preExplosionSpawnThingDef>
       <explosionSpawnChance>0.5</explosionSpawnChance>
       <soundExplode>MortarIncendiary_Explode</soundExplode>

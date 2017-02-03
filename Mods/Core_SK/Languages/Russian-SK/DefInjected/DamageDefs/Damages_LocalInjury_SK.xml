@@ -1,17 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <Radiation.label>Облучение</Radiation.label>
-  <Radiation.deathMessage>{0} умирает от радиационного отравления.</Radiation.deathMessage>
-
   	<ArmorPiercing.label>Бронебойный снаряд</ArmorPiercing.label>
 	<ArmorPiercing.deathMessage>{0} умирает от попадания бронебойного снаряда.</ArmorPiercing.deathMessage>
 	
 	<LaserBurn.label>Ожог лазером</LaserBurn.label>
 	<LaserBurn.deathMessage>{0} сгорает заживо.</LaserBurn.deathMessage>
   
-  <Optic.label>Оптика</Optic.label>
-  <Optic.deathMessage>{0} умирает от снайперского выстрела.</Optic.deathMessage>
+  <Optic.label>Микроволны</Optic.label>
+  <Optic.deathMessage>{0} умирает от микроволнового излучения.</Optic.deathMessage>
 
   <Plasma.label>Плазма</Plasma.label>
   <Plasma.deathMessage>{0} расплавляется от плазмы.</Plasma.deathMessage>
@@ -27,5 +24,8 @@
 
   <ElectricShock.label>Электрошок</ElectricShock.label>
   <ElectricShock.deathMessage>{0} умирает от электричества.</ElectricShock.deathMessage>
+ 
+  <Poison.label>Яд</Poison.label>
+  <Poison.deathMessage>{0} умирает от передозировки.</Poison.deathMessage>
  
 </LanguageData>

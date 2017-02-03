@@ -6,7 +6,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="Ammo50BMGBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Large caliber bullet used by many heavy machine guns and anti-materiel rifles.</description>
     <statBases>
-	  <Weight>0.11</Weight>
+	  <Mass>0.11</Mass>
 	  <Bulk>0.15</Bulk>
     </statBases>
 		<tradeTags>
@@ -19,16 +19,6 @@
     <stackLimit>200</stackLimit>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.7</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.04</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -62,7 +52,7 @@
 
   <ThingDef Class="Combat_Realism.AmmoDef" ParentName="Ammo50BMGBase">
     <defName>Ammo_50BMG_HE</defName>
-    <label>.50 BMG cartridge (HE)</label>
+    <label>.50 BMG cartridge (HESH)</label>
     <graphicData>
       <texPath>Things/Ammo/HighCaliber/HE</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -93,7 +83,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="Ammo145x114mmBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Old-school anti-tank cartridge originally designed for AT rifles, it is also used by a number of heavy machine guns.</description>
     <statBases>
-	  <Weight>0.2</Weight>
+	  <Mass>0.2</Mass>
 	  <Bulk>0.25</Bulk>
     </statBases>
 	<tradeTags>
@@ -106,16 +96,6 @@
     <stackLimit>200</stackLimit>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.9</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.06</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -135,7 +115,7 @@
 
   <ThingDef Class="Combat_Realism.AmmoDef" ParentName="Ammo145x114mmBase">
     <defName>Ammo_145x114mm_HE</defName>
-    <label>14.5x114mm cartridge (HE)</label>
+    <label>14.5x114mm cartridge (HESH)</label>
     <graphicData>
       <texPath>Things/Ammo/HighCaliber/HE</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

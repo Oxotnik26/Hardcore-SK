@@ -1,53 +1,180 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>TradingSpot</defName>
-    <label>Trading spot</label>
-	<thingClass>SK.TradingSpot</thingClass>
-    <Description>Designates a spot where traders will stop when visiting your colony.</Description>
-    <graphicData>
-      <texPath>Things/Building/Misc/TradingPost/TradingPost</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
-		<shadowData>
-        		<volume>(2.0, 2.3, 2.0)</volume>
-		</shadowData>
+  <ThingDef ParentName="BenchBase">
+    <defName>PrimitiveResearchBench</defName>
+    <label>primitive research table</label>
+	<description>Study surrounding materials here to research new things.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+	<graphicData>
+	  <texPath>Things/Building/Production/TableResearch/Neolithic/TableResearchNeolithic</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
-    <size>(3,3)</size>
     <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
     <statBases>
-	  <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>8500</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
       <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>0.5</ResearchSpeedFactor>
     </statBases>
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>120</costStuffCount>
-		<costList>
-			<Component>6</Component>
-		</costList>
+    <size>(3,1)</size>
+	<stuffCategories>
+	<li>Stony</li>
+	</stuffCategories>
+	<costStuffCount>80</costStuffCount>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <DesignationCategory>Misc</DesignationCategory>
-	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <passability>Standable</passability>
-	<rotatable>false</rotatable>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>SimpleResearchBench</defName>
+    <label>research bench</label>
+    <description>A simple bench with writing implements and low-tech scientific tools. Researchers work here to discover new things.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/ResearchBenchSimple</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>0.7</ResearchSpeedFactor>
+    </statBases>
+    <size>(3,2)</size>
+	<stuffCategories>
+	<li>Metallic</li>
+	<li>Woody</li>
+	<li>Plastic</li>
+	</stuffCategories>
+	<costStuffCount>150</costStuffCount>
+		<CostList>
+			<Component>8</Component>
+			<Mechanism>2</Mechanism>
+		</CostList>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>FileCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <DesignationCategory>Misc</DesignationCategory>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <researchPrerequisites>
+      <li>SK_Technology</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+	<ThingDef ParentName="BenchBase">
+    <defName>HiTechResearchBench</defName>
+    <label>hi-tech research bench</label>
+    <description>A high-tech bench with computers and electronic measurement equipment. Research is sped up by the high-tech tools. Requires power.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <size>(5,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>180</costStuffCount>
+    <costList>
+	  <Plastic>85</Plastic>
+	  <Component>15</Component>
+	  <Electronics>5</Electronics>
+	  <AdvMechanism>5</AdvMechanism>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Production/ResearchBenchHiTech</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+    </statBases>
 	<tickerType>Normal</tickerType>
-       <comps>
-           <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-            <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
-            <MaxCount>1</MaxCount>
-			</li>
-       </comps>
-        <placeWorkers>
-            <li>CommunityCoreLibrary.PlaceWorker_RestrictedCount</li>
-        </placeWorkers>
+    <comps>
+			  <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>700</basePowerConsumption>
+        <startElectricalFires>true</startElectricalFires>
+      </li>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
+                <idlePowerFactor>0.1</idlePowerFactor>
+            </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>MultiAnalyzer</li>
+          <li>FileCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <designationHotKey>Misc9</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+    <researchPrerequisites>
+      <li>Batteries</li>
+    </researchPrerequisites>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <defName>SunLamp</defName>
-    <label>Sun Lamp</label>
+    <label>sun lamp</label>
     <thingClass>Building_SunLamp</thingClass>
     <category>Building</category>
     <graphicData>
@@ -63,11 +190,14 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <fillPercent>0.15</fillPercent>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>1530</WorkToMake>
+			<WorkToBuild>1530</WorkToBuild>
 			<Flammability>1.0</Flammability>
+			<Bulk>15</Bulk>
+			<Mass>5</Mass>
 		</statBases>
     <selectable>true</selectable>
     <description>Lights an area brightly enough to grow crops. Requires power.</description>
@@ -92,6 +222,7 @@
         <soundPowerOff>PowerOffSmall</soundPowerOff>
         <basePowerConsumption>1000</basePowerConsumption>
       </li>
+      <li Class="SK.CompProperties_AutoFlicker"/>
     </comps>
     <!-- Determined by trial and error
     This value isn't perfect because these radii use different algorithms
@@ -106,7 +237,7 @@
   
 <ThingDef ParentName="BuildingBase">
     <defName>HeatSunLamp</defName>
-    <label>Advanced Sun Lamp</label>
+    <label>advanced sun lamp</label>
 	<description>Heat and light an area at the same time but needs a lot of energy. Perfect to grow some plants.</description>
 	 <thingClass>Building_Heater</thingClass>
     <tickerType>Rare</tickerType>
@@ -121,11 +252,14 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
 	<pathCost>90</pathCost>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToBuild>1000</WorkToBuild>
       <Flammability>0.8</Flammability>
+		<Bulk>30</Bulk>
+		<Mass>12</Mass>
     </statBases>
 	<size>(2,2)</size>
 	 <castEdgeShadows>true</castEdgeShadows>
@@ -163,6 +297,7 @@
       <li Class="CompProperties_TempControl">
         <energyPerSecond>21</energyPerSecond>
       </li>
+      <li Class="SK.CompProperties_AutoFlicker"/>
     </comps>
 	  <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <specialDisplayRadius>5.8</specialDisplayRadius>
@@ -173,59 +308,54 @@
 
 
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>FertilizerPump</defName>
-		<label>Terraforming Pump</label>
-		<thingClass>Core_SK.Building_FertilizerPump</thingClass>
-    		<graphicData>
-		<texPath>Things/Building/Misc/FertilizerPump</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+  <ThingDef ParentName="BuildingBase">
+    <defName>TradingSpot</defName>
+    <label>trading spot</label>
+	<thingClass>SK.TradingSpot</thingClass>
+    <Description>Designates a spot where traders will stop when visiting your colony.</Description>
+    <graphicData>
+      <texPath>Things/Building/Misc/TradingPost/TradingPost</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
 		<shadowData>
-        		<volume>(0.3, 0.6, 0.3)</volume>
+        		<volume>(2.0, 2.3, 2.0)</volume>
 		</shadowData>
-    		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Standable</passability>
-		<fillPercent>0.2</fillPercent>
-		<tickerType>Rare</tickerType>	
-		<statBases>
-			<MaxHitPoints>240</MaxHitPoints>
-			<WorkToMake>4000</WorkToMake>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<description>This pump slowly expands a field of growable soil around itself. Requires power.</description>
-		<size>(1,1)</size>
+    </graphicData>
+    <size>(3,3)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>8500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
 		<costList>
-			<Component>8</Component>
-			<Rubber>35</Rubber>
-			<Plastic>15</Plastic>
-			<ElectronicComponents>3</ElectronicComponents>
-			<Mechanism>3</Mechanism>
+			<Component>6</Component>
 		</costList>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Misc</designationCategory>
-		<comps>
-			  <li Class="CompProperties_Flickable"/>
-			  <li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>false</startElectricalFires>
-				<basePowerConsumption>300</basePowerConsumption>
+    <DesignationCategory>Misc</DesignationCategory>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <passability>Standable</passability>
+	<rotatable>false</rotatable>
+	<tickerType>Normal</tickerType>
+       <comps>
+           <li Class="SK.CompProperties_RestrictedPlacement">
+            <compClass>SK.CompRestrictedPlacement</compClass>
+            <MaxCount>1</MaxCount>
 			</li>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-		</comps>
-		<rotatable>false</rotatable>
-	<researchPrerequisites><li>MoisturePump</li></researchPrerequisites>
-	</ThingDef>
-
-
+       </comps>
+        <placeWorkers>
+            <li>SK.PlaceWorker_RestrictedCount</li>
+        </placeWorkers>
+  </ThingDef>
 
 
   <ThingDef ParentName="BuildingBase">
     <defName>OrbitalTradeBeacon</defName>
-    <label>Orbital Trade Beacon</label>
+    <label>orbital trade beacon</label>
     <thingClass>Building_OrbitalTradeBeacon</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/DropBeacon</texPath>
@@ -239,18 +369,21 @@
       </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToMake>1500</WorkToMake>
+      <WorkToBuild>1500</WorkToBuild>
       <Flammability>1.0</Flammability>
+			<Bulk>23</Bulk>
+			<Mass>11</Mass>
     </statBases>
     <description>Required for orbital trading. You can only sell goods that are near an orbital trade beacon. Can be placed indoors.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
     <specialDisplayRadius>7.9</specialDisplayRadius>
     <fillPercent>0.15</fillPercent>
 		<costList>
-			<Component>7</Component>
-			<Mechanism>2</Mechanism>
+			<Component>8</Component>
+			<Mechanism>3</Mechanism>
 		</costList>
     <comps>
 			  <li Class="CompProperties_Flickable"/>
@@ -274,7 +407,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>CommsConsole</defName>
-    <label>Comms Console</label>
+    <label>comms console</label>
     <thingClass>Building_CommsConsole</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/CommsConsole2x1</texPath>
@@ -289,7 +422,7 @@
     <fillPercent>1</fillPercent>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>4250</WorkToMake>
+			<WorkToBuild>4250</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
     <description>Communicate with nearby ships here for negotiation and trade.</description>
@@ -315,21 +448,82 @@
         <startElectricalFires>true</startElectricalFires>
         <basePowerConsumption>300</basePowerConsumption>
       </li>
-            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
     </comps>
     <designationHotKey>Misc3</designationHotKey>
 		<researchPrerequisites><li>SK_TelecommunicationI</li></researchPrerequisites>
   </ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>Buildings_SubspaceBurstTransponder</defName>
+		<label>subspace burst transponder</label>
+		<description>Contacts Ships at a distance and guides them to your colony.</description>
+		<thingClass>SK.Building_SubspaceBurstTransponder</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ComUnitBase</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/ComUnit</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<WorkToBuild>18200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<building>
+			<isMealSource>true</isMealSource>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<foodCostPerDispense>6</foodCostPerDispense>
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		<comps>
+			  <li Class="CompProperties_Flickable"/>
+			  <li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>1200</basePowerConsumption>
+			</li>
+		</comps>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>110</costStuffCount>
+		<costList>
+			<Plastic>20</Plastic>
+			<Glass>15</Glass>
+			<Component>5</Component>
+			<Electronics>8</Electronics>
+		</costList>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<tickerType>Normal</tickerType>
+		<researchPrerequisites>
+			<li>SK_TelecommunicationII</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 
   <!-- Facilities -->
 
   <ThingDef ParentName="BuildingBase">
     <defName>MultiAnalyzer</defName>
-    <label>Multi-Analyzer</label>
+    <label>multi-analyzer</label>
     <description>Increases research speed. Needs to be placed near a research bench. One research bench can be linked to only one multi-analyzer.</description>
     <graphicData>
       <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
@@ -350,8 +544,10 @@
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>8500</WorkToMake>
+      <WorkToBuild>8500</WorkToBuild>
       <Flammability>1.0</Flammability>
+			<Bulk>85</Bulk>
+			<Mass>40</Mass>
     </statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -387,7 +583,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>VitalsMonitor</defName>
-    <label>Vitals Monitor</label>
+    <label>vitals monitor</label>
     <graphicData>
       <texPath>Things/Building/Misc/VitalsMonitor</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -409,8 +605,10 @@
     <fillPercent>1.0</fillPercent>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>6000</WorkToMake>
+      <WorkToBuild>6000</WorkToBuild>
       <Flammability>1.0</Flammability>
+			<Bulk>35</Bulk>
+			<Mass>20</Mass> 
     </statBases>
     <description>Increases patients treatment quality. Needs to be placed adjacent to a medical bed. One medical bed can be linked to only one vitals monitor.</description>
     <size>(1,1)</size>
@@ -436,25 +634,99 @@
       </li>
       <li Class="CompProperties_Facility">
         <statOffsets>
-          <MedicalTreatmentQualityFactor>0.041</MedicalTreatmentQualityFactor>
+          <MedicalTendQualityOffset>0.08</MedicalTendQualityOffset>
           <ImmunityGainSpeedFactor>0.021</ImmunityGainSpeedFactor>
         </statOffsets>
         <maxSimultaneous>1</maxSimultaneous>
         <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
         <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
       </li>
+			<li Class="SK.CompProperties_LowIdleDraw">
+				<compClass>SK.CompPowerLowIdleDraw</compClass>
+				<!-- 0 watts when not in use -->
+			</li>
     </comps>
+		<tickerType>Normal</tickerType>
     <designationHotKey>Misc5</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-	<researchPrerequisites><li>VitalsMonitor</li></researchPrerequisites>	
+	<researchPrerequisites><li>VitalsMonitor</li></researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+	<defName>AdvancedVitalsMonitor</defName>
+	<label>advanced vitals monitor</label>
+    <graphicData>
+      <texPath>Things/Building/AdvancedVitalMonitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+	  <drawSize>(1,2)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.3, 0.4)</volume>
+      </shadowData>
+		<damageData>
+			<rect>(0.15,0.15,1.7,1.7)</rect>
+		</damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+			<Bulk>45</Bulk>
+			<Mass>25</Mass>
+    </statBases>
+	<description>An advanced vitals monitor capable of diagnosing the root cause of almost any symptom. Needs to be placed adjacent to a Hi-tech medical bed.</description>
+	<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+    <costList>
+		<BiosyntheticMaterial>6</BiosyntheticMaterial>
+		<MagneticMaterial>4</MagneticMaterial>
+		<AdvMechanism>3</AdvMechanism>
+		<Microchips>1</Microchips>
+    </costList>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <comps>
+			  <li Class="CompProperties_Flickable"/>
+			  <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>280</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.09</MedicalTendQualityOffset>
+          <ImmunityGainSpeedFactor>0.035</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+        <canLinkToMedBedsOnly>true</canLinkToMedBedsOnly>
+      </li>
+			<li Class="SK.CompProperties_LowIdleDraw">
+				<compClass>SK.CompPowerLowIdleDraw</compClass>
+				<!-- 0 watts when not in use -->
+			</li>
+    </comps>
+		<tickerType>Normal</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	<researchPrerequisites><li>SK_HospitalIV</li></researchPrerequisites>
   </ThingDef>
 
 
   <ThingDef ParentName="FurnitureBase">
     <defName>FileCabinet</defName>
-    <label>File Cabinet</label>
+    <label>file cabinet</label>
     <description>A important place to store important documents about important experiments used for important research on important technologies. Increases research speed slightly when next to a research bench.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/FileCabinet2</texPath>
@@ -473,9 +745,11 @@
     <designationCategory>Misc</designationCategory>
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
-      <WorkToMake>600</WorkToMake>
+      <WorkToBuild>600</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>2</Beauty>
+		<Bulk>28</Bulk>
+		<Mass>14</Mass> 
     </statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -500,7 +774,7 @@
 
   <ThingDef ParentName="FurnitureBase">
     <defName>Patterner</defName>
-    <label>Pattern designer</label>
+    <label>pattern designer</label>
     <description>A important place to store textiles used for increases work speed on textile benches.</description>
     <graphicData>
       <texPath>Things/Building/Furniture/Patterner</texPath>
@@ -523,9 +797,11 @@
     <designationCategory>Misc</designationCategory>
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
-      <WorkToMake>600</WorkToMake>
+      <WorkToBuild>600</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>2</Beauty>
+		<Bulk>25</Bulk>
+		<Mass>12</Mass>  
     </statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -550,7 +826,7 @@
   
   <ThingDef ParentName="BuildingBase">
     <defName>ToolCabinet</defName>
-    <label>Large Tool Cabinet</label>
+    <label>large tool cabinet</label>
     <graphicData>
       <texPath>Things/Building/Misc/ToolCabinet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -570,8 +846,10 @@
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>3800</WorkToMake>
+      <WorkToBuild>3800</WorkToBuild>
       <Flammability>1.0</Flammability>
+			<Bulk>65</Bulk>
+			<Mass>35</Mass> 
     </statBases>
     <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</description>
     <size>(2,1)</size>
@@ -605,7 +883,7 @@
 
     <ThingDef ParentName="BuildingBase">
     <defName>Small_ToolCabinet</defName>
-    <label>Small Tool Cabinet</label>
+    <label>small tool cabinet</label>
     <graphicData>
       <texPath>Things/Building/Misc/ToolCabinet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -619,8 +897,10 @@
     <fillPercent>1.0</fillPercent>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>2800</WorkToMake>
+      <WorkToBuild>2800</WorkToBuild>
       <Flammability>1.0</Flammability>
+			<Bulk>30</Bulk>
+			<Mass>15</Mass> 
     </statBases>
     <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tool cabinets.</description>
     <size>(1,1)</size>
@@ -654,7 +934,7 @@
   
       <ThingDef ParentName="BuildingBase">
     <defName>CookingTools</defName>
-    <label>Cooking tools</label>
+    <label>cooking tools</label>
     <graphicData>
       <texPath>Things/Building/Production/CookingTools</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -668,8 +948,10 @@
     <fillPercent>1.0</fillPercent>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>2800</WorkToMake>
+      <WorkToBuild>2800</WorkToBuild>
       <Flammability>1.0</Flammability>
+			<Bulk>32</Bulk>
+			<Mass>18</Mass> 
     </statBases>
     <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tool cabinets.</description>
     <size>(1,1)</size>
@@ -690,7 +972,7 @@
         <statOffsets>
           <WorkTableWorkSpeedFactor>0.12</WorkTableWorkSpeedFactor>
         </statOffsets>
-        <maxSimultaneous>1</maxSimultaneous>
+        <maxSimultaneous>2</maxSimultaneous>
       </li>
     </comps>
 		<placeWorkers>
@@ -702,7 +984,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>FirefoamPopper</defName>
-    <label>Firefoam popper</label>
+    <label>firefoam popper</label>
     <description>When touched by fire or triggered by hand, this pops and sprays a fire-extinguishing foam in a circular field around itself.</description>
     <graphicData>
       <texPath>Things/Building/Misc/FirefoamPopper</texPath>
@@ -740,9 +1022,11 @@
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToMake>1500</WorkToMake>
+      <WorkToBuild>1500</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>-8</Beauty>
+		<Bulk>32</Bulk>
+		<Mass>18</Mass>
     </statBases>
     <fillPercent>0.15</fillPercent>
 	<stuffCategories>
@@ -766,7 +1050,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>MoisturePump</defName>
-    <label>Moisture pump</label>
+    <label>moisture pump</label>
     <description>Very slowly removes moisture from nearby terrain, converting marshes or shallow water into dry ground. Does not affect deep water.</description>
     <graphicData>
       <texPath>Things/Building/Misc/MoisturePump</texPath>
@@ -783,7 +1067,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>true</startElectricalFires>
-        <basePowerConsumption>150</basePowerConsumption>
+        <basePowerConsumption>300</basePowerConsumption>
         <shortCircuitInRain>false</shortCircuitInRain>
       </li>
       <li Class="CompProperties_TerrainPumpDry">
@@ -793,11 +1077,14 @@
     </comps>
     <tickerType>Rare</tickerType>
     <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToMake>1500</WorkToMake>
+      <WorkToBuild>1500</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>-8</Beauty>
+		<Bulk>70</Bulk>
+		<Mass>32</Mass> 
     </statBases>
     <fillPercent>0.15</fillPercent>
     <costList>
@@ -807,17 +1094,66 @@
     <specialDisplayRadius>6.9</specialDisplayRadius>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <pathCost>25</pathCost>
-    <designationCategory>Misc</designationCategory>
+    <designationCategory>SK_category_terraform</designationCategory>
     <rotatable>false</rotatable>
     <researchPrerequisites>
       <li>MoisturePump</li>
     </researchPrerequisites>
   </ThingDef>
-
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>FertilizerPump</defName>
+		<label>terraforming pump</label>
+		<thingClass>SK.Building_FertilizerPump</thingClass>
+    		<graphicData>
+		<texPath>Things/Building/Misc/FertilizerPump</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shadowData>
+        		<volume>(0.3, 0.6, 0.3)</volume>
+		</shadowData>
+    		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<passability>Standable</passability>
+		<fillPercent>0.2</fillPercent>
+		<tickerType>Rare</tickerType>	
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Bulk>65</Bulk>
+			<Mass>30</Mass>
+		</statBases>
+		<description>This pump slowly expands a field of growable soil around itself. Requires power.</description>
+		<size>(1,1)</size>
+		<costList>
+			<Component>8</Component>
+			<Rubber>35</Rubber>
+			<Plastic>15</Plastic>
+			<ElectronicComponents>3</ElectronicComponents>
+			<Mechanism>3</Mechanism>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>SK_category_terraform</designationCategory>
+		<comps>
+			  <li Class="CompProperties_Flickable"/>
+			  <li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>false</startElectricalFires>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+	<researchPrerequisites><li>MoisturePump</li></researchPrerequisites>
+	</ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <defName>Grave</defName>
-    <label>Grave</label>
+    <label>grave</label>
     <thingClass>Building_Grave</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/GraveEmpty</texPath>
@@ -830,7 +1166,7 @@
     <description>Place the deceased in graves to give them a decent final resting place. Can only be dug in dirt.</description>
     <size>(1,2)</size>
     <statBases>
-      <WorkToMake>1350</WorkToMake>
+      <WorkToBuild>1350</WorkToBuild>
     </statBases>
     <passability>PassThroughOnly</passability>
     <building>
@@ -873,7 +1209,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Sarcophagus</defName>
-    <label>Sarcophagus</label>
+    <label>sarcophagus</label>
     <thingClass>Building_Sarcophagus</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/Sarcophagus</texPath>
@@ -917,7 +1253,7 @@
       </defaultStorageSettings>
     </building>
     <statBases>
-      <WorkToMake>3500</WorkToMake>
+      <WorkToBuild>3500</WorkToBuild>
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -956,14 +1292,14 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>CryptosleepCasket</defName>
-    <label>Cryptosleep Casket</label>
+    <label>cryptosleep casket</label>
     <thingClass>Building_CryptosleepCasket</thingClass>
     <graphicData>
       <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,3)</drawSize>
     </graphicData>
-    <researchPrerequisites><li>SK_MedicineIII</li></researchPrerequisites>
+    <researchPrerequisites><li>Cryptosleep</li></researchPrerequisites>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -971,7 +1307,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
     <statBases>
-      <WorkToMake>3800</WorkToMake>
+      <WorkToBuild>3800</WorkToBuild>
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -1003,7 +1339,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>AncientCryptosleepCasket</defName>
-    <label>Ancient Cryptosleep Casket</label>
+    <label>ancient cryptosleep casket</label>
     <thingClass>Building_AncientCryptosleepCasket</thingClass>
     <graphicData>
       <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
@@ -1049,8 +1385,8 @@
 
  	<ThingDef ParentName="BuildingBase">
 		<defName>Holodeck</defName>
-		<label>Holosuite</label>
-		<thingClass>Core_SK.Building_Holodeck</thingClass>
+		<label>holosuite</label>
+		<thingClass>SK.Building_Holodeck</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/Holodeck1x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1062,8 +1398,10 @@
 		<hasInteractionCell>true</hasInteractionCell>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>7000</WorkToMake>
+			<WorkToBuild>7000</WorkToBuild>
 			<Flammability>1.0</Flammability>
+			<Bulk>35</Bulk>
+			<Mass>15</Mass>
 		</statBases>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -1094,54 +1432,11 @@
 		<researchPrerequisites><li>SK_TrainingFacilitiesII</li></researchPrerequisites>
 	</ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
-    <DefName>AutopsyTable</DefName>
-    <label>Autopsy Table</label>
-    <ThingClass>Building_WorkTable</ThingClass>
-    <Description>Doctors can hone their skills by testing their techniques on corpses.</Description>
-    <graphicData>
-      <texPath>Things/Building/Misc/TableAutopsy</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(1,2)</drawSize>
-	  <shadowData>
-      <volume>(0.3, 0.6, 0.3)</volume>
-	  </shadowData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-	<stuffCategories>
-	<li>Metallic</li>
-	</stuffCategories>
-	<costStuffCount>55</costStuffCount>
-		<costList>
-			<Rubber>15</Rubber>
-			<Component>6</Component>
-			<Mechanism>4</Mechanism>
-		</costList>
-    <passability>Impassable</passability>
-    <fillPercent>1</fillPercent>
-    <useHitPoints>True</useHitPoints>
-    <statBases>
-      <WorkToMake>6000</WorkToMake>
-      <MaxHitPoints>350</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-	<Size>(1,2)</Size>
-	<designationCategory>Misc</designationCategory>
-    <Passability>Impassable</Passability>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(-1,0,0)</interactionCellOffset>
-    <surfaceType>Item</surfaceType>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
-    <researchPrerequisites><li>VitalsMonitor</li><li>SK_TrainingFacilitiesI</li></researchPrerequisites>
-  </ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>PunchingBag</defName>
-		<label>Punching Bag</label>
-		<thingClass>Core_SK.Building_PunchingBag</thingClass>
+		<label>punching bag</label>
+		<thingClass>SK.Building_PunchingBag</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/PunchingBag1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1156,8 +1451,10 @@
 		<hasInteractionCell>true</hasInteractionCell>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>2250</WorkToMake>
+			<WorkToBuild>2250</WorkToBuild>
 			<Flammability>1.0</Flammability>
+			<Bulk>20</Bulk>
+			<Mass>10</Mass>
 		</statBases>
 		<passability>Standable</passability>
 		<fillPercent>0.5</fillPercent>
@@ -1188,10 +1485,165 @@
 		<researchPrerequisites><li>SK_TrainingFacilitiesI</li></researchPrerequisites>
 	</ThingDef>
 	
+  <ThingDef ParentName="BuildingBase">
+    <defName>GroundPenetratingScanner</defName>
+    <label>ground-penetrating scanner</label>
+    <description>A downward-facing penetrating radar, combined with sonar and magnetic imagers, allows you to detect (but not identify) minerals buried deep under the surface. Requires a huge amount of electricity.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/GroundPenetratingScanner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.4, 0.5, 1.4)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <costList>
+      <Steel>400</Steel>
+      <Component>12</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>1500</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li>
+        <compClass>CompDeepScanner</compClass>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-8</Beauty>
+    </statBases>
+    <fillPercent>0.25</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>25</pathCost>
+    <rotatable>false</rotatable>
+    <size>(2,2)</size>
+    <researchPrerequisites>
+      <li>GroundPenetratingScanner</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <!--========================== Transport pods ============================-->
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>PodLauncher</defName>
+    <label>pod launcher</label>
+    <description>A fueling port for launching one transport pod. Pod launchers can launch as a group - but the launchers must be placed adjacent to each other.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/PodLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1.0</fillPercent>
+    <designationCategory>Misc</designationCategory>
+    <building>
+      <hasFuelingPort>true</hasFuelingPort>
+    </building>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+    <costList>
+		<Plastic>80</Plastic>
+		<Mechanism>12</Mechanism>
+		<Component>15</Component>
+		<Electronics>5</Electronics>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>150.0</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>75</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Fuel</li>
+            <li>BioDiesel</li>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>true</drawFuelGaugeInMap>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_FuelingPort</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<researchPrerequisites>
+			<li>TransportPod</li>
+		</researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>TransportPod</defName>
+    <label>transport pod</label>
+    <description>A launchable suborbital-travel cargo pod capable of carrying people, items, or animals. Can be used for transport, surprise attacks, or reinforcing battles.</description>
+    <graphicData>
+      <texPath>Things/Special/DropPod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Misc</designationCategory>
+    <iconDrawScale>1</iconDrawScale>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+    <costList>
+		<Glass>15</Glass>
+		<Plastic>15</Plastic>
+		<Component>5</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Transporter" />
+      <li Class="CompProperties_Launchable" />
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsFuelingPort</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+		<researchPrerequisites>
+			<li>TransportPod</li>
+		</researchPrerequisites>
+  </ThingDef>	
 
 	<ThingDef ParentName="BuildingBase" Class="MobileMineralSonar.ThingDef_MobileMineralSonar">
     <defName>MobileMineralSonar</defName>
-    <Label>Mobile Mineral Sonar</Label>
+    <Label>mobile mineral sonar</Label>
     <Description>The mobile mineral sonar is used to detect hidden minerals and oil deposits.
 - It will scan the surrounding rocks autonomously with the embedded energy packs.
 - Supplying some additional power will hasten the scan rate.
@@ -1219,13 +1671,15 @@
     </CostList>
     <AltitudeLayer>Building</AltitudeLayer>
     <statBases>
-      <WorkToMake>200</WorkToMake>
+      <WorkToBuild>200</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0.1</Flammability>
+	  <Bulk>15</Bulk>
+	  <Mass>8</Mass>
     </statBases>
     <useHitPoints>True</useHitPoints>
     <Size>(1,1)</Size>
-    <!--<DesignationCategory>Misc</DesignationCategory>-->
+	<DesignationCategory>Production</DesignationCategory>
     <Passability>Impassable</Passability>
     <comps>
 			  <li Class="CompProperties_Flickable"/>
@@ -1262,7 +1716,7 @@
   
   <ThingDef ParentName="BuildingBase">
     <defName>MiningHelmetGlower</defName>
-    <label>Mining helmet light</label>
+    <label>mining helmet light</label>
     <Description>Mining helmet light.</Description>
     <graphicData>
       <texPath>Things/Building/DummyTexture</texPath>
@@ -1286,7 +1740,7 @@
   
   <ThingDef ParentName="BuildingBase">
     <defName>DermalRegenerator</defName>
-    <label>Dermal regenerator</label>
+    <label>dermal regenerator</label>
     <graphicData>
       <texPath>Things/Building/DermalRegenerator</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1299,7 +1753,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
     <statBases>
-      <WorkToMake>14200</WorkToMake>
+      <WorkToBuild>14200</WorkToBuild>
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -1334,8 +1788,8 @@
         <startElectricalFires>true</startElectricalFires>
         <basePowerConsumption>2000</basePowerConsumption>
 	</li>
-	            <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-                <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
+	            <li Class="SK.CompProperties_LowIdleDraw">
+                <compClass>SK.CompPowerLowIdleDraw</compClass>
                 <idlePowerFactor>0.1</idlePowerFactor>
             </li>
     </comps>
@@ -1347,7 +1801,7 @@
   
 	<ThingDef ParentName="BuildingBase">
 		<defName>ImpactionCharge</defName>
-		<label>Impaction Charge</label>
+		<label>impaction charge</label>
 		<thingClass>Building_BlastingCharge</thingClass>
 		<graphicData>
 			<texPath>Things/Building/ImpactionCharge</texPath>
@@ -1359,8 +1813,10 @@
 		<passability>PassThroughOnly</passability>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToBuild>12000</WorkToBuild>
 			<Flammability>1.0</Flammability>
+			<Bulk>18</Bulk>
+			<Mass>10</Mass>
 		</statBases>
     <CostList>
       <DepletedUranium>75</DepletedUranium>
@@ -1380,8 +1836,8 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,255,0,0)</glowColor>
 			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-                <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
+            <li Class="SK.CompProperties_RestrictedPlacement">
+                <compClass>SK.CompRestrictedPlacement</compClass>
                 <thingDefs>
                     <li>SteamGeyser</li>
                     <li>MineralDeposits</li>
@@ -1392,7 +1848,7 @@
 		</comps>
 		<size>(1,1)</size>
         <placeWorkers>
-            <li>CommunityCoreLibrary.PlaceWorker_NotOnThing</li>
+            <li>SK.PlaceWorker_NotOnThing</li>
         </placeWorkers>
 		<killedLeavings>
 			<SteamGeyser>1</SteamGeyser>
@@ -1404,72 +1860,11 @@
 		<researchPrerequisites><li>SK_AppliedPhysicsIII</li></researchPrerequisites>
 	</ThingDef>
  
-  
-	<ThingDef ParentName="BuildingBase">
-		<defName>Buildings_SubspaceBurstTransponder</defName>
-		<label>Subspace Burst Transponder</label>
-		<description>Contacts Ships at a distance and guides them to your colony.</description>
-		<thingClass>SubspaceBurstTransponder.Building_SubspaceBurstTransponder</thingClass>
-		<graphicData>
-			<texPath>Things/Building/ComUnitBase</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
-			<damageData>
-				<rect>(0.02,0.25,2.96,2.85)</rect>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/ComUnit</uiIconPath>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<fillPercent>1</fillPercent>
-		<statBases>
-			<WorkToMake>18200</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<building>
-			<isMealSource>true</isMealSource>
-			<wantsHopperAdjacent>true</wantsHopperAdjacent>
-			<foodCostPerDispense>6</foodCostPerDispense>
-			<soundDispense>DispensePaste</soundDispense>
-		</building>
-		<comps>
-			  <li Class="CompProperties_Flickable"/>
-			  <li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
-				<basePowerConsumption>1200</basePowerConsumption>
-			</li>
-		</comps>
-		<size>(3,3)</size>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>110</costStuffCount>
-		<costList>
-			<Plastic>20</Plastic>
-			<Glass>15</Glass>
-			<Component>5</Component>
-			<Electronics>8</Electronics>
-		</costList>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
-		<hasInteractionCell>true</hasInteractionCell>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Misc</designationCategory>
-		<tickerType>Normal</tickerType>
-		<researchPrerequisites>
-			<li>SK_TelecommunicationII</li>
-		</researchPrerequisites>
-	</ThingDef>
-
+<!--
 	
 	<ThingDef Class="Enhanced_Development.Stargate.StargateThingDef" ParentName="BuildingBase">
 		<defName>Stargate</defName>
-		<label>Stargate</label>
+		<label>stargate</label>
 		<description>A Stargate allows transferring of colonists and items between colonies. You can send things through in Colony A's Stargate and load them in Colony B's Stargate. To use it place items or colonists near the Stargate and use the "add resource" or "add colonist" buttons, then use the "dial out" button. The colonists or items are now ready to be "recalled" in a different colony.</description>
 		<thingClass>Enhanced_Development.Stargate.Building_Stargate</thingClass>
 		<graphicData>
@@ -1486,7 +1881,7 @@
 		<FileLocationPrimary></FileLocationPrimary>
 		<FileLocationSecondary></FileLocationSecondary>
 		<statBases>
-			<WorkToMake>20000</WorkToMake>
+			<WorkToBuild>20000</WorkToBuild>
 			<MaxHitPoints>2000</MaxHitPoints>
 			<Flammability>0.0</Flammability>
 		</statBases>
@@ -1514,5 +1909,6 @@
 		<designationCategory>Misc</designationCategory>
 		<staticSunShadowHeight>0.75</staticSunShadowHeight>
 	</ThingDef>
-
+ -->
+ 
 </Buildings>

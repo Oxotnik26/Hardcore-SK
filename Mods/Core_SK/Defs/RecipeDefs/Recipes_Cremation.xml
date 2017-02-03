@@ -34,8 +34,9 @@
 			<thingDefs>
 				<li>Human_Corpse</li>
 				<li>Norbal_Corpse</li>
-				<li>Nova_Corpse</li>
-				<li>Asari_Corpse</li>
+				<li>Alien_Nova_Corpse</li>
+				<li>Alien_Orassan</li>
+				<li>Alien_Asari_Corpse</li>
 			</thingDefs>
 			<specialFiltersToAllow>
 				<li>AllowCorpsesColonist</li>
@@ -143,8 +144,9 @@
 			<thingDefs>
 				<li>Human_Corpse</li>
 				<li>Norbal_Corpse</li>
-				<li>Nova_Corpse</li>
-				<li>Asari_Corpse</li>
+				<li>Alien_Nova_Corpse</li>
+				<li>Alien_Orassan</li>
+				<li>Alien_Asari_Corpse</li>
 			</thingDefs>
 			<specialFiltersToAllow>
 				<li>AllowCorpsesColonist</li>

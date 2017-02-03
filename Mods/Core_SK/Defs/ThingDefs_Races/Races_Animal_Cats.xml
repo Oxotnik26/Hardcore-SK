@@ -4,6 +4,7 @@
   <ThingDef ParentName="AnimalThingBase" Name="AnimalDomesticCatBase" Abstract="True">
 	<thingClass>Core_SK.PersonalShields.Animal.ShieldPawn</thingClass>
     <statBases>
+	  <Mass>3</Mass>
       <MoveSpeed>4.5</MoveSpeed>
       <ComfyTemperatureMin>-14</ComfyTemperatureMin>
       <MarketValue>250</MarketValue>
@@ -12,7 +13,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>2</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
@@ -27,7 +28,7 @@
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>90</defaultCooldownTicks>
+        <defaultCooldownTime>1.55</defaultCooldownTime>
         <meleeDamageBaseAmount>2</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
@@ -42,7 +43,7 @@
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <defaultCooldownTime>1.6</defaultCooldownTime>
         <meleeDamageBaseAmount>4</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -71,7 +72,7 @@
       <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
       <trainableIntelligence>Advanced</trainableIntelligence>
       <wildness>0.2</wildness>
-      <nuzzleMtbHours>40</nuzzleMtbHours>
+      <nuzzleMtbHours>14</nuzzleMtbHours>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -120,7 +121,7 @@
       <maxPreyBodySize>0.26</maxPreyBodySize>
 	  <meatLabel>Cat Meat</meatLabel>
       <leatherLabel>Cat Fur</leatherLabel>
-	  <leatherMarketValue>4</leatherMarketValue>
+	  <leatherMarketValueFactor>4</leatherMarketValueFactor>
       <leatherStatFactors>
 		<MaxHitPoints>0.7</MaxHitPoints>
         <Beauty>1.3</Beauty>
@@ -134,7 +135,6 @@
 		<WorkToMake>1.1</WorkToMake>
 		<BedRestEffectiveness>0.9</BedRestEffectiveness>
 		<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
-		<MedicalTreatmentQualityFactor>0.9</MedicalTreatmentQualityFactor>
       </leatherStatFactors>
     </race>
   </ThingDef>
@@ -188,7 +188,7 @@
   </PawnKindDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Fluffy_MiniMaineCoon</defName>
+		<defName>MiniMaineCoon</defName>
 		<label>miniature Maine Coon</label>
 		<race>Cat</race>
 		<combatPower>35</combatPower>
@@ -240,7 +240,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Fluffy_MaineCoon</defName>
+		<defName>MaineCoon</defName>
 		<label>Maine Coon</label>
 		<race>Cat</race>
 		<combatPower>30</combatPower>
@@ -292,7 +292,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Fluffy_EuropeanShorthair</defName>
+		<defName>EuropeanShorthair</defName>
 		<label>European Shorthair</label>
 		<race>Cat</race>
 		<combatPower>30</combatPower>
@@ -344,7 +344,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Fluffy_NorwegianForestCat</defName>
+		<defName>NorwegianForestCat</defName>
 		<label>Norwegian Forest Cat</label>
 		<race>Cat</race>
 		<combatPower>35</combatPower>
@@ -396,7 +396,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Fluffy_BritishShorthair</defName>
+		<defName>BritishShorthair</defName>
 		<label>British Shorthair</label>
 		<race>Cat</race>
 		<combatPower>35</combatPower>
@@ -448,7 +448,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Fluffy_Siamese</defName>
+		<defName>Siamese</defName>
 		<label>Siamese</label>
 		<race>Cat</race>
 		<combatPower>35</combatPower>

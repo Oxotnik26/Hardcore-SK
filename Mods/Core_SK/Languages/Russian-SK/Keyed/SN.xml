@@ -1,11 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
+	<FollowMe.Cancel>Больше не следует за {0}.</FollowMe.Cancel>
+	<FollowMe.Follow>Следует за {0}.</FollowMe.Follow>
+	<FollowMe.RejectMultiple>Не может следовать - выделено несколько целей.</FollowMe.RejectMultiple>
+	<FollowMe.RejectNoSelection>Не может следовать - не выбрана цель.</FollowMe.RejectNoSelection>
+	<FollowMe.RejectNotAThing>Не может следовать - неподходящая цель.</FollowMe.RejectNotAThing>
+
+<!--  Plasma Generator  -->
+<ClutterStringPowerOutput>Выходная мощность: </ClutterStringPowerOutput>
+<ClutterStringCharging>Процесс зарядки: </ClutterStringCharging>
+
 <CallShipLabel>Вызвать торговый корабль</CallShipLabel>
 <CallShipDesc>После полной зарядки устройства, вы сможете попробовать вызвать торговый корабль.</CallShipDesc>
 <ChargingProcess>Зарядка: </ChargingProcess>
 <FullyCharged>Полностью заряжено</FullyCharged>
-<TransmittingProcess>Установливаем контакт: </TransmittingProcess>
+<TransmittingProcess>Устанавливаем контакт: </TransmittingProcess>
 <InsufficientChargeLevel>Не хватает заряда. Пожалуйста дождитесь полной зарядки.</InsufficientChargeLevel>
 <MSPowerNeeded>Требуется: </MSPowerNeeded>
 <MSScanProcess>Процесс сканирования: </MSScanProcess>
@@ -22,14 +32,14 @@
 <IncreasePowerLabel>Увеличить мощность</IncreasePowerLabel>
 <IncreasePowerDesc>Увеличьте мощность, чтобы быстрее зарядить звездные врата</IncreasePowerDesc>
 <DecreasePowerLabel>Уменьшить мощность</DecreasePowerLabel>
-<DecreasePowerDesc>Нажмите чтобы уменьщить мощность</DecreasePowerDesc>
+<DecreasePowerDesc>Нажмите чтобы уменьшить мощность</DecreasePowerDesc>
 <InsPowerAddRes>Не хватает заряда, чтобы добавить ресурсы</InsPowerAddRes>
 <InsPowerAddCol>Не хватает заряда, чтобы добавить поселенцев</InsPowerAddCol>
-<PlsRecallOTF>Пожалуйста вызовите сохраненную команду.</PlsRecallOTF>
+<PlsRecallOTF>Пожалуйста, вызовите сохраненную команду.</PlsRecallOTF>
 <InsPTEC>Не хватает заряда, чтобы установить связь.</InsPTEC>
 <RecOfft>Вызываем...</RecOfft>
 <OffNotFound>К сожалению, никто не вышел на связь.</OffNotFound>
-<BufferItemsSG>В буффере: </BufferItemsSG>
+<BufferItemsSG>В буфере: </BufferItemsSG>
 <CapacitorChargeSG>Заряд: </CapacitorChargeSG>
 
 <IncHaulPriorityLabel>Повысить приоритет переноса</IncHaulPriorityLabel>
@@ -44,11 +54,11 @@
 <RotateLabel>Повернуть</RotateLabel>
 <RotateDesc>Нажми чтобы повернуть.</RotateDesc>
 <CoolingLabel>Охлаждение</CoolingLabel>
-<CoolingDesc>Нажми чтобы включить режим охлаждения.</CoolingDesc>
+<CoolingDesc>Нажми чтобы переключить в режим обогрева.</CoolingDesc>
 <HeatingLabel>Обогрев</HeatingLabel>
-<HeatingDesc>Нажми чтобы включить режим обогрева.</HeatingDesc>
+<HeatingDesc>Нажми чтобы переключить в авто-режим.</HeatingDesc>
 <AutoLabel>Авто-режим</AutoLabel>
-<AutoDesc>Нажми чтобы включить авто-режим.</AutoDesc>
+<AutoDesc>Нажми чтобы переключить в режим охлаждения.</AutoDesc>
 <ModeCooling>Статус: Охлаждение</ModeCooling>
 <ModeHeating>Статус: Обогрев</ModeHeating>
 <ModeAuto>Статус: Авто</ModeAuto>
@@ -58,40 +68,139 @@
 <StoredItemsCount>Содержит внутри:</StoredItemsCount>
 <Remove>Убрать</Remove>
 
-<UnlockDoors>Unlock doors</UnlockDoors>
-<LockDoors>Lock doors</LockDoors>
-<DoorAreLocked>Door are locked</DoorAreLocked>
-<DoorAreUnlocked>Door are unlocked</DoorAreUnlocked>
+<UnlockDoors>Открыть дверь</UnlockDoors>
+<LockDoors>Закрыть дверь</LockDoors>
+<DoorAreLocked>Дверь закрыта</DoorAreLocked>
+<DoorAreUnlocked>Дверь открыта</DoorAreUnlocked>
+<DoorBlocked>Дверь заблокирована</DoorBlocked>
+<DoorHoldOpen>Дверь всегда открыта</DoorHoldOpen>
+<UnlockingMote>Открываю</UnlockingMote>
+<LockingMote>Закрываю</LockingMote>
 
-<NeedAqHopperLabel>Need aquaculture hopper</NeedAqHopperLabel>
-<NeedAqHopperDesc>You have an aquaculture basin with no aquaculture hopper next to it.\n\nTo work, aquaculture basin must draw from an adjacent aquaculture hopper filled with raw vegetables.\n\nBuild an aquaculture hopper adjacent to the aquaculture basin.</NeedAqHopperDesc>
-<IdleAqBasinLabel>Idle aquaculture basin</IdleAqBasinLabel>
-<IdleAqBasinDesc>You have an idle aquaculture basin.\n\nYou should supply it some fish eggs to start breeding.\n\nUse the bills tab to order it and check you have an available fisher.</IdleAqBasinDesc>
-<FrozenFishingSpotLabel>Frozen fishing spot</FrozenFishingSpotLabel>
-<FrozenFishingSpotDesc>One of your fishing spot is frozen.\n\nYour fishers' efficiency will be greatly reduced.\n\nMake a hole in the ice (clear snow) so they can work.</FrozenFishingSpotDesc>
-<BredFishedDied>Bred fishes have died in an aquaculture basin. You should check its conditions.</BredFishedDied>
-<ProgressZero>Progress: 0%</ProgressZero>
-<ProgressLabel>Progress: </ProgressLabel>
-<BredSpecies>Bred species: </BredSpecies>
-<NoneStatus>none</NoneStatus>
-<MicroFungusStatus>(micro fungus)</MicroFungusStatus>
-<ColdStatus>(cold)</ColdStatus>
-<HotStatus>(hot)</HotStatus>
-<CritStatus>(critical)</CritStatus>
-<FishStatus>Water quality/fishes health: </FishStatus>
-<FishStock>Fish stock: </FishStock>
-<MicroFungusLabel>Micro Fungus</MicroFungusLabel>
-<MicroFungusDesc>Some of your aquaculture basins have been infected by a strange aquatic fungus.\nIt seems to consume all the water's oxygen.\nLet's hope the fishes will survive this deprivation.</MicroFungusDesc>
-<TreasureLabel>Sunken treasure!</TreasureLabel>
-<TreasureDesc> has found a sunken treasure while fishing! What a good catch!\n</TreasureDesc>
-<DeadMarineLabel>Dead marine</DeadMarineLabel>
-<DeadMarineDesc> has cought a dead body while fishing!\n\n'This is really disgusting but look at his gear! This guy was probably a MiningCo. security member. I wonder what happend to him...'\n"</DeadMarineDesc>
-<AqReport>Aquaculture hopper must be placed next to an aquaculture basin.</AqReport>
-<PlaceOnBank>Fishing pier must be placed on a bank.</PlaceOnBank>
-<PlaceonWater>Fishing pier must be placed on water.</PlaceonWater>
-<SpotOnWater>Fishing spot must be placed on water.</SpotOnWater>
-<PierToClose>An other fishing pier is too close.</PierToClose>
-<BprintToClose>An other fishing pier blueprint is too close.</BprintToClose>
-<FrameToClose>An other fishing pier frame is too close.</FrameToClose>
+<NeedAqHopperLabel>Для работы требуется наличие хоппера</NeedAqHopperLabel>
+<NeedAqHopperDesc>У вас есть бассейн для разведения рыбы, но нет рядом хоппера для его работы.\n\nДля его работы требуется поместить корм в специализированный хоппер.\n\nПостройте хоппер рядом с бассейном для разведения рыбы.</NeedAqHopperDesc>
+<IdleAqBasinLabel>Неактивный бассейн</IdleAqBasinLabel>
+<IdleAqBasinDesc>У вас неактивный бассейн для разведения рыбы.\n\nВы должны поместить икру рыбы, чтобы начать разведение.</IdleAqBasinDesc>
+<FrozenFishingSpotLabel>Замерзшее место рыбалки</FrozenFishingSpotLabel>
+<FrozenFishingSpotDesc>Одно из мест рыбалки замерзло\n\nЭффективность рыбалки будет сильно снижена.\n\nСделайте отверстие во льду(уберите снег), чтобы возобновить рыбалку.</FrozenFishingSpotDesc>
+<BredFishedDied>Рыба которую разводили погибла. Проверьте условия разведения рыбы.</BredFishedDied>
+<ProgressZero>Процесс: 0%</ProgressZero>
+<ProgressLabel>Процесс: </ProgressLabel>
+<BredSpecies>Разведение вида: </BredSpecies>
+<NoneStatus>пусто</NoneStatus>
+<NoFoodStatus>(нет пищи)</NoFoodStatus>
+<MicroFungusStatus>(микро грибок)</MicroFungusStatus>
+<ColdStatus>(холодно)</ColdStatus>
+<HotStatus>(жарко)</HotStatus>
+<CritStatus>(крит.)</CritStatus>
+<FishStatus>Качество воды/Здоровье рыб: </FishStatus>
+<FishStock>Запас рыбы: </FishStock>
+<MicroFungusLabel>Микро грибок</MicroFungusLabel>
+<MicroFungusDesc>Некоторые из ваших бассейнов для разведения рыбы были заражены странным водным грибком.\nМикро грибок продолжает поглощать значительную долю кислорода в воде.\nБудем надеяться, что рыбы смогут пережить это.</MicroFungusDesc>
+<TreasureLabel>Затонувшие сокровища!</TreasureLabel>
+<TreasureDesc> нашел затонувшее сокровище во время рыбалки! Какой хороший улов!\n</TreasureDesc>
+<DeadMarineLabel>Мертвый рыбак</DeadMarineLabel>
+<DeadMarineDesc> поймал труп во время рыбалки!\n\n'Это действительно отвратительно, но давайте посмотрим на его снаряжение! Интересно, что с ним случилось и как он тут оказался...'\n"</DeadMarineDesc>
+<AqReport>Хопер должен быть размещен рядом с бассейном для разведения рыбы.</AqReport>
+<PlaceOnBank>Пирс для рыбалки должен быть частично размещен на берегу.</PlaceOnBank>
+<PlaceonWater>Пирс для рыбалки должен быть частично размещен на воде.</PlaceonWater>
+<SpotOnWater>Место для рыбалки должно быть размещено на воде.</SpotOnWater>
+<PierToClose>Слишком близко к другому пирсу, мы так ничего не поймаем!</PierToClose>
+<BprintToClose>Слишком близко к другому пирсу, мы так ничего не поймаем!</BprintToClose>
+<FrameToClose>Слишком близко к другому пирсу, мы так ничего не поймаем!</FrameToClose>
+
+  <!-- Fuel -->
+  <FuelFilter>Фильтр</FuelFilter>
+  <InternalTemperature>Внутренняя температура:</InternalTemperature>
+  <OperatingTemperature>Рабочая температура: </OperatingTemperature>
+  <CurrentStatus>Текущий статус:</CurrentStatus>
+  <WStatus> работает</WStatus>
+  <LTStatus> низкая темп.</LTStatus>
+  <RefuelAt>Заправить при </RefuelAt>
+  <BurningProgress>Процесс горения:</BurningProgress>
+  <FuelAmount>Количество топлива: </FuelAmount>
+  <DepletesAfter>Скор. сгорания: </DepletesAfter>
+  <MaxTempertarure>Макс. темп: </MaxTempertarure>
+  <NoFuel>Нет топлива</NoFuel>
+  <FuelDrop>Забрать топливо</FuelDrop>
+  <FuelInfo>Информация</FuelInfo>
+  <ytime> г. </ytime>
+  <mtime> мес. </mtime>
+  <dtime> дн. </dtime>
+  <htime> ч. </htime>
+  <lhtime>1 часа </lhtime>
+  <FuelFilterMessage>Настройки фильтра топлива установлены по умолчанию (Разрешить всё). Если вы хотите запретить для всего, сперва установите шкалу заправки в 0%.</FuelFilterMessage>
+  
+<InsectHuntMessage>Насекомое покинуло улей в поисках пищи</InsectHuntMessage>
+<SpawnManHuntInspect>Насекомое в гневе: </SpawnManHuntInspect>
+
+  <wantedtoattack> планировали атаковать вас, но не смогли дойти.</wantedtoattack> 
+  <wantedtoattackbuttemp> планировали атаковать вас, но решили вернуться из-за  </wantedtoattackbuttemp> 
+  <toohot>слишком жаркой погоды</toohot>
+  <toocold>слишком холодной погоды</toocold>
+  
+  <CopyBillsLabel>Скопировать задания</CopyBillsLabel>
+  <CopyDescA>Копировать </CopyDescA>
+  <BillSettingsTr> настройки заданий</BillSettingsTr>
+  <PasteBillsLabel>Вставить задания</PasteBillsLabel>
+  <PasteDescA>Вставить </PasteDescA>
+  <NotFound>Нет </NotFound>
+  <CopyFirst> с сохраненными настройками</CopyFirst>
+  
+	<DashEnabled>Ускорение активно</DashEnabled>
+	<Dash>Ускорение</Dash>
+	<DashDisabled>Ускорение недоступно</DashDisabled>
+	<Recharging>Перезарядка</Recharging>
+
+	<WindowImpassable>Окно блокируется c одной или нескольких сторон.</WindowImpassable>
+	<WindowDoubleOutside>Одна сторона окна должна быть внутри.</WindowDoubleOutside>
+	<WindowDoubleInside>Одна сторона окна должна быть снаружи.</WindowDoubleInside>
+	
+	<UniformGrowZoneLabel>Равномерная посадка</UniformGrowZoneLabel>
+	<UniformGrowZoneDesc>Ограничивает зону посадки к выбранной одному типу почвы.</UniformGrowZoneDesc>
+
+	<RedLabel>Красный оттенок</RedLabel>
+	<BlueLabel>Синий оттенок</BlueLabel>
+	<GreenLabel>Зеленый оттенок</GreenLabel>
+	<AlphaLabel>Прозрачность</AlphaLabel>
+	<UseColorLabel>Выбрать</UseColorLabel>
+	<RandomColorLabel>Случайно</RandomColorLabel>
+	<StockpileLabel>Склад</StockpileLabel>
+	<DefaultLabel>По умолчанию</DefaultLabel>
+	<CustomLabel>Свой</CustomLabel>	
+	<DumpingStockpileLabel>Свалка</DumpingStockpileLabel>
+	
+	<accident>Инцидент</accident>
+	<accidentdesc> - несчастный случай.</accidentdesc>
+	
+	<LootLabel>Открыть</LootLabel>
+	<LootDesc>Найти что-нибудь полезное внутри </LootDesc>
+	<LootThe>Найти что-нибудь полезное внутри </LootThe>
+	
+<AutoFlickingLabel>Автоматизация</AutoFlickingLabel>
+<AutoFlickingDesc>Автоматически дает указание поселенцу включать или выключать в течении дня или на ночь.</AutoFlickingDesc>
+
+<onLabel>Включить</onLabel>
+<OffLabel>Выключить</OffLabel>
+<SetTimesLabel>Время</SetTimesLabel>
+<SetTimesDesc>Установить время, чтобы переключатель автоматически включался или выключался.</SetTimesDesc>
+
+<OnWater>Должно быть размещено на воде.</OnWater>
+<OnShallowWater>Должно быть размещено на мелководье.</OnShallowWater>
+<OnFundament>Должно быть размещено на фундаменте.</OnFundament>
+<AlreadyShallowWater>Здесь уже мелководье.</AlreadyShallowWater>
+<CantOnMarsh>Не может быть размещено в болоте.</CantOnMarsh>
+	
+<WarnFalling>ВНИМАНИЕ: Падение неизвестного космического объекта!</WarnFalling>
+
+<LetterLabelZeonPasses>Зеон!</LetterLabelZeonPasses>
+<LetterZeonPasses>Многие колонии Римворлда уже пали от босса механоидов, Зеона. Возможно, вам следует рассмотреть вопрос о досрочном покидании колонии... 
+Он уже здесь!</LetterZeonPasses>
+
+<Refillcells>Переносить при меньше, чем</Refillcells>
+
+<ResumeOnLowStock>Продолжить крафт</ResumeOnLowStock>
+<PauseOnCompletion>Пауза после завершения</PauseOnCompletion>
+<LowStockThreshold>Порог низкого кол-ва на складе: </LowStockThreshold>
 
 </LanguageData>

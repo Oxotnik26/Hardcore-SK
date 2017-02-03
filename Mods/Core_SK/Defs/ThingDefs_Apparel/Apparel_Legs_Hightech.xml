@@ -2,14 +2,14 @@
 
 <ThingDefs>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Apparello_Pollypolly</defName>
 		<label>Constructor's Trousers</label>
 		<description>Trousers with huge pocket space.</description>
 		<graphicData>
 		  <texPath>Things/Apparel/Apparello/Accessorello/PollyPocket</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		</graphicData>		
+		</graphicData>
 		<stuffCategories>
 			<li>HF</li>
 			<li>Fabric</li>
@@ -20,6 +20,7 @@
 			<Compaste>15</Compaste>
 		</CostList>
 		<statBases>
+			<WorkToMake>6500</WorkToMake>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Flammability>4</Flammability>
 			<Insulation_Heat>4</Insulation_Heat>
@@ -28,7 +29,7 @@
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.27</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.4</Weight>
+			<Mass>0.4</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.4</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -67,7 +68,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>USCM_CamoPants</defName>
 		<label>Camo Military Pants</label>
 		<description>Standard military camouflage pants of USCM troopers.</description>
@@ -86,6 +87,7 @@
 			<Kevlar>22</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>7500</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>4</Flammability>
 			<Insulation_Heat>4</Insulation_Heat>
@@ -94,7 +96,7 @@
 			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.31</ArmorRating_Heat>
 			<ArmorRating_Electric>0.31</ArmorRating_Electric>
-			<Weight>0.7</Weight>
+			<Mass>0.7</Mass>
 			<Bulk>0.8</Bulk>
 			<WornWeight>0.6</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -137,7 +139,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Marine_MilitaryPants</defName>
 		<label>Marine Military Pants</label>
 		<description>Reliable military pants intended for marines.</description>
@@ -156,6 +158,7 @@
 			<Kevlar>20</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>8000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>3</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
@@ -164,7 +167,7 @@
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.27</ArmorRating_Electric>
-			<Weight>0.6</Weight>
+			<Mass>0.6</Mass>
 			<Bulk>0.5</Bulk>
 			<WornWeight>0.6</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -208,7 +211,7 @@
 	</ThingDef>
 	
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelSpacerBase">
 		<defName>Apparello_Spants</defName>
 		<label>Space Marine Leggings</label>
 		<description>A pair of leggings covered in a thin layer of kevlar. Can be worn over most of the other pants.</description>
@@ -227,6 +230,7 @@
 			<Kevlar>20</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>4</Insulation_Heat>
@@ -235,7 +239,7 @@
 			<ArmorRating_Sharp>0.37</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.8</Weight>
+			<Mass>0.8</Mass>
 			<Bulk>0.7</Bulk>
 			<WornWeight>0.8</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -288,8 +292,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelSpacerBase">
 		<defName>Apparello_Cryptonautpants</defName>
 		<label>Cryptonaut Pants</label>
 		<description>An armored set of pants designed for ultimate balance.</description>
@@ -308,6 +311,7 @@
 			<Kevlar>20</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -316,7 +320,7 @@
 			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<ArmorRating_Electric>0.3</ArmorRating_Electric>
-			<Weight>1</Weight>
+			<Mass>1</Mass>
 			<Bulk>0.9</Bulk>
 			<WornWeight>1</WornWeight>
 			<WornBulk>0</WornBulk>

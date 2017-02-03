@@ -7,15 +7,15 @@
     <texturePath>Terrain/Surfaces/WaterDeep</texturePath>
     <EdgeType>FadeRough</EdgeType>
     <RenderPrecedence>395</RenderPrecedence>
-		<passability>Impassable</passability>
+	<passability>Impassable</passability>
     <PathCost>300</PathCost>
     <acceptFilth>false</acceptFilth>
     <fertility>0</fertility>
     <avoidWander>true</avoidWander>
-    <changeable>false</changeable>
-		<holdSnow>false</holdSnow>
-    <affordances>
-      <li>Undefined</li>
+    <changeable>true</changeable> <!-- changed the changeable to true -->
+	<holdSnow>false</holdSnow>
+	<affordances>
+      <li>Undefined</li> <!-- added affordance undefined, needed for building with this mod-->
     </affordances>
   </TerrainDef>
 
@@ -27,13 +27,31 @@
     <RenderPrecedence>394</RenderPrecedence>
     <PathCost>12</PathCost>
     <acceptFilth>false</acceptFilth>
-    <fertility>0</fertility>
+    <fertility>0.02</fertility>
     <avoidWander>true</avoidWander>
-    <changeable>false</changeable>
-		<holdSnow>false</holdSnow>
+    <changeable>true</changeable>    <!-- changed the changeable to true -->
+	<holdSnow>true</holdSnow>
     <driesTo>Gravel</driesTo>
-    <affordances>
-      <li>Undefined</li>
+	<affordances>
+      <li>Undefined</li>  <!-- added affordance undefined, needed for building with this mod-->
+    </affordances>
+  </TerrainDef>
+  
+  <TerrainDef>
+    <defName>WaterSea</defName>
+    <label>Sea water</label>
+    <texturePath>Terrain/Surfaces/WaterSea</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>396</RenderPrecedence>
+	<passability>Impassable</passability>
+    <PathCost>300</PathCost>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <changeable>true</changeable> <!-- changed the changeable to true -->
+	<holdSnow>false</holdSnow>
+	<Fertility>0</Fertility>
+	<affordances>
+      <li>Undefined</li> <!-- added affordance undefined, needed for building with this mod-->
     </affordances>
   </TerrainDef>
   

@@ -9,7 +9,9 @@
 		</graphicData>
 		<projectile>
 			<speed>140</speed>
-			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundExplode>Explosion</soundExplode>
+			<soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
+			<soundImpactAnticipate>FlyingShell</soundImpactAnticipate>
 	  		<flyOverhead>false</flyOverhead>
 			<dropsCasings>true</dropsCasings>
 			<casingMoteDefName>Mote_BigShell</casingMoteDefName>
@@ -26,15 +28,12 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>230</damageAmountBase>
-	  <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
-	  <soundExplode>MortarBomb_Explode</soundExplode>
-      <soundImpactAnticipate>FlyingShell</soundImpactAnticipate>
     </projectile>
 		<comps>
 			<li Class="Combat_Realism.CompProperties_ExplosiveCR">
 				<explosionDamage>65</explosionDamage>
 				<explosionDamageDef>Bomb</explosionDamageDef>
-				<explosionRadius>1.8</explosionRadius>
+				<explosionRadius>2</explosionRadius>
 				<fragments>
 					<Fragment_MortarSmall>45</Fragment_MortarSmall>
 					<Fragment_MortarMedium>25</Fragment_MortarMedium>
@@ -56,10 +55,7 @@
     <projectile>
       <damageDef>Bomb</damageDef>
       <damageAmountBase>15</damageAmountBase>
-      <explosionRadius>1.5</explosionRadius>
-	  <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
-	  <soundExplode>MortarBomb_Explode</soundExplode>
-      <soundImpactAnticipate>FlyingShell</soundImpactAnticipate>
+      <explosionRadius>2</explosionRadius>
     </projectile>
 		<comps>
 			<li Class="Combat_Realism.CompProperties_ExplosiveCR">
@@ -88,14 +84,13 @@
     <projectile>
       <damageDef>EMP</damageDef>
       <damageAmountBase>95</damageAmountBase>
-      <explosionRadius>6.5</explosionRadius>
-	  <soundExplode>MortarBomb_Explode</soundExplode>
+      <explosionRadius>7</explosionRadius>
     </projectile>
 		<comps>
 			<li Class="Combat_Realism.CompProperties_ExplosiveCR">
 				<explosionDamage>25</explosionDamage>
 				<explosionDamageDef>Electrical</explosionDamageDef>
-				<explosionRadius>6.5</explosionRadius>
+				<explosionRadius>7</explosionRadius>
 			</li>
 		</comps>
   </ThingDef>
@@ -109,6 +104,8 @@
 		<projectile>
 		<speed>60</speed>
 		<soundExplode>Explosion</soundExplode>
+		<soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
+		<soundImpactAnticipate>FlyingShell</soundImpactAnticipate>
 		<flyOverhead>true</flyOverhead>
 		<dropsCasings>true</dropsCasings>
 		<casingMoteDefName>Mote_BigShell</casingMoteDefName>
@@ -126,15 +123,13 @@
     <projectile>
       <damageDef>Bomb</damageDef>
       <damageAmountBase>150</damageAmountBase>
-      <explosionRadius>2.8</explosionRadius>
-      <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <explosionRadius>3</explosionRadius>
     </projectile>
 		<comps>
 			<li Class="Combat_Realism.CompProperties_ExplosiveCR">
 				<explosionDamage>100</explosionDamage>
 				<explosionDamageDef>Bomb</explosionDamageDef>
-				<explosionRadius>3.8</explosionRadius>
+				<explosionRadius>4</explosionRadius>
 				<fragments>
 					<Fragment_MortarSmall>180</Fragment_MortarSmall>
 					<Fragment_MortarMedium>130</Fragment_MortarMedium>
@@ -146,7 +141,7 @@
   </ThingDef>
   
  
-  <ThingDef ParentName="Base90mmCannonShell">
+  <ThingDef ParentName="Base155mmHowitzerShell">
     <defName>Bullet_155mmHowitzerShell_EMP</defName>
     <label>155mm howitzer shell (EMP)</label>
 		<thingClass>Combat_Realism.ProjectileCR_Explosive</thingClass>
@@ -158,7 +153,6 @@
       <damageDef>EMP</damageDef>
       <damageAmountBase>150</damageAmountBase>
       <explosionRadius>9</explosionRadius>
-      <soundExplode>MortarBomb_Explode</soundExplode>
     </projectile>
 		<comps>
 			<li Class="Combat_Realism.CompProperties_ExplosiveCR">

@@ -1,36 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase">
+	
+	<ThingDef Name="BurnerFueled" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Building</thingClass>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<surfaceType>Item</surfaceType>
+		<fillPercent>1</fillPercent>
+		<comps>
+			<li>
+				<compClass>SK.CompFadingShadowThrower</compClass>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>SK.ITab_Fuel</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<ThingDef ParentName="WorkTableFueled">
     <defName>Campfire</defName>
-    <label>Campfire</label>
-    <description>A camfire can cook meals and produce heat but it will burn out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>    
-    <thingClass>Building_WorkTable</thingClass>
-    <category>Building</category>
+    <label>campfire</label>
+    <description>A campfire that can cook meals and produce heat, but it will burn out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat.</description>    
     <graphicData>
       <texPath>Things/Building/Misc/Campfire</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawRotated>false</drawRotated>
-      <allowFlip>false</allowFlip>
+	  <drawSize>(1,1)</drawSize>
       <damageData>
         <rect>(0.2,0,0.6,0.1)</rect>
       </damageData>
+			<shadowData>
+				<volume>(0.5, 0.5, 0.5)</volume>
+			</shadowData>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
-    <tickerType>Normal</tickerType>
-    <drawerType>RealtimeOnly</drawerType>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>200</WorkToMake>
+      <WorkToBuild>200</WorkToBuild>
       <Flammability>0</Flammability>
+	  <WorkTableWorkSpeedFactor>0.7</WorkTableWorkSpeedFactor>
     </statBases>
-    <selectable>true</selectable>
+	<Size>(1,1)</Size>
     <stuffCategories>
-      <li>Kindlingstuff</li>
+      <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>20</costStuffCount>
+    <costStuffCount>10</costStuffCount>
     <soundImpactDefault>BulletImpactGround</soundImpactDefault>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
@@ -39,39 +54,47 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
-	   <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>8.0</fuelConsumptionRate>
-        <fuelCapacity>10.0</fuelCapacity>
-        <fuelFilter>
-          <thingDefs>
-            <li>Kindling</li>
-            <li>WoodLog</li>
-            <li>Charcoal</li>
-          </thingDefs>
-        </fuelFilter>
-        <destroyOnNoFuel>false</destroyOnNoFuel>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>10</glowRadius>
-        <glowColor>(252,187,113,0)</glowColor>
-      </li>
-			<li Class="SK.CompProperties_HeatPusherAdvanced">
-				<compClass>SK.CompHeatPusherAdvanced</compClass>
+		  <li>
+			<compClass>CompGatherSpot</compClass>
+		  </li>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>8</glowRadius>
+			<glowColor>(252,187,113,0)</glowColor>
+		  </li>
+			<li Class="SK.CompProperties_HeatPusherExt">
+				<compClass>SK.CompHeatPusherExt</compClass>
 				<heatPerSecond>18</heatPerSecond>
 				<heatPushMaxTemperature>30</heatPushMaxTemperature>
 			</li>
-      <li Class="SK.CompProperties_FireOverlayMod">
-        <fireSize>1</fireSize>
-      </li>
-      <li>
-        <compClass>CompGatherSpot</compClass>
-      </li>
+			<li Class="SK.CompFueled_Properties">
+				<operatingTemp>300</operatingTemp>
+				<fireDrawOffset>(0,0.15,0.1)</fireDrawOffset>
+				<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+				<fuelDrawOffset>(0,0.1,0.01)</fuelDrawOffset>
+				<fuelDrawScale>0.7</fuelDrawScale>
+				<fuelCapacity>10</fuelCapacity>
+				<smokesize>0.3</smokesize>
+				<canAutoBurn>true</canAutoBurn>
+				<effectOnWeather>true</effectOnWeather>				
+				<fuelFilter>
+				  <thingDefs>
+						<li>Charcoal</li>
+						<li>Coal</li>
+						<li>Kindling</li>
+				  </thingDefs>
+					<categories>
+					  <li>Wooden</li>
+					  <li>Woody</li>
+					</categories>  
+				</fuelFilter>
+			</li>
     </comps>
     <designationCategory>Temperature</designationCategory>
     <designationHotKey>Misc1</designationHotKey>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <recipes>
+      <li>BurnApparelCampfire</li>
+      <li>BurnDrugs</li>
+	
       <li>BakePotato</li>
       <li>MakePemmicanCampfire</li>
       <li>CookMealJerky</li>
@@ -82,24 +105,24 @@
       <li>BurnApparelCampfire</li>
       <li>BurnThingsCampfire</li>
     </recipes>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
     <building>
       <isMealSource>true</isMealSource>
-      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
   </ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BurnerFueled">
 		<defName>Building_Heater</defName>
-		<label>Coal burner</label>
-		<ThingClass>Building</ThingClass>
+		<label>coal burner</label>
 		<graphicData>
-		<texPath>Things/Building/Temperature/MedievalHeater</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(2,2)</drawSize>
+		  <texPath>Things/Building/Temperature/WoodStoveFurnace</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <damageData>
+			<rect>(0.2,0,0.6,0.1)</rect>
+		  </damageData>
+		  <drawSize>(3,3)</drawSize>
 		</graphicData>
+		<uiIconPath>Things/Building/Temperature/WoodStoveFurnace_ico</uiIconPath>	
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
@@ -107,12 +130,12 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<statBases>
 			<MaxHitPoints>310</MaxHitPoints>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToBuild>2500</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<description>A burner produces only heat by burning basic coal-like fuel sources.h coal, charcoal, kindling or peat in order to function.</description>
-		<size>(2,2)</size>
+		<description>A fueled burner that produces heat by burning basic fuel sources. Can be fueled by Kindling, Coal, Charcoal, Peat and wooden stuff.</description>
+		<size>(1,1)</size>
 		<building>
 			<ignoreNeedsPower>true</ignoreNeedsPower>
 		</building>
@@ -121,31 +144,35 @@
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 		<comps>
-			  <li Class="CompProperties_Flickable"/>
-		  <li Class="CompProperties_Refuelable">
-			<fuelConsumptionRate>17.0</fuelConsumptionRate>
-			<fuelCapacity>50.0</fuelCapacity>
-			<fuelFilter>
-			  <thingDefs>
-				<li>Coal</li>
-				<li>Charcoal</li>
-				<li>Peat</li>
-				<li>Kindling</li>
-			  </thingDefs>
-				<categories>
-				  <li>Wooden</li>
-				</categories>
-			</fuelFilter>
-			<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
-		  </li>
-			<li Class="CompProperties_Glower">
-			<glowRadius>3</glowRadius>
-			<glowColor>(217,112,33,0)</glowColor>
-		  </li>
-			<li Class="SK.CompProperties_HeatPusherAdvanced">
-				<compClass>SK.CompHeatPusherAdvanced</compClass>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="SK.CompProperties_HeatPusherExt">
+				<compClass>SK.CompHeatPusherExt</compClass>
 				<heatPerSecond>40</heatPerSecond>
 				<heatPushMaxTemperature>50</heatPushMaxTemperature>
+			</li>
+				<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="SK.CompFueled_Properties">
+				<operatingTemp>500</operatingTemp>
+				<drawfirefuel>false</drawfirefuel>
+				<smokeDrawOffset>(0,-0.1,1.1)</smokeDrawOffset>
+				<smokesize>0.5</smokesize>
+				<fuelCapacity>30</fuelCapacity>
+				<effectOnWeather>true</effectOnWeather>
+				<fuelFilter>
+				  <thingDefs>
+						<li>Coal</li>
+						<li>Charcoal</li>
+						<li>Peat</li>
+						<li>Kindling</li>
+				  </thingDefs>
+					<categories>
+					  <li>Wooden</li>
+					  <li>Woody</li>
+					</categories>  
+				</fuelFilter>
 			</li>
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -156,7 +183,7 @@
   
   <ThingDef ParentName="BuildingBase">
     <defName>EHeatedFloor</defName>
-    <label>Electric Heated Floor</label>
+    <label>electric heated floor</label>
     <thingClass>Building_Heater</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/EHeatedFloor</texPath>
@@ -173,13 +200,13 @@
     <description>Heated flooring tiles that utilize conductive wires and convection heating to warm a room.</description>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>100</WorkToMake>
+      <WorkToBuild>100</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
     <selectable>false</selectable>
     <placingDraggableDimensions>2</placingDraggableDimensions>
     <costList>
-	<Concrete>5</Concrete>
+	<ConcreteResource>5</ConcreteResource>
 	<Component>3</Component>
 	<ElectronicComponents>1</ElectronicComponents>
     </costList>
@@ -209,10 +236,59 @@
     <researchPrerequisites><li>Batteries</li></researchPrerequisites>
   </ThingDef>
 
+  <ThingDef ParentName="BuildingBase">
+    <defName>PassiveCooler</defName>
+    <label>passive cooler</label>
+    <description>A traditional unpowered cooler that works by water evaporation. While it's not strong enough to refridgerate food, it can help survive a heat wave. It will run out and self-destruct after several days.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Misc/PassiveCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <WoodPlank>50</WoodPlank>
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-10</heatPerSecond>
+        <heatPushMinTemperature>15</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifeSpanTicks>300000</lifeSpanTicks>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>	
+    <researchPrerequisites><li>PassiveCooler</li></researchPrerequisites>
+  </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <defName>Heater</defName>
-    <label>Heater</label>
+    <label>heater</label>
     <thingClass>Building_Heater</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/TempControl/Heater</texPath>
@@ -235,7 +311,7 @@
     <rotatable>false</rotatable>
     <fillPercent>0.4</fillPercent>
     <statBases>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -280,9 +356,9 @@
   
 	<ThingDef ParentName="BuildingBase">
 		<defName>ColdstoneBattery</defName>
-		<label>Coldstone Battery</label>
+		<label>coldstone battery</label>
 		<description>A tank built to cool a medium-sized room to below freezing. Requires coldstone as fuel. Able to support a roof.</description>
-		<thingClass>Powerless.Building_ColdstoneBattery</thingClass>
+		<thingClass>SK.Building_ColdstoneBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/ColdstoneBattery</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -301,7 +377,7 @@
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<statBases>
 			<Flammability>0</Flammability>
-			<WorkToMake>2200</WorkToMake>
+			<WorkToBuild>2200</WorkToBuild>
 			<MaxHitPoints>500</MaxHitPoints>
 		</statBases>
 		<stuffCategories>
@@ -327,25 +403,81 @@
 				</fuelFilter>
 				<destroyOnNoFuel>false</destroyOnNoFuel>
 			</li>
-			<li Class="CorePanda.CompProperties_ColdPusher">
+			<li Class="SK.CompProperties_ColdPusher">
 				<coldPerSecond>-30</coldPerSecond>
 				<coldPushMinTemperature>-4</coldPushMinTemperature>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<placeWorkers>
-			<li>Powerless.PlaceWorker_ColdstoneBattery</li>
+			<li>SK.PlaceWorker_ColdstoneBattery</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<researchPrerequisites><li>EnthalpicCooling</li></researchPrerequisites>
 		<designationCategory>Temperature</designationCategory>
 	</ThingDef>
 	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TemperatureGauge</defName>
+		<label>thermometer</label>
+		<thingClass>SK.Building_TemperatureGauge</thingClass>
+		<graphicData>
+			<texPath>Things/Building/TempGauge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.25,0.4,0.7)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2600</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-5</Beauty>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<description>Displays the current ambient temperature and can be configured to provide temperature based alerts. Does not require power.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+		<li>Metallic</li>
+		</stuffCategories>
+    	<costStuffCount>25</costStuffCount>
+		<costList>
+			<Component>5</Component>
+			<ElectronicComponents>2</ElectronicComponents>
+		</costList>
+		<comps>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>0</energyPerSecond>
+			</li>
+		</comps>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Temperature</designationCategory>
+		<researchPrerequisites><li>SK_ElectronicsI</li></researchPrerequisites>
+	</ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>Cooler</defName>
-    <label>Reverse Cooler</label>
-	<thingClass>Enhanced_Development.Temperature.Building_ReverseCycleCooler</thingClass>
+    <label> cooler</label>
+    <thingClass>Building_Cooler</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/TempControl/CoolerB</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -356,19 +488,19 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <altitudeLayer>PawnUnused</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.99</fillPercent>
     <coversFloor>true</coversFloor>
     <blockLight>true</blockLight>
     <statBases>
-      <WorkToMake>1600</WorkToMake>
+      <WorkToBuild>1600</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
     <tickerType>Rare</tickerType>
-    <description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer. </description>
+    <description>An electrical device that fits into a wall and pushes cold air into a room. Its exhaust port generates a lot of heat. Can be used to cool down rooms during the summer months, or to create a walk-in freezer.</description>
 		<stuffCategories>
 		<li>Metallic</li>
 		</stuffCategories>
@@ -381,19 +513,19 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <placeWorkers>
       <li>PlaceWorker_Cooler</li>
-      <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+      <li>SK.PlaceWorker_OnlyOnThing</li>
       <li>SK.PlaceWorker_OnWall</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <building>
       <canPlaceOverWall>true</canPlaceOverWall>
-      <isEdifice>false</isEdifice>
     </building>
     <comps>
-      <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-        <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
+      <li Class="SK.CompProperties_RestrictedPlacement">
+        <compClass>SK.CompRestrictedPlacement</compClass>
         <thingDefs>
                     <li>Wall</li>
+					<li>MWall</li>
 					<li>WallLog</li>
 					<li>WallLighted</li>
 					<li>ClutterSilverWall</li>
@@ -408,7 +540,7 @@
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_TempControl">
-        <energyPerSecond>-13</energyPerSecond>
+        <energyPerSecond>-14</energyPerSecond>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
@@ -419,8 +551,8 @@
 
 <ThingDef ParentName="BuildingBase">
     <defName>GH</defName>
-    <label>Geothermal Heater</label>
-    <thingClass>SK_GH.Building_GeothermalHeater</thingClass>
+    <label>geothermal heater</label>
+    <thingClass>SK.Building_GeothermalHeater</thingClass>
 	<graphicData>
 		<texPath>Things/Building/GH</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -437,7 +569,7 @@
     <fillPercent>0.4</fillPercent>
     <Size>(2,2)</Size>
     <statBases>
-      <WorkToMake>5000</WorkToMake>
+      <WorkToBuild>5000</WorkToBuild>
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -456,24 +588,18 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
+			<li Class="CompProperties_Flickable"/>
 			<li Class="SK.CompProperties_HeatPusherAdvanced">
 				<compClass>SK.CompHeatPusherAdvanced</compClass>
 				<heatPerSecond>50</heatPerSecond>
-				<heatPushMaxTemperature>80</heatPushMaxTemperature>
-			</li>
-            <li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-                <compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
-                <RestrictedThing>
-                    <li>SteamGeyser</li>
-                </RestrictedThing>
-            </li>
-			      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+				<heatPushMaxTemperature>25</heatPushMaxTemperature>
+			</li>		      
+			<li Class="CompProperties_Breakdownable"/>
     </comps>
     <designationCategory>Temperature</designationCategory>
     <placeWorkers>
       <li>PlaceWorker_Heater</li>
-      <li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+	  <li>PlaceWorker_OnSteamGeyser</li>
     </placeWorkers>
 		<researchPrerequisites><li>SK_InfrastructureIV</li></researchPrerequisites>
   </ThingDef>
@@ -482,7 +608,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>Vent</defName>
-		<label>Closable Vent</label>
+		<label>closable vent</label>
 		<thingClass>Enhanced_Development.Temperature.Building_ClosableVent</thingClass>
 		<graphicData>
 		  <texPath>Things/Building/Misc/TempControl/Vent</texPath>
@@ -502,7 +628,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<statBases>
-			<WorkToMake>1700</WorkToMake>
+			<WorkToBuild>1700</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
@@ -520,7 +646,7 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<placeWorkers>
 			<li>PlaceWorker_Vent</li>
-			<li>CommunityCoreLibrary.PlaceWorker_OnlyOnThing</li>
+			<li>SK.PlaceWorker_OnlyOnThing</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
@@ -529,10 +655,11 @@
 		</building>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
-				<compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
+			<li Class="SK.CompProperties_RestrictedPlacement">
+				<compClass>SK.CompRestrictedPlacement</compClass>
               <thingDefs>
                     <li>Wall</li>
+					<li>MWall</li>
 					<li>WallLog</li>
 					<li>WallLighted</li>
 					<li>ClutterSilverWall</li>
@@ -546,7 +673,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>MiningHelmetGlower</defName>
-    <label>Mining helmet light</label>
+    <label>mining helmet light</label>
     <Description>Mining helmet light.</Description>
     <graphicData>
       <texPath>Things/Building/DummyTexture</texPath>

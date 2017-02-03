@@ -2,6 +2,9 @@
 
 <LanguageData>
   
+ 	<SK_Glowstone.label>Освещение из светокамня</SK_Glowstone.label> 
+	<SK_Glowstone.description>Узнайте, как построить красивые лампы из светокамня.</SK_Glowstone.description> 	
+  
  	<SK_DiningRoomI.label>Мебель для столовой I</SK_DiningRoomI.label> 
 	<SK_DiningRoomI.description>Открывает возможность устанавливать в обеденной комнате новую мебель: длинный стол и табурет.</SK_DiningRoomI.description> 	
 	
@@ -26,22 +29,30 @@
 			<TubeTelevision.description>Открывает возможность устанавливать в комнате отдыха бильярдный стол, ЭЛТ Телевизор и журнальный столик.</TubeTelevision.description> 
 		
 				<SK_RecreationRoomIV.label>Мебель для комнаты отдыха IV</SK_RecreationRoomIV.label> 
-				<SK_RecreationRoomIV.description>Последнее исследование в исскустве получения радости позволит установить телескоп и собрать современный телевизор</SK_RecreationRoomIV.description> 
+				<SK_RecreationRoomIV.description>Последнее исследование в искусстве получения радости позволит установить телескоп и собрать современный телевизор</SK_RecreationRoomIV.description> 
 	
 	
 	
-	<SK_BedroomI.label>Мебель для спальни I</SK_BedroomI.label> 
+	<SK_BedroomI.label>Средневековая мебель для спальни</SK_BedroomI.label> 
 	<SK_BedroomI.description>Исследование основ отдыха в спальнях позволит устанавливать уютную кровать и прикроватный столик.</SK_BedroomI.description> 	
 	
-		<SK_BedroomII.label>Мебель для спальни II</SK_BedroomII.label> 
+	<SK_BedroomRenaissance.label>Ренесанс мебель для спальни</SK_BedroomRenaissance.label> 
+	<SK_BedroomRenaissance.description>Исследование основ отдыха в спальнях позволит устанавливать уютную кровать и прикроватный столик.</SK_BedroomRenaissance.description> 	
+	
+		<SK_BedroomII.label>Королевская мебель для спальни</SK_BedroomII.label> 
 		<SK_BedroomII.description>Дальнейшее исследование искусства отдыхать даст возможность Вашим поселенцам устанавливать комфортную кровать и читальный столик.</SK_BedroomII.description> 
-		
-			<SK_BedroomIII.label>Мебель для спальни III</SK_BedroomIII.label> 
+
+		<SK_BedroomIndustrial.label>Современная мебель для спальни</SK_BedroomIndustrial.label> 
+		<SK_BedroomIndustrial.description>Дальнейшее исследование искусства отдыхать даст возможность Вашим поселенцам устанавливать комфортную кровать и читальный столик.</SK_BedroomIndustrial.description> 
+				
+			<SK_BedroomIII.label>Роскошная мебель для спальни</SK_BedroomIII.label> 
 			<SK_BedroomIII.description>Детальное изучение отдыха позволит устанавливать роскошную кровать и кресло.</SK_BedroomIII.description> 
 		
-				<SK_BedroomIV.label>Мебель для спальни IV</SK_BedroomIV.label> 
+				<SK_BedroomIV.label>Нано мебель для спальни</SK_BedroomIV.label> 
 				<SK_BedroomIV.description>Финальный штрих в нелёгком искусстве отдыха откроет перед Вашими поселенцами тайну установки стильных кроватей и уютных кресел.</SK_BedroomIV.description> 
 	
+				<SK_BedroomV.label>Мебель для спальни будущего</SK_BedroomV.label> 
+				<SK_BedroomV.description>Финальный штрих в нелёгком искусстве отдыха откроет перед Вашими поселенцами тайну установки стильных кроватей и уютных кресел.</SK_BedroomV.description> 
 	
 	<SK_ErgonomicsI.label>Эргономика I</SK_ErgonomicsI.label> 
 	<SK_ErgonomicsI.description>Изучение основ эргономики позволит Вашим поселенцам устанавливать маленький шкаф с инструментами и кухонную полку, призванные ускорить работу за прилегающими верстаками.</SK_ErgonomicsI.description> 	
@@ -55,7 +66,7 @@
 	
 	
 	<SK_HygleneI.label>Гигиена I</SK_HygleneI.label> 
-	<SK_HygleneI.description>Это исследование позволяет строить крематории для сжигания трупов, материалов и одежды.</SK_HygleneI.description> 
+	<SK_HygleneI.description>Это исследование позволяет строить ковровые дорожки.</SK_HygleneI.description> 
 	
 		<ElectricCremation.label>Гигиена II</ElectricCremation.label> 
 		<ElectricCremation.description>Это исследование позволяет строить электрические крематории для более быстрого сжигания трупов, материалов и одежды.</ElectricCremation.description>
@@ -66,10 +77,10 @@
 	<SK_StorageI.description>Открывает возможность постройки различных мисок, корзин, палет, поддонов.</SK_StorageI.description> 	
 	
 		<SK_StorageII.label>Хранилища II</SK_StorageII.label> 
-		<SK_StorageII.description>Дальнейшие исследования в технологии храненения открывают возможность постройки шкафов, полок и стеллажей.</SK_StorageII.description> 
+		<SK_StorageII.description>Дальнейшие исследования в технологии хранения открывают возможность постройки шкафов, полок и стеллажей.</SK_StorageII.description> 
 		
 			<SK_StorageIII.label>Хранилища III</SK_StorageIII.label> 
-			<SK_StorageIII.description>Позволяет исследовать продвинутые системы хранения для различных веществ. Открывет возможность постройки полок-холодильников и контейнеров для хранения радиоактивных веществ.</SK_StorageIII.description> 
+			<SK_StorageIII.description>Позволяет исследовать продвинутые системы хранения для различных веществ. Открывает возможность постройки полок-холодильников и контейнеров для хранения радиоактивных веществ.</SK_StorageIII.description> 
 	
 	
 	
@@ -77,7 +88,7 @@
 	<SK_TrainingFacilitiesI.description>Открывает возможность постройки Cтола патологоанатома, на котором врачи могут оттачивать свои навыки путем тестирования методики на трупах, и боксерской груши,  на которой поселенцы могут отработать свои навыки ближнего боя.</SK_TrainingFacilitiesI.description> 	
 	
 		<SK_TrainingFacilitiesII.label>Тренажёры II</SK_TrainingFacilitiesII.label> 
-		<SK_TrainingFacilitiesII.description>Открывает возможность постройки голографических столов, где колонисты могут отработать свои социальные навыки на человекоподобной голограмме.</SK_TrainingFacilitiesII.description> 
+		<SK_TrainingFacilitiesII.description>Открывает возможность постройки голографических столов, где поселенцы могут отработать свои социальные навыки на человекоподобной голограмме.</SK_TrainingFacilitiesII.description> 
 	
 	
 	

@@ -3,12 +3,12 @@
 
   <!-- =========================== Neolithic ================================ -->
 
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="WeaponNeoliticBase">
     <defName>MeleeWeapon_Spear</defName>
     <label>Spear</label>
     <description>A polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/Spear</texPath>
+      <texPath>Things/Weapons/Melee/Spear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -25,13 +25,14 @@
 			<WoodPlank>30</WoodPlank>
 		</CostList>
     <statBases>
+	  <WorkToMake>6000</WorkToMake>
       <MeleeWeapon_DamageAmount>15</MeleeWeapon_DamageAmount>
       <MeleeWeapon_Cooldown>1.5</MeleeWeapon_Cooldown>
       <Bulk>7.00</Bulk>
-      <Weight>3.00</Weight>
+      <Mass>3.00</Mass>
 	  <ArmorPenetration>0.3</ArmorPenetration>
     </statBases>
-    <equippedAngleOffset>-25</equippedAngleOffset>
+    <equippedAngleOffset>-20</equippedAngleOffset>
 	<equippedStatOffsets>
 		<MoveSpeed>-0.12</MoveSpeed>
 		<WorkSpeedGlobal>-0.11</WorkSpeedGlobal>
@@ -49,12 +50,12 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="WeaponNeoliticBase">
     <defName>MeleeWeapon_Mace</defName>
     <label>Mace</label>
     <description>A refined club, engineered for efficient swinging and deadly impacts.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+      <texPath>Things/Weapons/Melee/Mace</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -71,12 +72,13 @@
 			<WoodPlank>20</WoodPlank>
 		</CostList>
     <statBases>
+	  <WorkToMake>6000</WorkToMake>
       <MeleeWeapon_DamageAmount>12</MeleeWeapon_DamageAmount>
       <MeleeWeapon_Cooldown>1.3</MeleeWeapon_Cooldown>
       <Bulk>6.00</Bulk>
-      <Weight>3.00</Weight>
+      <Mass>3.00</Mass>
     </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedAngleOffset>-45</equippedAngleOffset>
 	<equippedStatOffsets>
 		<MoveSpeed>-0.1</MoveSpeed>
 		<WorkSpeedGlobal>-0.09</WorkSpeedGlobal>
@@ -94,12 +96,12 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="WeaponNeoliticBase">
     <defName>MeleeWeapon_Club</defName>
     <label>Club</label>
     <description>A club is the oldest human weapon. It is a shaped blunt weapon for bashing enemies to death. Primitive but effective.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/Club</texPath>
+      <texPath>Things/Weapons/Melee/Club</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Industrial</techLevel>
@@ -113,13 +115,14 @@
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
     <statBases>
+	  <WorkToMake>5500</WorkToMake>
       <MeleeWeapon_DamageAmount>13</MeleeWeapon_DamageAmount>
       <DeteriorationRate>1</DeteriorationRate>
       <MeleeWeapon_Cooldown>1.4</MeleeWeapon_Cooldown>
       <Bulk>7.00</Bulk>
-      <Weight>3.50</Weight>
+      <Mass>3.50</Mass>
     </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedAngleOffset>-20</equippedAngleOffset>
 	<equippedStatOffsets>
 		<MoveSpeed>-0.11</MoveSpeed>
 		<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
@@ -137,7 +140,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="WeaponNeoliticBase">
     <defName>NorbalMeleeWeapon_ShortSwordtwo</defName>
     <label>Norbal Sword</label>
     <description>Reliable and deadly in melee combat. Comes with added Nordic flair</description>
@@ -156,10 +159,11 @@
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
     <statBases>
+	  <WorkToMake>7500</WorkToMake>
       <MeleeWeapon_DamageAmount>12</MeleeWeapon_DamageAmount>
       <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
       <Bulk>7.00</Bulk>
-      <Weight>2.50</Weight>
+      <Mass>2.50</Mass>
 	  <ArmorPenetration>0.25</ArmorPenetration>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -181,7 +185,7 @@
   </ThingDef>
    
    
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="WeaponNeoliticBase">
     <defName>NorbalMeleeWeapon_ShortSword</defName>
     <label>Heroic Sword</label>
     <description>Reliable and deadly in melee combat. Comes with added Arabic flair.</description>
@@ -199,10 +203,11 @@
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
     <statBases>
+	  <WorkToMake>8000</WorkToMake>
       <MeleeWeapon_DamageAmount>18</MeleeWeapon_DamageAmount>
       <MeleeWeapon_Cooldown>1.7</MeleeWeapon_Cooldown>
       <Bulk>7.50</Bulk>
-      <Weight>3.00</Weight>
+      <Mass>3.00</Mass>
 	  <ArmorPenetration>0.27</ArmorPenetration>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -224,7 +229,7 @@
   </ThingDef>
 
   
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="WeaponNeoliticBase">
     <defName>NorbalMeleeWeapon_Ax</defName>
     <label>Norbal War Axe</label>
     <description>Medieval axe.</description>
@@ -247,10 +252,11 @@
 			<WoodPlank>15</WoodPlank>
 		</CostList>
     <statBases>
+	  <WorkToMake>8000</WorkToMake>
       <MeleeWeapon_DamageAmount>18</MeleeWeapon_DamageAmount>
       <MeleeWeapon_Cooldown>1.5</MeleeWeapon_Cooldown>
       <Bulk>8.00</Bulk>
-      <Weight>4.00</Weight>
+      <Mass>4.00</Mass>
 	  <ArmorPenetration>0.25</ArmorPenetration>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
@@ -271,7 +277,7 @@
   </ThingDef>
 
   
-  <ThingDef ParentName="BaseMeleeWeapon">
+  <ThingDef ParentName="WeaponNeoliticBase">
     <defName>NorbalMeleeWeapon_Bigax</defName>
     <label>Battleaxe</label>
     <description>The ultimate Norbal beheader.</description>
@@ -293,10 +299,11 @@
 			<WoodPlank>15</WoodPlank>
 		</CostList>
     <statBases>
+	  <WorkToMake>8500</WorkToMake>
       <MeleeWeapon_DamageAmount>22</MeleeWeapon_DamageAmount>
       <MeleeWeapon_Cooldown>1.9</MeleeWeapon_Cooldown>
       <Bulk>8.70</Bulk>
-      <Weight>4.70</Weight>
+      <Mass>4.70</Mass>
 	  <ArmorPenetration>0.3</ArmorPenetration>
     </statBases>
     <equippedAngleOffset>-25</equippedAngleOffset>

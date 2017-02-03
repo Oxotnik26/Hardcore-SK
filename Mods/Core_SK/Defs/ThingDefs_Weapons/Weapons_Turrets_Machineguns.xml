@@ -25,7 +25,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
-        <warmupTicks>90</warmupTicks>
+        <warmupTime>0.90</warmupTime>
         <range>55</range>
 		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 		<burstShotCount>25</burstShotCount>
@@ -58,7 +58,7 @@
 		<canBeSpawningInventory>false</canBeSpawningInventory>
 		<tradeability>Never</tradeability>
     <graphicData>
-		<texPath>Things/Building/Security/TurretGun_M2Browning</texPath>
+		<texPath>Things/Building/Security/UA571CGun</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 		<statBases>
@@ -75,7 +75,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_50BMG_FMJ</projectileDef>
-			<warmupTicks>120</warmupTicks>
+			<warmupTime>1.20</warmupTime>
 			<range>60</range>
 			<minRange>3</minRange>
 			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -123,11 +123,11 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
-        <warmupTicks>140</warmupTicks>
+        <warmupTime>1.40</warmupTime>
         <range>55</range>
 		<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 		<burstShotCount>100</burstShotCount>
-        <soundCast>M134Shoot</soundCast>
+        <soundCast>ShotMinigun</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
       </li>
@@ -169,7 +169,7 @@
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_145x114mm_FMJ</projectileDef>
-        <warmupTicks>150</warmupTicks>
+        <warmupTime>1.50</warmupTime>
         <range>65</range>
 		<minRange>3</minRange>
 		<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -197,7 +197,7 @@
 
   <ThingDef ParentName="BaseTurretGun">
 		<defName>Gun_ChainGun</defName>
-		<label>30x173mm GSh-30 cannon</label>
+		<label>30x165mm GSh-30 cannon</label>
 	<graphicData>
 		<texPath>Things/Building/Security/ChainGunTurretGun_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -215,13 +215,13 @@
 			<recoilAmount>0.87</recoilAmount>
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<projectileDef>Bullet_30x173mm</projectileDef>
+			<projectileDef>Bullet_30x165mm</projectileDef>
 			<range>85</range>
             <minRange>8</minRange>
-			<warmupTicks>180</warmupTicks>
-            <forcedMissRadius>1.5</forcedMissRadius>
+			<warmupTime>1.80</warmupTime>
+            <forcedMissRadius>2.5</forcedMissRadius>
             <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
-            <burstShotCount>15</burstShotCount>
+            <burstShotCount>20</burstShotCount>
 			<soundCast>35mm_shot</soundCast>
             <muzzleFlashScale>9</muzzleFlashScale>
 		</li>
@@ -231,7 +231,7 @@
 				<magazineSize>90</magazineSize>
 				<reloadTicks>600</reloadTicks>
 				<spawnUnloaded>true</spawnUnloaded>
-				<ammoSet>AmmoSet_30x173mm</ammoSet>
+				<ammoSet>AmmoSet_30x165mm</ammoSet>
 			</li>
 			<li Class="Combat_Realism.CompProperties_FireModes">
 				<aimedBurstShotCount>5</aimedBurstShotCount>
@@ -245,7 +245,7 @@
 
   <ThingDef ParentName="BaseTurretGun">
 		<defName>Gun_Avenger</defName>
-		<label>35x228mm Avenger Fire Cannon</label>
+		<label>30x173mm Avenger Fire Cannon</label>
 		<description>35mm Avenger fire cannon attached to a turret base.</description>
 		<graphicData>
 			<texPath>Things/Building/Security/AvengerTurretGun_Top</texPath>
@@ -264,14 +264,14 @@
 			<recoilAmount>0.82</recoilAmount>
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<projectileDef>Bullet_35x228mm</projectileDef>
+			<projectileDef>Bullet_30x173mm</projectileDef>
 			<range>85</range>
             <minRange>8</minRange>
-			<warmupTicks>180</warmupTicks>
-            <forcedMissRadius>5.5</forcedMissRadius>
+			<warmupTime>1.80</warmupTime>
+            <forcedMissRadius>5.8</forcedMissRadius>
             <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 			<soundCast>35mm_shot</soundCast>
-            <burstShotCount>8</burstShotCount>
+            <burstShotCount>15</burstShotCount>
 		  </li>
 		</verbs>
 		<comps>
@@ -279,7 +279,7 @@
 				<magazineSize>56</magazineSize>
 				<reloadTicks>600</reloadTicks>
 				<spawnUnloaded>true</spawnUnloaded>
-				<ammoSet>AmmoSet_35x228mm</ammoSet>
+				<ammoSet>AmmoSet_30x173mm</ammoSet>
 			</li>
 			<li Class="Combat_Realism.CompProperties_FireModes">
 			</li>
@@ -312,7 +312,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_20x102mm</projectileDef>
-			<warmupTicks>180</warmupTicks>
+			<warmupTime>1.80</warmupTime>
 			<range>75</range>
 			<minRange>7</minRange>
 			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -362,7 +362,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_20x102mm</projectileDef>
-			<warmupTicks>180</warmupTicks>
+			<warmupTime>1.80</warmupTime>
 			<range>70.0</range>
 			<minRange>5</minRange>
 			<ticksBetweenBurstShots>3</ticksBetweenBurstShots>

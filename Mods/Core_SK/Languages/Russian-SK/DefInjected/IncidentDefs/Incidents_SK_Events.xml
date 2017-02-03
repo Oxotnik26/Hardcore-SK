@@ -2,24 +2,14 @@
 
 <LanguageData>
 
-	<Fluffy_FeenixPasses.label>огненный кот</Fluffy_FeenixPasses.label> 
-	<Fluffy_IcicatPasses.label>ледяной кот</Fluffy_IcicatPasses.label>
+	<OrassanBombardmentIncident.label>Орбитальная бомбардировка</OrassanBombardmentIncident.label>
+	<Swarm.label>Рой насекомых</Swarm.label>
+	<ZeonIncoming.label>Вторжение зеона</ZeonIncoming.label>
+	
+	<Accident.label>Несчастный случай</Accident.label>
 
-	<HeatWaveExtreme.label>небывалая тепловая волна</HeatWaveExtreme.label>
-	<HeatWaveExtreme.letterLabel>Небывалая тепловая волна</HeatWaveExtreme.letterLabel>
-	<HeatWaveExtreme.letterText>Началась ужасная жара, стоит предупредить возможные тепловые удары, самовозгорание поселенцев и наплыв перекати-поле.</HeatWaveExtreme.letterText>
-
-	<ColdSnapExtreme.label>небывалые заморозки</ColdSnapExtreme.label>
-	<ColdSnapExtreme.letterLabel>Небывалые заморозки</ColdSnapExtreme.letterLabel>
-	<ColdSnapExtreme.letterText>Наступили жуткие смертоносные холода, стоит предостеречь переохлаждение у поселенцев. Опасайтесь вымораживания посевов и Белых ходоков!</ColdSnapExtreme.letterText>
-
-	<HeatWaveRidiculous.label>жуткая тепловая волна</HeatWaveRidiculous.label>
-	<HeatWaveRidiculous.letterLabel>Жуткая тепловая волна</HeatWaveRidiculous.letterLabel>
-	<HeatWaveRidiculous.letterText>Начался коллапс звезды системы. Первые вспышки уже достигли атмосферы планеты. Меньше чем через 10 лет все живое выгорит, а океаны пересохнут. Пора убираться отсюда! </HeatWaveRidiculous.letterText>
-
-	<HotFlashstorm.label>жуткая электрическая гроза</HotFlashstorm.label>
-	<HotFlashstorm.letterLabel>Жуткая электрическая гроза</HotFlashstorm.letterLabel>
-	<HotFlashstorm.letterText>Ужасающее количество молний обрушилось на небольшой регион. Это явление влечет за собой серьезные разрушения и очень сильные пожары.</HotFlashstorm.letterText>
+	<FeenixPasses.label>феникс</FeenixPasses.label> 
+	<IcicatPasses.label>кирин</IcicatPasses.label>
 
 	<RaptorPasses.label>рапторы</RaptorPasses.label> 
 	<TribeMigration.label>кочующее племя</TribeMigration.label>
@@ -30,11 +20,11 @@
 	<MalariaRaid.label>москиты</MalariaRaid.label>
 	<FleaRaid.label>блохи</FleaRaid.label>
 	<Plunderers.label>расхитители</Plunderers.label>
-	<Earthquake.label>землятрясение</Earthquake.label>
+	<Earthquake.label>землетрясение</Earthquake.label>
 	<Flood.label>наводнение</Flood.label>
 	<AnimalGenocide.label>геноцид животных</AnimalGenocide.label>
 	<PrisonRiot.label>буйство заключённых</PrisonRiot.label>
-	<PrisonerRampage.label>яроть заключённых</PrisonerRampage.label>
+	<PrisonerRampage.label>ярость заключённых</PrisonerRampage.label>
 	<PrisonSuicide.label>самоубийство пленника</PrisonSuicide.label>
 	<NuclearIncident.label>ядерная авария</NuclearIncident.label>
 	<NuclearFallout.label>радиоактивные осадки</NuclearFallout.label>

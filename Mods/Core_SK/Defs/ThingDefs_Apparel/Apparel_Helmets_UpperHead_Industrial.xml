@@ -3,7 +3,7 @@
 <ThingDefs>
 
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>Apparel_MilitaryHelmet</defName>
 		<label>Military Helmet</label>
 		<description>An old-looking, heavy, but effective military helmet. Protects against low-velocity projectiles, shrapnel, falling debris and cuts to the head.</description>
@@ -21,6 +21,7 @@
 			<SyntheticFibers>7</SyntheticFibers>
 		</CostList>
 		<statBases>
+			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>53</MaxHitPoints>
 			<Flammability>3</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -29,7 +30,7 @@
 			<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.8</Weight>
+			<Mass>0.8</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.8</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -63,12 +64,12 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>Apparel_KevlarHelmet</defName>
 		<label>Kevlar Helmet</label>
 		<description>A lightweight armored combat helmet that protects your head and ears.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/KevlarHelmet/KevlarHelmet</texPath>
+		<texPath>Things/Apparel/SK/Vault_Security_Helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>		
 		<stuffCategories>
@@ -81,6 +82,7 @@
 			<Kevlar>30</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>55</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -89,7 +91,7 @@
 			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
 			<ArmorRating_Electric>0.25</ArmorRating_Electric>
-			<Weight>0.8</Weight>
+			<Mass>0.8</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.8</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -97,16 +99,12 @@
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
 			<MentalBreakThreshold>-0.03</MentalBreakThreshold>
-			<MedicalOperationSpeed>0.1</MedicalOperationSpeed>
-			<HealingSpeed>0.1</HealingSpeed>
-			<BaseHealingQuality>0.1</BaseHealingQuality>
-			<SurgerySuccessChance>0.1</SurgerySuccessChance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<worngraphicPath>Things/Pawn/Humanlike/Apparel/KevlarHelmet/KevlarHelmet</worngraphicPath>
+			<worngraphicPath>Things/Apparel/SK/Vault_Security_Helmet</worngraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -119,34 +117,13 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>RGBA(0.33,0.33,0.33,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>RGBA(0.65,0.65,0.65,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<min>RGBA(0.3,0.3,0.3,1)</min>
-					<max>RGBA(0.5,0.5,0.5,1)</max>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>RGBA(0.9,0.9,0.9,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
 		<thingCategories>
 			<li>HeavyHelmetsCat</li>
 		</thingCategories>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>Marine_Helmet</defName>
 		<label>Marine Ballistic Helmet</label>
 		<description>A marine helmet designed to protect against ballistics. This is a standard issue item for Colonial Marines.</description>
@@ -164,6 +141,7 @@
 			<Kevlar>25</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>55</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -172,7 +150,7 @@
 			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.9</Weight>
+			<Mass>0.9</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.9</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -205,7 +183,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelIndustrialBase">
 		<defName>Ghillie_Hood</defName>
 		<label>Ghillie Hood</label>
 		<description>A camouflaged hood worn by members of the special forces. It pairs up with the ghillie suit.</description>
@@ -225,6 +203,7 @@
 			<SyntheticFibers>5</SyntheticFibers>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>4</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -233,7 +212,7 @@
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.12</ArmorRating_Heat>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -271,7 +250,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>Jaffa_BasicHelmet</defName>
 		<label>Scout Helmet</label>
 		<description>This basic scout helmet doesn't offer great protection, but it is lightweight.</description>
@@ -289,6 +268,7 @@
 			<Kevlar>15</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>3</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -297,7 +277,7 @@
 			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -311,7 +291,7 @@
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 		  </bodyPartGroups>
-		  <worngraphicPath>Things/Apparel/ScoutCamohelmet/ScoutCamohelmet_Basic</worngraphicPath>
+		  <worngraphicPath>Things/Apparel/ScoutCamohelmet/ScoutCamohelmet</worngraphicPath>
 		  <layers>
 			<li>Overhead</li>
 		  </layers>
@@ -340,7 +320,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>USCM_CamoHelmet</defName>
 		<label>Camo Ballistic Helmet</label>
 		<description>A camouflaged version of the marine ballistic helmet. It is a standard issue item for Colonial Marines.</description>
@@ -358,6 +338,7 @@
 			<Kevlar>17</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>55</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -366,7 +347,7 @@
 			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -398,7 +379,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>MilitaryHelmetGoggles</defName>
 		<label>Military Googled Helmet</label>
 		<description>A camouflaged marine ballistic helmet with built in goggles. This is a standard issue item for Colonial Marines.</description>
@@ -419,6 +400,7 @@
 			<Kevlar>14</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>53</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -427,7 +409,7 @@
 			<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -463,7 +445,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>USCM_PilotHelmet</defName>
 		<label>Military Pilot Helmet</label>
 		<description>A standard issue helmet used by pilots across all of the USCM fleets.</description>
@@ -484,6 +466,7 @@
 			<Kevlar>14</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>55</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -492,7 +475,7 @@
 			<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -527,7 +510,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorIndustrialBase">
 		<defName>Tactical_Helmet</defName>
 		<label>Tactical Helmet</label>
 		<description>A tactical combat helmet used by special forces.</description>
@@ -546,6 +529,7 @@
 			<Kevlar>16</Kevlar>
 		</CostList>
 		<statBases>
+			<WorkToMake>11000</WorkToMake>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>2</Insulation_Heat>
@@ -554,7 +538,7 @@
 			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Weight>0.2</Weight>
+			<Mass>0.2</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>0.2</WornWeight>
 			<WornBulk>0</WornBulk>

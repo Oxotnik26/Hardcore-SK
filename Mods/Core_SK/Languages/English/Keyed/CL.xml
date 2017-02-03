@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
+	<FollowMe.Cancel>No longer following {0}.</FollowMe.Cancel>
+	<FollowMe.Follow>Following {0}.</FollowMe.Follow>
+	<FollowMe.RejectMultiple>Can not follow, multiple selections.</FollowMe.RejectMultiple>
+	<FollowMe.RejectNoSelection>Can not follow, nothing selected.</FollowMe.RejectNoSelection>
+	<FollowMe.RejectNotAThing>Can not follow, selection is not a thing, pawn or animal.</FollowMe.RejectNotAThing>
+
   <CommandAddDangerZoneLabel>Create allow area</CommandAddDangerZoneLabel>
   <CommandAddDangerZoneDesc>Creates an area outside radiation danger radius.</CommandAddDangerZoneDesc>
   <DangerZoneLabel>Radiation danger area</DangerZoneLabel>
@@ -16,7 +22,7 @@
   <QRY_ResourcesMined>Resources mined</QRY_ResourcesMined>
   <QRY_SwitchToParent>Show Hauling or Deconstruct options</QRY_SwitchToParent>
   
-  <QRY_BlocksMined>Blocks mined</QRY_BlocksMined>
+  <QRY_JunkMined>Junk mined</QRY_JunkMined>
   <QRY_TextMote_LargeVein>Found large vein!</QRY_TextMote_LargeVein>
   <QRY_NotEnoughStone>Require at least 60% rocky terrain</QRY_NotEnoughStone>
 
@@ -27,5 +33,17 @@
   <LookDiscA>We found the location of the ship wreck, perhaps spacer could have survived.</LookDiscA>
   <OnFissureReportString>Require fissure first!</OnFissureReportString>
   
+  <RepTent>Repair the tent</RepTent>
+  <TentneededRes>needed</TentneededRes>
+  <DamagedTent>Damaged tent deployed. Some walls will be missing.</DamagedTent>
+  <TentPlacementBlocked>Tent placement blocked by a item, pawn or a building. Please deploy on a suitable space.</TentPlacementBlocked>
+  <NoResFoundOne>There is no</NoResFoundOne>
+  <NoResFoundTwo>available to repair the tent</NoResFoundTwo>
+  <NoResFoundTh>Need</NoResFoundTh>
+  <TentPlacementBlockedTree>Tent placement blocked by a tree. Please deploy on a suitable space.</TentPlacementBlockedTree>
+  <TentPlacementBlockedSimple>Tent placement blocked. Please deploy on a suitable space.</TentPlacementBlockedSimple>
+  <CantPlaceTent>Cannot place a fully damaged tent.</CantPlaceTent>
+
+  <DeconstructConduitsLabel>Deconstruct Conduits</DeconstructConduitsLabel>
   
 </LanguageData>

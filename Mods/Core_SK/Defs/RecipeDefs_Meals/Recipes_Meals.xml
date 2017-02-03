@@ -3,12 +3,13 @@
 
 		<RecipeDef>
 		<defName>CookMealSalad</defName>
-		<label>Make Simple Salad</label>
+		<label>make simple salad</label>
 		<description>Prepares a Simple Salad made from raw vegetables. Produces 1.</description>
 		<jobString>Making Simple Salad.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>400</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -61,12 +62,13 @@
 	
 		<RecipeDef>
 		<defName>CookMealSalad_Bulk</defName>
-		<label>Make Simple Salads</label>
+		<label>make simple salads (x4)</label>
 		<description>Prepares Simple Salads made from raw vegetables. Produces 4.</description>
 		<jobString>Making Simple Salads.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1800</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -121,12 +123,13 @@
 
 <RecipeDef Name="CookRoastedMeatx4">
 		<defName>CookRoadMeatx4</defName>
-		<label>Cook Roasted Meats (x4)</label>
+		<label>cook roasted meats (x4)</label>
 		<description>Prepares fresh Roasted Meats. Produces 4.</description>
 		<jobString>Cooking Roasted Meat.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2000</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -154,7 +157,12 @@
 				<li>MeatRaw</li>
 			</categories>
 			<exceptedThingDefs>
-				<li>Human_Meat</li>
+                <li>Human_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Gnawler_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
         <li>EggsFertilized</li>
@@ -176,12 +184,13 @@
 
 	<RecipeDef Name="CookJerkyMeatx4">
 		<defName>CookJerkyMeatx4</defName>
-		<label>Cook Jerky Meats (x4)</label>
+		<label>cook jerky meats (x4)</label>
 		<description>Prepares smoked Jerky from raw meat. Produces 4.</description>
 		<jobString>Cooking Jerky.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1900</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -208,7 +217,12 @@
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
-			<exceptedThingDefs>
+            <exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -230,11 +244,12 @@
 
 	<RecipeDef Name="CookMealSimple">
 		<defName>CookMealSimple</defName>
-		<label>Cook Simple Meal</label>
+		<label>cook simple meal</label>
 		<description>Cooks a Simple Meal from one ingredient. Produces 1.</description>
 		<jobString>Cooking Simple Meal.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
+		<workAmount>500</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -263,6 +278,11 @@
 				<li>BasicPlantFoodRaw</li>
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -288,12 +308,13 @@
 
 		<RecipeDef>
 		<defName>CookMealSimple_Bulk</defName>
-		<label>Cook Simple Meals</label>
+		<label>cook simple meals (x4)</label>
 		<description>Cooks Simple Meals from one ingredient. Produces 4.</description>
 		<jobString>Cooking Simple Meals.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2000</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -321,6 +342,11 @@
 				<li>BasicPlantFoodRaw</li>
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -342,11 +368,12 @@
 
 	<RecipeDef>
 		<defName>CookMealFine</defName>
-		<label>Cook Fine Meal</label>
+		<label>cook fine meal</label>
 		<description>Cooks a somewhat complex meal from a combination of raw meat and raw plant ingredients. Produces 1.</description>
 		<jobString>Cooking Fine Meal.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
+		<workAmount>500</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -391,6 +418,11 @@
 				<li>BasicPlantFoodRaw</li>				
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -409,12 +441,13 @@
 	
 	<RecipeDef>
 		<defName>CookMealFine_Bulk</defName>
-		<label>Cook Fine Meals</label>
+		<label>cook fine meals (x4)</label>
 		<description>Cooks somewhat complex meals from a combination of raw meat and raw plant ingredients. Produces 4.</description>
 		<jobString>Cooking Fine Meals.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2200</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -458,6 +491,11 @@
 				<li>BasicPlantFoodRaw</li>				
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -479,12 +517,13 @@
 
 	<RecipeDef>
 		<defName>CookMealLavish</defName>
-		<label>Cook Lavish Meal</label>
+		<label>cook lavish meal</label>
 		<description>Cooks a very complex meal from a combination of raw meat and raw plant ingredients. Produces 1.</description>
 		<jobString>Cooking Lavish Meal.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>600</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -535,6 +574,11 @@
 				<li>AnimalProductRaw</li>
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -554,12 +598,13 @@
 
 	<RecipeDef>
 		<defName>CookMealLavish_Bulk</defName>
-		<label>Cook Lavish Meals</label>
+		<label>cook lavish meals (x4)</label>
 		<description>Cooks very complex meals from a combination of raw meat and raw plant ingredients. Produces 4.</description>
 		<jobString>Cooking Lavish Meals.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2400</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -610,6 +655,11 @@
 				<li>AnimalProductRaw</li>
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -630,12 +680,13 @@
 	
 	<RecipeDef>
 		<defName>CookMealLuxury</defName>
-		<label>Cook Luxury Meal</label>
+		<label>cook luxury meal</label>
 		<description>Cooks a Luxurious Meal from a combination of raw meat and raw plant ingredients. Some ingredients are wasted as only the finest will do. Produces 1.</description>
 		<jobString>Cooking Luxury Meal.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>700</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -705,6 +756,11 @@
 				<li>AnimalProductRaw</li>
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -723,12 +779,13 @@
 	
 	<RecipeDef>
 		<defName>CookMealLuxury_Bulk</defName>
-		<label>Cook Luxury Meals</label>
+		<label>cook luxury meals (x4)</label>
 		<description>Cooks Luxurious Meals from a combination of raw meat and raw plant ingredients. Some ingredients are wasted as only the finest will do. Produces 4.</description>
 		<jobString>Cooking four Luxury Meals.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2800</workAmount>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -798,6 +855,11 @@
 				<li>AnimalProductRaw</li>
 			</categories>
 			<exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -819,11 +881,12 @@
 	
 	<RecipeDef Name="CookRoastedMeat">
 		<defName>CookRoastedMeat</defName>
-		<label>Cook Roasted Meat</label>
+		<label>cook roasted meat</label>
 		<description>Prepares fresh Roasted Meat. Produces 1.</description>
 		<jobString>Cooking Roasted Meat.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
+		<workAmount>500</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -854,7 +917,12 @@
 				<li>MeatRaw</li>
 				<li>AnimalProductRaw</li>
 			</categories>
-			<exceptedThingDefs>
+            <exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -878,11 +946,12 @@
 	
     <RecipeDef Name="CookMealJerky">
 		<defName>CookMealJerky</defName>
-		<label>Cook Jerky Meat</label>
+		<label>cook jerky meat</label>
 		<description>Prepares smoked Jerky from raw meat. Produces 1.</description>
 		<jobString>Cooking Jerky.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
+		<workAmount>400</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -913,7 +982,12 @@
 				<li>MeatRaw</li>
 				<li>AnimalProductRaw</li>
 			</categories>
-			<exceptedThingDefs>
+            <exceptedThingDefs>
+                <li>Gnawler_Meat</li>
+				<li>Megaspider_Meat</li>
+                <li>Antis_Meat</li>
+                <li>Mosquito_Meat</li>
+                <li>Crashbug_Meat</li>
 				<li>Human_Meat</li>
 			</exceptedThingDefs>
       <exceptedCategories>
@@ -937,11 +1011,12 @@
 
 	<RecipeDef>
 		<defName>MakeDriedfruit</defName>
-		<label>Dry Fresh Fruit</label>
+		<label>dry fresh fruit</label>
 		<description>Dehydrates fruit to increase its lifespan. Produces 1.</description>
 		<jobString>Drying Fruit.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
+		<workAmount>500</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -976,11 +1051,11 @@
 	
 	<RecipeDef>
 		<defName>MakeTofu</defName>
-		<label>Make Tofu</label>
+		<label>make tofu</label>
 		<description>Turns Beans into Tofu. Tofu is used in place of meat in meals or can be eaten raw. Produces 5.</description>
 		<jobString>Pressing Tofu.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>575</workAmount>
+		<workAmount>600</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -1017,11 +1092,12 @@
 
 	<RecipeDef>
 		<defName>MakeVegetables</defName>
-		<label>Cook Fried Assorts</label>
+		<label>cook fried assorts</label>
 		<description>Prepares a simple dried assortment of vegetables. Produces 1.</description>
 		<jobString>Cooking Fried Assorts.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
+		<workAmount>500</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
@@ -1060,9 +1136,10 @@
 
     <RecipeDef Name="BakePotato">
 		<defName>BakePotato</defName>
-		<label>Bake Potato</label>
-		<description>Prepares baked potatos from raw potatos. Produces 10.</description>
+		<label>bake potato</label>
+		<description>Prepares baked potatos from raw potatos. Produces 1.</description>
 		<jobString>Baking Potato.</jobString>
+		<workAmount>350</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
@@ -1073,11 +1150,11 @@
 					<li>RawPotatoes</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<products>
-			<BakedPotato>10</BakedPotato>
+			<BakedPotato>1</BakedPotato>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -1093,7 +1170,42 @@
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
 
-
-
+	<RecipeDef>
+		<defName>HalfCoconut</defName>
+		<label>split coconuts</label>
+		<description>Splits coconuts into two and harvests the milk from the fruit. Makes 5 Milks.</description>
+		<jobString>Splitting coconut.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>500</workAmount>
+		<effectWorking>Cook</effectWorking>
+		 <soundWorking>Recipe_CookMeal</soundWorking>          
+		<ingredients>
+		<li>
+			<filter>
+			  <thingDefs>
+				<li>RawCoconut</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		   <thingDefs>
+				<li>RawCoconut</li>
+			  </thingDefs>
+		  <specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		  </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+		  <coconutmilk>5</coconutmilk>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>TableButcherNeolithic</li>
+			<li>TableButcher</li>
+			<li>Canningstove</li>
+	   </recipeUsers>
+	</RecipeDef>
 
 </RecipeDefs>

@@ -2,7 +2,7 @@
 
 <ThingDefs>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorMedievalBase">
 		<defName>Apparello_iratemoron</defName>
 		<label>Morion</label>
 		<description>A basic metal helmet with a flat ridge in the middle, worthy of a Spanish conquistador. It keeps your head safe from blows sometimes, if you're lucky.</description>
@@ -18,6 +18,7 @@
 			<Component>7</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>49</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>6</Insulation_Heat>
@@ -26,7 +27,7 @@
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 			<ArmorRating_Electric>0.1</ArmorRating_Electric>
-			<Weight>1.2</Weight>
+			<Mass>1.2</Mass>
 			<Bulk>5</Bulk>
 			<WornWeight>1.2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -83,7 +84,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorMedievalBase">
 		<defName>Apparello_Moron</defName>
 		<label>Kettlehat</label>
 		<description>A helmet with a large metal brim for extra protection; favored by peasant but seen as unfit for nobility.</description>
@@ -99,6 +100,7 @@
 			<Component>5</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>47</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>6</Insulation_Heat>
@@ -106,7 +108,7 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.1</ArmorRating_Heat>
-			<Weight>2</Weight>
+			<Mass>2</Mass>
 			<Bulk>5</Bulk>
 			<WornWeight>2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -156,7 +158,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorMedievalBase">
 		<defName>MedievalArmor_NasalHelmet</defName>
 		<label>Nasal Helmet</label>
 		<description>A simple helmet with a slight innovation: a bar that extended down over the nose, provding better protection to the face but somewhat obscuring vision.</description>
@@ -172,6 +174,7 @@
 			<Component>4</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>47</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -180,7 +183,7 @@
 			<ArmorRating_Sharp>0.28</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 			<ArmorRating_Electric>0</ArmorRating_Electric>
-			<Weight>2</Weight>
+			<Mass>2</Mass>
 			<Bulk>5</Bulk>
 			<WornWeight>2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -228,7 +231,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ApparelMedievalBase">
 		<defName>MedievalTimes_Headwrap</defName>
 		<label>Padded Head-wrap</label>
 		<description>A soft cap made of leather and cloth padding. It contains a single steel plate to deflect incoming blows. Great for keeping warm in winter.</description>
@@ -241,6 +244,7 @@
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<statBases>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>47</MaxHitPoints>
 			<Flammability>2</Flammability>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -249,7 +253,7 @@
 			<ArmorRating_Sharp>0.14</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
 			<ArmorRating_Electric>0</ArmorRating_Electric>
-			<Weight>2</Weight>
+			<Mass>2</Mass>
 			<Bulk>5</Bulk>
 			<WornWeight>2</WornWeight>
 			<WornBulk>0</WornBulk>
@@ -297,7 +301,7 @@
 		</thingCategories>
 	</ThingDef>
 	
-	<ThingDef ParentName="ApparelBase">
+	<ThingDef ParentName="ArmorMedievalBase">
 		<defName>Apparello_NorbalKing</defName>
 		<label>Horned Cap</label>
 		<description>A decorated, hardened leather cap. Often worn by the most revered and skilled combatants of Norbal communities.</description>
@@ -313,13 +317,14 @@
 			<Component>4</Component>
 		</CostList>
 		<statBases>
+			<WorkToMake>4000</WorkToMake>
 			<MaxHitPoints>40</MaxHitPoints>
 			<Flammability>5</Flammability>
 			<Insulation_Heat>3</Insulation_Heat>
 			<Insulation_Cold>-7</Insulation_Cold>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.21</ArmorRating_Sharp>
-			<Weight>1.5</Weight>
+			<Mass>1.5</Mass>
 			<Bulk>3</Bulk>
 			<WornWeight>1.5</WornWeight>
 			<WornBulk>0</WornBulk>

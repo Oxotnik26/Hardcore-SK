@@ -2,7 +2,7 @@
 <ThingDefs>
 
 	<ThingDef Name="BodyPartBase" Abstract="True">
-		<label>Body Part</label>
+		<label>body part</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
 		<useHitPoints>true</useHitPoints>
@@ -10,16 +10,50 @@
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+			<Mass>2.5</Mass>
+			<Bulk>3</Bulk>
 		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
 		<tickerType>Never</tickerType>
 		<alwaysHaulable>true</alwaysHaulable>
 		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<tradeTags>
+			<li>BodyPartOrImplant</li>
+		</tradeTags>
 		<comps>
-		<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 		<pathCost>10</pathCost>
 	</ThingDef>
+
+	
+  <ThingDef Name="ImplantBase" Abstract="True">
+    <label>implant</label>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <Mass>2.5</Mass>
+      <Bulk>3</Bulk>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <tradeTags>
+      <li>BodyPartOrImplant</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <thingCategories>
+      <li>BodyPartsArtificial</li>
+    </thingCategories>
+    <pathCost>10</pathCost>
+  </ThingDef>
 	  
 	<!-- artificial - advanced prosthetic weapons -->
 	
@@ -77,5 +111,18 @@
       </thingCategories>
       <pathCost>10</pathCost>
    </ThingDef>
+   
+    <ThingDef ParentName="ImplantBase">
+        <defName>Senex_Implant</defName>
+        <label>senexium implant</label>
+        <description>Age accelleration implant. Multiplies aging by 100</description>
+        <graphicData>
+            <texPath>Things/Item/Implant/Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1500</MarketValue>
+        </statBases>
+    </ThingDef>
    
 </ThingDefs>

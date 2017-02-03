@@ -3,10 +3,10 @@
 
 	
   <RecipeDef>
-    <defName>BrewBeer</defName>
-    <label>Brew Beer</label>
-    <description>Brew a batch of bottled Beer from Hops. Produces 5.</description>
-    <jobString>Brewing batch of Beer.</jobString>
+    <defName>MakeWort</defName>
+    <label>brew wort</label>
+    <description>Brew a batch of bottled Wort from Hops. Produces 5.</description>
+    <jobString>Brewing batch of Wort.</jobString>
     <workSpeedStat>BrewingSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
@@ -29,7 +29,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Beer>5</Beer>
+      <Wort>5</Wort>
     </products>
 		<skillRequirements>
 			<li>
@@ -43,7 +43,7 @@
 
 <RecipeDef>
 	<defName>Distillcider</defName>
-	<label>Brew Apple Cider</label>
+	<label>brew apple cider</label>
 	<description>Brew bottles of Apple Cider. Produces 5.</description>
 	<jobString>Brewing Apple Cider.</jobString>
 	<workSpeedStat>BrewingSpeed</workSpeedStat>
@@ -52,6 +52,7 @@
           <allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
          <li>Brewery</li>
+		 <li>ElectricBrewery</li>
       </recipeUsers>
 	<workAmount>800</workAmount>
           <targetCountAdjustment>1</targetCountAdjustment>
@@ -85,7 +86,7 @@
 
 <RecipeDef>
 	<defName>Distillrum</defName>
-	<label>Distill Rum</label>
+	<label>distill rum</label>
 	<description>Distills bottles of Rum from Sugarcane. Produces 5.</description>
 	<jobString>Distilling bottles of Rum.</jobString>
 	<workSpeedStat>BrewingSpeed</workSpeedStat>
@@ -94,6 +95,7 @@
           <allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
          <li>Brewery</li>
+		 <li>ElectricBrewery</li>
       </recipeUsers>
 <workAmount>800</workAmount>
           <targetCountAdjustment>1</targetCountAdjustment>
@@ -127,7 +129,7 @@
 
 <RecipeDef>
 	<defName>DistillStrawberryWine</defName>
-	<label>Distill Strawberry Wine</label>
+	<label>distill strawberry wine</label>
 	<description>Distills bottles of Strawberry Wine. Produces 8.</description>
 	<jobString>Distilling Strawberry Wine.</jobString>
 	<workSpeedStat>BrewingSpeed</workSpeedStat>
@@ -163,13 +165,14 @@
 	<workSkill>Cooking</workSkill>
     <recipeUsers>
       <li>Brewery</li>
+	  <li>ElectricBrewery</li>
     </recipeUsers>
 </RecipeDef>
 
 
 <RecipeDef>
 	<defName>DistillSaki</defName>
-	<label>Distill Sake</label>
+	<label>distill sake</label>
 	<description>Distills bottles of Saki from Rice. Produces 8.</description>
 	<jobString>Distilling bottles of Saki.</jobString>
 	<workSpeedStat>BrewingSpeed</workSpeedStat>
@@ -205,13 +208,14 @@
 	<workSkill>Cooking</workSkill>
     <recipeUsers>
       <li>Brewery</li>
+	  <li>ElectricBrewery</li>
     </recipeUsers>
 </RecipeDef>
 
 
 <RecipeDef>
 	<defName>DistillVodka</defName>
-	<label>Distill Vodka</label>
+	<label>distill vodka</label>
 	<description>Distills bottles of Vodka from Potatoes. Produces 8.</description>
 	<jobString>Distilling bottles of Vodka.</jobString>
 	<workSpeedStat>BrewingSpeed</workSpeedStat>
@@ -247,13 +251,14 @@
 	<workSkill>Cooking</workSkill>
     <recipeUsers>
       <li>Brewery</li>
+	  <li>ElectricBrewery</li>
     </recipeUsers>
 </RecipeDef>
 	
 	
 <RecipeDef>
 	<defName>DistillTequila</defName>
-	<label>Distill Tequila</label>
+	<label>distill tequila</label>
 	<description>Distills bottles of Tequila from Agave. Produces 8.</description>
 	<jobString>Distilling bottles of Tequila.</jobString>
 	<workSpeedStat>BrewingSpeed</workSpeedStat>
@@ -289,13 +294,14 @@
 	<workSkill>Cooking</workSkill>
     <recipeUsers>
       <li>Brewery</li>
+	  <li>ElectricBrewery</li>
     </recipeUsers>
 </RecipeDef>
 
 
 <RecipeDef>
 	<defName>DistillWhisky</defName>
-	<label>Distill Whisky</label>
+	<label>distill whisky</label>
 	<description>Distills bottles of Whisky from Corn. Produces 8.</description>
 	<jobString>Distilling bottles of Whisky.</jobString>
 	<workSpeedStat>BrewingSpeed</workSpeedStat>
@@ -331,6 +337,7 @@
 	<workSkill>Cooking</workSkill>
     <recipeUsers>
       <li>Brewery</li>
+	  <li>ElectricBrewery</li>
     </recipeUsers>
 </RecipeDef>
 

@@ -5,25 +5,6 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
   </DamageDef>
 
-  <DamageDef ParentName="LocalInjuryBase">
-    <defName>Bomb</defName>
-    <label>Bomb</label>
-    <externalViolence>true</externalViolence>
-    <isExplosive>true</isExplosive>
-    <battleWound>true</battleWound>
-    <deathMessage>{0} has died in an explosion.</deathMessage>
-    <hediff>Shredded</hediff>
-    <hediffSolid>Crack</hediffSolid>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <impactSoundType>Blunt</impactSoundType>
-    <armorCategory>Blunt</armorCategory>
-    <explosionDamage>50</explosionDamage>
-    <explosionBuildingDamageFactor>2</explosionBuildingDamageFactor>
-    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
-    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
-    <explosionCellMote>Mote_BlastDry</explosionCellMote>
-    <soundExplosion>Explosion_Bomb</soundExplosion>
-  </DamageDef>
 
   <DamageDef ParentName="LocalInjuryBase">
     <defName>Optic</defName>
@@ -105,20 +86,7 @@
     <spreadOut>true</spreadOut>
   </DamageDef>
   
-  <DamageDef ParentName="LocalInjuryBase">
-    <defName>Radiation</defName>
-    <label>Radiation</label>
-    <hasForcefulImpact>false</hasForcefulImpact>
-    <makesBlood>false</makesBlood>
-    <incapChanceMultiplier>1</incapChanceMultiplier>
-    <externalViolence>false</externalViolence>
-    <battleWound>false</battleWound>
-    <deathMessage>{0} died of radiation poisoning.</deathMessage>
-    <hediff>Radiation</hediff>
-    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
-    <armorCategory>Electric</armorCategory>
-  </DamageDef>
-  
+ 
   <DamageDef ParentName="LocalInjuryBase">
     <defName>ArmorPiercing</defName>
     <label>Armor-piercing</label>
@@ -128,7 +96,7 @@
     <hediff>Gunshot</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
-    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <soundExplosion>Explosion</soundExplosion>
     <explosionCellMote>Mote_BlastDry</explosionCellMote>
   </DamageDef>
 
@@ -179,5 +147,65 @@
     <impactSoundType>Electric</impactSoundType>
     <armorCategory>Blunt</armorCategory>
   </DamageDef>
+  
+  <DamageDef ParentName="LocalInjuryBase">
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <defName>BioticShock</defName>
+    <label>Biotic Shock</label>
+    <harmsHealth>true</harmsHealth>
+    <battleWound>true</battleWound>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <canInterruptJobs>true</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} shocked to death.</deathMessage>
+    <hasChanceToAdditionallyDamageInnerSolidParts>true</hasChanceToAdditionallyDamageInnerSolidParts>
+    <hediff>ElectricShock</hediff>
+    <hediffSkin>ElectricShock</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>True</harmAllLayersUntilOutside>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <soundExplosion>Thunder_OnMap</soundExplosion>
+  </DamageDef>
+  
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>KineticPulse</defName>
+    <label>Kinetic Pulse</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shattered.</deathMessage>
+    <hediff>Crush</hediff>
+	<hasForcefulImpact>true</hasForcefulImpact>
+	<hasChanceToAdditionallyDamageInnerSolidParts>true</hasChanceToAdditionallyDamageInnerSolidParts>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <spreadOut>true</spreadOut>
+    <explosionDamage>8</explosionDamage>
+    <explosionBuildingDamageFactor>8</explosionBuildingDamageFactor>
+    <explosionHeatEnergyPerCell>8</explosionHeatEnergyPerCell>
+	<explosionCellMote>Mote_BlastDry</explosionCellMote>
+    <soundExplosion>Explosion</soundExplosion>
+  </DamageDef>
+  
+ <DamageDef Name="Dart" ParentName="LocalInjuryBase">
+    <defName>Dart</defName>
+    <label>dart</label>
+    <externalViolence>true</externalViolence>
+    <battleWound>true</battleWound>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+ </DamageDef>
+
+ <SK.DamageDef_AddHediffSizeBased ParentName="Dart">
+    <defName>Poison</defName>
+    <workerClass>SK.DamageWorker_AddHediffSizeBased</workerClass>
+    <label>poison</label>
+    <hediff>Soporific</hediff>
+    <pawnBaseMeatAmount>12</pawnBaseMeatAmount>
+ </SK.DamageDef_AddHediffSizeBased>
 	
 </Defs>

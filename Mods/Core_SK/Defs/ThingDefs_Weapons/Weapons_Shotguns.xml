@@ -22,7 +22,7 @@
 			<SwayFactor>1.74</SwayFactor>
 			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
 			<Bulk>7.50</Bulk>
-			<Weight>3.50</Weight>
+			<Mass>3.50</Mass>
 		</statBases>
     <weaponTags>
 	<li>Gun</li>
@@ -40,7 +40,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_12Gauge_Buck</projectileDef>
-			<warmupTicks>34</warmupTicks>
+			<warmupTime>0.34</warmupTime>
 			<range>16</range>
 			<soundCast>USCM_shotM37A2</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -58,6 +58,10 @@
 			<magazineSize>4</magazineSize>
 			<reloadTicks>210</reloadTicks>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.26125,0.3,-0.1)</MainHand>
+				<SecHand>(0.18125,0,-0.025)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -82,7 +86,7 @@
 	  <SwayFactor>1.66</SwayFactor>
       <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
 	  <Bulk>8.10</Bulk>
-	  <Weight>3.00</Weight>
+	  <Mass>3.00</Mass>
     </statBases>
     <weaponTags>
 	<li>Gun</li>
@@ -100,7 +104,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_12Gauge_Buck</projectileDef>
-			<warmupTicks>23</warmupTicks>
+			<warmupTime>0.23</warmupTime>
 			<range>16</range>
 			<soundCast>ShotShotgun</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -117,6 +121,10 @@
 			<magazineSize>5</magazineSize>
 			<reloadTicks>230</reloadTicks>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.3,0.3,-0.05)</MainHand>
+				<SecHand>(0.2,0,-0.05)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -143,7 +151,7 @@
 		<SwayFactor>1.60</SwayFactor>
 		<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		<Bulk>8.80</Bulk>
-		<Weight>4.00</Weight>
+		<Mass>4.00</Mass>
     </statBases>
     <weaponTags>
       <li>Gun</li>
@@ -163,7 +171,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_12Gauge_Buck</projectileDef>
-			<warmupTicks>32</warmupTicks>
+			<warmupTime>0.32</warmupTime>
 			<range>16</range>
 			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 			<burstShotCount>2</burstShotCount>
@@ -182,6 +190,10 @@
 			<magazineSize>20</magazineSize>
 			<reloadTicks>250</reloadTicks>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.325,0.3,-0.1)</MainHand>
+				<SecHand>(0.2,0,-0.1)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -209,7 +221,7 @@
 		<SwayFactor>1.7</SwayFactor>
 		<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
 		<Bulk>9.00</Bulk>
-		<Weight>4.00</Weight>
+		<Mass>4.00</Mass>
     </statBases>
     <tradeTags>
       <li>Exotic</li>
@@ -232,7 +244,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_12Gauge_Buck</projectileDef>
-			<warmupTicks>38</warmupTicks>
+			<warmupTime>0.38</warmupTime>
 			<range>16</range>
 			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 			<burstShotCount>2</burstShotCount>
@@ -251,6 +263,10 @@
 			<magazineSize>8</magazineSize>
 			<reloadTicks>270</reloadTicks>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.26125,0.3,-0.1)</MainHand>
+				<SecHand>(0.18125,0,-0.025)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -279,7 +295,7 @@
 			<SwayFactor>2.1</SwayFactor>
 			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
 			<Bulk>9.50</Bulk>
-			<Weight>4.50</Weight>
+			<Mass>4.50</Mass>
 		</statBases>
     <tradeTags>
       <li>Exotic</li>
@@ -305,7 +321,7 @@
 			<projectileDef>Bullet_12Gauge_Buck</projectileDef>
 			<burstShotCount>3</burstShotCount>
 			<ticksBetweenBurstShots>16</ticksBetweenBurstShots>
-			<warmupTicks>55</warmupTicks>
+			<warmupTime>0.55</warmupTime>
 			<range>16</range>
 			<soundCast>RF_ShotAA12</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -323,6 +339,10 @@
 			<magazineSize>12</magazineSize>
 			<reloadTicks>280</reloadTicks>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.225,0.3,-0.125)</MainHand>
+				<SecHand>(0.15,0,0)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>
@@ -350,7 +370,7 @@
 		<SwayFactor>2.1</SwayFactor>
 		<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		<Bulk>9.50</Bulk>
-		<Weight>4.50</Weight>
+		<Mass>4.50</Mass>
     </statBases>
     <tradeTags>
       <li>Exotic</li>
@@ -373,7 +393,7 @@
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<projectileDef>Bullet_12Gauge_Buck</projectileDef>
-			<warmupTicks>55</warmupTicks>
+			<warmupTime>0.55</warmupTime>
 			<range>16</range>
 			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 			<burstShotCount>3</burstShotCount>
@@ -393,6 +413,10 @@
 			<magazineSize>12</magazineSize>
 			<reloadTicks>260</reloadTicks>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
+		  </li>
+		  <li Class="WHands.WhandCompProps">
+				<MainHand>(-0.1825,0.3,-0.1)</MainHand>
+				<SecHand>(0.125,0,-0.025)</SecHand>
 		  </li>
 		</comps>
     <smeltProducts>

@@ -12,6 +12,12 @@
       <texPath>Things/Building/AquacultureBasin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -42,7 +48,7 @@
     </CostList>
     <UseHitPoints>True</UseHitPoints>
     <statBases>
-      <WorkToMake>1800</WorkToMake>
+      <WorkToBuild>1800</WorkToBuild>
       <MaxHitPoints>300</MaxHitPoints>
       <Beauty>20</Beauty>
       <Flammability>0.4</Flammability>
@@ -62,7 +68,7 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <building>
-      <foodCostPerDispense>30</foodCostPerDispense>
+      <foodCostPerDispense>20</foodCostPerDispense>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
     <researchPrerequisites>

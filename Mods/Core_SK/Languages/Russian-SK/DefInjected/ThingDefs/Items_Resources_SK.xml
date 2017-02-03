@@ -63,7 +63,7 @@
 	<GoldBar.description>Сплавы из золота требуются в основном в электронике.</GoldBar.description>
 	<GoldBar.stuffProps.stuffAdjective>золота</GoldBar.stuffProps.stuffAdjective>
 
-	<SilverBar.label>Серебрянный сплав</SilverBar.label>
+	<SilverBar.label>серебряный сплав</SilverBar.label>
 	<SilverBar.description>Сплавы из серебра требуются в основном в электронике.</SilverBar.description>
 	<SilverBar.stuffProps.stuffAdjective>серебра</SilverBar.stuffProps.stuffAdjective>
 
@@ -119,9 +119,9 @@
 
 	<!--=============== Fabric, leather, etc  ====================-->
 	
-	<WeedCloth.label>Конопляное полотно</WeedCloth.label>
-	<WeedCloth.description>Эта ткань соткана из материала которую мы курим, но кто-то решил что делать из нее ткань хорошая идея...</WeedCloth.description>
-	<WeedCloth.stuffProps.stuffAdjective>конопляного полотна</WeedCloth.stuffProps.stuffAdjective>
+	<HempCloth.label>Конопляное полотно</HempCloth.label>
+	<HempCloth.description>Эта ткань соткана из материала которую мы курим, но кто-то решил что делать из нее ткань хорошая идея...</HempCloth.description>
+	<HempCloth.stuffProps.stuffAdjective>конопляного полотна</HempCloth.stuffProps.stuffAdjective>
 
 	<RamWool.label>шерсть барана</RamWool.label>
 <RamWool.description>Очень мягкая шерсть барана</RamWool.description>
@@ -181,8 +181,8 @@
 	<Silicon.label>Кремний</Silicon.label>
     <Silicon.description>Материал, который изготавливается из кремнийорганических соединений (песка).</Silicon.description>
 
-	<EthanolFuel.label>Этанол</EthanolFuel.label>
-	<EthanolFuel.description>Канистра этанола. Может быть использована как топливо для генератора или продана торговцу.</EthanolFuel.description>
+	<Chemfuel.label>Этанол</Chemfuel.label>
+	<Chemfuel.description>Канистра этанола. Может быть использована как топливо для генератора или продана торговцу.</Chemfuel.description>
 
 	<ElectronicComponents.label>Электронные компоненты</ElectronicComponents.label>
 	<ElectronicComponents.description>Электронные компоненты используются для крафта продвинутых электронных приспособлений.</ElectronicComponents.description>
@@ -226,9 +226,9 @@
 	<CarbonAlloy.description>Чрезвычайно лёгкий, и тем не менее очень прочный полимер укрепленный волокном, содержащий углеволокна со стальным сплавом. Создаётся в лаборатории.</CarbonAlloy.description>
 	<CarbonAlloy.stuffProps.stuffAdjective>композита</CarbonAlloy.stuffProps.stuffAdjective>
 
-	<Concrete.label>Бетон</Concrete.label>
-  <Concrete.description>Широко используется в строительстве.</Concrete.description>
-  <Concrete.stuffProps.stuffAdjective>бетона</Concrete.stuffProps.stuffAdjective>
+	<ConcreteResource.label>Бетон</ConcreteResource.label>
+  <ConcreteResource.description>Широко используется в строительстве.</ConcreteResource.description>
+  <ConcreteResource.stuffProps.stuffAdjective>бетона</ConcreteResource.stuffProps.stuffAdjective>
 
 	<Peat.label>Торф</Peat.label>
   <Peat.description>Горючее полезное ископаемое и агроруда; образовано скоплением остатков мхов, подвергшихся неполному разложению в условиях болот. Для болота характерно отложение на поверхности почвы неполно разложившегося органического вещества, превращающегося в дальнейшем в торф.</Peat.description>
@@ -284,7 +284,7 @@
 	<Sulfur.description>Сера необходима для производства пороха.</Sulfur.description>
 
 	<Sulphates.label>Сульфаты</Sulphates.label>
-	<Sulphates.description>Достаточно важный ингридиент.</Sulphates.description>
+	<Sulphates.description>Достаточно важный ингредиент.</Sulphates.description>
 
 	<Fuel.label>Топливо</Fuel.label>
 	<Fuel.description>Создано из переработанной нефти. Оно необходимо для заправки электростанции.</Fuel.description>
@@ -344,5 +344,8 @@
 
 	<RepairKit.label>Ремонтный комплект</RepairKit.label>
 	<RepairKit.description>Ремонтный комплект требуется для починки вещей и оружия на ремонтном станке.</RepairKit.description>
+
+	<ChunkSalt.label>Соль</ChunkSalt.label>
+	<ChunkSalt.description>Соль - ингредиент для консервации продуктов.</ChunkSalt.description>
 
 </LanguageData>

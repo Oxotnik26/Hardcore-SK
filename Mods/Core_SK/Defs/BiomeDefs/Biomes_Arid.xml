@@ -3,12 +3,18 @@
 
   <BiomeDef>
     <defName>AridShrubland</defName>
-    <label>Arid shrubland</label>
+    <label>arid shrubland</label>
     <description>A dry region, but not dry enough to become a true desert. Open plains with grasses and bushes give way to scattered groves of trees. Plants are hardy and there is a moderate density of animals.</description>
     <workerClass>BiomeWorker_AridShrubland</workerClass>
-    <animalDensity>4.0</animalDensity>
-    <plantDensity>0.8</plantDensity>
-    <baseColor>(125,101,78)</baseColor>
+    <animalDensity>3.6</animalDensity>
+    <plantDensity>0.7</plantDensity>
+    <factionBaseSelectionWeight>0.95</factionBaseSelectionWeight>
+    <pathCost>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </pathCost>
+    <texture>World/Biomes/AridShrubland</texture>
     <soundsAmbient>
       <li>AmbientNightInsects_Standard</li>
     </soundsAmbient>
@@ -102,6 +108,8 @@
 		<PlantWildBanana>0.4</PlantWildBanana>
         <PlantTreeOak>0.2</PlantTreeOak>
         <PlantTreePoplar>0.35</PlantTreePoplar>
+	  <PlantBlueMushroom>0.08</PlantBlueMushroom>
+      <PlantRedMushroom>0.04</PlantRedMushroom>
     </wildPlants>
     <wildAnimals>
       <Warg>0.03</Warg>
@@ -113,11 +121,11 @@
       <Boomrat>0.3</Boomrat>
       <Iguana>0.2</Iguana>
       <Rhinoceros>0.2</Rhinoceros>
-      <WildBoar>0.5</WildBoar>
+      <Meerkat>0.7</Meerkat>
       <Emu>0.4</Emu>
       <Ostrich>0.6</Ostrich>
       <Rat>1.0</Rat>
-      <Megatherium>0.03</Megatherium>
+      <Megasloth>0.03</Megasloth>
       <Cougar>0.11</Cougar>
       <WolfTimber>0.02</WolfTimber>
       <FoxFennec>0.05</FoxFennec>
@@ -127,26 +135,33 @@
       <Tarantula>0.11</Tarantula>
       <Fly>1.1</Fly>
       <Mosquito>1.1</Mosquito>
-      <Quadhog>0.1</Quadhog>
-      <Lion>0.07</Lion>
       <Scorpion>0.06</Scorpion>
       <Tiger>0.07</Tiger>
       <Jaguar>0.04</Jaguar>
+      <SmilodonPop>0.03</SmilodonPop>
     </wildAnimals>
     <allowedPackAnimals>
-      <li>ArmoredMuffalo</li>
+      <li>Muffalo</li>
+      <li>Buffalo</li> 
+      <li>Dromedary</li>
     </allowedPackAnimals>
   </BiomeDef>
   
   
   <BiomeDef>
     <defName>Desert</defName>
-    <label>Desert</label>
-    <description>A very dry, hot area which supports little life.</description>
+    <label>desert</label>
+    <description>A very dry area which supports little life. Deserts can be hot, or quite cold.</description>
     <workerClass>BiomeWorker_Desert</workerClass>
     <animalDensity>0.8</animalDensity>
     <plantDensity>0.2</plantDensity>
-    <baseColor>(0.592, 0.568, 0.396)</baseColor>
+    <factionBaseSelectionWeight>0.65</factionBaseSelectionWeight>
+    <pathCost>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </pathCost>
+    <texture>World/Biomes/Desert</texture>
     <diseaseMtbDays>80</diseaseMtbDays>
     <diseases>
       <li>
@@ -216,31 +231,37 @@
       <Dromedary>0.5</Dromedary>
       <Ostrich>0.2</Ostrich>
       <Rat>0.30</Rat>
-      <Cougar>0.1</Cougar>
+      <Meerkat>0.45</Meerkat>
+      <Cougar>0.15</Cougar>
       <FoxFennec>0.07</FoxFennec>
       <Crashbug>0.4</Crashbug>
       <Tarantula>0.07</Tarantula>
       <Fly>0.1</Fly>
       <Mosquito>0.2</Mosquito>
-      <Lacosdile>0.4</Lacosdile>
-      <Quadhog>0.12</Quadhog>
       <Spindlecrib>0.1</Spindlecrib>
       <Scorpion>0.1</Scorpion>
     </wildAnimals>
     <allowedPackAnimals>
-      <li>ArmoredMuffalo</li>
+      <li>Buffalo</li>
+      <li>Dromedary</li>
     </allowedPackAnimals>
   </BiomeDef>
 
 
   <BiomeDef>
     <defName>ExtremeDesert</defName>
-    <label>Extreme desert</label>
+    <label>extreme desert</label>
     <description>An extremely hot, dry area, devoid of almost all living creatures. Immense heat and limited vegetation make it very difficult to survive here, even for well-adapted animals.</description>
     <workerClass>BiomeWorker_ExtremeDesert</workerClass>
     <animalDensity>0.45</animalDensity>
-    <plantDensity>0.02</plantDensity>
-    <baseColor>(0.707, 0.664, 0.371)</baseColor>
+    <plantDensity>0.015</plantDensity>
+    <factionBaseSelectionWeight>0.42</factionBaseSelectionWeight>
+		<pathCost>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</pathCost>
+    <texture>World/Biomes/ExtremeDesert</texture>
     <diseaseMtbDays>90</diseaseMtbDays>
     <diseases>
       <li>
@@ -297,6 +318,7 @@
       <Iguana>0.3</Iguana>
       <Rat>0.2</Rat>
       <Dromedary>0.3</Dromedary>
+      <Meerkat>0.3</Meerkat>
       <FoxFennec>0.1</FoxFennec>
       <Crashbug>0.5</Crashbug>
       <Tarantula>0.03</Tarantula>
@@ -304,7 +326,8 @@
       <Scorpion>0.05</Scorpion>
     </wildAnimals>
     <allowedPackAnimals>
-      <li>ArmoredMuffalo</li>
+      <li>Buffalo</li>
+      <li>Dromedary</li>
     </allowedPackAnimals>
   </BiomeDef>
 

@@ -22,16 +22,6 @@
 	<GermanShepherd_Corpse.label>труп немецкой овчарки</GermanShepherd_Corpse.label>
 	<GermanShepherd_Corpse.description>Труп немецкой овчарки</GermanShepherd_Corpse.description>
 	
-	<BorderCollie.label>Бордер-колли</BorderCollie.label>
-	<BorderCollie.description>Относится к пастушьим собакам. Согласно исследованиям, бордер-колли является самой умной собакой среди всех пород. Характер стремительный, энергичный, собака восприимчива и понятлива, проницательна. Собаки этой породы очень умны, но требуют постоянных физических и умственных нагрузок.</BorderCollie.description>
-	<BorderCollie_Leather.Label>шкура бордер-колли</BorderCollie_Leather.Label>
-	<BorderCollie_Leather.stuffProps.stuffAdjective>шкуры бордер-колли</BorderCollie_Leather.stuffProps.stuffAdjective>
-	<BorderCollie_Leather.description>шкура, содранная с бордер-колли</BorderCollie_Leather.description>
-	<!-- <BorderCollie_Meat.label>мясо бордер-колли</BorderCollie_Meat.label>
-	<BorderCollie_Meat.description>сырое мясо бордер-колли</BorderCollie_Meat.description> -->
-	<BorderCollie_Corpse.label>труп бордер-колли</BorderCollie_Corpse.label>
-	<BorderCollie_Corpse.description>Труп бордер-колли</BorderCollie_Corpse.description>
-
 	<Nightling.label>Найтлинг</Nightling.label>
     <Nightling.description>Большой уродливый зверь с шипами на спине. Римворлд это суровое место и трупы здесь - это обычное явление. Но за последние годы тревожные сообщения о растерзанных трупах, вывернутых наизнанку и пронзённых шипами стали появляться всё чаще. Каждый рассвет освещает то, что происходило ночью. Местные жители довольно быстро научились бояться темноты и тех, кто в ней обитает.</Nightling.description>
 	<Nightling_Leather.label>шкура найтлинга</Nightling_Leather.label>
@@ -43,7 +33,7 @@
 	<Nightling_Corpse.description>Труп найтлинга.</Nightling_Corpse.description>
 <!-- ========================= Raptor enviro ============================= -->
 	<FRaptor.label>Пернатый раптор</FRaptor.label>
-	<FRaptor.description>Тихий и хитрый, элегантный, но безжалостный - этот пернатый ящер был выведен для борьбы с нарастающй угрозой нашествия варгов. К несчастью, когда кто-то наконец додумался, что селекция нового альфа-хищника не сможет помочь уже разрушенной экосистеме, проект был отменен. После его отмены, ученые взялись за новый - сделать этих рептилий питомцами богатых и состоятельный людей. Именно из-за этого теперь тело рапторов покрывают переливающиеся на солнце перья.</FRaptor.description>
+	<FRaptor.description>Тихий и хитрый, элегантный, но безжалостный - этот пернатый ящер был выведен для борьбы с нарастающей угрозой нашествия варгов. К несчастью, когда кто-то наконец додумался, что селекция нового альфа-хищника не сможет помочь уже разрушенной экосистеме, проект был отменен. После его отмены, ученые взялись за новый - сделать этих рептилий питомцами богатых и состоятельный людей. Именно из-за этого теперь тело рапторов покрывают переливающиеся на солнце перья.</FRaptor.description>
 	<FRaptor_Leather.label>Шкура раптора</FRaptor_Leather.label>
 	<FRaptor_Leather.stuffProps.stuffAdjective>шкуры раптора</FRaptor_Leather.stuffProps.stuffAdjective>
 	<FRaptor_Leather.description>шкура, содранная с раптора</FRaptor_Leather.description>
@@ -52,15 +42,15 @@
 	<FRaptor_Corpse.label>труп раптора</FRaptor_Corpse.label>
 	<FRaptor_Corpse.description>Труп раптора.</FRaptor_Corpse.description>
 
-	<Fenrir.label>Фенрир</Fenrir.label>
-    <Fenrir.description>Мифологический огромный волк. В день рагнарека, согласно прорицанию Вёлвы, Фенрир разорвёт свои оковы, а потом убьет Одина.</Fenrir.description>
-	<Fenrir_Leather.label>шкура Фенрира</Fenrir_Leather.label>
-	<Fenrir_Leather.stuffProps.stuffAdjective>шкуры Фенрира</Fenrir_Leather.stuffProps.stuffAdjective>
-	<Fenrir_Leather.description>шкура, содранная с Фенрира.</Fenrir_Leather.description>
-	<Fenrir_Meat.label>мясо Фенрира</Fenrir_Meat.label>
-	<Fenrir_Meat.description>Сырое мясо Фенрира.</Fenrir_Meat.description>
-	<Fenrir_Corpse.label>труп Фенрира</Fenrir_Corpse.label>
-	<Fenrir_Corpse.description>Труп Фенрира.</Fenrir_Corpse.description>
+	<Barghest.label>Баргест</Barghest.label>
+    <Barghest.description>Мифическое существо. Может выглядеть по-разному, но чаще всего принимает вид чёрного пса с горящими глазами, огромными когтями и клыками. Считается злым духом, приносящим несчастье и горе. Говорят, что по ночам он охраняет могилы своих хозяев от вандалов и прочих недобрых людей. Согласно поверью, встреча с баргестом приносит несчастья и скорую смерть. Считается, что баргесты — призраки, материализовавшиеся в призрачных псов и преследующие живых людей. По некоторым поверьям эти чудовища являются предзнаменованием Дикой Охоты. Другие же легенды гласят, что баргесты — воплощение божественной кары и олицетворенного возмездия. И только в одном все рассказы сходятся: баргесты всегда безжалостны по отношению к живым существам.</Barghest.description>
+	<Barghest_Leather.label>шкура Баргеста</Barghest_Leather.label>
+	<Barghest_Leather.stuffProps.stuffAdjective>шкуры Баргеста</Barghest_Leather.stuffProps.stuffAdjective>
+	<Barghest_Leather.description>шкура, содранная с Баргеста.</Barghest_Leather.description>
+	<Barghest_Meat.label>мясо Баргеста</Barghest_Meat.label>
+	<Barghest_Meat.description>Сырое мясо Баргеста.</Barghest_Meat.description>
+	<Barghest_Corpse.label>труп Баргеста</Barghest_Corpse.label>
+	<Barghest_Corpse.description>Труп Баргеста.</Barghest_Corpse.description>
 <!-- ========================= Insects enviro ============================= -->
 	<!--Mosquito-->
 	<Mosquito.label>Москит-мутант</Mosquito.label>
@@ -113,13 +103,6 @@
 	<Scorpion_Corpse.label>труп скорпиона</Scorpion_Corpse.label>
 	<Scorpion_Corpse.description>Труп скорпиона.</Scorpion_Corpse.description>
 	
-	<Feralisk.label>Фералиск</Feralisk.label>
-    <Feralisk.description>Подвид пауков мутантов, чрезвычайно опасен и ядовит.</Feralisk.description>
-	<!-- <Feralisk_Meat.label>мясо фералиска</Feralisk_Meat.label>
-	<Feralisk_Meat.description>Сырое мясо фералиска.</Feralisk_Meat.description> -->
-	<Feralisk_Corpse.label>труп фералиска</Feralisk_Corpse.label>
-	<Feralisk_Corpse.description>Труп фералиска.</Feralisk_Corpse.description>
-	
 	<Terramorph.label>Терраморф</Terramorph.label>
     <Terramorph.description>Эти уникальный подвид насекомых, способный существовать в суровых климатических условиях. Ядовит и чрезвычайно вынослив.</Terramorph.description>
 	<!-- <Terramorph_Meat.label>мясо терраморфа</Terramorph_Meat.label>
@@ -137,24 +120,7 @@
 	<Buffalo_Meat.description>Сырое мясо альфало.</Buffalo_Meat.description>
 	<Buffalo_Corpse.label>труп альфало</Buffalo_Corpse.label>
 	<Buffalo_Corpse.description>Труп альфало.</Buffalo_Corpse.description>
-<!-- ArmoredMuffalo -->
-    <ArmoredMuffalo.label>Бронированный Муффало</ArmoredMuffalo.label>
-	<ArmoredMuffalo.description>Крупное стадное травоядное животное, на которое надели броню. Эти животные произошли от буйволов и приспособились к некоторым экзотических средам. Безопасны, если не тревожить.</ArmoredMuffalo.description>
-	<ArmoredMuffalo_Corpse.label>труп муффало</ArmoredMuffalo_Corpse.label>
-	<ArmoredMuffalo_Corpse.description>Труп муффало.</ArmoredMuffalo_Corpse.description>
-	<ArmoredMuffalo_Leather.label>шкура муффало</ArmoredMuffalo_Leather.label>
-	<ArmoredMuffalo_Leather.stuffProps.stuffAdjective>шкуры муффало</ArmoredMuffalo_Leather.stuffProps.stuffAdjective>
-	<ArmoredMuffalo_Leather.description>Шкура, содранная с муффало.</ArmoredMuffalo_Leather.description>
-	<ArmoredMuffalo_Meat.label>мясо муффало</ArmoredMuffalo_Meat.label>
-	<ArmoredMuffalo_Meat.description>Сырое мясо муффало.</ArmoredMuffalo_Meat.description>
-<!--Quadhog-->
-	<Quadhog.label>Мегасвин</Quadhog.label>
-	<Quadhog.description>Это предок кабана, только в четыре раза агрессивнее и в четыре раза смертельнее... К счастью, от них можно сделать ноги.</Quadhog.description>
-	<Quadhog_Leather.label>шкура мегасвина</Quadhog_Leather.label>
-	<Quadhog_Leather.stuffProps.stuffAdjective>шкуры мегасвина</Quadhog_Leather.stuffProps.stuffAdjective>
-	<Quadhog_Leather.description>шкура, содранная с мегасвина.</Quadhog_Leather.description>
-	<Quadhog_Corpse.label>труп мегасвина</Quadhog_Corpse.label>
-	<Quadhog_Corpse.description>Труп мегасвина.</Quadhog_Corpse.description>
+
 <!--Rimram-->
 	<Rimram.label>Баран</Rimram.label>
 	<Rimram.description>Толстый шерстяной мех этих баранов позволяет переносить низкие температуры. Не переносят тепло. Также известны своей способностью находить опору даже на отвесных скалах.</Rimram.description>
@@ -167,7 +133,7 @@
 	<Rimram_Corpse.description>Труп барана.</Rimram_Corpse.description>
 <!--Snork-->
 	<Snork.label>Снорк</Snork.label>
-	<Snork.description>Есть некоторое сходство между ними и моржами, но нельзя сказать, кто появился из них раньше, почти все даннные о земляной фауне были давно повреждены. Их бивни высоко ценятся на черном рынке.</Snork.description>
+	<Snork.description>Есть некоторое сходство между ними и моржами, но нельзя сказать, кто появился из них раньше, почти все данные о земляной фауне были давно повреждены. Их бивни высоко ценятся на черном рынке.</Snork.description>
 	<Snork_Leather.label>шкура снорка</Snork_Leather.label>
 	<Snork_Leather.stuffProps.stuffAdjective>шкуры снорка</Snork_Leather.stuffProps.stuffAdjective>
 	<Snork_Leather.description>шкура, содранная с снорка.</Snork_Leather.description>
@@ -175,19 +141,10 @@
 	<Snork_Meat.description>Сырое мясо снорка.</Snork_Meat.description>
 	<Snork_Corpse.label>труп снорка</Snork_Corpse.label>
 	<Snork_Corpse.description>Труп снорка.</Snork_Corpse.description>
-<!--Hedgehog-->
-	<Hedgehog.label>Ёж</Hedgehog.label>
-	<Hedgehog.description>Маленький зверек, спина которого покрыта иголками.</Hedgehog.description>
-	<Hedgehog_Leather.label>шкура ежа</Hedgehog_Leather.label>
-	<Hedgehog_Leather.stuffProps.stuffAdjective>шкуры ежа</Hedgehog_Leather.stuffProps.stuffAdjective>
-	<Hedgehog_Leather.description>шкура, содранная с ежа.</Hedgehog_Leather.description>
-	<Hedgehog_Meat.label>мясо ежа</Hedgehog_Meat.label>
-	<Hedgehog_Meat.description>Сырое мясо ежа.</Hedgehog_Meat.description>
-	<Hedgehog_Corpse.label>труп ежа</Hedgehog_Corpse.label>
-	<Hedgehog_Corpse.description>Труп ежа.</Hedgehog_Corpse.description>
+
 <!--Lacosdile-->
 	<Lacosdile.label>Лакосдил</Lacosdile.label>
-	<Lacosdile.description>Гибридные и генетически модифицированные ящерицы изначально созданы ради забавы. Будучи травоядными всеравно достаточно опасными. Однажды после затопления канализационной системы их унесло по всей галактике в дальние уголки космоса. В результате в настоящее время виды процветают на пустынных землях Римворлда.</Lacosdile.description>
+	<Lacosdile.description>Гибридные и генетически модифицированные ящерицы изначально созданы ради забавы. Будучи травоядными всё равно достаточно опасными. Однажды после затопления канализационной системы их унесло по всей галактике в дальние уголки космоса. В результате в настоящее время виды процветают на пустынных землях Римворлда.</Lacosdile.description>
 	<Lacosdile_Leather.label>кожа лакосдила</Lacosdile_Leather.label>
 	<Lacosdile_Leather.stuffProps.stuffAdjective>кожа лакосдила</Lacosdile_Leather.stuffProps.stuffAdjective>
 	<Lacosdile_Leather.description>кожа, содранная с лакосдила.</Lacosdile_Leather.description>
@@ -195,5 +152,25 @@
 	<Lacosdile_Meat.description>Сырое мясо лакосдила.</Lacosdile_Meat.description>
 	<Lacosdile_Corpse.label>труп лакосдила</Lacosdile_Corpse.label>
 	<Lacosdile_Corpse.description>Труп лакосдила.</Lacosdile_Corpse.description>
+	
+	<PandaBear.label>панда</PandaBear.label>
+	<PandaBear.description>Панды очень древние и редкие животные. Впервые  о Больших пандах стало известно около 6000 лет назад. Это довольно большое и тяжелое животное. Панда имеет необычный черно-белый окрас шерсти крупными областями.</PandaBear.description>
+<!-- 	<PandaBear_Leather.label>шкура панды</PandaBear_Leather.label>
+	<PandaBear_Leather.stuffProps.stuffAdjective>шкуры белых медведей</PandaBear_Leather.stuffProps.stuffAdjective>
+	<PandaBear_Leather.description>шкура, содранная с панды.</PandaBear_Leather.description>
+	<PandaBear_Meat.label>мясо панды</PandaBear_Meat.label>
+	<PandaBear_Meat.description>Сырое мясо панды.</PandaBear_Meat.description> -->
+	<PandaBear_Corpse.label>труп панды</PandaBear_Corpse.label>
+	<PandaBear_Corpse.description>Труп панды.</PandaBear_Corpse.description>
 
+	<Blackbear.label>Черный медведь</Blackbear.label>
+	<Blackbear.description>Средний по размерам медведь родом из лесистых лесов. Черный медведь - это всеядное и одинокое по природе животное, значительно менее опасное, чем его более крупные собратья. Не нападает, если его не провоцировать.</Blackbear.description>
+	<Blackbear_Corpse.label>труп черного медведя</Blackbear_Corpse.label>
+	<Blackbear_Corpse.description>Труп черного медведя.</Blackbear_Corpse.description>
+
+	<Chipmunk.label>Бурундук</Chipmunk.label>
+	<Chipmunk.description>Небольшой грызун, известный своей способностью забивать за щеки огромное количество еды.</Chipmunk.description>
+	<Chipmunk_Corpse.label>труп бурундука</Chipmunk_Corpse.label>
+	<Chipmunk_Corpse.description>Труп бурундука.</Chipmunk_Corpse.description>
+	
 </LanguageData>

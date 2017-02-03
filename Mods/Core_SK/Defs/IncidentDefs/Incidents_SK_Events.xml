@@ -2,18 +2,81 @@
 <Defs>
 
   <IncidentDef>
-    <defName>Fluffy_FeenixPasses</defName>
+    <defName>WandererJoinSK</defName>
+    <label>new arrival</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>SK.Events.IncidentWorker_WandererJoin</workerClass>
+    <baseChance>0.4</baseChance>
+    <populationEffect>Increase</populationEffect>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>OrassanBombardmentIncident</defName>
+    <label>Orbital bombardment</label>
+	<targetType>BaseMap</targetType>
+    <workerClass>SK.Events.IncidentWorker_OrassanBombardment</workerClass>
+    <populationEffect>Decrease</populationEffect>
+    <letterLabel>Orbital Bombardment</letterLabel>
+    <letterText>The orassans are not pleased with you, their warship will shoot at you from orbit.</letterText>
+    <letterType>BadUrgent</letterType>
+    <baseChance>0.8</baseChance>
+    <minRefireDays>50</minRefireDays>
+    <minDifficulty>2</minDifficulty>
+    <durationDays>
+      <min>0.075</min>
+      <max>0.1</max>
+    </durationDays>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>Swarm</defName>
+    <label>Swarm</label>
+	<targetType>BaseMap</targetType>
+    <workerClass>SK.Events.IncidentWorker_Swarm</workerClass>
+    <baseChance>0</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>false</pointsScaleable>
+	<earliestDay>45</earliestDay>
+    <minRefireDays>30</minRefireDays>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>ZeonIncoming</defName>
+    <label>Zeon incoming</label>
+	<targetType>BaseMap</targetType>
+    <workerClass>SK.Events.IncidentWorker_Zeon</workerClass>
+    <baseChance>0.8</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>false</pointsScaleable>
+	<earliestDay>280</earliestDay>
+    <minRefireDays>140</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Accident</defName>
+    <label>Accident</label>
+	<targetType>BaseMap</targetType>
+    <workerClass>SK.Events.IncidentWorker_Accidents</workerClass>
+    <baseChance>3.5</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <category>ThreatSmall</category>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>FeenixPasses</defName>
     <label>fenix passes</label>
-    <workerClass>Fluffy.IncidentWorker_FeenixPasses</workerClass>
+	<targetType>BaseMap</targetType>
+    <workerClass>SK.IncidentWorker_FeenixPasses</workerClass>
     <baseChance>1.5</baseChance>
 	<earliestDay>40</earliestDay>
     <minRefireDays>70</minRefireDays>
   </IncidentDef>
 
    <IncidentDef>
-    <defName>Fluffy_IcicatPasses</defName>
-    <label>icicat passes</label>
-    <workerClass>Fluffy.IncidentWorker_IcicatPasses</workerClass>    
+    <defName>IcicatPasses</defName>
+    <label>Kirin passes</label>
+	<targetType>BaseMap</targetType>
+    <workerClass>SK.IncidentWorker_IcicatPasses</workerClass>    
     <mapCondition>ColdSnap</mapCondition>
     <letterLabel>Cold Snap</letterLabel>
     <letterText>An unusual cold snap has set in. Watch out for hypothermia and dying crops.</letterText>
@@ -27,79 +90,11 @@
     </durationDays>
   </IncidentDef>
 
-  <IncidentDef>
-    <defName>HeatWaveExtreme</defName>
-    <label>heat wave extreme</label>
-    <workerClass>SK.Events.IncidentWorker_HeatWave</workerClass>
-    <mapCondition>HeatWave</mapCondition>
-    <letterLabel>Heat wave</letterLabel>
-    <letterText>An unusual and severe heat wave has begun. Watch out for heat stroke, spontaneous human combustion, and tumbleweed.</letterText>
-    <letterType>BadNonUrgent</letterType>
-    <baseChance>1.5</baseChance>
-    <earliestDay>110</earliestDay>
-    <pointsScaleable>false</pointsScaleable>
-    <minRefireDays>70</minRefireDays>
-    <durationDays>
-      <min>1</min>
-      <max>3</max>
-    </durationDays>
-  </IncidentDef>
-
-  <IncidentDef>
-    <defName>ColdSnapExtreme</defName>
-    <label>cold snap extreme</label>
-    <workerClass>SK.Events.IncidentWorker_ColdSnap</workerClass>
-    <mapCondition>ColdSnap</mapCondition>
-    <letterLabel>Cold snap</letterLabel>
-    <letterText>An unusual and deadly cold snap has set in. Watch out for hypothermia, dying crops and the White Walkers.</letterText>
-    <letterType>BadNonUrgent</letterType>
-    <baseChance>1.5</baseChance>
-    <pointsScaleable>false</pointsScaleable>
-    <earliestDay>110</earliestDay>
-    <minRefireDays>70</minRefireDays>
-    <durationDays>
-      <min>1</min>
-      <max>3</max>
-    </durationDays>
-  </IncidentDef>
-
-  <IncidentDef>
-    <defName>HeatWaveRidiculous</defName>
-    <label>heat wave ridiculous</label>
-    <workerClass>IncidentWorker_MakeMapCondition</workerClass>
-    <mapCondition>SolarApocalypse</mapCondition>
-    <letterLabel>Solar Apocalypse</letterLabel>
-    <letterText>Solar activity has begun to increase at an alarming rate. In less than ten years, it is estimated that the surface of this world will be uninhabitable.</letterText>
-    <letterType>BadNonUrgent</letterType>
-    <baseChance>0</baseChance>
-    <pointsScaleable>false</pointsScaleable>
-    <earliestDay>1200</earliestDay>
-    <minRefireDays>120000</minRefireDays>
-    <durationDays>
-      <min>0.5</min>
-      <max>2</max>
-    </durationDays>
-  </IncidentDef>
-
-  <IncidentDef>
-    <defName>HotFlashstorm</defName>
-    <label>hot flashstorm</label>
-    <workerClass>SK.Events.IncidentWorker_HotFlashstorm</workerClass>
-    <letterLabel>Flashstorm</letterLabel>
-    <letterText>Extreme amounts of lightning are hitting a small region. This can cause massive fires.</letterText>
-    <letterType>BadNonUrgent</letterType>
-    <baseChance>0.5</baseChance>
-    <pointsScaleable>false</pointsScaleable>
-    <minRefireDays>5</minRefireDays>
-    <durationDays>
-      <min>0.2</min>
-      <max>0.35</max>
-    </durationDays>
-  </IncidentDef>
-  
+ 
    <IncidentDef>
     <defName>RaptorPasses</defName>
     <label>raptor passes</label>
+	<targetType>BaseMap</targetType>
     <workerClass>SK.Events.IncidentWorker_RaptorPasses</workerClass>
     <baseChance>2</baseChance>
     <minRefireDays>20</minRefireDays>
@@ -109,6 +104,7 @@
 	<IncidentDef>
 		<defName>FactionWar</defName>
 		<label>faction war</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_FactionWar</workerClass>
 		<minRefireDays>25</minRefireDays>
 		<category>ThreatBig</category>
@@ -121,6 +117,7 @@
 	<IncidentDef>
 		<defName>TribeMigration</defName>
 		<label>tribe migration</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_TribeMigration</workerClass>
 		<baseChance>1.2</baseChance>
 		<minRefireDays>60</minRefireDays>
@@ -131,6 +128,7 @@
 	  <IncidentDef>
 		<defName>BoulderHit</defName>
 		<label>boulder hit</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_BoulderHit</workerClass>
 		<baseChance>2</baseChance>
 		<minRefireDays>10</minRefireDays>
@@ -141,6 +139,7 @@
 	  <IncidentDef>
 		<defName>BoulderMassHit</defName>
 		<label>boulder masshit</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_BoulderMassHit</workerClass>
 		<baseChance>1</baseChance>
 		<category>ThreatSmall</category>
@@ -151,6 +150,7 @@
 	  <IncidentDef>
 		<defName>RazorRain</defName>
 		<label>razor rain</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_RazorRain</workerClass>
 		<baseChance>1.5</baseChance>
 		<minRefireDays>35</minRefireDays>
@@ -161,6 +161,7 @@
 	<IncidentDef>
 		<defName>HungryLocusts</defName>
 		<label>hungry locusts</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_Locusts</workerClass>
 		<minRefireDays>25</minRefireDays>
 		<baseChance>3</baseChance>
@@ -170,6 +171,7 @@
 	<IncidentDef>
 		<defName>MalariaRaid</defName>
 		<label>malaria raid</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_Malaria</workerClass>
 		<minRefireDays>20</minRefireDays>
 		<baseChance>3</baseChance>
@@ -179,6 +181,7 @@
 	<IncidentDef>
 		<defName>FleaRaid</defName>
 		<label>flea raid</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_FleaPlague</workerClass>
 		<minRefireDays>20</minRefireDays>
 		<baseChance>3</baseChance>
@@ -188,6 +191,7 @@
 	<IncidentDef>
 		<defName>Plunderers</defName>
 		<label>plunderers</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_Plunderers</workerClass>
 		<minRefireDays>15</minRefireDays>
 		<baseChance>2.5</baseChance>
@@ -197,15 +201,17 @@
 	<IncidentDef>
 		<defName>Earthquake</defName>
 		<label>earthquake</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_Earthquake</workerClass>
 		<category>ThreatSmall</category>
-		<baseChance>1.5</baseChance>
-		<minRefireDays>30</minRefireDays>
+		<baseChance>1.4</baseChance>
+		<minRefireDays>40</minRefireDays>
 	</IncidentDef>
 	
   <IncidentDef>
 		<defName>Flood</defName>
 		<label>flood</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_FlashFlood</workerClass>
 		<baseChance>0</baseChance>
 		<category>ThreatSmall</category>
@@ -216,6 +222,7 @@
 	<IncidentDef>
 		<defName>AnimalGenocide</defName>
 		<label>animal genocide</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_AnimalGenocide</workerClass>
 		<minRefireDays>80</minRefireDays>
 		<category>ThreatBig</category>
@@ -223,96 +230,10 @@
 		<earliestDay>35</earliestDay>
 	</IncidentDef>
 	
-<!--
-	<IncidentDef>
-		<defName>MechanoidSwarm</defName>
-		<workerClass>SK.Events.IncidentWorker_MechanoidSwarm</workerClass>
-		<minRefireDays>180</minRefireDays>
-		<category>ThreatBig</category>
-		<baseChance>3</baseChance>
-		<pointsScaleable>true</pointsScaleable>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>Major_RaiderCommand</defName>
-		<workerClass>SK.Events.IncidentWorker_RaidCommand</workerClass>
-		<minRefireDays>60</minRefireDays>
-		<category>ThreatBig</category>
-		<baseChance>2</baseChance>
-		<pointsScaleable>true</pointsScaleable>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>RaiderSyndicate</defName>
-		<workerClass>SK.Events.IncidentWorker_RaiderSyndicate</workerClass>
-		<minRefireDays>180</minRefireDays>
-		<category>ThreatBig</category>
-		<baseChance>1.3</baseChance>
-		<pointsScaleable>true</pointsScaleable>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>MiscEvents</defName>
-		<workerClass>SK.Events.IncidentWorker_TextOnlyEvents</workerClass>
-		<baseChance>17</baseChance>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>PrisonerAssault</defName>
-		<workerClass>SK.Events.IncidentWorker_PrisonerAssault</workerClass>
-		<pointsScaleable>true</pointsScaleable>
-		<category>ThreatBig</category>
-		<baseChance>0.4</baseChance>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>NuclearFalloutAftermath</defName>
-		<workerClass>SK.Events.IncidentWorker_NuclearFalloutAftermath</workerClass>
-		<baseChance>33</baseChance>
-		<pointsScaleable>false</pointsScaleable>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>SuspiciousCrates</defName>
-		<workerClass>SK.Events.IncidentWorker_SuspiciousCrates</workerClass>
-		<minRefireDays>12</minRefireDays>
-		<baseChance>2</baseChance>
-	</IncidentDef>
-
-	<IncidentDef>
-		<defName>PrisonBreak</defName>
-		<workerClass>SK.Events.IncidentWorker_PrisonBreak</workerClass>
-		<baseChance>1</baseChance>
-		<category>ThreatBig</category>
-		<pointsScaleable>true</pointsScaleable>
-		<minRefireDays>40</minRefireDays>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>HungryCarnivores</defName>
-		<workerClass>SK.Events.IncidentWorker_HungryCarnivores</workerClass>
-		<category>ThreatSmall</category>
-		<minRefireDays>15</minRefireDays>
-		<baseChance>21</baseChance>
-	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>RageVirus</defName>
-		<label>rage virus</label>
-		<workerClass>SK.Events.IncidentWorker_RageVirus</workerClass>
-		<pointsScaleable>true</pointsScaleable>
-		<category>ThreatSmall</category>
-		<minRefireDays>80</minRefireDays>
-		<baseChance>0.8</baseChance>
-		<earliestDay>125</earliestDay>
-	</IncidentDef>
-	
--->
-
-
 	<IncidentDef>
 		<defName>PrisonRiot</defName>
 		<label>prison riot</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_PrisonRiot</workerClass>
 		<pointsScaleable>true</pointsScaleable>
 		<category>ThreatSmall</category>
@@ -323,6 +244,7 @@
 	<IncidentDef>
 		<defName>PrisonerRampage</defName>
 		<label>prison rampage</label>
+		<targetType>BaseMap</targetType>
 		<category>ThreatSmall</category>
 		<workerClass>SK.Events.IncidentWorker_PrisonerRampage</workerClass>
 		<baseChance>4</baseChance>
@@ -331,6 +253,7 @@
 	<IncidentDef>
 		<defName>PrisonSuicide</defName>
 		<label>prison suicide</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_PrisonerSuicide</workerClass>
 		<baseChance>3</baseChance>
 	</IncidentDef>
@@ -338,6 +261,7 @@
 	<IncidentDef>
 		<defName>NuclearIncident</defName>
 		<label>nuclear incident</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_NuclearIncident</workerClass>
 		<baseChance>0.1</baseChance>
 		<category>ThreatBig</category>
@@ -348,6 +272,7 @@
 	<IncidentDef>
 		<defName>NuclearFallout</defName>
 		<label>nuclear fallout</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_NuclearFallout</workerClass>
 		<baseChance>1</baseChance>
 		<category>ThreatBig</category>
@@ -358,6 +283,7 @@
 	<IncidentDef>
 		<defName>CosmicRadiation</defName>
 		<label>cosmic radiation</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_SolarFlareSubEventA</workerClass>
 		<category>ThreatSmall</category>
 		<minRefireDays>60</minRefireDays>
@@ -368,6 +294,7 @@
 	<IncidentDef>
 		<defName>AnimalMigration</defName>
 		<label>animal migration</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_Migration</workerClass>
 		<minRefireDays>15</minRefireDays>
 		<baseChance>5</baseChance>
@@ -376,6 +303,7 @@
 	<IncidentDef>
 		<defName>Stroke</defName>
 		<label>stroke</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_Stroke</workerClass>
 		<baseChance>1.5</baseChance>
 		<minRefireDays>15</minRefireDays>
@@ -385,6 +313,7 @@
 	<IncidentDef>
 		<defName>AccidentalExplosion</defName>
 		<label>accidental explosion</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_AccidentalExplosion</workerClass>
 		<baseChance>1.5</baseChance>
 		<category>ThreatSmall</category>
@@ -395,6 +324,7 @@
 	<IncidentDef>
 		<defName>SickNausea</defName>
 		<label>sick nausea</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_Nausea</workerClass>
 		<baseChance>3</baseChance>
 		<category>ThreatSmall</category>
@@ -404,6 +334,7 @@
 	<IncidentDef>
 		<defName>ColonistStash</defName>
 		<label>colonist stash</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_ColonistStash</workerClass>
 		<minRefireDays>10</minRefireDays>
 		<baseChance>2</baseChance>
@@ -412,6 +343,7 @@
 	<IncidentDef>
 		<defName>EclipseFeral</defName>
 		<label>eclipse feral</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_EclipseSubEventA</workerClass>
 		<category>ThreatSmall</category>
 		<baseChance>1.5</baseChance>
@@ -422,6 +354,7 @@
 	<IncidentDef>
 		<defName>EclipseMeteorImpact</defName>
 		<label>eclipse meteor impact</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_EclipseSubEventB</workerClass>
 		<category>ThreatBig</category>
 		<minRefireDays>20</minRefireDays>
@@ -432,6 +365,7 @@
 	<IncidentDef>
 		<defName>MysteriousTransmission</defName>
 		<label>mysterious transmission</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_MysteriousTransmission</workerClass>
 		<minRefireDays>20</minRefireDays>
 		<category>ThreatSmall</category>
@@ -442,6 +376,7 @@
 	<IncidentDef>
 		<defName>Darkness</defName>
 		<label>darkness</label>
+		<targetType>BaseMap</targetType>	
 		<workerClass>SK.Events.IncidentWorker_BlackVoid</workerClass>
 		<baseChance>3.5</baseChance>
 		<category>ThreatBig</category>
@@ -452,6 +387,7 @@
 	<IncidentDef>
 		<defName>PermanentDarkness</defName>
 		<label>permanent darkness</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_PermanentDarkess</workerClass>
 		<baseChance>0.01</baseChance>
 		<minRefireDays>9999</minRefireDays>
@@ -461,6 +397,7 @@
 	<IncidentDef>
 		<defName>MajorRescue</defName>
 		<label>major resque</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_EndRescue</workerClass>
 		<minRefireDays>180</minRefireDays>
 		<baseChance>0.5</baseChance>
@@ -470,6 +407,7 @@
 	<IncidentDef>
 		<defName>UnexpectedGuest</defName>
 		<label>unexpected guest</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_UnexpectedGuest</workerClass>
 		<minRefireDays>15</minRefireDays>
 		<baseChance>2</baseChance>
@@ -479,23 +417,17 @@
 	<IncidentDef>
 		<defName>HiddenResources</defName>
 		<label>hidden resources</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_HiddenResources</workerClass>
 		<minRefireDays>60</minRefireDays>
-		<baseChance>1.5</baseChance>
+		<baseChance>2.5</baseChance>
 		<earliestDay>105</earliestDay>
 	</IncidentDef>
 	
-  <IncidentDef>
-    <defName>WandererJoin</defName>
-    <label>wanderer join</label>
-    <workerClass>Orassan.IncidentWorker_WandererJoin</workerClass>
-    <baseChance>0.4</baseChance>
-    <populationEffect>Increase</populationEffect>
-  </IncidentDef>
-
 	<IncidentDef>
 		<defName>OrassianFound</defName>
 		<label>orassian found</label>
+		<targetType>BaseMap</targetType>
 		<workerClass>SK.Events.IncidentWorker_OrassianFound</workerClass>
 		<baseChance>0</baseChance>
 		<populationEffect>Increase</populationEffect>

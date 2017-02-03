@@ -474,7 +474,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Concrete</li>
+						<li>ConcreteResource</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>
@@ -486,14 +486,14 @@
 						<li>USLDBar</li>
 					</categories>
 			<thingDefs>
-				<li>Concrete</li>
+				<li>ConcreteResource</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<thingDefs>
 			<li>Bronze</li>	
 			<li>SteelBar</li>
-			<li>Concrete</li>			
+			<li>ConcreteResource</li>			
 		</thingDefs>
 		<exceptedthingDefs>
 			<li>FerrosiliconAlloy</li>
@@ -538,7 +538,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Concrete</li>
+						<li>ConcreteResource</li>
 					</thingDefs>
 				</filter>
 				<count>20</count>
@@ -550,14 +550,14 @@
 						<li>USLDBar</li>
 					</categories>
 					<thingDefs>
-						<li>Concrete</li>
+						<li>ConcreteResource</li>
 					</thingDefs>
 		</fixedIngredientFilter>
 				<defaultIngredientFilter>
 			<thingDefs>
 			<li>Bronze</li>	
 			<li>SteelBar</li>
-			<li>Concrete</li>
+			<li>ConcreteResource</li>
 		</thingDefs>
 		<exceptedthingDefs>
 			<li>FerrosiliconAlloy</li>
@@ -917,7 +917,7 @@
 	<RecipeDef>
 		<defName>MakeRepairKit</defName>
 		<label>Make Repair kits</label>
-		<description>Craft 10 repair kits. Produces 5.</description>
+		<description>Craft 5 repair kits.</description>
 		<jobString>Making repair kits.</jobString>
 		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<effectWorking>Smith</effectWorking>
@@ -925,7 +925,6 @@
 		<allowMixingIngredients>false</allowMixingIngredients>
 		<workAmount>1500</workAmount>
 		<targetCountAdjustment>5</targetCountAdjustment>
-		<workSkill>Crafting</workSkill>
 		<ingredients>
 			<li>
 				<filter>
@@ -964,8 +963,8 @@
 			<RepairKit>5</RepairKit>
 		</products>
 		<recipeUsers>
-			<li>ElectricSmithy</li>
-			<li>FueledSmithy</li>
+			<li>ComponentAssemblyBench</li>
+			<li>AdvToolBench</li>
 		</recipeUsers>
 		<researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>

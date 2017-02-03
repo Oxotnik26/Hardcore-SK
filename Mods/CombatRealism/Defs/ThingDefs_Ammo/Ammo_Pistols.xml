@@ -6,7 +6,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="40RimfireBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Low caliber handgun cartridge lacking in stopping power.</description>
     <statBases>
-	  <Weight>0.01</Weight>
+	  <Mass>0.01</Mass>
 	  <Bulk>0.02</Bulk>
     </statBases>
 		<tradeTags>
@@ -18,16 +18,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.3</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -78,7 +68,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="9x19mmParaBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Common pistol cartridge used by a variety of handguns and SMGs.</description>
     <statBases>
-	  <Weight>0.012</Weight>
+	  <Mass>0.012</Mass>
 	  <Bulk>0.02</Bulk>
     </statBases>
 	<tradeTags>
@@ -90,16 +80,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.3</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
@@ -150,7 +130,7 @@
   <ThingDef Class="Combat_Realism.AmmoDef" Name="45ACPBase" ParentName="SmallAmmoBase" Abstract="True">
     <description>Pistol cartridge favoured for its above average stopping power.</description>
     <statBases>
-	  <Weight>0.02</Weight>
+	  <Mass>0.02</Mass>
 	  <Bulk>0.03</Bulk>
     </statBases>
 	<tradeTags>
@@ -162,16 +142,6 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Explosive">
-        <explosiveRadius>0.2</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <wickTicks>
-          <min>10</min>
-          <max>30</max>
-        </wickTicks>
-      </li>
     </comps>
   </ThingDef>
 
